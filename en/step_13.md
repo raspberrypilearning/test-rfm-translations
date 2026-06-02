@@ -8,20 +8,20 @@ You want to keep a climbing, maze-like, or scrolling game inside a clear play ar
 
 ### Keep the player inside the level
 
-Paint tall wall sprites with the `Platform` sprite, or use the boundary checks below once your player can move. Change the edge values so they match the left and right limits of your own level.
+Paint tall wall sprites with the `Platform` sprite, or use the boundary checks below once your player can move. On the Scratch Stage, the left edge is `x = -240` and the right edge is `x = 240`.
 
 Add this code to the Player sprite:
 
 ```blocks3
-if <(x position) > [right edge]> then
-  set x to [right edge]
+if <(x position) > [240]> then
+  set x to [240]
 end
-if <(x position) < [left edge]> then
-  set x to [left edge]
+if <(x position) < [-240]> then
+  set x to [-240]
 end
 ```
 
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Move the player to the left and right edges and check that it stays inside the Stage.
+Move the player to `x = -240` and `x = 240` and check that it stays inside the Stage.
