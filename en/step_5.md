@@ -22,13 +22,13 @@ Choose **Upload Backdrop** and pick one of these example backdrops. Use the name
 
 [![Space platforms backdrop](images/example-backdrop-space-platforms.png)](images/example-backdrop-space-platforms.png)
 
-The words in the block below are placeholders. Do not make a variable called `your backdrop name`; replace it with the name of your own backdrop.
+Choose your own backdrop name in the menu below.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-switch backdrop to [your backdrop name v]
+switch backdrop to [ v]
 ```
 
 

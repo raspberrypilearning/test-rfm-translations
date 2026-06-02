@@ -12,18 +12,18 @@ You can keep the spikes still as a danger zone, or use the code below to make th
 
 [![Spike hazard sprite](images/spikes.png)](images/spikes.png)
 
-The words in the white inputs below are placeholders. Do not make variables called `start x`, `start y`, `end x`, `end y`, `drop time`, or `reset delay`; replace them with your own values.
+Type your own positions and timing into the white inputs below.
 
 Add this code to the Spike sprite:
 
 ```blocks3
 when I receive [start game v]
 show
-go to x: (start x) y: (start y)
+go to x: () y: ()
 forever
-  glide (drop time) secs to x: (end x) y: (end y)
-  go to x: (start x) y: (start y)
-  wait (reset delay) seconds
+  glide () secs to x: () y: ()
+  go to x: () y: ()
+  wait () seconds
 end
 ```
 

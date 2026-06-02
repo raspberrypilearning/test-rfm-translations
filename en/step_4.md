@@ -14,13 +14,13 @@ You already have an image on your device and want to turn it into a fast platfor
 
 Choose **Upload Backdrop** and pick an image from your device. A simple image with clear colours works best. Use the name Scratch gives your backdrop, or rename it first and use that name.
 
-The words in the block below are placeholders. Do not make a variable called `your backdrop name`; replace it with the name of your own backdrop.
+Choose your own backdrop name in the menu below.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-switch backdrop to [your backdrop name v]
+switch backdrop to [ v]
 ```
 
 

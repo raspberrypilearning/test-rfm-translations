@@ -16,13 +16,13 @@ Choose **Paint** in the backdrop menu. Add a ground line, hills, cave walls, or 
 
 [![Scratch backdrop paint tool](<images/scratch screenshots/backdrop-paint.png>)](<images/scratch screenshots/backdrop-paint.png>)
 
-The words in the block below are placeholders. Do not make a variable called `your backdrop name`; replace it with the name of your own backdrop.
+Choose your own backdrop name in the menu below.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-switch backdrop to [your backdrop name v]
+switch backdrop to [ v]
 ```
 
 

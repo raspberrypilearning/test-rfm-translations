@@ -10,14 +10,14 @@ You want the player to explore and collect before the game ends.
 
 Choose how many items the player needs, then use that value in the block below.
 
-`target score` below is a value to replace, not a variable name.
+Type your target score into the white input below.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
 forever
-  if <(Score) = [target score]> then
+  if <(Score) = ()> then
     broadcast [win v]
   end
 end

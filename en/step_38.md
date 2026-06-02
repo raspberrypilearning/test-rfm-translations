@@ -12,13 +12,13 @@ Create or choose a backdrop for losing, then use that backdrop name in the scrip
 
 [![Scratch backdrop tab](<images/scratch screenshots/backdrop_tab.png>)](<images/scratch screenshots/backdrop_tab.png>)
 
-`your game-over backdrop` below is a placeholder. Replace it with the name of your own backdrop.
+Choose your game-over backdrop in the menu below.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [game over v]
-switch backdrop to [your game-over backdrop v]
+switch backdrop to [ v]
 stop [all v]
 ```
 

@@ -12,14 +12,14 @@ Move the `Exit` to a place that feels like the end of the challenge. You can use
 
 [![Exit door sprite](images/exit-door.png)](images/exit-door.png)
 
-`exit x` and `exit y` below are values to replace, not variables to create.
+Type the exit position into the white inputs below.
 
 Add this code to the Exit sprite:
 
 ```blocks3
 when I receive [start game v]
 show
-go to x: (exit x) y: (exit y)
+go to x: () y: ()
 ```
 
 

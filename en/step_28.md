@@ -10,13 +10,13 @@ You want pressure without adding another sprite to the level.
 
 Make a `Time` variable for all sprites. Choose a starting time that suits your own level.
 
-`starting time` below is a value to replace, not another variable.
+Type your starting time into the white input below.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-set [Time v] to [starting time]
+set [Time v] to ()
 repeat until <(Time) = [0]>
   wait (1) seconds
   change [Time v] by (-1)

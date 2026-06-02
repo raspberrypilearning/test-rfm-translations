@@ -12,13 +12,13 @@ Create or choose a backdrop for winning, then use that backdrop name in the scri
 
 [![Scratch backdrop tab](<images/scratch screenshots/backdrop_tab.png>)](<images/scratch screenshots/backdrop_tab.png>)
 
-`your win backdrop` below is a placeholder. Replace it with the name of your own backdrop.
+Choose your win backdrop in the menu below.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [win v]
-switch backdrop to [your win backdrop v]
+switch backdrop to [ v]
 stop [all v]
 ```
 

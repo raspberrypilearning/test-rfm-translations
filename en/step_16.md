@@ -10,15 +10,15 @@ You want a more old-school platformer route with vertical climbing.
 
 Draw the `Ladder` sprite as a tall shape that the player can touch. Make these variables for the `Player` sprite: `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, and `on ground`. Change the tuning values below so they fit your own player and level.
 
-Make the variables listed above. In the setup block, `your move speed`, `your jump strength`, and `your gravity` are placeholder values, not extra variables.
+Type your own starting values into the white inputs in the setup block.
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [start game v]
-set [move speed v] to [your move speed]
-set [jump strength v] to [your jump strength]
-set [gravity v] to [your gravity]
+set [move speed v] to ()
+set [jump strength v] to ()
+set [gravity v] to ()
 set [x speed v] to [0]
 set [y speed v] to [0]
 set [on ground v] to [0]

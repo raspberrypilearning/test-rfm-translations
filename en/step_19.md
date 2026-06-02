@@ -10,18 +10,18 @@ You want a level that feels larger than one Stage without making the player tiny
 
 Add the script below to each level sprite except `Player`. Use it on `Platform`, `Coin`, `Enemy`, and `Exit` if you want them all to scroll together. Change the scroll points and speed so they fit your own level.
 
-`right scroll point`, `left scroll point`, and `scroll speed` below are values to replace, not variables to create.
+Type your own scroll trigger points and scroll amounts into the white inputs below.
 
 Add this code to the level sprite such as Platform, Coin, Exit, or Enemy:
 
 ```blocks3
 when I receive [start game v]
 forever
-  if <<(x position of [Player v]) > [right scroll point]> and <key [right arrow v] pressed?>> then
-    change x by ((0) - (scroll speed))
+  if <<(x position of [Player v]) > ()> and <key [right arrow v] pressed?>> then
+    change x by ((0) - ())
   end
-  if <<(x position of [Player v]) < [left scroll point]> and <key [left arrow v] pressed?>> then
-    change x by (scroll speed)
+  if <<(x position of [Player v]) < ()> and <key [left arrow v] pressed?>> then
+    change x by ()
   end
 end
 ```

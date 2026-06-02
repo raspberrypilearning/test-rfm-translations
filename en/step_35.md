@@ -12,7 +12,7 @@ If your player only has one costume, duplicate it first and make a small change 
 
 [![Scratch costume tab](<images/scratch screenshots/costume_tab.png>)](<images/scratch screenshots/costume_tab.png>)
 
-`animation delay` below is a value to replace, not a variable name.
+Type your own animation delay into the white input below.
 
 Add this code to the Player sprite:
 
@@ -21,11 +21,11 @@ when I receive [start game v]
 forever
   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
     next costume
-    wait (animation delay) seconds
+    wait () seconds
   end
   if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
     next costume
-    wait (animation delay) seconds
+    wait () seconds
   end
 end
 ```

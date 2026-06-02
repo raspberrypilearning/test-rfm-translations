@@ -10,13 +10,13 @@ You want a simple movement route that still feels like a platform game.
 
 This route works best on a flat floor or a very small number of platforms. Make a `move speed` variable for the `Player` sprite, then change the values below until they suit your own player and level.
 
-`your move speed`, `jump up repeats`, `jump up amount`, `jump down repeats`, and `jump down amount` are placeholder values to replace, not extra variables.
+Type your own values into the white inputs below.
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [start game v]
-set [move speed v] to [your move speed]
+set [move speed v] to ()
 forever
   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
     change x by (move speed)
@@ -25,11 +25,11 @@ forever
     change x by ((0) - (move speed))
   end
   if <key [space v] pressed?> then
-    repeat (jump up repeats)
-      change y by (jump up amount)
+    repeat ()
+      change y by ()
     end
-    repeat (jump down repeats)
-      change y by ((0) - (jump down amount))
+    repeat ()
+      change y by ((0) - ())
     end
     wait until <not <key [space v] pressed?>>
   end

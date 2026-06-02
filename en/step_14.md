@@ -10,15 +10,15 @@ You want the most traditional platformer movement route.
 
 Make these variables for the `Player` sprite: `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, and `on ground`. `move speed` controls left and right movement. `jump strength` controls how high the jump is. `gravity` pulls the player back down. Change the tuning values and floor position below so they fit your own level.
 
-Make the variables listed above. In the setup block, `your move speed`, `your jump strength`, `your gravity`, and `floor y` are placeholder values, not extra variables.
+Type your own starting values into the white inputs in the setup block.
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [start game v]
-set [move speed v] to [your move speed]
-set [jump strength v] to [your jump strength]
-set [gravity v] to [your gravity]
+set [move speed v] to ()
+set [jump strength v] to ()
+set [gravity v] to ()
 set [x speed v] to [0]
 set [y speed v] to [0]
 set [on ground v] to [0]
@@ -46,8 +46,8 @@ forever
       set [on ground v] to [1]
     end
   end
-  if <(y position) < [floor y]> then
-    set y to [floor y]
+  if <(y position) < ()> then
+    set y to ()
     set [y speed v] to [0]
     set [on ground v] to [1]
   end

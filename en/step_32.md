@@ -10,25 +10,25 @@ You want the game to feel more forgiving and more like a bigger platformer.
 
 Make a `Lives` variable for all sprites. Change the starting number, respawn position, and delay so they match your own game. Change the sprite names in the touching block to match your real danger sprites.
 
-`starting lives`, `start x`, `start y`, and `respawn delay` below are values to replace, not extra variables.
+Type your starting lives, respawn position, and respawn delay into the white inputs below.
 
 Add this code to the Stage and Player sprite:
 
 ```blocks3
 when I receive [start game v]
-set [Lives v] to [starting lives]
+set [Lives v] to ()
 
 when I receive [start game v]
 forever
   if <touching [Enemy v]?> then
     change [Lives v] by (-1)
-    go to x: (start x) y: (start y)
-    wait (respawn delay) seconds
+    go to x: () y: ()
+    wait () seconds
   end
   if <touching [Spike v]?> then
     change [Lives v] by (-1)
-    go to x: (start x) y: (start y)
-    wait (respawn delay) seconds
+    go to x: () y: ()
+    wait () seconds
   end
   if <(Lives) = [0]> then
     broadcast [game over v]

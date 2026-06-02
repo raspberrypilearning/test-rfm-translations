@@ -14,13 +14,13 @@ Choose sounds from the Scratch sound library, then add them inside the scripts y
 
 [![Scratch sound library](<images/scratch screenshots/list-sounds.png>)](<images/scratch screenshots/list-sounds.png>)
 
-`your jump sound` and `your collect sound` below are placeholders. Replace them with the names of sounds you choose.
+Choose your own sounds in the menus below.
 
 Add this code to the sprite that already has the action, such as Player or Coin:
 
 ```blocks3
 if <<key [space v] pressed?> and <(on ground) = [1]>> then
-+ play sound [your jump sound v] until done
++ play sound [ v] until done
   set [y speed v] to (jump strength)
   set [on ground v] to [0]
 end
@@ -29,7 +29,7 @@ when I receive [start game v]
 show
 forever
   if <touching [Player v]?> then
-+   play sound [your collect sound v] until done
++   play sound [ v] until done
     change [Score v] by (1)
     hide
   end

@@ -10,7 +10,7 @@ You want a very simple control route that feels good for a maze or collection ga
 
 Keep the level fairly open so the player can follow the mouse smoothly. Change the move amount below until it feels right for your own game.
 
-`your speed` below is a value to replace, not a variable name.
+Type your own move amount into the white input below.
 
 Add this code to the Player sprite:
 
@@ -18,7 +18,7 @@ Add this code to the Player sprite:
 when I receive [start game v]
 forever
   point towards [mouse-pointer v]
-  move (your speed) steps
+  move () steps
 end
 ```
 
