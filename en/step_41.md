@@ -10,11 +10,6 @@ You want to hear what another player notices before you change the game again.
 
 Ask someone to play your platformer and tell you one thing that was fun, one thing that was tricky, and one thing they would change. Write down the answers so you can decide what to improve next.
 
-### Works well with
-
-- [Add a win screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/37)
-- [Add a game-over screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/38)
-- [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 ### Next choices
 

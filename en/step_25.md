@@ -21,11 +21,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
-- [Add sound effects](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/36)
-- [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 ### Next choices
 

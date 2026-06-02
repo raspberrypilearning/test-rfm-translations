@@ -21,11 +21,6 @@ if <(x position) < [-220]> then
 end
 ```
 
-### Works well with
-
-- [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
-- [Make your player follow the mouse](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/17)
-- [Make a scrolling level](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/19)
 
 ### Next choices
 

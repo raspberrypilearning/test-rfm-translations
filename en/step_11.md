@@ -19,11 +19,6 @@ go to x: (0) y: (-150)
 set size to (180)%
 ```
 
-### Works well with
-
-- [Choose a static Scratch sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/6)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Make a fixed one-screen level](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/20)
 
 ### Next choices
 

@@ -10,11 +10,6 @@ You want a clear, simple level where the player can see the whole challenge at o
 
 Place the `Player`, `Platform`, goal sprites, and danger sprites so the whole challenge fits inside the Stage. Keep the finish point easy to spot from the beginning.
 
-### Works well with
-
-- [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- [Move left and right with jump but no gravity](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/15)
-- [Win by reaching the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/24)
 
 ### Next choices
 

@@ -20,11 +20,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add walls or boundaries](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
-- [Add an exit or special place](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/23)
-- [Add falling spikes or danger zones](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/29)
 
 ### Next choices
 

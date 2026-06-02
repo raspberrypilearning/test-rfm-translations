@@ -23,12 +23,6 @@ when green flag clicked
 broadcast [start game v]
 ```
 
-### Works well with
-
-- [Choose a Scratch backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/2)
-- [Choose a static Scratch sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/6)
-- [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
 
 ### Next choices
 

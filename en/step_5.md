@@ -29,11 +29,6 @@ when I receive [start game v]
 switch backdrop to [sky-platforms v]
 ```
 
-### Works well with
-
-- [Use an example generated sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/10)
-- [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
 
 ### Next choices
 

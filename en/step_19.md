@@ -24,11 +24,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add walls or boundaries](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Add an exit or special place](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/23)
 
 ### Next choices
 

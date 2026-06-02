@@ -18,11 +18,6 @@ show
 go to x: (190) y: (-110)
 ```
 
-### Works well with
-
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Win by reaching the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/24)
-- [Win by finding a key and unlocking the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/26)
 
 ### Next choices
 

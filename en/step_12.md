@@ -19,11 +19,6 @@ go to x: (-100) y: (-40)
 set size to (80)%
 ```
 
-### Works well with
-
-- [Draw your own sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/8)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Add moving platforms](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/18)
 
 ### Next choices
 

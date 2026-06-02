@@ -30,11 +30,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
-- [Win by collecting enough things](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/25)
-- [Add a win screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/37)
 
 ### Next choices
 

@@ -21,11 +21,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add an exit or special place](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/23)
-- [Add a win screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/37)
-- [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 ### Next choices
 

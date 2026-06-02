@@ -26,11 +26,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Win by collecting enough things](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/25)
-- [Add visual feedback](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/39)
 
 ### Next choices
 

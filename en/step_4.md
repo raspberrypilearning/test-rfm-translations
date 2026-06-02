@@ -21,11 +21,6 @@ when I receive [start game v]
 switch backdrop to [Uploaded backdrop v]
 ```
 
-### Works well with
-
-- [Upload a sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
-- [Add walls or boundaries](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
-- [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
 
 ### Next choices
 

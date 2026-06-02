@@ -26,11 +26,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Choose an animated Scratch sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/7)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
 
 ### Next choices
 

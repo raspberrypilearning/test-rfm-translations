@@ -34,11 +34,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
-- [Add falling spikes or danger zones](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/29)
-- [Add visual feedback](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/39)
 
 ### Next choices
 

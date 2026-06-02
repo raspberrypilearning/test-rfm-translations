@@ -29,11 +29,6 @@ set size to (60)%
 go to x: (-180) y: (-110)
 ```
 
-### Works well with
-
-- [Use an example generated backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/5)
-- [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
 
 ### Next choices
 

@@ -21,11 +21,6 @@ when I receive [start game v]
 switch backdrop to [Backdrop1 v]
 ```
 
-### Works well with
-
-- [Draw your own sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/8)
-- [Make platforms to jump between](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
-- [Move left and right with jump but no gravity](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/15)
 
 ### Next choices
 

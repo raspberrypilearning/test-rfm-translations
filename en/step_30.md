@@ -21,11 +21,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Reset the player after a fall](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/34)
-- [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 ### Next choices
 

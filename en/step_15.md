@@ -34,11 +34,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- [Make a fixed one-screen level](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/20)
-- [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
 
 ### Next choices
 

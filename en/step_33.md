@@ -21,11 +21,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add a countdown timer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/28)
-- [Add a game-over screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/38)
-- [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 ### Next choices
 

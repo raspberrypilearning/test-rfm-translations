@@ -15,11 +15,6 @@ You want to check that your choices work together before you share the game or a
 
 If something breaks, check sprite names inside `touching` blocks, check that variables such as `Score`, `Lives`, `Time`, and `has key` are made for all sprites when needed, and check that your code is on the right sprite or the Stage.
 
-### Works well with
-
-- [Win by reaching the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/24)
-- [End the game when the player touches danger](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/31)
-- [Add a win screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/37)
 
 ### Next choices
 

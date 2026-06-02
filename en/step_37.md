@@ -18,11 +18,6 @@ switch backdrop to [You Win v]
 stop [all v]
 ```
 
-### Works well with
-
-- [Win by reaching the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/24)
-- [Win by finding a key and unlocking the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/26)
-- [Add sound effects](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/36)
 
 ### Next choices
 

@@ -26,11 +26,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
-- [Add an exit or special place](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/23)
-- [Win by finding a key and unlocking the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/26)
 
 ### Next choices
 

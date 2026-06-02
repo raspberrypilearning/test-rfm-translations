@@ -57,11 +57,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Use an example generated backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/5)
-- [Add walls or boundaries](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
-- [Add a key](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/22)
 
 ### Next choices
 

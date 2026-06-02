@@ -18,11 +18,6 @@ switch backdrop to [Level 2 v]
 broadcast [start game v]
 ```
 
-### Works well with
-
-- [Add moving platforms](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/18)
-- [Win by reaching the exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/24)
-- [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
 
 ### Next choices
 

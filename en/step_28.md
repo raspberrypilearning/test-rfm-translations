@@ -21,11 +21,6 @@ repeat until <(Time) = [0]>
 end
 ```
 
-### Works well with
-
-- [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
-- [End the game when time runs out](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/33)
-- [Add a game-over screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/38)
 
 ### Next choices
 

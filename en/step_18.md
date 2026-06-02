@@ -21,11 +21,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Make platforms to jump between](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
 
 ### Next choices
 

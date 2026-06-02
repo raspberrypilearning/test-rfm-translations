@@ -18,11 +18,6 @@ switch backdrop to [Game Over v]
 stop [all v]
 ```
 
-### Works well with
-
-- [End the game when the player touches danger](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/31)
-- [End the game when time runs out](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/33)
-- [Add a win screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/37)
 
 ### Next choices
 

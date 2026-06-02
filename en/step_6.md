@@ -23,11 +23,6 @@ set size to (60)%
 go to x: (-180) y: (-110)
 ```
 
-### Works well with
-
-- [Choose a Scratch backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/2)
-- [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
 
 ### Next choices
 

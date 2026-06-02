@@ -21,11 +21,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- [End the game when the player touches danger](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/31)
-- [Add lives](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/32)
 
 ### Next choices
 

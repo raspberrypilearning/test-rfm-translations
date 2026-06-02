@@ -25,11 +25,6 @@ when I receive [game over v]
 change [ghost v] effect by (40)
 ```
 
-### Works well with
-
-- [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
-- [Add lives](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/32)
-- [Animate your player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/35)
 
 ### Next choices
 

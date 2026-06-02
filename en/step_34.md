@@ -22,11 +22,6 @@ forever
 end
 ```
 
-### Works well with
-
-- [Add a fall-off-the-level danger](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/30)
-- [Add lives](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/32)
-- [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 ### Next choices
 

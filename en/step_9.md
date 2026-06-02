@@ -23,11 +23,6 @@ set size to (60)%
 go to x: (-180) y: (-110)
 ```
 
-### Works well with
-
-- [Upload a backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/4)
-- [Make platforms to jump between](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
-- [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
 
 ### Next choices
 
