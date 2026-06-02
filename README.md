@@ -1,18 +1,15 @@
-# default-project-template
+# Branching Pathways Platformer
 
-![default-project-template](banner.png)
-
-Find the project online at [projects.raspberrypi.org/en/projects/default-project-template](https://projects.raspberrypi.org/en/projects/default-project-template)
+Choose-your-own-adventure style instructions for making a Scratch platformer game.
 
 ## Resources
-For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/default-project-template/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/default-project-template/tree/master/en/solutions).
+
+Project assets and optional example art live in [en/resources](en/resources).
 
 ## Contributing
+
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Licence
+
 See [LICENCE.md](LICENCE.md)
-
-## Setting up a Crowdin project
-
-See [CROWDIN.md](CROWDIN.md).

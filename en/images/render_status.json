@@ -1,0 +1,222 @@
+{
+  "attempted": false,
+  "failed_steps": [],
+  "generated_steps": [],
+  "renderer": "manual-scratch-screenshots",
+  "skipped_steps": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42
+  ],
+  "steps": {
+    "1": {
+      "output": "images/step_1_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "2": {
+      "output": "images/step_2_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "3": {
+      "output": "images/step_3_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "4": {
+      "output": "images/step_4_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "5": {
+      "output": "images/step_5_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "6": {
+      "output": "images/step_6_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "7": {
+      "output": "images/step_7_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "8": {
+      "output": "images/step_8_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "9": {
+      "output": "images/step_9_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "10": {
+      "output": "images/step_10_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "11": {
+      "output": "images/step_11_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "12": {
+      "output": "images/step_12_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "13": {
+      "output": "images/step_13_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "14": {
+      "output": "images/step_14_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "15": {
+      "output": "images/step_15_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "16": {
+      "output": "images/step_16_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "17": {
+      "output": "images/step_17_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "18": {
+      "output": "images/step_18_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "19": {
+      "output": "images/step_19_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "20": {
+      "output": "images/step_20_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "21": {
+      "output": "images/step_21_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "22": {
+      "output": "images/step_22_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "23": {
+      "output": "images/step_23_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "24": {
+      "output": "images/step_24_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "25": {
+      "output": "images/step_25_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "26": {
+      "output": "images/step_26_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "27": {
+      "output": "images/step_27_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "28": {
+      "output": "images/step_28_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "29": {
+      "output": "images/step_29_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "30": {
+      "output": "images/step_30_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "31": {
+      "output": "images/step_31_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "32": {
+      "output": "images/step_32_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "33": {
+      "output": "images/step_33_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "34": {
+      "output": "images/step_34_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "35": {
+      "output": "images/step_35_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "36": {
+      "output": "images/step_36_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "37": {
+      "output": "images/step_37_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "38": {
+      "output": "images/step_38_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "39": {
+      "output": "images/step_39_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "40": {
+      "output": "images/step_40_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "41": {
+      "output": "images/step_41_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    },
+    "42": {
+      "output": "images/step_42_output.png",
+      "status": "skipped",
+      "reason": "Scratch UI screenshots will be created manually later."
+    }
+  },
+  "toolchain_available": false
+}

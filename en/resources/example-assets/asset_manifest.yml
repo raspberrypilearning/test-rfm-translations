@@ -1,0 +1,118 @@
+assets:
+  - filename: backdrops/sky-platforms.png
+    type: backdrop
+    intended_use: Example backdrop for a platformer level.
+    prompt_summary: Bright cartoon sky platformer backdrop with clouds and distant hills, no text.
+    transparent_background: false
+    used_in:
+      - Use an example generated backdrop
+    human_review_required: true
+
+  - filename: backdrops/forest-platforms.png
+    type: backdrop
+    intended_use: Example forest backdrop for a platformer level.
+    prompt_summary: Bright cartoon forest platformer backdrop with trees, bushes, and open play space, no text.
+    transparent_background: false
+    used_in:
+      - Use an example generated backdrop
+    human_review_required: true
+
+  - filename: backdrops/cave-platforms.png
+    type: backdrop
+    intended_use: Example cave backdrop for a platformer level.
+    prompt_summary: Friendly cartoon cave backdrop with crystals and open play space, no text.
+    transparent_background: false
+    used_in:
+      - Use an example generated backdrop
+    human_review_required: true
+
+  - filename: backdrops/space-platforms.png
+    type: backdrop
+    intended_use: Example space backdrop for a platformer level.
+    prompt_summary: Bright cartoon space backdrop with planets, stars, and open play space, no text.
+    transparent_background: false
+    used_in:
+      - Use an example generated backdrop
+    human_review_required: true
+
+  - filename: sprites/player-robot.png
+    type: sprite
+    intended_use: Example main character sprite.
+    prompt_summary: Friendly robot platformer character with a clear silhouette on a transparent background.
+    transparent_background: true
+    used_in:
+      - Use an example generated sprite
+    human_review_required: true
+
+  - filename: sprites/player-creature.png
+    type: sprite
+    intended_use: Example creature main character sprite.
+    prompt_summary: Friendly creature platformer character with a clear silhouette on a transparent background.
+    transparent_background: true
+    used_in:
+      - Use an example generated sprite
+    human_review_required: true
+
+  - filename: sprites/player-adventurer.png
+    type: sprite
+    intended_use: Example adventurer main character sprite.
+    prompt_summary: Friendly adventurer platformer character with a clear silhouette on a transparent background.
+    transparent_background: true
+    used_in:
+      - Use an example generated sprite
+    human_review_required: true
+
+  - filename: collectibles/coin.png
+    type: collectible
+    intended_use: Example coin collectible sprite.
+    prompt_summary: Shiny cartoon coin collectible on a transparent background.
+    transparent_background: true
+    used_in:
+      - Add coins or stars
+    human_review_required: true
+
+  - filename: collectibles/star.png
+    type: collectible
+    intended_use: Example star collectible sprite.
+    prompt_summary: Bright cartoon star collectible on a transparent background.
+    transparent_background: true
+    used_in:
+      - Add coins or stars
+    human_review_required: true
+
+  - filename: collectibles/key.png
+    type: collectible
+    intended_use: Example key collectible sprite.
+    prompt_summary: Golden cartoon key collectible on a transparent background.
+    transparent_background: true
+    used_in:
+      - Add a key
+    human_review_required: true
+
+  - filename: goals/exit-door.png
+    type: goal
+    intended_use: Example exit sprite.
+    prompt_summary: Friendly cartoon exit door on a transparent background.
+    transparent_background: true
+    used_in:
+      - Add an exit or special place
+      - Win by finding a key and unlocking the exit
+    human_review_required: true
+
+  - filename: dangers/enemy-blob.png
+    type: danger
+    intended_use: Example enemy sprite.
+    prompt_summary: Non-scary cartoon blob enemy with a mischievous expression on a transparent background.
+    transparent_background: true
+    used_in:
+      - Add a patrolling enemy
+    human_review_required: true
+
+  - filename: dangers/spikes.png
+    type: danger
+    intended_use: Example spikes hazard sprite.
+    prompt_summary: Cartoon spikes hazard on a transparent background.
+    transparent_background: true
+    used_in:
+      - Add falling spikes or danger zones
+    human_review_required: true

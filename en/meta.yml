@@ -1,19 +1,55 @@
-title: Project title in sentence case
+title: Branching Pathways Platformer
 hero_image: images/banner.png
-description: A short description of the project
+description: Build a Scratch platformer by choosing your own route through worlds, players, movement, goals, danger, and polish.
 listed: false
 pdf: false
+landing: true
 steps:
-  - title: What you can make
+  - title: Start your platformer adventure
   - title: Choose a Scratch backdrop
-  - title: Draw a Scratch backdrop
-  - title: Upload your own backdrop
-  - title: Add a Scratch sprite
-  - title: Draw a Scratch sprite
-  - title: Upload your own sprite
-  - title: Make your sprite fly
-  - title: Make your sprite run and jump
-  - title: Aim - get to a goal
-  - title: Aim - collect things
-  - title: Aim - defeat enemies
-
+  - title: Draw your own backdrop
+  - title: Upload a backdrop
+  - title: Use an example generated backdrop
+  - title: Choose a static Scratch sprite
+  - title: Choose an animated Scratch sprite
+  - title: Draw your own sprite
+  - title: Upload a sprite
+  - title: Use an example generated sprite
+  - title: Make a single floor
+    completion:
+      - engaged
+  - title: Make platforms to jump between
+  - title: Add walls or boundaries
+  - title: Move left and right with gravity and jumps
+  - title: Move left and right with jump but no gravity
+  - title: Make your player climb ladders
+  - title: Make your player follow the mouse
+  - title: Add moving platforms
+  - title: Make a scrolling level
+  - title: Make a fixed one-screen level
+  - title: Add coins or stars
+  - title: Add a key
+  - title: Add an exit or special place
+  - title: Win by reaching the exit
+  - title: Win by collecting enough things
+  - title: Win by finding a key and unlocking the exit
+    completion:
+      - internal
+  - title: Add a patrolling enemy
+  - title: Add a countdown timer
+  - title: Add falling spikes or danger zones
+  - title: Add a fall-off-the-level danger
+  - title: End the game when the player touches danger
+  - title: Add lives
+  - title: End the game when time runs out
+  - title: Reset the player after a fall
+  - title: Animate your player
+  - title: Add sound effects
+  - title: Add a win screen
+  - title: Add a game-over screen
+  - title: Add visual feedback
+  - title: Test and debug your platformer
+  - title: Share your game
+    completion:
+      - external
+  - title: Start another level

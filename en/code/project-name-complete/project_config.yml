@@ -1,4 +1,4 @@
-name: "Project title completed"
-identifier: "project-title-complete"
+name: "Branching Pathways Platformer"
+identifier: "project-name-complete"
 type: 'python'
-build: false
+build: true
