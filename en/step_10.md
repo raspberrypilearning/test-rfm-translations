@@ -20,6 +20,8 @@ Choose **Upload Sprite** and select one of these example player sprites. Rename 
 
 [![Player adventurer sprite](images/example-sprite-player-adventurer.png)](images/example-sprite-player-adventurer.png)
 
+The words in the white inputs below are placeholders. Do not make variables called `player size`, `start x`, or `start y`; replace them with your own values.
+
 Add this code to the Player sprite:
 
 ```blocks3

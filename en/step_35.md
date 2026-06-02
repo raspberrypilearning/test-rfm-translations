@@ -12,6 +12,8 @@ If your player only has one costume, duplicate it first and make a small change 
 
 [![Scratch costume tab](<images/scratch screenshots/costume_tab.png>)](<images/scratch screenshots/costume_tab.png>)
 
+`animation delay` below is a value to replace, not a variable name.
+
 Add this code to the Player sprite:
 
 ```blocks3

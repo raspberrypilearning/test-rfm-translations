@@ -10,6 +10,8 @@ You want pressure without adding another sprite to the level.
 
 Make a `Time` variable for all sprites. Choose a starting time that suits your own level.
 
+`starting time` below is a value to replace, not another variable.
+
 Add this code to the Stage:
 
 ```blocks3

@@ -8,7 +8,9 @@ You want a simple movement route that still feels like a platform game.
 
 ### Add simple running and jumping
 
-This route works best on a flat floor or a very small number of platforms. Change the movement and jump values below until they suit your own player and level.
+This route works best on a flat floor or a very small number of platforms. Make a `move speed` variable for the `Player` sprite, then change the values below until they suit your own player and level.
+
+`your move speed`, `jump up repeats`, `jump up amount`, `jump down repeats`, and `jump down amount` are placeholder values to replace, not extra variables.
 
 Add this code to the Player sprite:
 

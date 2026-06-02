@@ -10,6 +10,8 @@ You want a gentler lose rule that keeps the game moving.
 
 Use the bottom of the Scratch Stage, `y = -180`, as the fall check. Keep the start position from your own player route. If you are also using `Lives`, you can take one away here as well.
 
+`start x` and `start y` below are values to replace, not variables to create.
+
 Add this code to the Player sprite:
 
 ```blocks3

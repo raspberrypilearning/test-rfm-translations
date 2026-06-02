@@ -10,6 +10,8 @@ You want to turn one platformer challenge into a bigger adventure.
 
 Make a second backdrop or a new set of platforms first. Then change your first win route so it broadcasts `next level` instead of `win` when the first level is finished. Use the name of your second backdrop in the block below.
 
+`your level 2 backdrop` below is a placeholder. Replace it with the name of your own backdrop.
+
 Add this code to the Stage:
 
 ```blocks3

@@ -16,6 +16,8 @@ Use bold colours and a simple outline. A circle head and a blocky body are enoug
 
 [![Scratch sprite paint tool](<images/scratch screenshots/sprite-paint.png>)](<images/scratch screenshots/sprite-paint.png>)
 
+The words in the white inputs below are placeholders. Do not make variables called `player size`, `start x`, or `start y`; replace them with your own values.
+
 Add this code to the Player sprite:
 
 ```blocks3

@@ -10,6 +10,8 @@ You want to make the level harder without changing the whole backdrop or player.
 
 Use one platform copy first. Once it works, you can duplicate it and change the positions and timing for extra variety.
 
+The words in the white inputs below are placeholders. Do not make variables called `start x`, `start y`, `end x`, `end y`, or `glide time`; replace them with your own values.
+
 Add this code to the Platform sprite:
 
 ```blocks3

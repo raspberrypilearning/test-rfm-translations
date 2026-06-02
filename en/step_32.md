@@ -10,6 +10,8 @@ You want the game to feel more forgiving and more like a bigger platformer.
 
 Make a `Lives` variable for all sprites. Change the starting number, respawn position, and delay so they match your own game. Change the sprite names in the touching block to match your real danger sprites.
 
+`starting lives`, `start x`, `start y`, and `respawn delay` below are values to replace, not extra variables.
+
 Add this code to the Stage and Player sprite:
 
 ```blocks3

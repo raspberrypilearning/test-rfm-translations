@@ -10,6 +10,8 @@ You want a very simple control route that feels good for a maze or collection ga
 
 Keep the level fairly open so the player can follow the mouse smoothly. Change the move amount below until it feels right for your own game.
 
+`your speed` below is a value to replace, not a variable name.
+
 Add this code to the Player sprite:
 
 ```blocks3

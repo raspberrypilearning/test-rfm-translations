@@ -10,6 +10,8 @@ You want a stronger puzzle feeling where the player needs two linked goals.
 
 This route works best when the key is somewhere interesting and the exit is easy to spot but not usable at first. Change the message below if you want different words in your own game.
 
+`your locked message` below is placeholder text. Replace it with your own words.
+
 Add this code to the Exit sprite:
 
 ```blocks3

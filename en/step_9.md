@@ -14,6 +14,8 @@ You already have an image you want to use for the main character.
 
 Choose an image that is easy to see at a small size. Change the size and start position below so they fit your own sprite and level.
 
+The words in the white inputs below are placeholders. Do not make variables called `player size`, `start x`, or `start y`; replace them with your own values.
+
 Add this code to the Player sprite:
 
 ```blocks3

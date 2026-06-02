@@ -12,6 +12,8 @@ You can keep the spikes still as a danger zone, or use the code below to make th
 
 [![Spike hazard sprite](images/spikes.png)](images/spikes.png)
 
+The words in the white inputs below are placeholders. Do not make variables called `start x`, `start y`, `end x`, `end y`, `drop time`, or `reset delay`; replace them with your own values.
+
 Add this code to the Spike sprite:
 
 ```blocks3

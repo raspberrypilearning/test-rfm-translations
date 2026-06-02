@@ -12,6 +12,8 @@ Put the `Enemy` on the floor or on one platform where the player will need to ti
 
 [![Enemy sprite example](images/enemy-blob.png)](images/enemy-blob.png)
 
+The words in the white inputs below are placeholders. Do not make variables called `start x`, `start y`, `end x`, `end y`, or `glide time`; replace them with your own values.
+
 Add this code to the Enemy sprite:
 
 ```blocks3

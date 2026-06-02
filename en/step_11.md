@@ -10,6 +10,8 @@ You want the easiest level shape for testing movement and goals.
 
 Paint the `Platform` sprite as a wide rectangle. Stretch it across the bottom of the Stage so the player has room to move. Change the position and size below so the floor fits your own level.
 
+The words in the white inputs below are placeholders. Do not make variables called `floor x`, `floor y`, or `floor size`; replace them with your own values.
+
 Add this code to the Platform sprite:
 
 ```blocks3

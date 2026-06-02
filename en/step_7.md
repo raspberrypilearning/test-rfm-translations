@@ -18,6 +18,8 @@ Choose a sprite from the Scratch library that already has more than one costume.
 
 [![Sprite costume list in Scratch](<images/scratch screenshots/list-costume.png>)](<images/scratch screenshots/list-costume.png>)
 
+The words in the white inputs below are placeholders. Do not make variables called `player size`, `start x`, or `start y`; replace them with your own values.
+
 Add this code to the Player sprite:
 
 ```blocks3

@@ -10,6 +10,8 @@ You want the player to explore and collect before the game ends.
 
 Choose how many items the player needs, then use that value in the block below.
 
+`target score` below is a value to replace, not a variable name.
+
 Add this code to the Stage:
 
 ```blocks3

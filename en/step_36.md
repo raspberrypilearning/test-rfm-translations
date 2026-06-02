@@ -14,6 +14,8 @@ Choose sounds from the Scratch sound library, then add them inside the scripts y
 
 [![Scratch sound library](<images/scratch screenshots/list-sounds.png>)](<images/scratch screenshots/list-sounds.png>)
 
+`your jump sound` and `your collect sound` below are placeholders. Replace them with the names of sounds you choose.
+
 Add this code to the sprite that already has the action, such as Player or Coin:
 
 ```blocks3

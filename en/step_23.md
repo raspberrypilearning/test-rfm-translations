@@ -12,6 +12,8 @@ Move the `Exit` to a place that feels like the end of the challenge. You can use
 
 [![Exit door sprite](images/exit-door.png)](images/exit-door.png)
 
+`exit x` and `exit y` below are values to replace, not variables to create.
+
 Add this code to the Exit sprite:
 
 ```blocks3

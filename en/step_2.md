@@ -16,6 +16,8 @@ Choose a backdrop from the Scratch backdrop library. Pick one with enough open s
 
 [![Scratch backdrop library](<images/scratch screenshots/backdrop-choose.png>)](<images/scratch screenshots/backdrop-choose.png>)
 
+The words in the block below are placeholders. Do not make a variable called `your backdrop name`; replace it with the name of your own backdrop.
+
 Add this code to the Stage:
 
 ```blocks3

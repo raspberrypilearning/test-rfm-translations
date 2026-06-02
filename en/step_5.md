@@ -22,6 +22,8 @@ Choose **Upload Backdrop** and pick one of these example backdrops. Use the name
 
 [![Space platforms backdrop](images/example-backdrop-space-platforms.png)](images/example-backdrop-space-platforms.png)
 
+The words in the block below are placeholders. Do not make a variable called `your backdrop name`; replace it with the name of your own backdrop.
+
 Add this code to the Stage:
 
 ```blocks3
