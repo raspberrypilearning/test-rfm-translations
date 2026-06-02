@@ -12,7 +12,7 @@ You want a player quickly but you would like something more custom than a Scratc
 
 ### Upload one of the example player sprites
 
-Choose **Upload Sprite** and select one of these example player sprites. Rename the sprite `Player` if Scratch does not do that for you.
+Choose **Upload Sprite** and select one of these example player sprites. Rename the sprite `Player` if Scratch does not do that for you. Change the size and start position below so they fit your own sprite and level.
 
 [![Player robot sprite](images/example-sprite-player-robot.png)](images/example-sprite-player-robot.png)
 
@@ -25,18 +25,10 @@ Add this code to the Player sprite:
 ```blocks3
 when I receive [start game v]
 show
-set size to (60)%
-go to x: (-180) y: (-110)
+set size to (player size)%
+go to x: (start x) y: (start y)
 ```
 
-
-### Next choices
-
-Now choose how the player moves, or build the level pieces the player will use.
-
-- Go to [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- Go to [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
-- Go to [Make a fixed one-screen level](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/20)
 
 <h2 class="c-project-heading--task">Test</h2>
 

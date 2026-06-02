@@ -12,7 +12,7 @@ You want a quick backdrop but you would like something different from the Scratc
 
 ### Upload one of the example backdrops
 
-Choose **Upload Backdrop** and pick one of these example backdrops:
+Choose **Upload Backdrop** and pick one of these example backdrops. Use the name of the backdrop you chose in the block below.
 
 [![Sky platforms backdrop](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
 
@@ -26,17 +26,9 @@ Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-switch backdrop to [sky-platforms v]
+switch backdrop to [your backdrop name v]
 ```
 
-
-### Next choices
-
-Now that the world is in place, choose a player or a movement style that fits it.
-
-- Go to [Use an example generated sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/10)
-- Go to [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- Go to [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
 
 <h2 class="c-project-heading--task">Test</h2>
 

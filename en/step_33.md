@@ -22,14 +22,6 @@ end
 ```
 
 
-### Next choices
-
-Now the timer can beat the player. Add a game-over screen, test the game, or get ready to share it.
-
-- Go to [Add a game-over screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/38)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
-- Go to [Share your game](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/41)
-
 <h2 class="c-project-heading--task">Test</h2>
 
 Wait until the timer reaches zero and check that the `game over` message runs.

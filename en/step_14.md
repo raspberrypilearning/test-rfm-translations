@@ -8,15 +8,15 @@ You want the most traditional platformer movement route.
 
 ### Add classic platformer controls
 
-Make these variables for the `Player` sprite: `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, and `on ground`. `move speed` controls left and right movement. `jump strength` controls how high the jump is. `gravity` pulls the player back down.
+Make these variables for the `Player` sprite: `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, and `on ground`. `move speed` controls left and right movement. `jump strength` controls how high the jump is. `gravity` pulls the player back down. Change the tuning values and floor position below so they fit your own level.
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [start game v]
-set [move speed v] to [5]
-set [jump strength v] to [12]
-set [gravity v] to [-1]
+set [move speed v] to [your move speed]
+set [jump strength v] to [your jump strength]
+set [gravity v] to [your gravity]
 set [x speed v] to [0]
 set [y speed v] to [0]
 set [on ground v] to [0]
@@ -44,23 +44,14 @@ forever
       set [on ground v] to [1]
     end
   end
-  if <(y position) < [-160]> then
-    set y to [-160]
+  if <(y position) < [floor y]> then
+    set y to [floor y]
     set [y speed v] to [0]
     set [on ground v] to [1]
   end
 end
 ```
 
-
-### Next choices
-
-Your game is playable now. Add level behaviour, a goal, danger, or jump to testing if you already have enough pieces.
-
-- Go to [Add moving platforms](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/18)
-- Go to [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
-- Go to [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 <h2 class="c-project-heading--task">Test</h2>
 

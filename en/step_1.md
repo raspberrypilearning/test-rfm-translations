@@ -24,15 +24,6 @@ broadcast [start game v]
 ```
 
 
-### Next choices
-
-Choose the route that feels easiest for you, or jump straight to the part you most want to build.
-
-- Go to [Choose a Scratch backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/2)
-- Go to [Choose a static Scratch sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/6)
-- Go to [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- Go to [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-
 <h2 class="c-project-heading--task">Test</h2>
 
 Click the green flag and check that your project is ready to respond to the `start game` message.

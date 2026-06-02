@@ -8,28 +8,20 @@ You want a gentler lose rule that keeps the game moving.
 
 ### Respawn after a fall
 
-Use the starting position from your player route. If you are also using `Lives`, you can take one away here as well.
+Use the fall position and starting position from your own player route. If you are also using `Lives`, you can take one away here as well.
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [start game v]
 forever
-  if <(y position) < [-170]> then
-    go to x: (-180) y: (-110)
+  if <(y position) < [fall y]> then
+    go to x: (start x) y: (start y)
     set [y speed v] to [0]
   end
 end
 ```
 
-
-### Next choices
-
-Your fall rule is kinder now. Add lives, polish the reset, or test whether the whole level feels fair.
-
-- Go to [Add lives](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/32)
-- Go to [Animate your player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/35)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 <h2 class="c-project-heading--task">Test</h2>
 

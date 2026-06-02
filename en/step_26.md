@@ -8,7 +8,7 @@ You want a stronger puzzle feeling where the player needs two linked goals.
 
 ### Unlock the exit with the key
 
-This route works best when the key is somewhere interesting and the exit is easy to spot but not usable at first.
+This route works best when the key is somewhere interesting and the exit is easy to spot but not usable at first. Change the message below if you want different words in your own game.
 
 Add this code to the Exit sprite:
 
@@ -19,20 +19,12 @@ forever
     if <(has key) = [1]> then
       broadcast [win v]
     else
-      say [Find the key first!] for (2) seconds
+      say [your locked message] for (2) seconds
     end
   end
 end
 ```
 
-
-### Next choices
-
-Your win route now has two parts. Add danger, make the win more exciting, or test whether the level feels fair.
-
-- Go to [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
-- Go to [Add a win screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/37)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 <h2 class="c-project-heading--task">Test</h2>
 

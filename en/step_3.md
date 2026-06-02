@@ -12,23 +12,17 @@ You want a more personal level background and do not mind spending a little time
 
 ### Paint a simple game world
 
-Choose **Paint** in the backdrop menu. Add a ground line, hills, cave walls, or another simple setting. Keep the middle of the Stage fairly clear so your game pieces stay easy to see.
+Choose **Paint** in the backdrop menu. Add a ground line, hills, cave walls, or another simple setting. Keep the middle of the Stage fairly clear so your game pieces stay easy to see. Use the name of the backdrop you created in the block below.
+
+[![Scratch backdrop paint tool](<images/scratch screenshots/backdrop-paint.png>)](<images/scratch screenshots/backdrop-paint.png>)
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-switch backdrop to [Backdrop1 v]
+switch backdrop to [your backdrop name v]
 ```
 
-
-### Next choices
-
-Your world is ready. Now choose a player or build platforms that fit the scene you drew.
-
-- Go to [Draw your own sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/8)
-- Go to [Make platforms to jump between](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
-- Go to [Move left and right with jump but no gravity](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/15)
 
 <h2 class="c-project-heading--task">Test</h2>
 

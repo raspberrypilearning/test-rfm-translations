@@ -12,23 +12,17 @@ You want the quickest route to a world so you can move on to your player and lev
 
 ### Make your backdrop appear
 
-Choose a backdrop from the Scratch backdrop library. Pick one with enough open space for platforms, danger, and a goal.
+Choose a backdrop from the Scratch backdrop library. Pick one with enough open space for platforms, danger, and a goal. Use the name of the backdrop you chose in the block below.
+
+[![Scratch backdrop library](<images/scratch screenshots/backdrop-choose.png>)](<images/scratch screenshots/backdrop-choose.png>)
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-switch backdrop to [Blue Sky v]
+switch backdrop to [your backdrop name v]
 ```
 
-
-### Next choices
-
-You have a world now. Next, add a player or build the part of the level the player will move on.
-
-- Go to [Choose a static Scratch sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/6)
-- Go to [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- Go to [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
 
 <h2 class="c-project-heading--task">Test</h2>
 

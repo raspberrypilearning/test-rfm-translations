@@ -8,13 +8,13 @@ You want a simple movement route that still feels like a platform game.
 
 ### Add simple running and jumping
 
-This route works best on a flat floor or a very small number of platforms.
+This route works best on a flat floor or a very small number of platforms. Change the movement and jump values below until they suit your own player and level.
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [start game v]
-set [move speed v] to [6]
+set [move speed v] to [your move speed]
 forever
   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
     change x by (move speed)
@@ -23,26 +23,17 @@ forever
     change x by ((0) - (move speed))
   end
   if <key [space v] pressed?> then
-    repeat (8)
-      change y by (6)
+    repeat (jump up repeats)
+      change y by (jump up amount)
     end
-    repeat (8)
-      change y by (-6)
+    repeat (jump down repeats)
+      change y by ((0) - (jump down amount))
     end
     wait until <not <key [space v] pressed?>>
   end
 end
 ```
 
-
-### Next choices
-
-You have a lighter movement route now. Choose a goal, add danger, or keep the whole level on one screen.
-
-- Go to [Make a fixed one-screen level](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/20)
-- Go to [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
-- Go to [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 <h2 class="c-project-heading--task">Test</h2>
 

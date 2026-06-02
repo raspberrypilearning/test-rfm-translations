@@ -8,7 +8,7 @@ You want a very simple control route that feels good for a maze or collection ga
 
 ### Follow the pointer
 
-Keep the level fairly open so the player can follow the mouse smoothly.
+Keep the level fairly open so the player can follow the mouse smoothly. Change the move amount below until it feels right for your own game.
 
 Add this code to the Player sprite:
 
@@ -16,19 +16,10 @@ Add this code to the Player sprite:
 when I receive [start game v]
 forever
   point towards [mouse-pointer v]
-  move (4) steps
+  move (your speed) steps
 end
 ```
 
-
-### Next choices
-
-With controls in place, you can add an exit, add danger, or keep the level bounded.
-
-- Go to [Add walls or boundaries](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
-- Go to [Add an exit or special place](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/23)
-- Go to [Add falling spikes or danger zones](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/29)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 <h2 class="c-project-heading--task">Test</h2>
 

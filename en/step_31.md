@@ -25,14 +25,6 @@ end
 ```
 
 
-### Next choices
-
-If that feels too strict, add lives instead. Otherwise, build a game-over screen or test the whole challenge.
-
-- Go to [Add lives](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/32)
-- Go to [Add a game-over screen](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/38)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
-
 <h2 class="c-project-heading--task">Test</h2>
 
 Touch a danger sprite and check that the `game over` message runs straight away.

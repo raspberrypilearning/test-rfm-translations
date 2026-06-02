@@ -8,30 +8,23 @@ You want a visible danger that feels different from an enemy.
 
 ### Drop a hazard into the level
 
-You can keep the spikes still as a danger zone, or use the code below to make them fall and reset.
+You can keep the spikes still as a danger zone, or use the code below to make them fall and reset. Change the positions and timing so they fit your own level.
+
+[![Spike hazard sprite](images/spikes.png)](images/spikes.png)
 
 Add this code to the Spike sprite:
 
 ```blocks3
 when I receive [start game v]
 show
-go to x: (120) y: (160)
+go to x: (start x) y: (start y)
 forever
-  glide (1) secs to x: (120) y: (-100)
-  go to x: (120) y: (160)
-  wait (1) seconds
+  glide (drop time) secs to x: (end x) y: (end y)
+  go to x: (start x) y: (start y)
+  wait (reset delay) seconds
 end
 ```
 
-
-### Next choices
-
-Add another danger, or choose what happens when the player touches or falls into it.
-
-- Go to [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
-- Go to [End the game when the player touches danger](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/31)
-- Go to [Reset the player after a fall](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/34)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
 
 <h2 class="c-project-heading--task">Test</h2>
 

@@ -8,25 +8,17 @@ You want a more classic platformer layout with jumps and different heights.
 
 ### Build a simple platform pattern
 
-Paint the `Platform` sprite as a small flat shape. Duplicate it and drag the copies to different heights so the player has stepping stones across the level.
+Paint the `Platform` sprite as a small flat shape. Duplicate it and drag the copies to different heights so the player has stepping stones across the level. Change the first platform values below so they fit your own layout.
 
 Add this code to the Platform sprite:
 
 ```blocks3
 when I receive [start game v]
 show
-go to x: (-100) y: (-40)
-set size to (80)%
+go to x: (platform x) y: (platform y)
+set size to (platform size)%
 ```
 
-
-### Next choices
-
-Your level shape is getting more interesting. Next, add movement, make the platforms move, or place goals on them.
-
-- Go to [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- Go to [Add moving platforms](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/18)
-- Go to [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
 
 <h2 class="c-project-heading--task">Test</h2>
 

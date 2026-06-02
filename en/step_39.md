@@ -8,31 +8,23 @@ You want the game to feel clearer without changing its main rules.
 
 ### Show a reaction on screen
 
-Use one small effect at first. A size change, colour effect, or short flashing animation is enough.
+Use one small effect at first. A size change, colour effect, or short flashing animation is enough. Change the values below so the effect fits your own sprite and style.
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [win v]
-repeat (6)
-  change size by (10)
-  wait (0.1) seconds
-  change size by (-10)
-  wait (0.1) seconds
+repeat (flash repeats)
+  change size by (size change)
+  wait (flash delay) seconds
+  change size by ((0) - (size change))
+  wait (flash delay) seconds
 end
 
 when I receive [game over v]
-change [ghost v] effect by (40)
+change [ghost v] effect by (ghost amount)
 ```
 
-
-### Next choices
-
-Your game now reacts more clearly. Test the whole route, or get ready to share it.
-
-- Go to [Animate your player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/35)
-- Go to [Test and debug your platformer](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/40)
-- Go to [Share your game](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/41)
 
 <h2 class="c-project-heading--task">Test</h2>
 

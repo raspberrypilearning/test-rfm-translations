@@ -16,15 +16,6 @@ You want to check that your choices work together before you share the game or a
 If something breaks, check sprite names inside `touching` blocks, check that variables such as `Score`, `Lives`, `Time`, and `has key` are made for all sprites when needed, and check that your code is on the right sprite or the Stage.
 
 
-### Next choices
-
-Ready to improve the game? Add another goal, add another danger, share it, or build a second level.
-
-- Go to [Add coins or stars](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
-- Go to [Add a patrolling enemy](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)
-- Go to [Share your game](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/41)
-- Go to [Start another level](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/42)
-
 <h2 class="c-project-heading--task">Test</h2>
 
 Play your game from start to finish and make sure you can see at least one thing that works well and one thing you still want to improve.

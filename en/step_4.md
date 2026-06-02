@@ -12,23 +12,15 @@ You already have an image on your device and want to turn it into a fast platfor
 
 ### Use your own backdrop file
 
-Choose **Upload Backdrop** and pick an image from your device. A simple image with clear colours works best.
+Choose **Upload Backdrop** and pick an image from your device. A simple image with clear colours works best. Use the name Scratch gives your backdrop, or rename it first and use that name.
 
 Add this code to the Stage:
 
 ```blocks3
 when I receive [start game v]
-switch backdrop to [Uploaded backdrop v]
+switch backdrop to [your backdrop name v]
 ```
 
-
-### Next choices
-
-Your backdrop is set. Next, add a player, walls, or a movement style that suits the world you uploaded.
-
-- Go to [Upload a sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
-- Go to [Add walls or boundaries](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
-- Go to [Make your player climb ladders](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
 
 <h2 class="c-project-heading--task">Test</h2>
 

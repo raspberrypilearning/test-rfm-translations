@@ -12,25 +12,21 @@ You want your platformer hero to feel lively and you plan to add animation later
 
 ### Set up an animated player
 
-Choose a sprite from the Scratch library that already has more than one costume. Rename it `Player` so later scripts stay easy to follow.
+Choose a sprite from the Scratch library that already has more than one costume. Rename it `Player` so later scripts stay easy to follow. Change the size and start position below so they fit your own sprite and level.
+
+[![Scratch sprite library](<images/scratch screenshots/sprite-choose.png>)](<images/scratch screenshots/sprite-choose.png>)
+
+[![Sprite costume list in Scratch](<images/scratch screenshots/list-costume.png>)](<images/scratch screenshots/list-costume.png>)
 
 Add this code to the Player sprite:
 
 ```blocks3
 when I receive [start game v]
 show
-set size to (60)%
-go to x: (-180) y: (-110)
+set size to (player size)%
+go to x: (start x) y: (start y)
 ```
 
-
-### Next choices
-
-You have a player with animation potential. Next, build the level or make the player move.
-
-- Go to [Make a single floor](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/11)
-- Go to [Move left and right with gravity and jumps](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-- Go to [Animate your player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/35)
 
 <h2 class="c-project-heading--task">Test</h2>
 
