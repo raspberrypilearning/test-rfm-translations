@@ -19,9 +19,11 @@ en/
 │   └── .keep
 ├── README.md
 ├── meta.yml
-├── step_1.md
-├── step_2.md
-└── step_3.md
+├── pathways.yml
+├── 1A - Draw Backdrop.md
+├── 1B - Upload Backdrop.md
+├── ...
+└── 9E - Add Enemies.md
 ```
 
 ## Directory and File Descriptions
@@ -90,7 +92,7 @@ steps:
 ### `README.md`
 Documentation for the project, including the structure and explanation of contents.
 
-### `step_1.md`, `step_2.md`, `step_3.md`
+### Route Markdown files
 Markdown files containing step-by-step instructions for learners.  
-- Each step corresponds to a tutorial section.  
-- The number of steps varies by project.  
+- Each file corresponds to a tutorial route, for example `1A - Draw Backdrop.md`.
+- The number of route files varies by project.

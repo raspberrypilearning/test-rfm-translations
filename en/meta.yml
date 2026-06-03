@@ -26,7 +26,7 @@ steps:
   - title: '7A - Get to Exit Sprite (Default)'
     completion:
       - internal
-  - title: '7B - Exceed Score'
+  - title: '7B - Target Score'
   - title: '7C - Has Key & Get to Exit Sprite'
   - title: '8A - Animate Your Player'
   - title: '8B - Make Your Player Sprint'

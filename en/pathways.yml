@@ -7,114 +7,114 @@ groups:
     title: Add a backdrop
     options:
       - id: 1A
-        file: step_1.md
+        file: 1A - Draw Backdrop.md
         title: 1A - Draw Backdrop
       - id: 1B
-        file: step_2.md
+        file: 1B - Upload Backdrop.md
         title: 1B - Upload Backdrop
       - id: 1C
-        file: step_3.md
+        file: 1C - Choose Inbuilt Backdrop.md
         title: 1C - Choose Inbuilt Backdrop
 
   - id: 2
     title: Add a player
     options:
       - id: 2A
-        file: step_4.md
+        file: 2A - Draw Player.md
         title: 2A - Draw Player
       - id: 2B
-        file: step_5.md
+        file: 2B - Upload Player.md
         title: 2B - Upload Player
       - id: 2C
-        file: step_6.md
+        file: 2C - Choose Inbuilt Player.md
         title: 2C - Choose Inbuilt Player
 
   - id: 3
     title: Add platforms
     options:
       - id: 3A
-        file: step_7.md
+        file: 3A - Add Floors and Platforms.md
         title: 3A - Add Floors and Platforms
       - id: 3B
-        file: step_8.md
+        file: 3B - Make Platforms Move.md
         title: 3B - Make Platforms Move
 
   - id: 4
     title: Move player
     options:
       - id: 4A
-        file: step_9.md
+        file: 4A - Keys.md
         title: 4A - Keys
       - id: 4B
-        file: step_10.md
+        file: 4B - Mouse Move.md
         title: 4B - Mouse Move
       - id: 4C
-        file: step_11.md
+        file: 4C - Always Moving.md
         title: 4C - Always Moving
 
   - id: 5
     title: Player jump/fall
     options:
       - id: 5A
-        file: step_12.md
+        file: 5A - Player Jump-Fall (Simple).md
         title: 5A - Player Jump/Fall (Simple)
       - id: 5B
-        file: step_13.md
+        file: 5B - Player Jump-Fall (Gravity).md
         title: 5B - Player Jump/Fall (Gravity)
 
   - id: 6
     title: Exit sprite
     options:
       - id: 6A
-        file: step_14.md
+        file: 6A - Draw Exit Sprite.md
         title: 6A - Draw Exit Sprite
       - id: 6B
-        file: step_15.md
+        file: 6B - Upload Exit Sprite.md
         title: 6B - Upload Exit Sprite
       - id: 6C
-        file: step_16.md
+        file: 6C - Choose Exit Sprite from Library.md
         title: 6C - Choose Exit Sprite from Library
 
   - id: 7
     title: Win condition options
     options:
       - id: 7A
-        file: step_17.md
+        file: 7A - Get to Exit Sprite (Default).md
         title: 7A - Get to Exit Sprite (Default)
       - id: 7B
-        file: step_18.md
-        title: 7B - Exceed Score
+        file: 7B - Target Score.md
+        title: 7B - Target Score
       - id: 7C
-        file: step_19.md
+        file: 7C - Has Key & Get to Exit Sprite.md
         title: 7C - Has Key & Get to Exit Sprite
 
   - id: 8
     title: Player extras
     options:
       - id: 8A
-        file: step_20.md
+        file: 8A - Animate Your Player.md
         title: 8A - Animate Your Player
       - id: 8B
-        file: step_21.md
+        file: 8B - Make Your Player Sprint.md
         title: 8B - Make Your Player Sprint
 
   - id: 9
     title: Level extras
     options:
       - id: 9A
-        file: step_22.md
+        file: 9A - Add Lava-Spikes.md
         title: 9A - Add Lava/Spikes
       - id: 9B
-        file: step_23.md
+        file: 9B - Add Music.md
         title: 9B - Add Music
       - id: 9C
-        file: step_24.md
+        file: 9C - Add Obstacles.md
         title: 9C - Add Obstacles
       - id: 9D
-        file: step_25.md
+        file: 9D - Add Hazards.md
         title: 9D - Add Hazards
       - id: 9E
-        file: step_26.md
+        file: 9E - Add Enemies.md
         title: 9E - Add Enemies
 
 recommended_paths:

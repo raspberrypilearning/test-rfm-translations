@@ -1,6 +1,6 @@
-<h2 class="c-project-heading--task">7B - Exceed Score</h2>
+<h2 class="c-project-heading--task">7B - Target Score</h2>
 
-Make the player win after their `Score` goes past a target.
+Make the player win after their `Score` goes past a set value.
 
 ### Choose this route if...
 
@@ -8,11 +8,11 @@ You want the player to collect items before the game can be won.
 
 ### Build it
 
-Add or choose a collectible sprite. You can use a coin, star, gem, or any small object.
+Add or choose a collectable sprite. You can use a coin, star, gem, or any small object.
 
-[![Coin collectible](images/coin.png)](images/coin.png)
+[![Coin collectable](images/coin.png)](images/coin.png)
 
-[![Star collectible](images/star.png)](images/star.png)
+[![Star collectable](images/star.png)](images/star.png)
 
 Type your target score into the white input.
 
@@ -29,7 +29,7 @@ forever
 end
 ```
 
-Add this code to the collectible sprite.
+Add this code to the collectable sprite.
 
 ```blocks3
 when green flag clicked

@@ -23,8 +23,8 @@ Example player previews:
 - example-sprite-player-adventurer.png: optional preview for 2B - Upload Player
 
 Example sprite and object assets:
-- coin.png: used in 7B - Exceed Score
-- star.png: used in 7B - Exceed Score
+- coin.png: used in 7B - Target Score
+- star.png: used in 7B - Target Score
 - key.png: used in 7C - Has Key & Get to Exit Sprite
 - exit-door.png: used in 6B - Upload Exit Sprite and 7C - Has Key & Get to Exit Sprite
 - spikes.png: used in 9A - Add Lava/Spikes

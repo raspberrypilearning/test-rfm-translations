@@ -25,7 +25,7 @@ forever
     point in direction (-90)
   end
   move (move speed) steps
-  if on edge bounce
+  if on edge, bounce
   end
 ```
 
