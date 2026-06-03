@@ -12,7 +12,7 @@ The learner-facing project contains exactly 26 alphanumeric route steps. Group t
 - **4. Move player**: `4A - Keys`, `4B - Mouse Move`, `4C - Always Moving`
 - **5. Player jump/fall**: `5A - Player Jump/Fall (Simple)`, `5B - Player Jump/Fall (Gravity)`
 - **6. Exit sprite**: `6A - Draw Exit Sprite`, `6B - Upload Exit Sprite`, `6C - Choose Exit Sprite from Library`
-- **7. Win condition options**: `7A - Get to Exit Sprite (Default)`, `7B - Exceed Score`, `7C - Has Key & Get to Exit Sprite`
+- **7. Win condition options**: `7A - Get to Exit Sprite (Default)`, `7B - Target Score`, `7C - Has Key & Get to Exit Sprite`
 - **8. Player extras**: `8A - Animate Your Player`, `8B - Make Your Player Sprint`
 - **9. Level extras**: `9A - Add Lava/Spikes`, `9B - Add Music`, `9C - Add Obstacles`, `9D - Add Hazards`, `9E - Add Enemies`
 

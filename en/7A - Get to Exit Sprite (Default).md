@@ -17,7 +17,6 @@ when green flag clicked
 forever
   if <touching [Exit v]?> then
     broadcast [win v]
-    say [You win!] for (2) seconds
     stop [this script v]
   end
 end
