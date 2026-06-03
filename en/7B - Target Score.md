@@ -4,15 +4,15 @@ Make the player win after their `Score` goes past a set value.
 
 ### Choose this route if...
 
-You want the player to collect items before the game can be won.
+You want the player to collect items to win the game.
 
 ### Build it
 
 Add or choose a collectable sprite. You can use a coin, star, gem, or any small object.
 
-[![Coin collectable](images/coin.png)](images/coin.png)
+[![Coin collectable](images/coin.png)](images/coin.png){:width="300px"}
 
-[![Star collectable](images/star.png)](images/star.png)
+[![Star collectable](images/star.png)](images/star.png){:width="300px"}
 
 Type your target score into the white input.
 
@@ -22,7 +22,7 @@ Add this code to the Stage.
 when green flag clicked
 set [Score v] to [0]
 forever
-  if <(Score) > ()> then
+  if <(Score) = ()> then
     broadcast [win v]
     stop [this script v]
   end
@@ -44,4 +44,4 @@ end
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Collect enough items and check that `win` broadcasts when `Score` goes past your target.
+Collect enough items and check that `win` broadcasts when the value of `Score` is the same as your target value.

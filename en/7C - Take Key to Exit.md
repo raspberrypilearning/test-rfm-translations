@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">7C - Has Key & Get to Exit Sprite</h2>
+<h2 class="c-project-heading--task">7C - Take Key to Exit</h2>
 
 Make the player win only after collecting a key and reaching the `Exit`.
 
@@ -10,9 +10,9 @@ You want a puzzle-style win condition with two linked goals.
 
 Place the key somewhere interesting and put the exit where the player can reach it after collecting the key.
 
-[![Key sprite](images/key.png)](images/key.png)
+[![Key sprite](images/key.png)](images/key.png){:width="300px"}
 
-[![Exit door sprite](images/exit-door.png)](images/exit-door.png)
+[![Exit door sprite](images/exit-door.png)](images/exit-door.png){:width="300px"}
 
 Add this code to the Stage.
 
