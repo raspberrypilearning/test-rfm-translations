@@ -8,9 +8,11 @@ You want a door, portal, flag, treasure, or finish marker that matches your own 
 
 ### Build it
 
-Choose **Paint** in the sprite menu. Draw a clear finish object and name the sprite `Exit`.
+Choose **Paint** in the sprite menu. Draw an exit object and name the sprite `Exit`.
 
-Type your own exit position into the white inputs if you want it to start in a fixed place.
+[![Scratch sprite paint tool](images/sprite-paint.png)](images/sprite-paint.png)
+
+Type the coordinates of the exit position into the white `go to` inputs to fix its start position.
 
 Add this code to the Exit sprite.
 
