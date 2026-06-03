@@ -28,6 +28,6 @@ Check that your sprite is facing sideways or is easy to turn sideways later. A p
 
 In the sprite pane, change the sprite name to **Player**. Use this exact spelling so later steps can refer to the same sprite.
 
-<h2 class="c-project-heading--task">Test</h2
+<h2 class="c-project-heading--task">Test</h2>
 
 Check the **Player** sprite is on the Stage. If it is too large, use the **Size** control in the sprite pane to make it smaller.

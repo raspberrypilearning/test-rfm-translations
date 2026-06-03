@@ -30,4 +30,4 @@ In the sprite pane, change the sprite name to **Player**. Use this exact spellin
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Check that your  sprite is named **Player**, appears on the Stage, and is easy to see against your backdrop.
+Check that your sprite is named **Player**, appears on the Stage, and is easy to see against your backdrop.

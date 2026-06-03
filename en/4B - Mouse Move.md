@@ -14,15 +14,23 @@ Open the **Code** tab.
 
 ## Step 3
 
-Add a script that starts when the green flag is clicked and runs `forever`.
+Add a script that starts when the green flag is clicked.
 
 ```blocks3
 +when green flag clicked
+```
+
+## Step 4
+
+Add a `forever` loop below the green flag block.
+
+```blocks3
+when green flag clicked
 +forever
 +end
 ```
 
-## Step 4
+## Step 5
 
 Inside the `forever` loop, make the **Player** sprite point toward the mouse pointer.
 
@@ -33,7 +41,7 @@ forever
 end
 ```
 
-## Step 5
+## Step 6
 
 Add the movement block below the pointing block, inside the same `forever` loop.
 
@@ -45,7 +53,7 @@ forever
 end
 ```
 
-## Step 6
+## Step 7
 
 Decide how fast the **Player** should move toward the mouse pointer.
 
