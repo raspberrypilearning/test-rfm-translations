@@ -4,8 +4,7 @@
 
 Select **Choose a Backdrop** in the menu. 
 
-[![Scratch backdrop library](images/backdrop-choose.png)]
-
+![Scratch backdrop library](images/backdrop-choose.png)
 
 ## Step 2
 
@@ -15,4 +14,4 @@ Pick a backdrop.
 
 Name the backdrop so you can find it again later.
 
-[![Scratch backdrop paint tool](images/backdrop-name.png)]
+![Scratch backdrop paint tool](images/backdrop-name.png)
