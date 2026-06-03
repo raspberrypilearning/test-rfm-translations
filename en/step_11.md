@@ -25,13 +25,8 @@ forever
     point in direction (-90)
   end
   move (move speed) steps
-  if <(x position) > (240)> then
-    point in direction (-90)
+  if on edge bounce
   end
-  if <(x position) < (-240)> then
-    point in direction (90)
-  end
-end
 ```
 
 <h2 class="c-project-heading--task">Test</h2>
