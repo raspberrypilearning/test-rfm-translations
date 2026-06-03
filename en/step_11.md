@@ -1,10 +1,10 @@
 <h2 class="c-project-heading--task">4C - Always Moving</h2>
 
-Make the `Player` keep moving while the learner controls its direction.
+Make the `Player` keep moving left and right while the learner controls its horizontal direction.
 
 ### Choose this route if...
 
-You want an auto-runner or always-moving challenge where the player must steer quickly.
+You want an auto-runner or always-moving challenge where the player must switch direction quickly.
 
 ### Build it
 
@@ -14,25 +14,26 @@ Add this code to the Player sprite.
 
 ```blocks3
 when green flag clicked
+set rotation style [left-right v]
 set [move speed v] to ()
+point in direction (90)
 forever
-  if <key [up arrow v] pressed?> then
-    point in direction (0)
-  end
-  if <key [right arrow v] pressed?> then
+  if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
     point in direction (90)
   end
-  if <key [down arrow v] pressed?> then
-    point in direction (180)
-  end
-  if <key [left arrow v] pressed?> then
+  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
     point in direction (-90)
   end
   move (move speed) steps
-  if on edge, bounce
+  if <(x position) > (240)> then
+    point in direction (-90)
+  end
+  if <(x position) < (-240)> then
+    point in direction (90)
+  end
 end
 ```
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that the `Player` keeps moving while the arrow keys change direction.
+Click the green flag and check that the `Player` keeps moving left and right while the controls change direction.
