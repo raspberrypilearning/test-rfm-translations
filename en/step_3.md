@@ -1,19 +1,18 @@
 <h2 class="c-project-heading--task">1C - Choose Inbuilt Backdrop</h2>
 
-Choose a Scratch library backdrop for the quickest route to a platformer world.
+## Step 1
 
-### Choose this route if...
+Select **Choose a Backdrop** in the menu. 
 
-You want a fast backdrop so you can spend more time building the player, platforms, and goal.
+[![Scratch backdrop library](images/backdrop-choose.png)]
 
-### Build it
 
-Choose a backdrop from the Scratch backdrop library. Pick one with clear space for platforms and a finish point.
+## Step 2
 
-[![Scratch backdrop library](images/backdrop-choose.png)](images/backdrop-choose.png)
+Pick a backdrop.
 
-If the backdrop is busy, keep your player and platforms large enough to see clearly.
+## Step 3
 
-<h2 class="c-project-heading--task">Test</h2>
+Name the backdrop so you can find it again later.
 
-Check that your chosen backdrop appears on the Stage.
+[![Scratch backdrop paint tool](images/backdrop-name.png)]

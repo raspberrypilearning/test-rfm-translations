@@ -1,21 +1,29 @@
 <h2 class="c-project-heading--task">1B - Upload Backdrop</h2>
 
-Upload a backdrop image so your platformer can use a world you already have.
+## Step 1
 
-### Choose this route if...
+Make sure you already have an image you want to use saved onto your computer. 
 
-You already have an image you want to use. Use an image you made yourself or have permission to use.
+Tip - try using one of these
+[![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)]
 
-### Build it
+[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)]
 
-Choose **Upload Backdrop** and pick an image from your device. A simple image with clear colours works best.
 
-[![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
+## Step 2
 
-[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
+Choose **Upload Backdrop** in the menu, and pick an image from your device.
 
-Rename the backdrop if Scratch gives it a name that is hard to recognise.
+[![Scratch backdrop tool](images/backdrop-upload.png)]
 
-<h2 class="c-project-heading--task">Test</h2>
+## Step 3
 
-Check that the uploaded backdrop fills the Stage and that your future player will be easy to see.
+Use the paint tools to select and resize your a backdrop so that it fills the screen
+
+[![Scratch backdrop paint tool](images/backdrop-resize.gif)]
+
+## Step 4
+
+Name the backdrop so you can find it again later.
+
+[![Scratch backdrop paint tool](images/backdrop-name.png)]
