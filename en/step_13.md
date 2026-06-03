@@ -2,10 +2,6 @@
 
 Add gravity-based jumping so the `Player` falls and lands on platforms.
 
-### Starting here?
-
-Add a sprite called `Player` and a rectangle sprite called `Platform` before you begin.
-
 ### Choose this route if...
 
 You want a more classic platformer feel with gravity, falling, and stronger jumps.

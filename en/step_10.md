@@ -2,10 +2,6 @@
 
 Make the `Player` move toward the mouse pointer.
 
-### Starting here?
-
-Add a sprite called `Player`. Keep the level fairly open so the player can follow the pointer smoothly.
-
 ### Choose this route if...
 
 You want simple pointer controls for a maze-like or open platformer route.

@@ -2,10 +2,6 @@
 
 Add obstacles that block the player or make the route more interesting.
 
-### Starting here?
-
-Add a sprite called `Player` and another sprite called `Obstacle`.
-
 ### Choose this route if...
 
 You want barriers, blocks, crates, walls, or other objects that shape the level without ending the game.

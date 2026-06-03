@@ -2,10 +2,6 @@
 
 Choose a Scratch library backdrop for the quickest route to a platformer world.
 
-### Starting here?
-
-Open a Scratch project and choose the Stage. You do not need any sprites before you choose a backdrop.
-
 ### Choose this route if...
 
 You want a fast backdrop so you can spend more time building the player, platforms, and goal.

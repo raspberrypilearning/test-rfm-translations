@@ -2,10 +2,6 @@
 
 Add a `Platform` sprite so the player has somewhere to stand and jump.
 
-### Starting here?
-
-Add a simple rectangle sprite and name it `Platform`. Add a `Player` sprite too if you do not already have one.
-
 ### Choose this route if...
 
 You want a classic platformer level with a floor, ledges, or stepping stones.

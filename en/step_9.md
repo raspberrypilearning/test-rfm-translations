@@ -2,10 +2,6 @@
 
 Add keyboard controls so the `Player` can move left and right.
 
-### Starting here?
-
-Add a sprite called `Player`. Keyboard controls work best on a laptop or desktop with a physical keyboard.
-
 ### Choose this route if...
 
 You want classic platformer controls with arrow keys, and optional WASD keys.

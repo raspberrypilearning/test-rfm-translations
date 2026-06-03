@@ -2,10 +2,6 @@
 
 Choose a Scratch library sprite and use it as the `Exit`.
 
-### Starting here?
-
-Open the sprite library and choose a sprite that can clearly mean finish, goal, door, or prize.
-
 ### Choose this route if...
 
 You want the fastest way to add a finish point without drawing or uploading an image.

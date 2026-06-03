@@ -2,10 +2,6 @@
 
 Make the `Player` keep moving while the learner controls its direction.
 
-### Starting here?
-
-Add a sprite called `Player`. This route works best when the level has enough empty space to move around.
-
 ### Choose this route if...
 
 You want an auto-runner or always-moving challenge where the player must steer quickly.

@@ -2,10 +2,6 @@
 
 Upload a player image and use it as the `Player` sprite.
 
-### Starting here?
-
-Choose **Upload Sprite** from the sprite menu. You can upload a player before you build the level.
-
 ### Choose this route if...
 
 You already have a character image. A transparent-background PNG is usually easiest to use.

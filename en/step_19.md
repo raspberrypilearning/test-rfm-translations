@@ -2,10 +2,6 @@
 
 Make the player win only after collecting a key and reaching the `Exit`.
 
-### Starting here?
-
-Add sprites called `Player`, `Key`, and `Exit`. Make a variable called `has key` for all sprites.
-
 ### Choose this route if...
 
 You want a puzzle-style win condition with two linked goals.

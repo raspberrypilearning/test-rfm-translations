@@ -2,10 +2,6 @@
 
 Add a simple patrolling enemy that the player must avoid.
 
-### Starting here?
-
-Add a sprite called `Player` and another sprite called `Enemy`.
-
 ### Choose this route if...
 
 You want a classic platformer challenge that moves back and forth.

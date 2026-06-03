@@ -2,10 +2,6 @@
 
 Draw an `Exit` sprite that shows where the player should finish the level.
 
-### Starting here?
-
-Add a new sprite with **Paint**. You can make the exit before you have a full level.
-
 ### Choose this route if...
 
 You want a door, portal, flag, treasure, or finish marker that matches your own backdrop.

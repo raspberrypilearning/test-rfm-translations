@@ -2,10 +2,6 @@
 
 Add a sprint control so the `Player` can move faster when a key is pressed.
 
-### Starting here?
-
-Add a sprite called `Player`. This route works best if you already use keyboard movement.
-
 ### Choose this route if...
 
 You want an optional speed boost for longer jumps, harder levels, or timed challenges.

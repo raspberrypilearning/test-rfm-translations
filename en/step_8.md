@@ -2,10 +2,6 @@
 
 Make a platform glide between two places to add timing and challenge.
 
-### Starting here?
-
-Add a rectangle sprite called `Platform` first. A moving platform works best after you have a floor or other platforms.
-
 ### Choose this route if...
 
 You want the level to feel more active without adding enemies yet.

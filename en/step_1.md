@@ -2,10 +2,6 @@
 
 Draw your own Scratch backdrop so your platformer has a world that matches your idea.
 
-### Starting here?
-
-Open a Scratch project and choose the Stage. You can paint over the plain backdrop or add a new one.
-
 ### Choose this route if...
 
 You want a backdrop that feels personal. Simple shapes are enough: sky, cave, forest, space, city, or another setting.

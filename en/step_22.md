@@ -2,10 +2,6 @@
 
 Add lava or spikes that the player must avoid.
 
-### Starting here?
-
-Add a sprite called `Player` and a danger sprite called `Lava` or `Spike`.
-
 ### Choose this route if...
 
 You want a clear danger zone that makes the level riskier.

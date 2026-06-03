@@ -2,10 +2,6 @@
 
 Upload a backdrop image so your platformer can use a world you already have.
 
-### Starting here?
-
-Open a Scratch project and choose the Stage. You can upload a backdrop before you add any sprites.
-
 ### Choose this route if...
 
 You already have an image you want to use. Use an image you made yourself or have permission to use.

@@ -2,10 +2,6 @@
 
 Add background music and optional sound effects to make the platformer feel more complete.
 
-### Starting here?
-
-Open the **Sounds** tab on the Stage or a sprite and choose a sound from the Scratch sound library.
-
 ### Choose this route if...
 
 You want atmosphere, feedback, and sound cues without changing the main rules.

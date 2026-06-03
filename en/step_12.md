@@ -2,10 +2,6 @@
 
 Add a quick jump and fall motion without building a full gravity system.
 
-### Starting here?
-
-Add a sprite called `Player` and a simple floor called `Platform` before you test the jump.
-
 ### Choose this route if...
 
 You want an easy jump that works quickly in a small game.

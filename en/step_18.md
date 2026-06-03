@@ -2,10 +2,6 @@
 
 Make the player win after their `Score` goes past a target.
 
-### Starting here?
-
-Make a variable called `Score` for all sprites. Add a `Player` sprite and one collectible sprite such as `Coin`.
-
 ### Choose this route if...
 
 You want the player to collect items before the game can be won.

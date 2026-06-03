@@ -2,10 +2,6 @@
 
 Switch costumes while the `Player` moves so the character feels more alive.
 
-### Starting here?
-
-Add a sprite called `Player` with at least two costumes. Duplicate and edit a costume if you need another one.
-
 ### Choose this route if...
 
 You want optional polish that does not change how movement works.

@@ -2,10 +2,6 @@
 
 Draw a simple player sprite and name it `Player`.
 
-### Starting here?
-
-Add a new sprite with **Paint**. You can create the player before you choose a backdrop or platforms.
-
 ### Choose this route if...
 
 You want your main character to match your own game idea. A simple shape with a clear outline works well.

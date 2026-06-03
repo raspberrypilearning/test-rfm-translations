@@ -2,10 +2,6 @@
 
 Make the player win when they touch the `Exit` sprite.
 
-### Starting here?
-
-Add sprites called `Player` and `Exit`. Put the `Exit` somewhere the player can reach.
-
 ### Choose this route if...
 
 You want the simplest win condition for a platformer level.

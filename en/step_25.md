@@ -2,10 +2,6 @@
 
 Add a moving or falling hazard that creates a timed danger.
 
-### Starting here?
-
-Add a sprite called `Player` and a danger sprite called `Hazard`.
-
 ### Choose this route if...
 
 You want danger based on movement or timing rather than only a fixed lava or spike zone.

@@ -2,10 +2,6 @@
 
 Choose a Scratch library sprite and rename it `Player`.
 
-### Starting here?
-
-Open a Scratch project and choose a sprite from the library. You do not need to draw or upload anything.
-
 ### Choose this route if...
 
 You want the quickest way to add a player so you can start building and coding.
