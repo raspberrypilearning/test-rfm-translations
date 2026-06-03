@@ -1,19 +1,33 @@
 <h2 class="c-project-heading--task">2A - Draw Player</h2>
 
-Draw a simple player sprite and name it `Player`.
+Draw your own player sprite and name it **Player**.
 
-### Choose this route if...
+## Step 1
 
-You want your main character to match your own game idea. A simple shape with a clear outline works well.
+If the Scratch cat sprite is still in your project, delete it. Click the **Delete** icon on the sprite thumbnail.
 
-### Build it
+![The Scratch cat sprite thumbnail with the Delete icon.](images/scratch-thumbnail.png)
 
-Choose **Paint** in the sprite menu. Draw a character such as a square hero, robot, explorer, animal, or shape.
+## Step 2
 
-[![Scratch sprite paint tool](images/sprite-paint.png)](images/sprite-paint.png)
+Open the **Choose a Sprite** menu and select **Paint**.
 
-Rename the sprite `Player` so later code can find it. Keep the design readable at a small size.
+![The Paint option in the Choose a Sprite menu.](images/sprite-paint.png)
 
-<h2 class="c-project-heading--task">Test</h2>
+## Step 3
 
-Check that your sprite is named `Player` and is easy to see on the Stage.
+Draw a simple character for your platformer. Your player could be a person, robot, creature, animal, or simple shape.
+
+Use a clear outline and colours that stand out from your backdrop. Keep the design easy to recognise when it is small on the Stage.
+
+## Step 4
+
+Check that your sprite is facing sideways or is easy to turn sideways later. A platformer player usually moves left and right, so a side-on character will be easier to animate.
+
+## Step 5
+
+In the sprite pane, change the sprite name to **Player**. Use this exact spelling so later steps can refer to the same sprite.
+
+<h2 class="c-project-heading--task">Test</h2
+
+Check the **Player** sprite is on the Stage. If it is too large, use the **Size** control in the sprite pane to make it smaller.

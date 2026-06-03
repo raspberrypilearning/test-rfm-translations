@@ -1,25 +1,58 @@
 <h2 class="c-project-heading--task">4B - Mouse Move</h2>
 
-Make the `Player` move toward the mouse pointer.
+Make the **Player** move toward the mouse pointer.
 
-### Choose this route if...
+## Step 1
 
-You want simple pointer controls for a maze-like or open platformer route.
+Select the **Player** sprite in the sprite pane.
 
-### Build it
+## Step 2
 
-Type your own move amount into the white input.
+Open the **Code** tab.
 
-Add this code to the Player sprite.
+![The Code tab in Scratch.](images/tab_code.png)
+
+## Step 3
+
+Add a script that starts when the green flag is clicked and runs `forever`.
+
+```blocks3
++when green flag clicked
++forever
++end
+```
+
+## Step 4
+
+Inside the `forever` loop, make the **Player** sprite point toward the mouse pointer.
+
+```blocks3
+when green flag clicked
+forever
++  point towards [mouse-pointer v]
+end
+```
+
+## Step 5
+
+Add the movement block below the pointing block, inside the same `forever` loop.
 
 ```blocks3
 when green flag clicked
 forever
   point towards [mouse-pointer v]
-  move () steps
++  move () steps
 end
 ```
 
+## Step 6
+
+Decide how fast the **Player** should move toward the mouse pointer.
+
+Type a move amount into the white input inside the `move` block. A smaller number gives slower movement, and a larger number gives faster movement.
+
 <h2 class="c-project-heading--task">Test</h2>
 
-Move the mouse pointer and check that the `Player` turns and moves toward it.
+Click the green flag and move the mouse pointer around the Stage.
+
+If the **Player** is hard to control, change the number in the `move () steps` block.

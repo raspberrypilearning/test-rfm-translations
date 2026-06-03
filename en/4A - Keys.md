@@ -1,16 +1,51 @@
 <h2 class="c-project-heading--task">4A - Keys</h2>
 
-Add keyboard controls so the `Player` can move left and right.
+Add keyboard controls so the **Player** can move left and right.
 
-### Choose this route if...
+## Step 1
 
-You want classic platformer controls with arrow keys, and optional WASD keys.
+Select the **Player** sprite in the sprite pane.
 
-### Build it
+## Step 2
 
-Make a variable called `move speed` for the `Player` sprite. Type your own speed into the white input.
+Open the **Code** tab.
 
-Add this code to the Player sprite.
+![The Code tab in Scratch.](images/tab_code.png)
+
+## Step 3
+
+Make a variable called `move speed` for the **Player** sprite.
+
+This variable controls how far the **Player** moves each time the loop runs. You will choose your own speed in the white input.
+
+## Step 4
+
+Add a script that starts when the green flag is clicked and sets the `move speed`.
+
+```blocks3
++when green flag clicked
++set [move speed v] to ()
++forever
++end
+```
+
+## Step 5
+
+Inside the `forever` loop, add controls for moving right.
+
+```blocks3
+when green flag clicked
+set [move speed v] to ()
+forever
++  if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
++    change x by (move speed)
++  end
+end
+```
+
+## Step 6
+
+Add controls for moving left. Put these blocks inside the same `forever` loop, below the right movement blocks.
 
 ```blocks3
 when green flag clicked
@@ -19,12 +54,15 @@ forever
   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
     change x by (move speed)
   end
-  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
-    change x by ((0) - (move speed))
-  end
++  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
++    change x by ((0) - (move speed))
++  end
 end
 ```
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Press the left and right controls and check that the `Player` moves across the Stage.
+Click the green flag and try the left and right controls.
+
+If the **Player** moves too slowly or too quickly, change the number in the `set [move speed v] to ()` block.
+

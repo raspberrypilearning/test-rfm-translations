@@ -1,19 +1,33 @@
 <h2 class="c-project-heading--task">2C - Choose Inbuilt Player</h2>
 
-Choose a Scratch library sprite and rename it `Player`.
+Choose a player sprite from the Scratch library and name it **Player**.
 
-### Choose this route if...
+## Step 1
 
-You want the quickest way to add a player so you can start building and coding.
+If the Scratch cat sprite is still in your project, delete it. Click the **Delete** icon on the sprite thumbnail.
 
-### Build it
+![The Scratch cat sprite thumbnail with the Delete icon.](images/scratch-thumbnail.png)
 
-Choose a sprite from the Scratch library. Pick one that is clear and easy to see on your backdrop.
+## Step 2
 
-[![Scratch sprite library](images/sprite-choose.png)](images/sprite-choose.png)
+Open the **Choose a Sprite** menu and select **Choose a Sprite**.
 
-Rename the sprite `Player`. If the sprite has extra costumes, you can animate it later.
+![The Choose a Sprite option in the sprite menu.](images/sprite-choose.png)
+
+## Step 3
+
+Pick a sprite from the Scratch library. Choose one that is clear, easy to see, and a good fit for the world of your platformer.
+
+For a classic platformer, a sprite with legs, wheels, or a clear body shape is usually easier to understand as the player.
+
+## Step 4
+
+Add the sprite to your project. If it has more than one costume, keep them because you may be able to use them for animation later.
+
+## Step 5
+
+In the sprite pane, change the sprite name to **Player**. Use this exact spelling so later steps can refer to the same sprite.
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Check that the sprite is named `Player` in the sprite list.
+Check that your  sprite is named **Player**, appears on the Stage, and is easy to see against your backdrop.
