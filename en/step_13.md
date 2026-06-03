@@ -1,27 +1,50 @@
-<h2 class="c-project-heading--task">Add walls or boundaries</h2>
+<h2 class="c-project-heading--task">5B - Player Jump/Fall (Gravity)</h2>
 
-Stop the player from leaving the level by adding walls or simple boundary checks.
+Add gravity-based jumping so the `Player` falls and lands on platforms.
+
+### Starting here?
+
+Add a sprite called `Player` and a rectangle sprite called `Platform` before you begin.
 
 ### Choose this route if...
 
-You want to keep a climbing, maze-like, or scrolling game inside a clear play area.
+You want a more classic platformer feel with gravity, falling, and stronger jumps.
 
-### Keep the player inside the level
+### Build it
 
-Paint tall wall sprites with the `Platform` sprite, or use the boundary checks below once your player can move. On the Scratch Stage, the left edge is `x = -240` and the right edge is `x = 240`.
+Make these variables for the `Player` sprite: `y speed`, `gravity`, `jump strength`, and `on ground`. Type your own starting values and respawn position into the white inputs.
 
-Add this code to the Player sprite:
+Add this code to the Player sprite.
 
 ```blocks3
-if <(x position) > [240]> then
-  set x to [240]
-end
-if <(x position) < [-240]> then
-  set x to [-240]
+when green flag clicked
+set [gravity v] to ()
+set [jump strength v] to ()
+set [y speed v] to [0]
+set [on ground v] to [0]
+forever
+  if <<key [space v] pressed?> and <(on ground) = [1]>> then
+    set [y speed v] to (jump strength)
+    set [on ground v] to [0]
+  end
+  change [y speed v] by (gravity)
+  change y by (y speed)
+  if <(y speed) < [0]> then
+    if <touching [Platform v]?> then
+      repeat until <not <touching [Platform v]?>>
+        change y by (1)
+      end
+      set [y speed v] to [0]
+      set [on ground v] to [1]
+    end
+  end
+  if <(y position) < [-180]> then
+    go to x: () y: ()
+    set [y speed v] to [0]
+  end
 end
 ```
 
-
 <h2 class="c-project-heading--task">Test</h2>
 
-Move the player to `x = -240` and `x = 240` and check that it stays inside the Stage.
+Jump and check that the `Player` falls back down and can land on the `Platform` sprite.

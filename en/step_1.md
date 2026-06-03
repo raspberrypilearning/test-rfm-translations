@@ -1,29 +1,23 @@
-<h2 class="c-project-heading--task">Start your platformer adventure</h2>
+<h2 class="c-project-heading--task">1A - Draw Backdrop</h2>
 
-Set up a simple start signal so you can jump into the route that fits the game you want to make.
+Draw your own Scratch backdrop so your platformer has a world that matches your idea.
 
 ### Starting here?
 
-You can begin here with an empty Scratch project. Keep the Stage and one sprite, and you are ready to choose your first route.
+Open a Scratch project and choose the Stage. You can paint over the plain backdrop or add a new one.
 
 ### Choose this route if...
 
-You want a quick starting point and a clear idea of the smallest path to a playable platformer.
+You want a backdrop that feels personal. Simple shapes are enough: sky, cave, forest, space, city, or another setting.
 
-### Start the game in one tidy way
+### Build it
 
-A short path to a playable game is: world -> player -> floor -> movement -> goal -> win.
+Choose **Paint** in the backdrop menu. Use big clear shapes and leave open space for platforms, dangers, and the exit.
 
-Using one start message keeps your scripts organised, especially if you add a second level later.
+[![Scratch backdrop paint tool](images/backdrop-paint.png)](images/backdrop-paint.png)
 
-Add this code to the Stage:
-
-```blocks3
-when green flag clicked
-broadcast [start game v]
-```
-
+Name the backdrop so you can find it again later.
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your project is ready to respond to the `start game` message.
+Check that your backdrop is visible on the Stage and has enough clear space for a platformer level.

@@ -1,42 +1,31 @@
-<h2 class="c-project-heading--task">Move left and right with jump but no gravity</h2>
+<h2 class="c-project-heading--task">6B - Upload Exit Sprite</h2>
 
-Give your `Player` simple left and right movement with a quick jump arc.
+Upload an exit or goal image and name it `Exit`.
+
+### Starting here?
+
+Choose **Upload Sprite** from the sprite menu. You can add the exit before you code the win condition.
 
 ### Choose this route if...
 
-You want a simple movement route that still feels like a platform game.
+You already have a door, flag, portal, trophy, or other finish image you want to use.
 
-### Add simple running and jumping
+### Build it
 
-This route works best on a flat floor or a very small number of platforms. Make a `move speed` variable for the `Player` sprite, then change the values below until they suit your own player and level.
+Upload your image and rename the sprite `Exit`. Use an image you made yourself or have permission to use.
 
-Type your own values into the white inputs below.
+[![Exit door sprite preview](images/exit-door.png)](images/exit-door.png)
 
-Add this code to the Player sprite:
+Type your own exit position into the white inputs if you want it to start in a fixed place.
+
+Add this code to the Exit sprite.
 
 ```blocks3
-when I receive [start game v]
-set [move speed v] to ()
-forever
-  if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
-    change x by (move speed)
-  end
-  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
-    change x by ((0) - (move speed))
-  end
-  if <key [space v] pressed?> then
-    repeat ()
-      change y by ()
-    end
-    repeat ()
-      change y by ((0) - ())
-    end
-    wait until <not <key [space v] pressed?>>
-  end
-end
+when green flag clicked
+show
+go to x: () y: ()
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Use the controls and check that the player moves left and right and makes a quick jump when you press space.
+Click the green flag and check that your uploaded `Exit` sprite appears in the level.

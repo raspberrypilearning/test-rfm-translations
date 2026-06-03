@@ -1,27 +1,36 @@
-<h2 class="c-project-heading--task">Make platforms to jump between</h2>
+<h2 class="c-project-heading--task">5A - Player Jump/Fall (Simple)</h2>
 
-Create several platforms so your player can jump from place to place.
+Add a quick jump and fall motion without building a full gravity system.
+
+### Starting here?
+
+Add a sprite called `Player` and a simple floor called `Platform` before you test the jump.
 
 ### Choose this route if...
 
-You want a more classic platformer layout with jumps and different heights.
+You want an easy jump that works quickly in a small game.
 
-### Build a simple platform pattern
+### Build it
 
-Paint the `Platform` sprite as a small flat shape. Duplicate it and drag the copies to different heights so the player has stepping stones across the level. Change the first platform values below so they fit your own layout.
+Type your own repeat counts and jump amounts into the white inputs below.
 
-Type your own platform position and size into the white inputs below.
-
-Add this code to the Platform sprite:
+Add this code to the Player sprite.
 
 ```blocks3
-when I receive [start game v]
-show
-go to x: () y: ()
-set size to ()%
+when green flag clicked
+forever
+  if <key [space v] pressed?> then
+    repeat ()
+      change y by ()
+    end
+    repeat ()
+      change y by ((0) - ())
+    end
+    wait until <not <key [space v] pressed?>>
+  end
+end
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your platforms appear where you want the player to jump.
+Press space and check that the `Player` moves up and then comes back down.

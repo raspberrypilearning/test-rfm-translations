@@ -1,31 +1,34 @@
-<h2 class="c-project-heading--task">Upload a sprite</h2>
+<h2 class="c-project-heading--task">4A - Keys</h2>
 
-Upload a player image from your device and use it as your `Player` sprite.
+Add keyboard controls so the `Player` can move left and right.
 
 ### Starting here?
 
-You can start here with an empty project. Choose **Upload Sprite** and rename the new sprite `Player`.
+Add a sprite called `Player`. Keyboard controls work best on a laptop or desktop with a physical keyboard.
 
 ### Choose this route if...
 
-You already have an image you want to use for the main character.
+You want classic platformer controls with arrow keys, and optional WASD keys.
 
-### Use your own player image
+### Build it
 
-Choose an image that is easy to see at a small size. Change the size and start position below so they fit your own sprite and level.
+Make a variable called `move speed` for the `Player` sprite. Type your own speed into the white input.
 
-Type your own values into the white inputs below.
-
-Add this code to the Player sprite:
+Add this code to the Player sprite.
 
 ```blocks3
-when I receive [start game v]
-show
-set size to ()%
-go to x: () y: ()
+when green flag clicked
+set [move speed v] to ()
+forever
+  if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+    change x by (move speed)
+  end
+  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
+    change x by ((0) - (move speed))
+  end
+end
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your uploaded `Player` appears at the starting point.
+Press the left and right controls and check that the `Player` moves across the Stage.

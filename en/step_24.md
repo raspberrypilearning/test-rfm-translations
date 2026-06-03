@@ -1,27 +1,27 @@
-<h2 class="c-project-heading--task">Win by reaching the exit</h2>
+<h2 class="c-project-heading--task">9C - Add Obstacles</h2>
 
-Make the player win as soon as they reach the exit.
+Add obstacles that block the player or make the route more interesting.
+
+### Starting here?
+
+Add a sprite called `Player` and another sprite called `Obstacle`.
 
 ### Choose this route if...
 
-You want the clearest and fastest win condition.
+You want barriers, blocks, crates, walls, or other objects that shape the level without ending the game.
 
-### Trigger a win at the exit
+### Build it
 
-This route works well when the player already has movement and a clear finish point.
+Place `Obstacle` sprites where they make the path more interesting. Obstacles should change movement, not automatically cause a loss.
 
-Add this code to the Exit sprite:
+Add these blocks inside your Player movement script after a horizontal movement block.
 
 ```blocks3
-when I receive [start game v]
-forever
-  if <touching [Player v]?> then
-    broadcast [win v]
-  end
-end
++ if <touching [Obstacle v]?> then
++   change x by ((0) - (move speed))
++ end
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Move the player to the exit and check that the `win` message runs.
+Move into an `Obstacle` and check that it blocks or pushes back the player without ending the game.

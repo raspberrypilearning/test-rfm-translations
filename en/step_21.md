@@ -1,36 +1,44 @@
-<h2 class="c-project-heading--task">Add coins or stars</h2>
+<h2 class="c-project-heading--task">8B - Make Your Player Sprint</h2>
 
-Give the player something satisfying to collect as they explore the level.
+Add a sprint control so the `Player` can move faster when a key is pressed.
+
+### Starting here?
+
+Add a sprite called `Player`. This route works best if you already use keyboard movement.
 
 ### Choose this route if...
 
-You want a goal that can be repeated several times around the level.
+You want an optional speed boost for longer jumps, harder levels, or timed challenges.
 
-### Collect an item
+### Build it
 
-Make a `Score` variable for all sprites. Put your `Coin` or `Star` in a place the player can reach.
+Make variables called `move speed` and `sprint speed` for the `Player` sprite. Type your own speeds into the white inputs.
 
-[![Coin collectible](images/coin.png)](images/coin.png)
-
-[![Star collectible](images/star.png)](images/star.png)
-
-Add this code to the Stage and Coin or Star sprite:
+Add this code to the Player sprite.
 
 ```blocks3
-when I receive [start game v]
-set [Score v] to [0]
-
-when I receive [start game v]
-show
+when green flag clicked
+set [move speed v] to ()
+set [sprint speed v] to ()
 forever
-  if <touching [Player v]?> then
-    change [Score v] by (1)
-    hide
+  if <key [shift v] pressed?> then
+    if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+      change x by (sprint speed)
+    end
+    if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
+      change x by ((0) - (sprint speed))
+    end
+  else
+    if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+      change x by (move speed)
+    end
+    if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
+      change x by ((0) - (move speed))
+    end
   end
 end
 ```
 
-
 <h2 class="c-project-heading--task">Test</h2>
 
-Touch a collectible and check that it disappears and the `Score` variable goes up.
+Hold shift while moving and check that the `Player` travels faster.

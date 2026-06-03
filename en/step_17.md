@@ -1,28 +1,32 @@
-<h2 class="c-project-heading--task">Make your player follow the mouse</h2>
+<h2 class="c-project-heading--task">7A - Get to Exit Sprite (Default)</h2>
 
-Make the `Player` point at the mouse pointer and follow it around the Stage.
+Make the player win when they touch the `Exit` sprite.
+
+### Starting here?
+
+Add sprites called `Player` and `Exit`. Put the `Exit` somewhere the player can reach.
 
 ### Choose this route if...
 
-You want a very simple control route that feels good for a maze or collection game.
+You want the simplest win condition for a platformer level.
 
-### Follow the pointer
+### Build it
 
-Keep the level fairly open so the player can follow the mouse smoothly. Change the move amount below until it feels right for your own game.
+Use `broadcast [win v]` so other routes can react to winning later.
 
-Type your own move amount into the white input below.
-
-Add this code to the Player sprite:
+Add this code to the Player sprite.
 
 ```blocks3
-when I receive [start game v]
+when green flag clicked
 forever
-  point towards [mouse-pointer v]
-  move () steps
+  if <touching [Exit v]?> then
+    broadcast [win v]
+    say [You win!] for (2) seconds
+    stop [this script v]
+  end
 end
 ```
 
-
 <h2 class="c-project-heading--task">Test</h2>
 
-Move the mouse and check that the player turns and follows the pointer.
+Move the `Player` to the `Exit` and check that the win message appears.

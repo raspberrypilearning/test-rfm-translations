@@ -1,33 +1,46 @@
-<h2 class="c-project-heading--task">Win by finding a key and unlocking the exit</h2>
+<h2 class="c-project-heading--task">9E - Add Enemies</h2>
 
-Make the player win only after they find the key and then reach the exit.
+Add a simple patrolling enemy that the player must avoid.
+
+### Starting here?
+
+Add a sprite called `Player` and another sprite called `Enemy`.
 
 ### Choose this route if...
 
-You want a stronger puzzle feeling where the player needs two linked goals.
+You want a classic platformer challenge that moves back and forth.
 
-### Unlock the exit with the key
+### Build it
 
-This route works best when the key is somewhere interesting and the exit is easy to spot but not usable at first. Change the message below if you want different words in your own game.
+Choose, draw, or upload an enemy. Put it on a platform or floor where the player must time their movement.
 
-Type your locked message into the white input below.
+[![Enemy sprite example](images/enemy-blob.png)](images/enemy-blob.png)
 
-Add this code to the Exit sprite:
+Type your own patrol positions and timing into the white inputs.
+
+Add this code to the Enemy sprite.
 
 ```blocks3
-when I receive [start game v]
+when green flag clicked
+go to x: () y: ()
 forever
-  if <touching [Player v]?> then
-    if <(has key) = [1]> then
-      broadcast [win v]
-    else
-      say [] for (2) seconds
-    end
+  glide () secs to x: () y: ()
+  glide () secs to x: () y: ()
+end
+```
+
+Add this code to the Player sprite.
+
+```blocks3
+when green flag clicked
+forever
+  if <touching [Enemy v]?> then
+    broadcast [game over v]
+    go to x: () y: ()
   end
 end
 ```
 
-
 <h2 class="c-project-heading--task">Test</h2>
 
-Touch the exit without the key and check that it stays locked, then collect the key and touch the exit again to win.
+Click the green flag and check that the `Enemy` patrols and causes `game over` when touched.

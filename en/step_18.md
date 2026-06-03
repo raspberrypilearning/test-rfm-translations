@@ -1,29 +1,51 @@
-<h2 class="c-project-heading--task">Add moving platforms</h2>
+<h2 class="c-project-heading--task">7B - Exceed Score</h2>
 
-Make one platform move backwards and forwards so the level feels trickier.
+Make the player win after their `Score` goes past a target.
+
+### Starting here?
+
+Make a variable called `Score` for all sprites. Add a `Player` sprite and one collectible sprite such as `Coin`.
 
 ### Choose this route if...
 
-You want to make the level harder without changing the whole backdrop or player.
+You want the player to collect items before the game can be won.
 
-### Move a platform across the Stage
+### Build it
 
-Use one platform copy first. Once it works, you can duplicate it and change the positions and timing for extra variety.
+Add or choose a collectible sprite. You can use a coin, star, gem, or any small object.
 
-Type your own positions and timing into the white inputs below.
+[![Coin collectible](images/coin.png)](images/coin.png)
 
-Add this code to the Platform sprite:
+[![Star collectible](images/star.png)](images/star.png)
+
+Type your target score into the white input.
+
+Add this code to the Stage.
 
 ```blocks3
-when I receive [start game v]
-go to x: () y: ()
+when green flag clicked
+set [Score v] to [0]
 forever
-  glide () secs to x: () y: ()
-  glide () secs to x: () y: ()
+  if <(Score) > ()> then
+    broadcast [win v]
+    stop [this script v]
+  end
 end
 ```
 
+Add this code to the collectible sprite.
+
+```blocks3
+when green flag clicked
+show
+forever
+  if <touching [Player v]?> then
+    change [Score v] by (1)
+    hide
+  end
+end
+```
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that the platform moves between the two points you chose.
+Collect enough items and check that `win` broadcasts when `Score` goes past your target.

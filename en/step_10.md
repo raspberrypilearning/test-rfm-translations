@@ -1,37 +1,29 @@
-<h2 class="c-project-heading--task">Use an example generated sprite</h2>
+<h2 class="c-project-heading--task">4B - Mouse Move</h2>
 
-Use one of the example PNG sprites if you want a ready-made player image.
+Make the `Player` move toward the mouse pointer.
 
 ### Starting here?
 
-You can start here with an empty project.
+Add a sprite called `Player`. Keep the level fairly open so the player can follow the pointer smoothly.
 
 ### Choose this route if...
 
-You want a player quickly but you would like something more custom than a Scratch library sprite.
+You want simple pointer controls for a maze-like or open platformer route.
 
-### Upload one of the example player sprites
+### Build it
 
-Choose **Upload Sprite** and select one of these example player sprites. Rename the sprite `Player` if Scratch does not do that for you. Change the size and start position below so they fit your own sprite and level.
+Type your own move amount into the white input.
 
-[![Player robot sprite](images/example-sprite-player-robot.png)](images/example-sprite-player-robot.png)
-
-[![Player creature sprite](images/example-sprite-player-creature.png)](images/example-sprite-player-creature.png)
-
-[![Player adventurer sprite](images/example-sprite-player-adventurer.png)](images/example-sprite-player-adventurer.png)
-
-Type your own values into the white inputs below.
-
-Add this code to the Player sprite:
+Add this code to the Player sprite.
 
 ```blocks3
-when I receive [start game v]
-show
-set size to ()%
-go to x: () y: ()
+when green flag clicked
+forever
+  point towards [mouse-pointer v]
+  move () steps
+end
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your example `Player` sprite appears in the correct place.
+Move the mouse pointer and check that the `Player` turns and moves toward it.

@@ -1,27 +1,42 @@
-<h2 class="c-project-heading--task">Make a single floor</h2>
+<h2 class="c-project-heading--task">4C - Always Moving</h2>
 
-Create one simple floor so your player has a safe place to stand.
+Make the `Player` keep moving while the learner controls its direction.
+
+### Starting here?
+
+Add a sprite called `Player`. This route works best when the level has enough empty space to move around.
 
 ### Choose this route if...
 
-You want the easiest level shape for testing movement and goals.
+You want an auto-runner or always-moving challenge where the player must steer quickly.
 
-### Place one floor across the Stage
+### Build it
 
-Paint the `Platform` sprite as a wide rectangle. Stretch it across the bottom of the Stage so the player has room to move. Change the position and size below so the floor fits your own level.
+Make a variable called `move speed` for the `Player` sprite. Type your own speed into the white input.
 
-Type your own floor position and size into the white inputs below.
-
-Add this code to the Platform sprite:
+Add this code to the Player sprite.
 
 ```blocks3
-when I receive [start game v]
-show
-go to x: () y: ()
-set size to (floor size)%
+when green flag clicked
+set [move speed v] to ()
+forever
+  if <key [up arrow v] pressed?> then
+    point in direction (0)
+  end
+  if <key [right arrow v] pressed?> then
+    point in direction (90)
+  end
+  if <key [down arrow v] pressed?> then
+    point in direction (180)
+  end
+  if <key [left arrow v] pressed?> then
+    point in direction (-90)
+  end
+  move (move speed) steps
+  if on edge, bounce
+end
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that the floor appears where your `Player` can reach it.
+Click the green flag and check that the `Player` keeps moving while the arrow keys change direction.

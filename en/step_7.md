@@ -1,35 +1,30 @@
-<h2 class="c-project-heading--task">Choose an animated Scratch sprite</h2>
+<h2 class="c-project-heading--task">3A - Add Floors and Platforms</h2>
 
-Choose a Scratch sprite with more than one costume so you can animate your player later.
+Add a `Platform` sprite so the player has somewhere to stand and jump.
 
 ### Starting here?
 
-You can start here with an empty project. Pick a sprite with at least two costumes and rename it `Player`.
+Add a simple rectangle sprite and name it `Platform`. Add a `Player` sprite too if you do not already have one.
 
 ### Choose this route if...
 
-You want your platformer hero to feel lively and you plan to add animation later.
+You want a classic platformer level with a floor, ledges, or stepping stones.
 
-### Set up an animated player
+### Build it
 
-Choose a sprite from the Scratch library that already has more than one costume. Rename it `Player` so later scripts stay easy to follow. Change the size and start position below so they fit your own sprite and level.
+Paint a wide rectangle for a floor, then duplicate it if you want more platforms. Put platforms where the player can reach them.
 
-[![Scratch sprite library](<images/scratch screenshots/sprite-choose.png>)](<images/scratch screenshots/sprite-choose.png>)
+Type your own position and size into the white inputs below if you want the platform to start in a fixed place.
 
-[![Sprite costume list in Scratch](<images/scratch screenshots/list-costume.png>)](<images/scratch screenshots/list-costume.png>)
-
-Type your own values into the white inputs below.
-
-Add this code to the Player sprite:
+Add this code to the Platform sprite.
 
 ```blocks3
-when I receive [start game v]
+when green flag clicked
 show
-set size to ()%
 go to x: () y: ()
+set size to ()%
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your `Player` appears in the right place and keeps its costumes ready for animation.
+Click the green flag and check that the `Platform` sprite appears where the player can use it.

@@ -1,31 +1,25 @@
-<h2 class="c-project-heading--task">Choose a Scratch backdrop</h2>
+<h2 class="c-project-heading--task">1B - Upload Backdrop</h2>
 
-Choose a backdrop from the Scratch library so your platformer has a world straight away.
+Upload a backdrop image so your platformer can use a world you already have.
 
 ### Starting here?
 
-You can start here even if your project is empty. If you have not added the `start game` message yet, do step 1 first or use `when green flag clicked` for now.
+Open a Scratch project and choose the Stage. You can upload a backdrop before you add any sprites.
 
 ### Choose this route if...
 
-You want the quickest route to a world so you can move on to your player and level layout.
+You already have an image you want to use. Use an image you made yourself or have permission to use.
 
-### Make your backdrop appear
+### Build it
 
-Choose a backdrop from the Scratch backdrop library. Pick one with enough open space for platforms, danger, and a goal. Use the name of the backdrop you chose in the block below.
+Choose **Upload Backdrop** and pick an image from your device. A simple image with clear colours works best.
 
-[![Scratch backdrop library](<images/scratch screenshots/backdrop-choose.png>)](<images/scratch screenshots/backdrop-choose.png>)
+[![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
 
-Choose your own backdrop name in the menu below.
+[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
 
-Add this code to the Stage:
-
-```blocks3
-when I receive [start game v]
-switch backdrop to [ v]
-```
-
+Rename the backdrop if Scratch gives it a name that is hard to recognise.
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your chosen backdrop appears on the Stage.
+Check that the uploaded backdrop fills the Stage and that your future player will be easy to see.

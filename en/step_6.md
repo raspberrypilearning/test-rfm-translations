@@ -1,33 +1,23 @@
-<h2 class="c-project-heading--task">Choose a static Scratch sprite</h2>
+<h2 class="c-project-heading--task">2C - Choose Inbuilt Player</h2>
 
-Pick a simple Scratch sprite and turn it into your `Player`.
+Choose a Scratch library sprite and rename it `Player`.
 
 ### Starting here?
 
-You can begin here even if you skipped the world routes. Add one sprite and rename it `Player`.
+Open a Scratch project and choose a sprite from the library. You do not need to draw or upload anything.
 
 ### Choose this route if...
 
-You want a quick player so you can focus on movement and level design.
+You want the quickest way to add a player so you can start building and coding.
 
-### Set up your player sprite
+### Build it
 
-Choose a sprite from the Scratch library and rename it `Player`. A clear full-body sprite is easiest to control and see. Change the size and start position below so they fit your own sprite and level.
+Choose a sprite from the Scratch library. Pick one that is clear and easy to see on your backdrop.
 
-[![Scratch sprite library](<images/scratch screenshots/sprite-choose.png>)](<images/scratch screenshots/sprite-choose.png>)
+[![Scratch sprite library](images/sprite-choose.png)](images/sprite-choose.png)
 
-Type your own values into the white inputs below.
-
-Add this code to the Player sprite:
-
-```blocks3
-when I receive [start game v]
-show
-set size to ()%
-go to x: () y: ()
-```
-
+Rename the sprite `Player`. If the sprite has extra costumes, you can animate it later.
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your `Player` appears in the same starting place each time.
+Check that the sprite is named `Player` in the sprite list.

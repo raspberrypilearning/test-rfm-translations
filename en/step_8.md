@@ -1,33 +1,30 @@
-<h2 class="c-project-heading--task">Draw your own sprite</h2>
+<h2 class="c-project-heading--task">3B - Make Platforms Move</h2>
 
-Paint your own `Player` sprite so the hero matches the game world you imagined.
+Make a platform glide between two places to add timing and challenge.
 
 ### Starting here?
 
-You can begin here with a new Scratch project. Choose **Paint** in the sprite menu and name the new sprite `Player`.
+Add a rectangle sprite called `Platform` first. A moving platform works best after you have a floor or other platforms.
 
 ### Choose this route if...
 
-You want a personal main character and you are happy to keep the design simple.
+You want the level to feel more active without adding enemies yet.
 
-### Paint a clear player shape
+### Build it
 
-Use bold colours and a simple outline. A circle head and a blocky body are enough. A clean silhouette is better than lots of tiny detail. Change the size and start position below so they fit your own sprite and level.
+Choose one platform copy to move. Type your own positions and timing into the white inputs below.
 
-[![Scratch sprite paint tool](<images/scratch screenshots/sprite-paint.png>)](<images/scratch screenshots/sprite-paint.png>)
-
-Type your own values into the white inputs below.
-
-Add this code to the Player sprite:
+Add this code to the Platform sprite.
 
 ```blocks3
-when I receive [start game v]
-show
-set size to ()%
+when green flag clicked
 go to x: () y: ()
+forever
+  glide () secs to x: () y: ()
+  glide () secs to x: () y: ()
+end
 ```
-
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your painted `Player` appears clearly on the Stage.
+Click the green flag and check that the platform moves between the two places you chose.

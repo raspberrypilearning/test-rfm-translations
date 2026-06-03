@@ -1,34 +1,35 @@
-<h2 class="c-project-heading--task">Add a key</h2>
+<h2 class="c-project-heading--task">9A - Add Lava/Spikes</h2>
 
-Place a key in the level so the player can unlock something later.
+Add lava or spikes that the player must avoid.
+
+### Starting here?
+
+Add a sprite called `Player` and a danger sprite called `Lava` or `Spike`.
 
 ### Choose this route if...
 
-You want one important item instead of lots of small collectibles.
+You want a clear danger zone that makes the level riskier.
 
-### Pick up a key
+### Build it
 
-Make a `has key` variable for all sprites. Put the `Key` in a place that feels like a reward to reach.
+Paint a lava pool or spikes, or use a sharp-looking sprite. Put it where the player needs to be careful.
 
-[![Key sprite](images/key.png)](images/key.png)
+[![Spike hazard sprite](images/spikes.png)](images/spikes.png)
 
-Add this code to the Stage and Key sprite:
+Type your own respawn position into the white inputs if you want the player to reset.
+
+Add this code to the Player sprite.
 
 ```blocks3
-when I receive [start game v]
-set [has key v] to [0]
-
-when I receive [start game v]
-show
+when green flag clicked
 forever
-  if <touching [Player v]?> then
-    set [has key v] to [1]
-    hide
+  if <<touching [Lava v]?> or <touching [Spike v]?>> then
+    broadcast [game over v]
+    go to x: () y: ()
   end
 end
 ```
 
-
 <h2 class="c-project-heading--task">Test</h2>
 
-Touch the key and check that it disappears and `has key` changes to `1`.
+Touch the lava or spikes and check that the `game over` message broadcasts or the player resets.

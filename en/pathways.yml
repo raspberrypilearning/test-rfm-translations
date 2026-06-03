@@ -1,827 +1,158 @@
 title: Branching Pathways Platformer
-start: step_1.md
-
-minimum_paths:
-  - name: Quick platformer
-    steps:
-      - step_1.md
-      - step_2.md
-      - step_6.md
-      - step_11.md
-      - step_14.md
-      - step_23.md
-      - step_24.md
-      - step_40.md
-      - step_41.md
-
-  - name: Creative drawn path
-    steps:
-      - step_1.md
-      - step_3.md
-      - step_8.md
-      - step_12.md
-      - step_15.md
-      - step_21.md
-      - step_25.md
-      - step_36.md
-      - step_40.md
-
-  - name: Ladder challenge path
-    steps:
-      - step_1.md
-      - step_5.md
-      - step_10.md
-      - step_16.md
-      - step_13.md
-      - step_22.md
-      - step_26.md
-      - step_28.md
-      - step_33.md
-      - step_40.md
-
-  - name: Challenge platformer
-    steps:
-      - step_1.md
-      - step_4.md
-      - step_9.md
-      - step_12.md
-      - step_14.md
-      - step_18.md
-      - step_29.md
-      - step_32.md
-      - step_37.md
-      - step_38.md
-      - step_41.md
+steps_are_files: true
+canonical_step_count: 26
 
 groups:
-  - id: start
-    title: Start
-  - id: world
-    title: Choose your world
-  - id: player
-    title: Choose your player
-  - id: floor
-    title: Build what your player moves on
-  - id: movement
-    title: Choose movement
-  - id: level
-    title: Shape your level
-  - id: goal
-    title: Add a goal
-  - id: win
-    title: Decide how to win
-  - id: danger
-    title: Add danger
-  - id: lose
-    title: Decide what happens when it goes wrong
-  - id: polish
-    title: Add polish
-  - id: test_share
-    title: Test, share, and extend
+  - id: 1
+    title: Add a backdrop
+    options:
+      - id: 1A
+        file: step_1.md
+        title: 1A - Draw Backdrop
+      - id: 1B
+        file: step_2.md
+        title: 1B - Upload Backdrop
+      - id: 1C
+        file: step_3.md
+        title: 1C - Choose Inbuilt Backdrop
 
-nodes:
-  - file: step_1.md
-    title: Start your platformer adventure
-    group: start
-    kind: gateway
-    needs: []
-    provides:
-      - start_game_message
-      - project_plan
-    next_groups:
-      - world
-      - player
-      - floor
-      - movement
-    next_steps:
-      - step_2.md
-      - step_6.md
-      - step_11.md
-      - step_14.md
+  - id: 2
+    title: Add a player
+    options:
+      - id: 2A
+        file: step_4.md
+        title: 2A - Draw Player
+      - id: 2B
+        file: step_5.md
+        title: 2B - Upload Player
+      - id: 2C
+        file: step_6.md
+        title: 2C - Choose Inbuilt Player
 
-  - file: step_2.md
-    title: Choose a Scratch backdrop
-    group: world
-    kind: option
-    needs: []
-    provides:
-      - backdrop
-    next_groups:
-      - player
-      - floor
-      - movement
-    next_steps:
-      - step_6.md
-      - step_11.md
-      - step_14.md
+  - id: 3
+    title: Add platforms
+    options:
+      - id: 3A
+        file: step_7.md
+        title: 3A - Add Floors and Platforms
+      - id: 3B
+        file: step_8.md
+        title: 3B - Make Platforms Move
 
-  - file: step_3.md
-    title: Draw your own backdrop
-    group: world
-    kind: option
-    needs: []
-    provides:
-      - backdrop
-    next_groups:
-      - player
-      - floor
-      - movement
-    next_steps:
-      - step_8.md
-      - step_12.md
-      - step_15.md
+  - id: 4
+    title: Move player
+    options:
+      - id: 4A
+        file: step_9.md
+        title: 4A - Keys
+      - id: 4B
+        file: step_10.md
+        title: 4B - Mouse Move
+      - id: 4C
+        file: step_11.md
+        title: 4C - Always Moving
 
-  - file: step_4.md
-    title: Upload a backdrop
-    group: world
-    kind: option
-    needs: []
-    provides:
-      - backdrop
-    next_groups:
-      - player
-      - floor
-      - movement
-    next_steps:
-      - step_9.md
-      - step_13.md
-      - step_16.md
+  - id: 5
+    title: Player jump/fall
+    options:
+      - id: 5A
+        file: step_12.md
+        title: 5A - Player Jump/Fall (Simple)
+      - id: 5B
+        file: step_13.md
+        title: 5B - Player Jump/Fall (Gravity)
 
-  - file: step_5.md
-    title: Use an example generated backdrop
-    group: world
-    kind: option
-    needs: []
-    provides:
-      - backdrop
-    next_groups:
-      - player
-      - floor
-      - movement
-    next_steps:
-      - step_10.md
-      - step_11.md
-      - step_16.md
+  - id: 6
+    title: Exit sprite
+    options:
+      - id: 6A
+        file: step_14.md
+        title: 6A - Draw Exit Sprite
+      - id: 6B
+        file: step_15.md
+        title: 6B - Upload Exit Sprite
+      - id: 6C
+        file: step_16.md
+        title: 6C - Choose Exit Sprite from Library
 
-  - file: step_6.md
-    title: Choose a static Scratch sprite
-    group: player
-    kind: option
-    needs: []
-    provides:
-      - player_sprite
-    next_groups:
-      - floor
-      - movement
-      - level
-    next_steps:
-      - step_11.md
-      - step_14.md
-      - step_20.md
+  - id: 7
+    title: Win condition options
+    options:
+      - id: 7A
+        file: step_17.md
+        title: 7A - Get to Exit Sprite (Default)
+      - id: 7B
+        file: step_18.md
+        title: 7B - Exceed Score
+      - id: 7C
+        file: step_19.md
+        title: 7C - Has Key & Get to Exit Sprite
 
-  - file: step_7.md
-    title: Choose an animated Scratch sprite
-    group: player
-    kind: option
-    needs: []
-    provides:
-      - player_sprite
-      - extra_costumes
-    next_groups:
-      - floor
-      - movement
-      - polish
-    next_steps:
-      - step_11.md
-      - step_14.md
-      - step_35.md
+  - id: 8
+    title: Player extras
+    options:
+      - id: 8A
+        file: step_20.md
+        title: 8A - Animate Your Player
+      - id: 8B
+        file: step_21.md
+        title: 8B - Make Your Player Sprint
 
-  - file: step_8.md
-    title: Draw your own sprite
-    group: player
-    kind: option
-    needs: []
-    provides:
-      - player_sprite
-    next_groups:
-      - floor
-      - movement
-      - level
-    next_steps:
-      - step_12.md
-      - step_15.md
-      - step_20.md
+  - id: 9
+    title: Level extras
+    options:
+      - id: 9A
+        file: step_22.md
+        title: 9A - Add Lava/Spikes
+      - id: 9B
+        file: step_23.md
+        title: 9B - Add Music
+      - id: 9C
+        file: step_24.md
+        title: 9C - Add Obstacles
+      - id: 9D
+        file: step_25.md
+        title: 9D - Add Hazards
+      - id: 9E
+        file: step_26.md
+        title: 9E - Add Enemies
 
-  - file: step_9.md
-    title: Upload a sprite
-    group: player
-    kind: option
-    needs: []
-    provides:
-      - player_sprite
-    next_groups:
-      - floor
-      - movement
-      - level
-    next_steps:
-      - step_12.md
-      - step_14.md
-      - step_20.md
+recommended_paths:
+  quick_platformer:
+    - 1C
+    - 2C
+    - 3A
+    - 4A
+    - 5A
+    - 6C
+    - 7A
 
-  - file: step_10.md
-    title: Use an example generated sprite
-    group: player
-    kind: option
-    needs: []
-    provides:
-      - player_sprite
-    next_groups:
-      - floor
-      - movement
-      - level
-    next_steps:
-      - step_11.md
-      - step_16.md
-      - step_20.md
+  drawn_platformer:
+    - 1A
+    - 2A
+    - 3A
+    - 4A
+    - 5B
+    - 6A
+    - 7A
 
-  - file: step_11.md
-    title: Make a single floor
-    group: floor
-    kind: core
-    needs: []
-    provides:
-      - platform_sprite
-      - safe_area
-    next_groups:
-      - movement
-      - level
-      - goal
-    next_steps:
-      - step_14.md
-      - step_20.md
-      - step_21.md
+  uploaded_assets_platformer:
+    - 1B
+    - 2B
+    - 3A
+    - 4A
+    - 5B
+    - 6B
+    - 7C
 
-  - file: step_12.md
-    title: Make platforms to jump between
-    group: floor
-    kind: core
-    needs: []
-    provides:
-      - platform_sprite
-      - jump_layout
-    next_groups:
-      - movement
-      - level
-      - goal
-    next_steps:
-      - step_14.md
-      - step_18.md
-      - step_21.md
-
-  - file: step_13.md
-    title: Add walls or boundaries
-    group: floor
-    kind: core
-    needs:
-      - player_sprite
-    provides:
-      - boundaries
-    next_groups:
-      - movement
-      - level
-    next_steps:
-      - step_16.md
-      - step_17.md
-      - step_19.md
-
-  - file: step_14.md
-    title: Move left and right with gravity and jumps
-    group: movement
-    kind: core
-    needs:
-      - player_sprite
-      - platform_sprite
-    provides:
-      - movement
-      - platformer_movement
-    next_groups:
-      - level
-      - goal
-      - danger
-      - test_share
-    next_steps:
-      - step_18.md
-      - step_21.md
-      - step_27.md
-      - step_40.md
-
-  - file: step_15.md
-    title: Move left and right with jump but no gravity
-    group: movement
-    kind: option
-    needs:
-      - player_sprite
-      - safe_area
-    provides:
-      - movement
-      - simple_jump_movement
-    next_groups:
-      - level
-      - goal
-      - danger
-      - test_share
-    next_steps:
-      - step_20.md
-      - step_21.md
-      - step_27.md
-      - step_40.md
-
-  - file: step_16.md
-    title: Make your player climb ladders
-    group: movement
-    kind: option
-    needs:
-      - player_sprite
-    provides:
-      - movement
-      - ladder_movement
-    next_groups:
-      - floor
-      - goal
-      - danger
-      - test_share
-    next_steps:
-      - step_13.md
-      - step_22.md
-      - step_28.md
-      - step_40.md
-
-  - file: step_17.md
-    title: Make your player follow the mouse
-    group: movement
-    kind: option
-    needs:
-      - player_sprite
-    provides:
-      - movement
-      - mouse_follow_movement
-    next_groups:
-      - floor
-      - goal
-      - danger
-      - test_share
-    next_steps:
-      - step_13.md
-      - step_23.md
-      - step_29.md
-      - step_40.md
-
-  - file: step_18.md
-    title: Add moving platforms
-    group: level
-    kind: option
-    needs:
-      - platform_sprite
-      - platformer_movement
-    provides:
-      - moving_platforms
-    next_groups:
-      - goal
-      - danger
-      - lose
-      - test_share
-    next_steps:
-      - step_21.md
-      - step_27.md
-      - step_31.md
-      - step_40.md
-
-  - file: step_19.md
-    title: Make a scrolling level
-    group: level
-    kind: option
-    needs:
-      - player_sprite
-      - platformer_movement
-    provides:
-      - scrolling_level
-    next_groups:
-      - goal
-      - danger
-      - test_share
-    next_steps:
-      - step_23.md
-      - step_27.md
-      - step_40.md
-
-  - file: step_20.md
-    title: Make a fixed one-screen level
-    group: level
-    kind: option
-    needs:
-      - backdrop
-      - player_sprite
-    provides:
-      - fixed_level
-    next_groups:
-      - goal
-      - win
-      - danger
-      - test_share
-    next_steps:
-      - step_21.md
-      - step_24.md
-      - step_27.md
-      - step_40.md
-
-  - file: step_21.md
-    title: Add coins or stars
-    group: goal
-    kind: option
-    needs:
-      - player_sprite
-      - movement
-    provides:
-      - collectibles
-      - score_variable
-    next_groups:
-      - goal
-      - win
-      - polish
-    next_steps:
-      - step_22.md
-      - step_23.md
-      - step_25.md
-      - step_39.md
-
-  - file: step_22.md
-    title: Add a key
-    group: goal
-    kind: option
-    needs:
-      - player_sprite
-      - movement
-    provides:
-      - key_item
-      - has_key_variable
-    next_groups:
-      - goal
-      - win
-      - danger
-      - test_share
-    next_steps:
-      - step_23.md
-      - step_26.md
-      - step_27.md
-      - step_40.md
-
-  - file: step_23.md
-    title: Add an exit or special place
-    group: goal
-    kind: option
-    needs:
-      - player_sprite
-    provides:
-      - exit_sprite
-    next_groups:
-      - win
-      - danger
-      - test_share
-    next_steps:
-      - step_24.md
-      - step_26.md
-      - step_27.md
-      - step_40.md
-
-  - file: step_24.md
-    title: Win by reaching the exit
-    group: win
-    kind: core
-    needs:
-      - exit_sprite
-      - movement
-    provides:
-      - win_rule
-    next_groups:
-      - danger
-      - polish
-      - test_share
-    next_steps:
-      - step_27.md
-      - step_35.md
-      - step_37.md
-      - step_40.md
-
-  - file: step_25.md
-    title: Win by collecting enough things
-    group: win
-    kind: core
-    needs:
-      - collectibles
-      - score_variable
-    provides:
-      - win_rule
-    next_groups:
-      - danger
-      - polish
-      - test_share
-    next_steps:
-      - step_27.md
-      - step_36.md
-      - step_37.md
-      - step_40.md
-
-  - file: step_26.md
-    title: Win by finding a key and unlocking the exit
-    group: win
-    kind: core
-    needs:
-      - key_item
-      - exit_sprite
-      - has_key_variable
-    provides:
-      - win_rule
-    next_groups:
-      - danger
-      - polish
-      - test_share
-    next_steps:
-      - step_27.md
-      - step_37.md
-      - step_40.md
-
-  - file: step_27.md
-    title: Add a patrolling enemy
-    group: danger
-    kind: option
-    needs:
-      - movement
-    provides:
-      - danger
-      - enemy_danger
-    next_groups:
-      - danger
-      - lose
-      - test_share
-    next_steps:
-      - step_28.md
-      - step_31.md
-      - step_32.md
-      - step_40.md
-
-  - file: step_28.md
-    title: Add a countdown timer
-    group: danger
-    kind: option
-    needs:
-      - movement
-    provides:
-      - danger
-      - timer_danger
-      - time_variable
-    next_groups:
-      - danger
-      - lose
-      - polish
-      - test_share
-    next_steps:
-      - step_29.md
-      - step_33.md
-      - step_38.md
-      - step_40.md
-
-  - file: step_29.md
-    title: Add falling spikes or danger zones
-    group: danger
-    kind: option
-    needs:
-      - movement
-    provides:
-      - danger
-      - spike_danger
-    next_groups:
-      - danger
-      - lose
-      - test_share
-    next_steps:
-      - step_27.md
-      - step_31.md
-      - step_34.md
-      - step_40.md
-
-  - file: step_30.md
-    title: Add a fall-off-the-level danger
-    group: danger
-    kind: option
-    needs:
-      - movement
-    provides:
-      - danger
-      - fall_danger
-    next_groups:
-      - lose
-      - test_share
-    next_steps:
-      - step_31.md
-      - step_34.md
-      - step_40.md
-
-  - file: step_31.md
-    title: End the game when the player touches danger
-    group: lose
-    kind: core
-    needs:
-      - danger
-    provides:
-      - lose_rule
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_32.md
-      - step_38.md
-      - step_40.md
-
-  - file: step_32.md
-    title: Add lives
-    group: lose
-    kind: core
-    needs:
-      - danger
-    provides:
-      - lives_rule
-      - lives_variable
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_34.md
-      - step_38.md
-      - step_39.md
-      - step_40.md
-
-  - file: step_33.md
-    title: End the game when time runs out
-    group: lose
-    kind: core
-    needs:
-      - time_variable
-    provides:
-      - lose_rule
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_38.md
-      - step_40.md
-      - step_41.md
-
-  - file: step_34.md
-    title: Reset the player after a fall
-    group: lose
-    kind: core
-    needs:
-      - fall_danger
-    provides:
-      - respawn_rule
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_32.md
-      - step_35.md
-      - step_40.md
-
-  - file: step_35.md
-    title: Animate your player
-    group: polish
-    kind: polish
-    needs:
-      - extra_costumes
-    provides:
-      - player_animation
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_36.md
-      - step_39.md
-      - step_40.md
-
-  - file: step_36.md
-    title: Add sound effects
-    group: polish
-    kind: polish
-    needs:
-      - movement
-    provides:
-      - sound_feedback
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_37.md
-      - step_38.md
-      - step_40.md
-
-  - file: step_37.md
-    title: Add a win screen
-    group: polish
-    kind: polish
-    needs:
-      - win_rule
-    provides:
-      - win_screen
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_38.md
-      - step_40.md
-      - step_41.md
-
-  - file: step_38.md
-    title: Add a game-over screen
-    group: polish
-    kind: polish
-    needs:
-      - lose_rule
-    provides:
-      - game_over_screen
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_39.md
-      - step_40.md
-      - step_41.md
-
-  - file: step_39.md
-    title: Add visual feedback
-    group: polish
-    kind: polish
-    needs:
-      - win_rule
-    provides:
-      - visual_feedback
-    next_groups:
-      - polish
-      - test_share
-    next_steps:
-      - step_35.md
-      - step_40.md
-      - step_41.md
-
-  - file: step_40.md
-    title: Test and debug your platformer
-    group: test_share
-    kind: core
-    needs:
-      - movement
-    provides:
-      - tested_game
-    next_groups:
-      - goal
-      - danger
-      - test_share
-    next_steps:
-      - step_21.md
-      - step_27.md
-      - step_41.md
-      - step_42.md
-
-  - file: step_41.md
-    title: Share your game
-    group: test_share
-    kind: share
-    needs:
-      - tested_game
-    provides:
-      - shared_game
-    next_groups:
-      - goal
-      - danger
-      - test_share
-    next_steps:
-      - step_42.md
-      - step_21.md
-      - step_27.md
-
-  - file: step_42.md
-    title: Start another level
-    group: test_share
-    kind: challenge
-    needs:
-      - win_rule
-    provides:
-      - next_level_route
-    next_groups:
-      - world
-      - floor
-      - goal
-      - danger
-    next_steps:
-      - step_2.md
-      - step_12.md
-      - step_21.md
-      - step_27.md
+  challenge_platformer:
+    - 1A
+    - 2A
+    - 3B
+    - 4A
+    - 5B
+    - 6A
+    - 7C
+    - 8B
+    - 9A
+    - 9E

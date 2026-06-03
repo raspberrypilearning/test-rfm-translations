@@ -1,55 +1,39 @@
 title: Branching Pathways Platformer
 hero_image: images/banner.png
-description: Build a Scratch platformer by choosing your own route through worlds, players, movement, goals, danger, and polish.
+description: Build a Scratch platformer by choosing your own route through backdrops, players, movement, goals, and level extras.
 listed: false
 pdf: false
 landing: true
 steps:
-  - title: Start your platformer adventure
-  - title: Choose a Scratch backdrop
-  - title: Draw your own backdrop
-  - title: Upload a backdrop
-  - title: Use an example generated backdrop
-  - title: Choose a static Scratch sprite
-  - title: Choose an animated Scratch sprite
-  - title: Draw your own sprite
-  - title: Upload a sprite
-  - title: Use an example generated sprite
-  - title: Make a single floor
+  - title: '1A - Draw Backdrop'
+  - title: '1B - Upload Backdrop'
+  - title: '1C - Choose Inbuilt Backdrop'
+  - title: '2A - Draw Player'
+  - title: '2B - Upload Player'
+  - title: '2C - Choose Inbuilt Player'
     completion:
       - engaged
-  - title: Make platforms to jump between
-  - title: Add walls or boundaries
-  - title: Move left and right with gravity and jumps
-  - title: Move left and right with jump but no gravity
-  - title: Make your player climb ladders
-  - title: Make your player follow the mouse
-  - title: Add moving platforms
-  - title: Make a scrolling level
-  - title: Make a fixed one-screen level
-  - title: Add coins or stars
-  - title: Add a key
-  - title: Add an exit or special place
-  - title: Win by reaching the exit
-  - title: Win by collecting enough things
-  - title: Win by finding a key and unlocking the exit
+  - title: '3A - Add Floors and Platforms'
+  - title: '3B - Make Platforms Move'
+  - title: '4A - Keys'
+  - title: '4B - Mouse Move'
+  - title: '4C - Always Moving'
+  - title: '5A - Player Jump/Fall (Simple)'
+  - title: '5B - Player Jump/Fall (Gravity)'
+  - title: '6A - Draw Exit Sprite'
+  - title: '6B - Upload Exit Sprite'
+  - title: '6C - Choose Exit Sprite from Library'
+  - title: '7A - Get to Exit Sprite (Default)'
     completion:
       - internal
-  - title: Add a patrolling enemy
-  - title: Add a countdown timer
-  - title: Add falling spikes or danger zones
-  - title: Add a fall-off-the-level danger
-  - title: End the game when the player touches danger
-  - title: Add lives
-  - title: End the game when time runs out
-  - title: Reset the player after a fall
-  - title: Animate your player
-  - title: Add sound effects
-  - title: Add a win screen
-  - title: Add a game-over screen
-  - title: Add visual feedback
-  - title: Test and debug your platformer
-  - title: Share your game
+  - title: '7B - Exceed Score'
+  - title: '7C - Has Key & Get to Exit Sprite'
+  - title: '8A - Animate Your Player'
+  - title: '8B - Make Your Player Sprint'
+  - title: '9A - Add Lava/Spikes'
+  - title: '9B - Add Music'
+  - title: '9C - Add Obstacles'
+  - title: '9D - Add Hazards'
+  - title: '9E - Add Enemies'
     completion:
       - external
-  - title: Start another level

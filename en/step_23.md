@@ -1,28 +1,36 @@
-<h2 class="c-project-heading--task">Add an exit or special place</h2>
+<h2 class="c-project-heading--task">9B - Add Music</h2>
 
-Place an exit, door, finish flag, or special place at the end of the level.
+Add background music and optional sound effects to make the platformer feel more complete.
+
+### Starting here?
+
+Open the **Sounds** tab on the Stage or a sprite and choose a sound from the Scratch sound library.
 
 ### Choose this route if...
 
-You want a clear place for the player to reach at the end of the game.
+You want atmosphere, feedback, and sound cues without changing the main rules.
 
-### Place the finish point
+### Build it
 
-Move the `Exit` to a place that feels like the end of the challenge. You can use a door, a portal, a treasure room, or another obvious finish point. Change the position below so it fits your own level.
+Choose a background music sound for the Stage.
 
-[![Exit door sprite](images/exit-door.png)](images/exit-door.png)
+[![Scratch sounds tab](images/sounds_tab.png)](images/sounds_tab.png)
 
-Type the exit position into the white inputs below.
+[![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
 
-Add this code to the Exit sprite:
+Choose your own sound in the menu below.
+
+Add this code to the Stage.
 
 ```blocks3
-when I receive [start game v]
-show
-go to x: () y: ()
+when green flag clicked
+forever
+  play sound [ v] until done
+end
 ```
 
+You can also add sounds to useful moments such as jump, collect, win, or danger scripts.
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that the exit appears where you want the player to finish.
+Click the green flag and check that the music starts and loops.

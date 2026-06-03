@@ -1,16 +1,39 @@
-<h2 class="c-project-heading--task">Make a fixed one-screen level</h2>
+<h2 class="c-project-heading--task">8A - Animate Your Player</h2>
 
-Keep the whole game on one Stage so everything stays simple and easy to read.
+Switch costumes while the `Player` moves so the character feels more alive.
+
+### Starting here?
+
+Add a sprite called `Player` with at least two costumes. Duplicate and edit a costume if you need another one.
 
 ### Choose this route if...
 
-You want a clear, simple level where the player can see the whole challenge at once.
+You want optional polish that does not change how movement works.
 
-### Fit the whole level on one screen
+### Build it
 
-Place the `Player`, `Platform`, goal sprites, and danger sprites so the whole challenge fits inside the Stage. Keep the finish point easy to spot from the beginning.
+Open the **Costumes** tab and check that the `Player` has more than one costume.
 
+[![Scratch costume tab](images/costume_tab.png)](images/costume_tab.png)
+
+Type your own animation delay into the white inputs.
+
+Add this code to the Player sprite.
+
+```blocks3
+when green flag clicked
+forever
+  if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+    next costume
+    wait () seconds
+  end
+  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
+    next costume
+    wait () seconds
+  end
+end
+```
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Press the green flag and check that you can see the whole level without needing to scroll.
+Move the `Player` and check that the costume changes while it travels.

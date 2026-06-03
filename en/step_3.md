@@ -1,31 +1,23 @@
-<h2 class="c-project-heading--task">Draw your own backdrop</h2>
+<h2 class="c-project-heading--task">1C - Choose Inbuilt Backdrop</h2>
 
-Paint your own backdrop so the world matches the platformer you imagine.
+Choose a Scratch library backdrop for the quickest route to a platformer world.
 
 ### Starting here?
 
-You can begin here with a new Scratch project. If you have not added the `start game` message yet, do step 1 first or use `when green flag clicked` for now.
+Open a Scratch project and choose the Stage. You do not need any sprites before you choose a backdrop.
 
 ### Choose this route if...
 
-You want a more personal level background and do not mind spending a little time drawing it.
+You want a fast backdrop so you can spend more time building the player, platforms, and goal.
 
-### Paint a simple game world
+### Build it
 
-Choose **Paint** in the backdrop menu. Add a ground line, hills, cave walls, or another simple setting. Keep the middle of the Stage fairly clear so your game pieces stay easy to see. Use the name of the backdrop you created in the block below.
+Choose a backdrop from the Scratch backdrop library. Pick one with clear space for platforms and a finish point.
 
-[![Scratch backdrop paint tool](<images/scratch screenshots/backdrop-paint.png>)](<images/scratch screenshots/backdrop-paint.png>)
+[![Scratch backdrop library](images/backdrop-choose.png)](images/backdrop-choose.png)
 
-Choose your own backdrop name in the menu below.
-
-Add this code to the Stage:
-
-```blocks3
-when I receive [start game v]
-switch backdrop to [ v]
-```
-
+If the backdrop is busy, keep your player and platforms large enough to see clearly.
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Click the green flag and check that your painted backdrop appears when the game starts.
+Check that your chosen backdrop appears on the Stage.
