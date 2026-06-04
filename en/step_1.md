@@ -4,9 +4,9 @@
 
 > [!TASK]
 >
-> Choose **Paint** in the backdrop menu.
+> In the **Stage**, choose **Paint** in the backdrop menu.
 >
-> ![Scratch backdrop paint tool](images/backdrop-paint.png)
+> ![Scratch backdrop paint tool](images/stage-paint.png)
 
 
 ## Step 2
