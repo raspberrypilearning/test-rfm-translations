@@ -2,18 +2,26 @@
 
 ## Step 1
 
-Choose **Paint** in the backdrop menu. 
+> [!TASK]
+>
+> Choose **Paint** in the backdrop menu.
+>
+> ![Scratch backdrop paint tool](images/backdrop-paint.png)
 
-![Scratch backdrop paint tool](images/backdrop-paint.png)
 
 ## Step 2
 
-Use the paint tools to draw your a backdrop based on the world your game is in. 
+> [!TASK]
+>
+> Use the paint tools to draw your a backdrop based on the world your game is in.
+>
+> ![Scratch backdrop paint tool](images/backdrop-draw.png)
 
-![Scratch backdrop paint tool](images/backdrop-draw.png)
 
 ## Step 3
 
-Name the backdrop so you can find it again later.
-
-![Scratch backdrop paint tool](images/backdrop-name.png)
+> [!TASK]
+>
+> Name the backdrop so you can find it again later.
+>
+> ![Scratch backdrop paint tool](images/backdrop-name.png)
