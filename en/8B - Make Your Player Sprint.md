@@ -8,9 +8,15 @@ You want an optional speed boost for longer jumps, harder levels, or timed chall
 
 ### Build it
 
-Make variables called `move speed` and `sprint speed` for the `Player` sprite. Type your own speeds into the white inputs.
+Make variables called `move speed` and `sprint speed` for the `Player` sprite. 
 
-Add this code to the Player sprite.
+Add the variables to the Player sprite.
+
+Type your own speeds into the white inputs.
+
+Add a condition to check whether the `shift` key is pressed so it can act as the sprint control key.
+
+Use the variable values to control how far the player's coordinates change.
 
 ```blocks3
 when green flag clicked
