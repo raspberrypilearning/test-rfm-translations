@@ -12,17 +12,16 @@ Upload an image and use it as the **Player** sprite.
 
 ## Step 2
 
-> [!TASK]
+Make sure you already have an image you want to use saved onto your computer.
+
+> [!TIP]
 >
-> Make sure the image you want to use is saved on your computer. A transparent-background PNG is usually easiest to use for a player sprite.
+> try using one of these
+> [![Robot player sprite preview](images/example-sprite-player-robot.png)](images/example-sprite-player-robot.png)
 >
-> These examples show the kind of clear, full-body image that works well for a platformer player.
+> [![Adventurer player sprite preview](images/example-sprite-player-adventurer.png)](images/example-sprite-player-adventurer.png)
 >
-> ![A robot player sprite example.](images/example-sprite-player-robot.png)
->
-> ![An adventurer player sprite example.](images/example-sprite-player-adventurer.png)
->
-> ![A creature player sprite example.](images/example-sprite-player-creature.png)
+> [![Creature player sprite preview](images/example-sprite-player-creature.png)](images/example-sprite-player-creature.png)
 
 ## Step 3
 
@@ -49,4 +48,3 @@ Upload an image and use it as the **Player** sprite.
 > [!TASK]
 >
 > Check the **Player** sprite on the Stage. If it is too large, use the **Size** control in the sprite pane to make it smaller.
-
