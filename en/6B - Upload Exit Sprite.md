@@ -1,30 +1,75 @@
-<h2 class="c-project-heading--task">6B - Upload Exit Sprite</h2>
+## 6B - Upload Exit Sprite
 
-Upload an exit or goal image to use as the `Exit` sprite.
+Upload an image and use it as the **Exit** sprite.
 
-### Choose this route if...
+## Step 1
 
-You already have a door, flag, portal, trophy, or other exit image you want to use.
+> [!TASK]
+>
+> Make sure the exit image you want to use is saved on your computer.
+>
+> Use an image you made yourself or have permission to use.
+>
+> ![An example exit door sprite.](images/exit-door.png)
 
-### Build it
+## Step 2
 
-Use an image you made yourself or have permission to use. 
+> [!TASK]
+>
+> Open the **Choose a Sprite** menu and select the **Upload Sprite** icon.
+>
+> ![The Choose a Sprite menu.](images/choose_sprite.png)
 
-Upload your image and rename the sprite `Exit`.
+## Step 3
 
-[![Exit door sprite preview](images/exit-door.png)](images/exit-door.png)
+> [!TASK]
+>
+> Select your exit image from your computer. Scratch will add it as a new sprite on the Stage.
 
-Type the coordinates of the exit position into the white `go to` inputs to fix its start position.
+## Step 4
 
-Add this code to the Exit sprite.
+> [!TASK]
+>
+> In the sprite pane, change the sprite name to **Exit**. Use this exact spelling so later steps can refer to the same sprite.
 
-```blocks3
-when green flag clicked
-show
-go to x: () y: ()
-```
+## Step 5
 
-<h2 class="c-project-heading--task">Test</h2>
+> [!TASK]
+>
+> Select the **Exit** sprite and add a script that starts when the green flag is clicked.
+>
+> ```blocks3
+> +when green flag clicked
+> ```
 
-Click the green flag and check that your uploaded `Exit` sprite appears where the player can reach it.
+## Step 6
+
+> [!TASK]
+>
+> Add a `show` block below the green flag block.
+>
+> ```blocks3
+> when green flag clicked
+> +show
+> ```
+
+## Step 7
+
+> [!TASK]
+>
+> Add a `go to x: () y: ()` block below `show`.
+>
+> Type the coordinates of the exit position into the white inputs to set its starting place.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> +go to x: () y: ()
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Click the green flag and check that your uploaded **Exit** sprite appears where the player can reach it.
 

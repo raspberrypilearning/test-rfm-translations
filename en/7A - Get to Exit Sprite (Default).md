@@ -1,27 +1,84 @@
-<h2 class="c-project-heading--task">7A - Get to Exit Sprite (Default)</h2>
+## 7A - Get to Exit Sprite (Default)
 
-Make the player win when they touch the `Exit` sprite.
+Make the player win when they touch the **Exit** sprite.
 
-### Choose this route if...
+## Step 1
 
-You want the simplest win condition for a platformer level.
+> [!TASK]
+>
+> Select the **Player** sprite in the sprite pane.
 
-### Build it
+## Step 2
 
-Use `broadcast [win v]` so other routes can react to winning later.
+> [!TASK]
+>
+> Add a script that starts when the green flag is clicked.
+>
+> ```blocks3
+> +when green flag clicked
+> ```
 
-Add this code to the Player sprite.
+## Step 3
 
-```blocks3
-when green flag clicked
-forever
-  if <touching [Exit v]?> then
-    broadcast [win v]
-    stop [this script v]
-  end
-end
-```
+> [!TASK]
+>
+> Add a `forever` loop below the green flag block.
+>
+> ```blocks3
+> when green flag clicked
+> +forever
+> +end
+> ```
 
-<h2 class="c-project-heading--task">Test</h2>
+## Step 4
 
-Move the `Player` to the `Exit` and check that the win message appears.
+> [!TASK]
+>
+> Inside the `forever` loop, add an `if` block that checks whether the **Player** is touching the **Exit** sprite.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+> +  if <touching [Exit v]?> then
+> +  end
+> end
+> ```
+
+## Step 5
+
+> [!TASK]
+>
+> Inside the `if` block, add `broadcast [win v]`.
+>
+> This lets other routes react to the win later.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Exit v]?> then
+> +    broadcast [win v]
+>   end
+> end
+> ```
+
+## Step 6
+
+> [!TASK]
+>
+> Add `stop [this script v]` below the broadcast block.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Exit v]?> then
+>     broadcast [win v]
+> +    stop [this script v]
+>   end
+> end
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Move the **Player** to the **Exit** and check that the win message appears.

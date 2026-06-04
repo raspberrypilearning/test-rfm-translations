@@ -1,27 +1,66 @@
-<h2 class="c-project-heading--task">6C - Choose Exit Sprite from Library</h2>
+## 6C - Choose Exit Sprite from Library
 
-Choose a Scratch library sprite and use it as the `Exit`.
+Choose a sprite from the Scratch library and use it as the **Exit**.
 
-### Choose this route if...
+## Step 1
 
-You want the fastest way to add a exit point without drawing or uploading an image.
+> [!TASK]
+>
+> Open the **Choose a Sprite** menu and select **Choose a Sprite**.
+>
+> ![The Choose a Sprite option in the sprite menu.](images/sprite-choose.png)
 
-### Build it
+## Step 2
 
-Choose a library sprite, then rename it `Exit`. A door or flag can work well.
+> [!TASK]
+>
+> Pick a sprite from the Scratch library to use as the exit.
+>
+> A door, portal, flag, treasure, or finish marker can work well.
 
-[![Scratch sprite library](images/sprite-choose.png)](images/sprite-choose.png)
+## Step 3
 
-Type the coordinates of the exit position into the white `go to` inputs to fix its start position.
+> [!TASK]
+>
+> In the sprite pane, change the sprite name to **Exit**. Use this exact spelling so later steps can refer to the same sprite.
 
-Add this code to the Exit sprite.
+## Step 4
 
-```blocks3
-when green flag clicked
-show
-go to x: () y: ()
-```
+> [!TASK]
+>
+> Select the **Exit** sprite and add a script that starts when the green flag is clicked.
+>
+> ```blocks3
+> +when green flag clicked
+> ```
 
-<h2 class="c-project-heading--task">Test</h2>
+## Step 5
 
-Click the green flag and check that your `Exit` sprite appears where the player can reach it.
+> [!TASK]
+>
+> Add a `show` block below the green flag block.
+>
+> ```blocks3
+> when green flag clicked
+> +show
+> ```
+
+## Step 6
+
+> [!TASK]
+>
+> Add a `go to x: () y: ()` block below `show`.
+>
+> Type the coordinates of the exit position into the white inputs to set its starting place.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> +go to x: () y: ()
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Click the green flag and check that your **Exit** sprite appears where the player can reach it.

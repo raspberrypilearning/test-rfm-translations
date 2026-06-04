@@ -1,56 +1,109 @@
-<h2 class="c-project-heading--task">7C - Take Key to Exit</h2>
+## 7C - Take Key to Exit
 
-Make the player win only after collecting a key and reaching the `Exit`.
+Make the player win only after collecting a key and reaching the **Exit**.
 
-### Choose this route if...
+## Step 1
 
-You want a puzzle-style win condition with two linked goals.
+> [!TASK]
+>
+> Make sure you have a variable called `has key`.
+>
+> Set it up for all sprites so the Stage, **Key**, and **Exit** sprites can all use it.
 
-### Build it
+## Step 2
 
-Place the key somewhere interesting and put the exit where the player can reach it after collecting the key.
+> [!TASK]
+>
+> Place the key somewhere interesting and put the exit where the player can reach it after collecting the key.
+>
+> ![A key sprite.](images/key.png){:width="300px"}
+>
+> ![An exit door sprite.](images/exit-door.png){:width="300px"}
 
-[![Key sprite](images/key.png)](images/key.png){:width="300px"}
+## Step 3
 
-[![Exit door sprite](images/exit-door.png)](images/exit-door.png){:width="300px"}
+> [!TASK]
+>
+> Select the **Stage** and add a script that starts when the green flag is clicked.
+>
+> ```blocks3
+> when green flag clicked
+> set [has key v] to [0]
+> ```
 
-Add this code to the Stage.
+## Step 4
 
-```blocks3
-when green flag clicked
-set [has key v] to [0]
-```
+> [!TASK]
+>
+> Select the **Key** sprite and add this script.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> forever
+>   if <touching [Player v]?> then
+>     set [has key v] to [1]
+>     hide
+>   end
+> end
+> ```
 
-Add this code to the Key sprite.
+## Step 5
 
-```blocks3
-when green flag clicked
-show
-forever
-  if <touching [Player v]?> then
-    set [has key v] to [1]
-    hide
-  end
-end
-```
+> [!TASK]
+>
+> Select the **Exit** sprite and add a script that checks when the player touches it.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Player v]?> then
+>   end
+> end
+> ```
 
-Add this code to the Exit sprite.
+## Step 6
 
-```blocks3
-when green flag clicked
-forever
-  if <touching [Player v]?> then
-    if <(has key) = [1]> then
-      broadcast [win v]
-      say [Unlocked!] for (2) seconds
-      stop [this script v]
-    else
-      say [] for (2) seconds
-    end
-  end
-end
-```
+> [!TASK]
+>
+> Inside the `if` block, add another `if` block to check whether `has key` is `1`.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Player v]?> then
+> +    if <(has key) = [1]> then
+> +    else
+> +    end
+>   end
+> end
+> ```
 
-<h2 class="c-project-heading--task">Test</h2>
+## Step 7
 
-Touch the exit before and after collecting the key to check that only the keyed route wins.
+> [!TASK]
+>
+> In the `has key = 1` part, add `broadcast [win v]`, `say [Unlocked!] for (2) seconds`, and `stop [this script v]`.
+>
+> In the `else` part, add a `say [] for (2) seconds` block.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Player v]?> then
+>     if <(has key) = [1]> then
+> +      broadcast [win v]
+> +      say [Unlocked!] for (2) seconds
+> +      stop [this script v]
+>     else
+> +      say [] for (2) seconds
+>     end
+>   end
+> end
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Touch the exit before and after collecting the key to check that only the keyed route wins.

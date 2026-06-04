@@ -1,35 +1,74 @@
-<h2 class="c-project-heading--task">8A - Animate Your Player</h2>
+## 8A - Animate Your Player
 
-Switch costumes while the `Player` moves so the character feels more alive.
+Switch costumes while the **Player** moves so the character feels more alive.
 
-### Choose this route if...
+## Step 1
 
-You would like an optional finishing touch that makes movement feel more lively without changing how it works.
+> [!TASK]
+>
+> Select the **Player** sprite and open the **Costumes** tab.
+>
+> Check that the sprite has more than one costume.
+>
+> ![The Costumes tab in Scratch.](images/costume_tab.png)
 
-### Build it
+## Step 2
 
-Open the **Costumes** tab and check that the `Player` has more than one costume.
+> [!TASK]
+>
+> In the movement script, find the `if` block that checks for right movement.
+>
+> Add a `next costume` block inside it.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+> +    next costume
+>   end
+> end
+> ```
 
-[![Scratch costume tab](images/costume_tab.png)](images/costume_tab.png)
+## Step 3
 
-Add `next costume` blocks to the movement code on the sprite.
+> [!TASK]
+>
+> Add a `wait () seconds` block below `next costume`.
+>
+> Type your own animation delay into the white input.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+>     next costume
+> +    wait () seconds
+>   end
+> end
+> ```
 
-Type your own animation delay into the white inputs.
+## Step 4
 
-```blocks3
-when green flag clicked
-forever
-  if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
-    next costume
-    wait () seconds
-  end
-  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
-    next costume
-    wait () seconds
-  end
-end
-```
+> [!TASK]
+>
+> Add the same two blocks to the `if` block that checks for left movement.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+>     next costume
+>     wait () seconds
+>   end
+>   if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
+> +    next costume
+> +    wait () seconds
+>   end
+> end
+> ```
 
-<h2 class="c-project-heading--task">Test</h2>
+## Test
 
-Move the `Player` and check that the costume changes while it travels.
+> [!TASK]
+>
+> Move the **Player** and check that the costume changes while it travels.
