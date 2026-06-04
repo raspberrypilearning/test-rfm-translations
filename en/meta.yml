@@ -30,10 +30,11 @@ steps:
   - title: '7C - Has Key & Get to Exit Sprite'
   - title: '8A - Animate Your Player'
   - title: '8B - Make Your Player Sprint'
-  - title: '9A - Add Lava/Spikes'
-  - title: '9B - Add Music'
-  - title: '9C - Add Obstacles'
-  - title: '9D - Add Hazards'
-  - title: '9E - Add Enemies'
+  - title: '9A - Add Spikes'
+  - title: '9B - Add Obstacles'
+  - title: '9C - Add Hazards'
+  - title: '9D - Add Enemies'
+  - title: '9E - Add Music'
+  - title: '9F - Add Sound effects'
     completion:
       - external
