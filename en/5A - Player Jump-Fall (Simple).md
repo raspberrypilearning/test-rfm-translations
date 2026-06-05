@@ -208,29 +208,6 @@ Add a quick jump and fall motion without building a full gravity system.
 > end
 > ```
 
-## Step 15
-
-> [!TASK]
->
-> Add a `key [space v] pressed?` sensing block inside the `not` block.
->
-> This makes the **Player** wait until the space key is released before another jump can start.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <key [space v] pressed?> then
->     repeat ()
->       change y by ()
->     end
->     repeat ()
->       change y by ((0) - ())
->     end
-> +    wait until <not <key [space v] pressed?>>
->   end
-> end
-> ```
-
 ## Test
 
 > [!TASK]
