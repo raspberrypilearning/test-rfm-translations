@@ -1,26 +1,117 @@
-<h2 class="c-project-heading--task">3B - Make Platforms Move</h2>
+## 3B - Make Platforms Move
 
-Make a platform glide between two places to add timing and challenge.
+Make a **Platform** sprite glide between two places to add timing and challenge.
 
-### Choose this route if...
+## Step 1
 
-You want the level to feel more active without adding enemies yet.
+> [!TASK]
+>
+> Open the **Choose a Sprite** menu and select **Paint**. Draw a simple rectangle, ledge, or stepping stone for the moving platform.
+>
+> If you already have a platform sprite, select it in the sprite pane.
+>
+> ![The Paint option in the Choose a Sprite menu.](images/sprite-paint.png)
 
-### Build it
+## Step 2
 
-Choose one platform copy to move. Type your own positions and timing into the white inputs below.
+> [!TASK]
+>
+> In the sprite pane, change the sprite name to **Platform**. Use this exact spelling so later steps can check whether the **Player** is touching it.
 
-Add this code to the Platform sprite.
+## Step 3
 
-```blocks3
-when green flag clicked
-go to x: () y: ()
-forever
-  glide () secs to x: () y: ()
-  glide () secs to x: () y: ()
-end
-```
+> [!TASK]
+>
+> Put the **Platform** sprite where you want it to start. Decide where it should glide to before returning.
 
-<h2 class="c-project-heading--task">Test</h2>
+## Step 4
 
-Click the green flag and check that the platform moves between the two places you chose.
+> [!TASK]
+>
+> Open the **Code** tab.
+>
+> ![The Code tab in Scratch.](images/tab_code.png)
+
+## Step 5
+
+> [!TASK]
+>
+> Add a script that starts when the green flag is clicked.
+>
+> ```blocks3
+> +when green flag clicked
+> ```
+
+## Step 6
+
+> [!TASK]
+>
+> Add a block to show the **Platform** sprite.
+>
+> ```blocks3
+> when green flag clicked
+> +show
+> ```
+
+## Step 7
+
+> [!TASK]
+>
+> Add a block to move the **Platform** sprite to its starting position.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> +go to x: () y: ()
+> ```
+
+## Step 8
+
+> [!TASK]
+>
+> Add a `forever` loop below the starting position block.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> go to x: () y: ()
+> +forever
+> +end
+> ```
+
+## Step 9
+
+> [!TASK]
+>
+> Inside the `forever` loop, add a `glide` block for the place the **Platform** should move to.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> go to x: () y: ()
+> forever
+> +  glide () secs to x: () y: ()
+> end
+> ```
+
+## Step 10
+
+> [!TASK]
+>
+> Add a second `glide` block so the **Platform** returns to another place.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> go to x: () y: ()
+> forever
+>   glide () secs to x: () y: ()
+> +  glide () secs to x: () y: ()
+> end
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Click the green flag and check that the **Platform** sprite moves between the two places you chose.

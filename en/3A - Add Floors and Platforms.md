@@ -1,26 +1,91 @@
-<h2 class="c-project-heading--task">3A - Add Floors and Platforms</h2>
+## 3A - Add Floors and Platforms
 
-Add a `Platform` sprite so the player has somewhere to stand and jump.
+Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
 
-### Choose this route if...
+## Step 1
 
-You want a classic platformer level with a floor, ledges, or stepping stones.
+> [!TASK]
+>
+> Open the **Choose a Sprite** menu and select **Paint**.
+>
+> ![The Paint option in the Choose a Sprite menu.](images/sprite-paint.png)
 
-### Build it
+## Step 2
 
-Paint a wide rectangle for a floor, then duplicate it if you want more platforms. Put platforms where the player can reach them.
+> [!TASK]
+>
+> Draw a wide rectangle for the floor. Add ledges or stepping stones if you want more places for the **Player** to land.
+>
+> Keep the shapes simple and clear. The platform needs to be easy to see against your backdrop.
 
-Type your own position and size into the white inputs below if you want the platform to start in a fixed place.
+## Step 3
 
-Add this code to the Platform sprite.
+> [!TASK]
+>
+> In the sprite pane, change the sprite name to **Platform**. Use this exact spelling so later steps can check whether the **Player** is touching it.
 
-```blocks3
-when green flag clicked
-show
-go to x: () y: ()
-set size to ()%
-```
+## Step 4
 
-<h2 class="c-project-heading--task">Test</h2>
+> [!TASK]
+>
+> Put the **Platform** sprite where the **Player** can reach it. Use the **Size** control if the platform is too large or too small.
 
-Click the green flag and check that the `Platform` sprite appears where the player can use it.
+## Step 5
+
+> [!TASK]
+>
+> Open the **Code** tab.
+>
+> ![The Code tab in Scratch.](images/tab_code.png)
+
+## Step 6
+
+> [!TASK]
+>
+> Add a script that starts when the green flag is clicked.
+>
+> ```blocks3
+> +when green flag clicked
+> ```
+
+## Step 7
+
+> [!TASK]
+>
+> Add a block to show the **Platform** sprite.
+>
+> ```blocks3
+> when green flag clicked
+> +show
+> ```
+
+## Step 8
+
+> [!TASK]
+>
+> Add a block to move the **Platform** sprite to your chosen starting position.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> +go to x: () y: ()
+> ```
+
+## Step 9
+
+> [!TASK]
+>
+> Add a block to set the **Platform** sprite's size.
+>
+> ```blocks3
+> when green flag clicked
+> show
+> go to x: () y: ()
+> +set size to ()%
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Click the green flag and check that the **Platform** sprite appears where the **Player** can stand or jump to it.

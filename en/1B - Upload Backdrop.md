@@ -8,7 +8,7 @@
 >
 > > [!TIP]
 > >
-> > try using one of these
+> > Try using one of these
 > > [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
 > >
 > >[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
@@ -17,7 +17,7 @@
 
 > [!TASK]
 >
-> > In the **Stage**, choose **Upload Backdrop** in the menu, and pick an image from your device.
+> In the **Stage**, choose **Upload Backdrop** in the menu, and pick an image from your device.
 >
 > ![Scratch backdrop tool](images/stage-upload.png)
 
