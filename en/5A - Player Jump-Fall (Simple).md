@@ -166,47 +166,6 @@ Add a quick jump and fall motion without building a full gravity system.
 > end
 > ```
 
-## Step 13
-
-> [!TASK]
->
-> Add a `wait until` block below both repeat loops.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <key [space v] pressed?> then
->     repeat ()
->       change y by ()
->     end
->     repeat ()
->       change y by ((0) - ())
->     end
-> +    wait until <>
->   end
-> end
-> ```
-
-## Step 14
-
-> [!TASK]
->
-> Add a `not` operator block to the `wait until` block.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <key [space v] pressed?> then
->     repeat ()
->       change y by ()
->     end
->     repeat ()
->       change y by ((0) - ())
->     end
-> +    wait until <not <>>
->   end
-> end
-> ```
 
 ## Test
 
