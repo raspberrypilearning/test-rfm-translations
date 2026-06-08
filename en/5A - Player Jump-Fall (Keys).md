@@ -1,4 +1,4 @@
-## 5A - Player Jump/Fall (Simple)
+## 5A - Player Jump/Fall (Keys)
 
 Use the starter settings to tune how the **Player** jumps and falls.
 

@@ -1,14 +1,12 @@
 ## 2B - Upload Player
 
-Upload an image and use it as the **Player** sprite.
+Upload an image as a costume for the existing **Player** sprite in the starter project.
 
 ## Step 1
 
 > [!TASK]
 >
-> If the Scratch cat sprite is still in your project, delete it. Click the **Delete** icon on the sprite thumbnail.
->
-> ![The Scratch cat sprite thumbnail with the Delete icon.](images/scratch-thumbnail.png)
+> Select the **Player** sprite in the sprite pane.
 
 ## Step 2
 
@@ -27,24 +25,24 @@ Make sure you already have an image you want to use saved onto your computer.
 
 > [!TASK]
 >
-> Open the **Choose a Sprite** menu and select the **Upload Sprite** icon.
+> Open the **Costumes** tab.
 >
-> ![The Choose a Sprite menu.](images/choose_sprite.png)
+> ![The Costumes tab in Scratch.](images/tab_costumes.png)
 
 ## Step 4
 
 > [!TASK]
 >
-> Select your player image from your computer. Scratch will add it as a new sprite on the Stage.
+> Open the costume menu and choose the **Upload Costume** icon.
 
 ## Step 5
 
 > [!TASK]
 >
-> In the sprite pane, change the sprite name to **Player**. Use this exact spelling so later steps can refer to the same sprite.
+> Select your player image from your computer. Scratch will add it as a new costume for the **Player** sprite.
 
 ## Test
 
 > [!TASK]
 >
-> Check the **Player** sprite on the Stage. If it is too large, use the **Size** control in the sprite pane to make it smaller.
+> Check that the **Player** sprite shows your uploaded costume on the Stage. If it is too large, use the **Size** control in the sprite pane to make it smaller.

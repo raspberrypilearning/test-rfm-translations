@@ -1,117 +1,55 @@
 ## 8B - Make Your Player Sprint
 
-Add a sprint control so the **Player** can move faster when a key is pressed.
+Add a sprint key to the keyboard controls from `4A - Keys`.
 
 ## Step 1
 
 > [!TASK]
 >
-> Make variables called `move speed` and `sprint speed` for the **Player** sprite.
+> This extra works with `4A - Keys`.
+>
+> If you chose `4B - Mouse Move` or `4C - Always Moving`, skip this extra and choose a different one.
 
 ## Step 2
 
 > [!TASK]
 >
-> Select the **Player** sprite and add a script that starts when the green flag is clicked.
->
-> ```blocks3
-> +when green flag clicked
-> ```
+> Make a variable called `sprint speed` for the **Player** sprite.
 
 ## Step 3
 
 > [!TASK]
 >
-> Add blocks to set `move speed` and `sprint speed` to your own values.
+> Replace the movement script from `4A - Keys` with this version.
 >
 > ```blocks3
 > when green flag clicked
-> +set [move speed v] to ()
-> +set [sprint speed v] to ()
-> ```
-
-## Step 4
-
-> [!TASK]
->
-> Add a `forever` loop below the variable setup blocks.
->
-> ```blocks3
-> when green flag clicked
-> set [move speed v] to ()
-> set [sprint speed v] to ()
-> +forever
-> +end
-> ```
-
-## Step 5
-
-> [!TASK]
->
-> Inside the `forever` loop, add an `if else` block that checks whether the `shift` key is pressed.
->
-> This lets `shift` act as the sprint key.
->
-> ```blocks3
-> when green flag clicked
-> set [move speed v] to ()
-> set [sprint speed v] to ()
+> set [move speed v] to (5)
+> set [sprint speed v] to (8)
 > forever
-> +  if <key [shift v] pressed?> then
-> +  else
-> +  end
-> end
-> ```
-
-## Step 6
-
-> [!TASK]
+>   set [x speed v] to (0)
 >
-> In the `shift pressed` part, add movement code that uses `sprint speed`.
->
-> ```blocks3
-> when green flag clicked
-> set [move speed v] to ()
-> set [sprint speed v] to ()
-> forever
 >   if <key [shift v] pressed?> then
-> +    if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
-> +      change x by (sprint speed)
-> +    end
-> +    if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
-> +      change x by ((0) - (sprint speed))
-> +    end
->   else
->   end
-> end
-> ```
-
-## Step 7
-
-> [!TASK]
->
-> In the `else` part, add movement code that uses `move speed`.
->
-> ```blocks3
-> when green flag clicked
-> set [move speed v] to ()
-> set [sprint speed v] to ()
-> forever
->   if <key [shift v] pressed?> then
->     if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->       change x by (sprint speed)
+>     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
+>       set [x speed v] to (sprint speed)
+>       point in direction (90)
 >     end
->     if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
->       change x by ((0) - (sprint speed))
+>     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
+>       set [x speed v] to ((0) - (sprint speed))
+>       point in direction (-90)
 >     end
 >   else
-> +    if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
-> +      change x by (move speed)
-> +    end
-> +    if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
-> +      change x by ((0) - (move speed))
-> +    end
+>     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
+>       set [x speed v] to (move speed)
+>       point in direction (90)
+>     end
+>     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
+>       set [x speed v] to ((0) - (move speed))
+>       point in direction (-90)
+>     end
 >   end
+>
+>   change x by (x speed)
 > end
 > ```
 

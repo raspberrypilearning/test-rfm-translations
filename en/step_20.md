@@ -16,56 +16,19 @@ Switch costumes while the **Player** moves so the character feels more alive.
 
 > [!TASK]
 >
-> In the movement script, find the `if` block that checks for right movement.
->
-> Add a `next costume` block inside it.
+> Open the **Code** tab and add this animation script.
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
-> +    next costume
->   end
-> end
-> ```
-
-## Step 3
-
-> [!TASK]
->
-> Add a `wait () seconds` block below `next costume`.
->
-> Type your own animation delay into the white input.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     next costume
-> +    wait () seconds
->   end
-> end
-> ```
-
-## Step 4
-
-> [!TASK]
->
-> Add the same two blocks to the `if` block that checks for left movement.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
+>   if <<not <(x speed) = (0)>> and <(on ground) = (1)>> then
 >     next costume
 >     wait () seconds
 >   end
->   if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
-> +    next costume
-> +    wait () seconds
->   end
 > end
 > ```
+>
+> Type your own delay into the `wait` block.
 
 ## Test
 

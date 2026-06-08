@@ -1,6 +1,6 @@
 ## 4C - Always Moving
 
-Make the **Player** keep moving left and right while the learner controls its horizontal direction.
+Make the **Player** keep moving, and use the keyboard to change direction and jump.
 
 ## Step 1
 
@@ -20,322 +20,59 @@ Make the **Player** keep moving left and right while the learner controls its ho
 
 > [!TASK]
 >
-> Make a variable called `move speed` for the **Player** sprite.
+> The starter project already includes the `move vertically` block, the **Player** setup script, and these **Player** variables:
 >
-> This variable controls how far the **Player** moves each time the loop runs. You will choose your own speed in the white input.
+> `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
+>
+> If you can already see them in your starter project, just check this step off.
 
 ## Step 4
 
 > [!TASK]
 >
-> Add a script that starts when the green flag is clicked.
+> Add this always-moving keyboard script.
 >
 > ```blocks3
-> +when green flag clicked
+> when green flag clicked
+> forever
+>   if <(x speed) = (0)> then
+>     set [x speed v] to (move speed)
+>   end
+>
+>   if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
+>     set [x speed v] to (move speed)
+>     point in direction (90)
+>   end
+>
+>   if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
+>     set [x speed v] to ((0) - (move speed))
+>     point in direction (-90)
+>   end
+>
+>   change x by (x speed)
+> end
 > ```
+>
+> The **Player** keeps moving even when no key is pressed. Use `A` and `D`, or the arrow keys, to turn around.
 
 ## Step 5
 
 > [!TASK]
 >
-> Add a block to set the rotation style to **left-right** so the **Player** does not turn upside down.
+> Add this jump and fall script.
 >
 > ```blocks3
 > when green flag clicked
-> +set rotation style [left-right v]
-> ```
-
-## Step 6
-
-> [!TASK]
->
-> Add a block to set the `move speed`.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> +set [move speed v] to ()
-> ```
-
-## Step 7
-
-> [!TASK]
->
-> Add a block to make the **Player** start by facing right.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> +point in direction (90)
-> ```
-
-## Step 8
-
-> [!TASK]
->
-> Add a `forever` loop below the direction block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> +forever
-> +end
-> ```
-
-## Step 9
-
-> [!TASK]
->
-> Inside the `forever` loop, add an empty `if` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
 > forever
-> +  if <> then
-> +  end
-> end
-> ```
-
-## Step 10
-
-> [!TASK]
->
-> Add an `or` operator block to the `if` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
-> +  if <<> or <>> then
+>   if <touching [Platform v]?> then
+>     change x by ((0) - (x speed))
 >   end
-> end
-> ```
-
-## Step 11
-
-> [!TASK]
 >
-> Add a `key [right arrow v] pressed?` sensing block to the first side of the `or` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
-> +  if <<key [right arrow v] pressed?> or <>> then
+>   if <<key [space v] pressed?> and <(on ground) = (1)>> then
+>     set [y speed v] to (jump strength)
 >   end
-> end
-> ```
-
-## Step 12
-
-> [!TASK]
 >
-> Add a `key [d v] pressed?` sensing block to the second side of the `or` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
-> +  if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->   end
-> end
-> ```
-
-## Step 13
-
-> [!TASK]
->
-> Inside the right direction `if` block, add a block to point right.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
-> +    point in direction (90)
->   end
-> end
-> ```
-
-## Step 14
-
-> [!TASK]
->
-> Below the right direction `if` block, add another empty `if` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
-> +  if <> then
-> +  end
-> end
-> ```
-
-## Step 15
-
-> [!TASK]
->
-> Add an `or` operator block to the new `if` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
-> +  if <<> or <>> then
->   end
-> end
-> ```
-
-## Step 16
-
-> [!TASK]
->
-> Add a `key [left arrow v] pressed?` sensing block to the first side of the `or` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
-> +  if <<key [left arrow v] pressed?> or <>> then
->   end
-> end
-> ```
-
-## Step 17
-
-> [!TASK]
->
-> Add a `key [a v] pressed?` sensing block to the second side of the `or` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
-> +  if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
->   end
-> end
-> ```
-
-## Step 18
-
-> [!TASK]
->
-> Inside the left direction `if` block, add a block to point left.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
->   if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
-> +    point in direction (-90)
->   end
-> end
-> ```
-
-## Step 19
-
-> [!TASK]
->
-> Add a `move` block below both direction checks, inside the same `forever` loop.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
->   if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
->     point in direction (-90)
->   end
-> +  move () steps
-> end
-> ```
-
-## Step 20
-
-> [!TASK]
->
-> Add the `move speed` variable block to the `move` block.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
->   if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
->     point in direction (-90)
->   end
-> +  move (move speed) steps
-> end
-> ```
-
-## Step 21
-
-> [!TASK]
->
-> Add the edge bounce block below the movement block so the **Player** stays on the Stage.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [move speed v] to ()
-> point in direction (90)
-> forever
->   if <<key [right arrow v] pressed?> or <key [d v] pressed?>> then
->     point in direction (90)
->   end
->   if <<key [left arrow v] pressed?> or <key [a v] pressed?>> then
->     point in direction (-90)
->   end
->   move (move speed) steps
-> +  if on edge, bounce
+>   move vertically
 > end
 > ```
 
@@ -343,7 +80,6 @@ Make the **Player** keep moving left and right while the learner controls its ho
 
 > [!TASK]
 >
-> Click the green flag and use the left and right controls to switch direction.
+> Click the green flag and check that the **Player** starts moving.
 >
-> If the **Player** moves too slowly or too quickly, change the number in the `set [move speed v] to ()` block.
-
+> Press `A` and `D`, or the arrow keys, to change direction, and press `space` to jump. If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script. If the jump feels too high or too low, change `jump strength`.

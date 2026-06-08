@@ -1,52 +1,48 @@
 ## 2B - Upload Player
 
-Upload an image and use it as the **Player** sprite.
+Upload an image as a costume for the existing **Player** sprite in the starter project.
 
 ## Step 1
 
 > [!TASK]
 >
-> If the Scratch cat sprite is still in your project, delete it. Click the **Delete** icon on the sprite thumbnail.
->
-> ![The Scratch cat sprite thumbnail with the Delete icon.](images/scratch-thumbnail.png)
+> Select the **Player** sprite in the sprite pane.
 
 ## Step 2
 
-> [!TASK]
+Make sure you already have an image you want to use saved onto your computer.
+
+> [!TIP]
 >
-> Make sure the image you want to use is saved on your computer. A transparent-background PNG is usually easiest to use for a player sprite.
+> try using one of these
+> [![Robot player sprite preview](images/example-sprite-player-robot.png)](images/example-sprite-player-robot.png)
 >
-> These examples show the kind of clear, full-body image that works well for a platformer player.
+> [![Adventurer player sprite preview](images/example-sprite-player-adventurer.png)](images/example-sprite-player-adventurer.png)
 >
-> ![A robot player sprite example.](images/example-sprite-player-robot.png)
->
-> ![An adventurer player sprite example.](images/example-sprite-player-adventurer.png)
->
-> ![A creature player sprite example.](images/example-sprite-player-creature.png)
+> [![Creature player sprite preview](images/example-sprite-player-creature.png)](images/example-sprite-player-creature.png)
 
 ## Step 3
 
 > [!TASK]
 >
-> Open the **Choose a Sprite** menu and select the **Upload Sprite** icon.
+> Open the **Costumes** tab.
 >
-> ![The Choose a Sprite menu.](images/choose_sprite.png)
+> ![The Costumes tab in Scratch.](images/tab_costumes.png)
 
 ## Step 4
 
 > [!TASK]
 >
-> Select your player image from your computer. Scratch will add it as a new sprite on the Stage.
+> Open the costume menu and choose the **Upload Costume** icon.
 
 ## Step 5
 
 > [!TASK]
 >
-> In the sprite pane, change the sprite name to **Player**. Use this exact spelling so later steps can refer to the same sprite.
+> Select your player image from your computer. Scratch will add it as a new costume for the **Player** sprite.
 
 ## Test
 
 > [!TASK]
 >
-> Check the **Player** sprite on the Stage. If it is too large, use the **Size** control in the sprite pane to make it smaller.
-
+> Check that the **Player** sprite shows your uploaded costume on the Stage. If it is too large, use the **Size** control in the sprite pane to make it smaller.

@@ -1,6 +1,6 @@
 ## 4B - Mouse Move
 
-Make the **Player** move toward the mouse pointer.
+Make the **Player** follow the mouse on the x-axis.
 
 ## Step 1
 
@@ -20,64 +20,42 @@ Make the **Player** move toward the mouse pointer.
 
 > [!TASK]
 >
-> Add a script that starts when the green flag is clicked.
+> The starter project already includes the `move vertically` block, the **Player** setup script, and these **Player** variables:
 >
-> ```blocks3
-> +when green flag clicked
-> ```
+> `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
+>
+> If you can already see them in your starter project, just check this step off.
 
 ## Step 4
 
 > [!TASK]
 >
-> Add a `forever` loop below the green flag block.
->
-> ```blocks3
-> when green flag clicked
-> +forever
-> +end
-> ```
-
-## Step 5
-
-> [!TASK]
->
-> Inside the `forever` loop, make the **Player** sprite point toward the mouse pointer.
+> Add this mouse movement script.
 >
 > ```blocks3
 > when green flag clicked
 > forever
-> +  point towards [mouse-pointer v]
+>   set [x speed v] to (((mouse x) - (x position)) / (4))
+>
+>   if <([abs v] of ((mouse x) - (x position))) < (2)> then
+>     set [x speed v] to (0)
+>   end
+>
+>   if <(x speed) > (0)> then
+>     point in direction (90)
+>   end
+>   if <(x speed) < (0)> then
+>     point in direction (-90)
+>   end
+>
+>   change x by (x speed)
 > end
 > ```
-
-## Step 6
-
-> [!TASK]
->
-> Add the movement block below the pointing block, inside the same `forever` loop.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   point towards [mouse-pointer v]
-> +  move () steps
-> end
-> ```
-
-## Step 7
-
-> [!TASK]
->
-> Decide how fast the **Player** should move toward the mouse pointer.
->
-> Type a move amount into the white input inside the `move` block. A smaller number gives slower movement, and a larger number gives faster movement.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and move the mouse pointer around the Stage.
+> Click the green flag and move the mouse left and right.
 >
-> If the **Player** is hard to control, change the number in the `move () steps` block.
-
+> Check that the **Player** follows the mouse smoothly. If it moves too slowly or too quickly, change the `4` in the division block.

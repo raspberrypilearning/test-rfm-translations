@@ -23,9 +23,10 @@ Create barriers, blocks, crates, walls, or other objects that block the player o
 > ```blocks3
 > when green flag clicked
 > forever
->  if <touching [Obstacle v]?> then
->    change x by ((0) - (move speed))
->  end
+>   if <touching [Obstacle v]?> then
+>     change x by ((0) - (x speed))
+>   end
+> end
 > ```
 
 <h2 class="c-project-heading--task">Test</h2>

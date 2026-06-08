@@ -1,46 +1,45 @@
 ## 2C - Choose Inbuilt Player
 
-Choose a player sprite from the Scratch library and name it **Player**.
+Choose a costume from the Scratch library for the existing **Player** sprite in the starter project.
 
 ## Step 1
 
 > [!TASK]
 >
-> If the Scratch cat sprite is still in your project, delete it. Click the **Delete** icon on the sprite thumbnail.
->
-> ![The Scratch cat sprite thumbnail with the Delete icon.](images/scratch-thumbnail.png)
+> Select the **Player** sprite in the sprite pane.
 
 ## Step 2
 
 > [!TASK]
 >
-> Open the **Choose a Sprite** menu and select **Choose a Sprite**.
+> Open the **Costumes** tab.
 >
-> ![The Choose a Sprite option in the sprite menu.](images/sprite-choose.png)
+> ![The Costumes tab in Scratch.](images/tab_costumes.png)
 
 ## Step 3
 
 > [!TASK]
 >
-> Pick a sprite from the Scratch library. Choose one that is clear, easy to see, and a good fit for the world of your platformer.
+> Open the costume menu and select **Choose a Costume**.
 >
-> For a classic platformer, a sprite with legs, wheels, or a clear body shape is usually easier to understand as the player.
+> ![The costume library in Scratch.](images/list-costume.png)
 
 ## Step 4
 
 > [!TASK]
 >
-> Add the sprite to your project. If it has more than one costume, keep them because you may be able to use them for animation later.
+> Pick a costume from the Scratch library. Choose one that is clear, easy to see, and a good fit for the world of your platformer.
+>
+> For a classic platformer, a costume with legs, wheels, or a clear body shape is usually easier to understand as the player.
 
 ## Step 5
 
 > [!TASK]
 >
-> In the sprite pane, change the sprite name to **Player**. Use this exact spelling so later steps can refer to the same sprite.
+> Add the costume to the **Player** sprite. If the **Player** already has another costume, keep it because you may be able to use it for animation later.
 
 ## Test
 
 > [!TASK]
 >
-> Check that your sprite is named **Player**, appears on the Stage, and is easy to see against your backdrop.
-
+> Check that the **Player** sprite shows your chosen costume on the Stage and is easy to see against your backdrop.
