@@ -6,7 +6,7 @@ Draw your own **Exit** sprite to show where the player should finish the level.
 
 > [!TASK]
 >
-> Open the **Choose a Sprite** menu and select **Paint**.
+> Open the **Sprite** menu and select **Paint**.
 >
 > ![The Paint option in the Choose a Sprite menu.](images/sprite-paint.png)
 
@@ -49,9 +49,17 @@ Draw your own **Exit** sprite to show where the player should finish the level.
 
 > [!TASK]
 >
+> Move the **Exit** sprite to where you want the door to be in the level.
+>
+> Drag it on the Stage so you can see the coordinates you want to use.
+
+## Step 7
+
+> [!TASK]
+>
 > Add a `go to x: () y: ()` block below `show`.
 >
-> Type the coordinates of the exit position into the white inputs to set its starting place.
+> The coordinates of the exit position should appear in the white inputs to set its starting place, but if not you can copy them from the sprite.
 >
 > ```blocks3
 > when green flag clicked

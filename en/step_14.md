@@ -6,7 +6,7 @@ Draw your own **Exit** sprite to show where the player should finish the level.
 
 > [!TASK]
 >
-> Open the **Choose a Sprite** menu and select **Paint**.
+> Open the **Sprite** menu and select **Paint**.
 >
 > ![The Paint option in the Choose a Sprite menu.](images/sprite-paint.png)
 
@@ -46,6 +46,14 @@ Draw your own **Exit** sprite to show where the player should finish the level.
 > ```
 
 ## Step 6
+
+> [!TASK]
+>
+> Move the **Exit** sprite to where you want the door to be in the level.
+>
+> Drag it on the Stage so you can see the coordinates you want to use.
+
+## Step 7
 
 > [!TASK]
 >

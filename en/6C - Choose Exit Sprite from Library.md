@@ -1,6 +1,6 @@
 ## 6C - Choose Exit Sprite from Library
 
-Choose a sprite from the Scratch library and use it as the **Exit**.
+Choose a sprite from the Scratch library and use it as the **Exit** - the way to finish the level.
 
 ## Step 1
 
@@ -49,9 +49,17 @@ Choose a sprite from the Scratch library and use it as the **Exit**.
 
 > [!TASK]
 >
+> Move the **Exit** sprite to where you want the door to be in the level.
+>
+> Drag it on the Stage so you can see the coordinates you want to use.
+
+## Step 7
+
+> [!TASK]
+>
 > Add a `go to x: () y: ()` block below `show`.
 >
-> Type the coordinates of the exit position into the white inputs to set its starting place.
+> The coordinates of the exit position should appear in the white inputs to set its starting place, but if not you can copy them from the sprite.
 >
 > ```blocks3
 > when green flag clicked
