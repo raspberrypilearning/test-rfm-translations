@@ -1,34 +1,37 @@
-<h2 class="c-project-heading--task">9D - Add Hazards</h2>
+<h2 class="c-project-heading--task">9C - X-motion Hazards</h2>
 
-Add a moving hazard that creates a danger.
+Add a hazard that moves left and right to create danger.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and give it a name.
+> Create a new sprite for your hazard and give it a name such as **Hazard**.
+>
+> If you already made spikes or lava in `9A`, you can duplicate that sprite and use it here.
 
 ## Step 2
 
 > [!TASK]
 >
-> In the **paint window**, resize and place the **hazard** sprite above or beside a risky part of the level.
+> Resize and place the **Hazard** sprite where you want it to start.
+>
+> Put it beside a platform, floor, or gap so it can move left and right across the player's path.
 
 ## Step 3
 
 > [!TASK]
 >
-> Add the blocks below to the **Hazard** sprite.
+> Add these blocks to the **Hazard** sprite.
 >
-> You can type your own `glide`{:class="block3motion"} time, and `x`{:class="block3motion"} and `y`{:class="block3motion"} positions. Also, add a `wait`{:class="block3control"} time.
+> Keep the two `y`{:class="block3motion"} positions the same. Change the two `x`{:class="block3motion"} positions to make the hazard move left and right.
 >
 > ```blocks3
 > when green flag clicked
 > go to x: () y: ()
 > forever
 >   glide () secs to x: () y: ()
->   go to x: () y: ()
->   wait () seconds
+>   glide () secs to x: () y: ()
 > end
 > ```
 
@@ -56,4 +59,4 @@ Add a moving hazard that creates a danger.
 
 > [!TASK]
 >
-> Click the green flag and check that the `Hazard` moves and broadcasts `game over` on contact.
+> Click the green flag and check that the **Hazard** moves left and right and broadcasts `game over` on contact.

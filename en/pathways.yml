@@ -105,11 +105,11 @@ groups:
         file: 9A - Add Lava-Spikes.md
         title: 9A - Add Lava/Spikes
       - id: 9B
-        file: 9B - Add Music.md
-        title: 9B - Add Music
+        file: 9B - Y-motion Hazards.md
+        title: 9B - Y-motion Hazards
       - id: 9C
-        file: 9C - Add Obstacles.md
-        title: 9C - Add Obstacles
+        file: 9C - X-motion Hazards.md
+        title: 9C - X-motion Hazards
       - id: 9D
         file: 9D - Add Hazards.md
         title: 9D - Add Hazards

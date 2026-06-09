@@ -8,8 +8,8 @@ Scratch UI screenshots:
 - sprite-paint.png: used in 2A - Draw Player
 - sprite-choose.png: used in 2C - Choose Inbuilt Player and 6C - Choose Exit Sprite from Library
 - costume_tab.png: used in 8A - Animate Your Player
-- sounds_tab.png: used in 9B - Add Music
-- list-sounds.png: used in 9B - Add Music
+- sounds_tab.png: used in 9E - Add Music
+- list-sounds.png: used in 9E - Add Music
 
 Example backdrop previews:
 - example-backdrop-sky-platforms.png: optional preview for 1B - Upload Backdrop

@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">9B - Add Music</h2>
+<h2 class="c-project-heading--task">9E - Add Music</h2>
 
 Add background music to give your game atmosphere.
 

@@ -1,36 +1,62 @@
-<h2 class="c-project-heading--task">9C - Add Obstacles</h2>
+<h2 class="c-project-heading--task">9B - Y-motion Hazards</h2>
 
-Create barriers, blocks, crates, walls, or other objects that block the player or make the route more difficult.
+Add a hazard that moves up and down to create danger.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and give it a name.
+> Create a new sprite for your hazard and give it a name such as **Hazard**.
+>
+> If you already made spikes or lava in `9A`, you can duplicate that sprite and use it here.
 
 ## Step 2
 
 > [!TASK]
 >
-> Place the **obstacle** sprite where it makes the path more interesting. Obstacles should change movement, not automatically cause a loss.
+> Resize and place the **Hazard** sprite where you want it to start.
+>
+> Put it above or below a risky part of the level so it can move up and down across the player's path.
 
 ## Step 3
 
 > [!TASK]
 >
-> Click on your **player** sprite and add these blocks:
+> Add these blocks to the **Hazard** sprite.
+>
+> Keep the two `x`{:class="block3motion"} positions the same. Change the two `y`{:class="block3motion"} positions to make the hazard move up and down.
+>
+> ```blocks3
+> when green flag clicked
+> go to x: () y: ()
+> forever
+>   glide () secs to x: () y: ()
+>   glide () secs to x: () y: ()
+> end
+> ```
+
+## Step 4
+
+> [!TASK]
+>
+> Click on the **Player** sprite and add these blocks:
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   if <touching [Obstacle v]?> then
->     change x by ((0) - (x speed))
+>   if <touching [Hazard v]?> then
+>     broadcast [game over v]
+>     go to x: () y: ()
 >   end
 > end
 > ```
+
+> [!TASK]
+>
+> If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
 
 <h2 class="c-project-heading--task">Test</h2>
 
 > [!TASK]
 >
-> Move your player into an **obstacle** and check that it blocks or pushes back the player.
+> Click the green flag and check that the **Hazard** moves up and down and broadcasts `game over` on contact.
