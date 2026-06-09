@@ -10,8 +10,6 @@ Place collectables exactly where you want the player to find them.
 >
 > You can use a coin, star, gem, crystal, or any other small object.
 >
-> If your collectable has different looks, add or rename its costumes. The example below uses `Crystal-a` and `Crystal-b`.
->
 > ![A coin collectable sprite.](images/coin.png){:width="300px"}
 >
 > ![A star collectable sprite.](images/star.png){:width="300px"}
