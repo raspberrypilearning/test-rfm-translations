@@ -1,32 +1,30 @@
-<h2 class="c-project-heading--task">9E - Add Enemies</h2>
+<h2 class="c-project-heading--task">10B - Y-motion Hazards</h2>
 
-
-Add an enemy that moves back and forth for the player to avoid.
+Add a hazard like spikes that move up and down to create danger.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and give it a name.
+> Create a new sprite for your hazard and give it a name such as **Hazard**.
 >
-> > [!TIP]
-> >
-> > You can use download this blob enemy to use.
-> > [![Enemy sprite example](images/enemy-blob.png)](images/enemy-blob.png)
+> If you already made spikes or lava in `10A`, you can duplicate that sprite and use it here.
 
 ## Step 2
 
 > [!TASK]
 >
-> In the **paint window**, resize and put the **enemy** sprite on a platform or floor.
+> Resize and place the **Hazard** sprite where you want it to start.
+>
+> Put it above or below a risky part of the level so it can move up and down across the player's path.
 
 ## Step 3
 
 > [!TASK]
 >
-> Add these blocks to the **Enemy** sprite.
+> Add these blocks to the **Hazard** sprite.
 >
-> Type `x`{:class="block3motion"} and `y`{:class="block3motion"} positions, and `glide`{:class="block3motion"} time.
+> Keep the two `x`{:class="block3motion"} positions the same. Change the two `y`{:class="block3motion"} positions to make the hazard move up and down.
 >
 > ```blocks3
 > when green flag clicked
@@ -46,7 +44,7 @@ Add an enemy that moves back and forth for the player to avoid.
 > ```blocks3
 > when green flag clicked
 > forever
->   if <touching [Enemy v]?> then
+>   if <touching [Hazard v]?> then
 >     broadcast [game over v]
 >     go to x: () y: ()
 >   end
@@ -61,4 +59,4 @@ Add an enemy that moves back and forth for the player to avoid.
 
 > [!TASK]
 >
-> Click the green flag and check that the `Enemy` patrols and causes `game over` when touched.
+> Click the green flag and check that the **Hazard** moves up and down and broadcasts `game over` on contact.

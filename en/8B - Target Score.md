@@ -1,4 +1,4 @@
-## 7B - Target Score
+## 8B - Target Score
 
 Make the player win after their **Score** reaches a target value.
 

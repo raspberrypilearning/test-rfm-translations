@@ -1,4 +1,4 @@
-## 8A - Animate Your Player
+## 9A - Animate Your Player
 
 Switch costumes while the **Player** moves so the character feels more alive.
 

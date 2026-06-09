@@ -1,4 +1,4 @@
-## 7C - Take Key to Exit
+## 8C - Take Key to Exit
 
 Make the player win only after collecting a key and reaching the **Exit**.
 

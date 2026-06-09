@@ -1,4 +1,4 @@
-## 8B - Make Your Player Sprint
+## 9B - Make Your Player Sprint
 
 Add a sprint key to the keyboard controls from `4A - Keys`.
 

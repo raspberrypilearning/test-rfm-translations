@@ -1,50 +1,62 @@
-<h2 class="c-project-heading--task">9E - Add Music</h2>
+<h2 class="c-project-heading--task">10C - X-motion Hazards</h2>
 
-Add background music to give your game atmosphere.
+Add a hazard like spikes that move left and right to create danger.
 
 ## Step 1
 
 > [!TASK]
 >
-> Click on the **Stage**.
+> Create a new sprite for your hazard and give it a name such as **Hazard**.
 >
-> ![Stage](images/stage.png)
-
+> If you already made spikes or lava in `10A`, you can duplicate that sprite and use it here.
 
 ## Step 2
 
 > [!TASK]
 >
-> Select the **Sounds** tab and then **Choose a Sound**.
+> Resize and place the **Hazard** sprite where you want it to start.
 >
-> ![Scratch sounds tab](images/sounds-tab.png)
-> ![Scratch sounds tab](images/sounds-choose.png)
+> Put it beside a platform, floor, or gap so it can move left and right across the player's path.
 
 ## Step 3
 
 > [!TASK]
 >
-> From the list of sounds, select the one your want to use.
+> Add these blocks to the **Hazard** sprite.
 >
-> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
+> Keep the two `y`{:class="block3motion"} positions the same. Change the two `x`{:class="block3motion"} positions to make the hazard move left and right.
+>
+> ```blocks3
+> when green flag clicked
+> go to x: () y: ()
+> forever
+>   glide () secs to x: () y: ()
+>   glide () secs to x: () y: ()
+> end
+> ```
 
 ## Step 4
 
 > [!TASK]
 >
-> Click the **Code** tab and add the blocks below.
->
-> Select your music from the `sound`{:class="block3sounds"} menu.
+> Click on the **Player** sprite and add these blocks:
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   play sound [music v] until done
+>   if <touching [Hazard v]?> then
+>     broadcast [game over v]
+>     go to x: () y: ()
+>   end
 > end
 > ```
+
+> [!TASK]
+>
+> If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
 
 <h2 class="c-project-heading--task">Test</h2>
 
 > [!TASK]
 >
-> Click the green flag and check that the music plays.
+> Click the green flag and check that the **Hazard** moves left and right and broadcasts `game over` on contact.

@@ -23,7 +23,7 @@ en/
 ├── 1A - Draw Backdrop.md
 ├── 1B - Upload Backdrop.md
 ├── ...
-└── 9E - Add Enemies.md
+└── 10F - Add Sound effects.md
 ```
 
 ## Directory and File Descriptions

@@ -1,6 +1,6 @@
-<h2 class="c-project-heading--task">9C - X-motion Hazards</h2>
+<h2 class="c-project-heading--task">10B - Y-motion Hazards</h2>
 
-Add a hazard like spikes that move left and right to create danger.
+Add a hazard like spikes that move up and down to create danger.
 
 ## Step 1
 
@@ -8,7 +8,7 @@ Add a hazard like spikes that move left and right to create danger.
 >
 > Create a new sprite for your hazard and give it a name such as **Hazard**.
 >
-> If you already made spikes or lava in `9A`, you can duplicate that sprite and use it here.
+> If you already made spikes or lava in `10A`, you can duplicate that sprite and use it here.
 
 ## Step 2
 
@@ -16,7 +16,7 @@ Add a hazard like spikes that move left and right to create danger.
 >
 > Resize and place the **Hazard** sprite where you want it to start.
 >
-> Put it beside a platform, floor, or gap so it can move left and right across the player's path.
+> Put it above or below a risky part of the level so it can move up and down across the player's path.
 
 ## Step 3
 
@@ -24,7 +24,7 @@ Add a hazard like spikes that move left and right to create danger.
 >
 > Add these blocks to the **Hazard** sprite.
 >
-> Keep the two `y`{:class="block3motion"} positions the same. Change the two `x`{:class="block3motion"} positions to make the hazard move left and right.
+> Keep the two `x`{:class="block3motion"} positions the same. Change the two `y`{:class="block3motion"} positions to make the hazard move up and down.
 >
 > ```blocks3
 > when green flag clicked
@@ -59,4 +59,4 @@ Add a hazard like spikes that move left and right to create danger.
 
 > [!TASK]
 >
-> Click the green flag and check that the **Hazard** moves left and right and broadcasts `game over` on contact.
+> Click the green flag and check that the **Hazard** moves up and down and broadcasts `game over` on contact.

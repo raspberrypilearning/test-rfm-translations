@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">9A - Add Spikes</h2>
+<h2 class="c-project-heading--task">10A - Add Spikes</h2>
 
 Add spikes, lava or another hazard for the player to avoid. 
 

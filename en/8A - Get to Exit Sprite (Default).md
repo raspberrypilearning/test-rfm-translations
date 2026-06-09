@@ -1,4 +1,4 @@
-## 7A - Get to Exit Sprite (Default)
+## 8A - Get to Exit Sprite (Default)
 
 Make the player win when they touch the **Exit** sprite.
 

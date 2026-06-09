@@ -7,9 +7,9 @@ Scratch UI screenshots:
 - backdrop-choose.png: used in 1C - Choose Inbuilt Backdrop
 - sprite-paint.png: used in 2A - Draw Player
 - sprite-choose.png: used in 2C - Choose Inbuilt Player and 6C - Choose Exit Sprite from Library
-- costume_tab.png: used in 8A - Animate Your Player
-- sounds_tab.png: used in 9E - Add Music
-- list-sounds.png: used in 9E - Add Music
+- costume_tab.png: used in 9A - Animate Your Player
+- sounds_tab.png: used in 10E - Add Music
+- list-sounds.png: used in 10E - Add Music
 
 Example backdrop previews:
 - example-backdrop-sky-platforms.png: optional preview for 1B - Upload Backdrop
@@ -23,11 +23,11 @@ Example player previews:
 - example-sprite-player-adventurer.png: optional preview for 2B - Upload Player
 
 Example sprite and object assets:
-- coin.png: used in 7B - Target Score
-- star.png: used in 7B - Target Score
-- key.png: used in 7C - Has Key & Get to Exit Sprite
-- exit-door.png: used in 6B - Upload Exit Sprite and 7C - Has Key & Get to Exit Sprite
-- spikes.png: used in 9A - Add Lava/Spikes
-- enemy-blob.png: used in 9E - Add Enemies
+- coin.png: used in 7A - Place Collectables, 7B - Random Collectables, and 8B - Target Score
+- star.png: used in 7A - Place Collectables, 7B - Random Collectables, and 8B - Target Score
+- key.png: used in 8C - Take Key to Exit
+- exit-door.png: used in 6B - Upload Exit Sprite and 8C - Take Key to Exit
+- spikes.png: used in 10A - Add Spikes
+- enemy-blob.png: used in 10D - Add Enemies
 
 All generated/example art should be human-reviewed before publication.

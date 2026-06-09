@@ -1,6 +1,6 @@
 title: Branching Pathways Platformer
 steps_are_files: true
-canonical_step_count: 26
+canonical_step_count: 29
 
 groups:
   - id: 1
@@ -76,46 +76,59 @@ groups:
         title: 6C - Choose Exit Sprite from Library
 
   - id: 7
-    title: Win condition options
+    title: Add collectables
     options:
       - id: 7A
-        file: 7A - Get to Exit Sprite (Default).md
-        title: 7A - Get to Exit Sprite (Default)
+        file: 7A - Place Collectables.md
+        title: 7A - Place Collectables
       - id: 7B
-        file: 7B - Target Score.md
-        title: 7B - Target Score
-      - id: 7C
-        file: 7C - Has Key & Get to Exit Sprite.md
-        title: 7C - Has Key & Get to Exit Sprite
+        file: 7B - Random Collectables.md
+        title: 7B - Random Collectables
 
   - id: 8
-    title: Player extras
+    title: Win condition options
     options:
       - id: 8A
-        file: 8A - Animate Your Player.md
-        title: 8A - Animate Your Player
+        file: 8A - Get to Exit Sprite (Default).md
+        title: 8A - Get to Exit Sprite (Default)
       - id: 8B
-        file: 8B - Make Your Player Sprint.md
-        title: 8B - Make Your Player Sprint
+        file: 8B - Target Score.md
+        title: 8B - Target Score
+      - id: 8C
+        file: 8C - Take Key to Exit.md
+        title: 8C - Take Key to Exit
 
   - id: 9
-    title: Level extras
+    title: Player extras
     options:
       - id: 9A
-        file: 9A - Add Lava-Spikes.md
-        title: 9A - Add Lava/Spikes
+        file: 9A - Animate Your Player.md
+        title: 9A - Animate Your Player
       - id: 9B
-        file: 9B - Y-motion Hazards.md
-        title: 9B - Y-motion Hazards
-      - id: 9C
-        file: 9C - X-motion Hazards.md
-        title: 9C - X-motion Hazards
-      - id: 9D
-        file: 9D - Add Hazards.md
-        title: 9D - Add Hazards
-      - id: 9E
-        file: 9E - Add Enemies.md
-        title: 9E - Add Enemies
+        file: 9B - Make Your Player Sprint.md
+        title: 9B - Make Your Player Sprint
+
+  - id: 10
+    title: Level extras
+    options:
+      - id: 10A
+        file: 10A - Static Hazard.md
+        title: 10A - Add Spikes
+      - id: 10B
+        file: 10B - Y-motion Hazards.md
+        title: 10B - Y-motion Hazards
+      - id: 10C
+        file: 10C - X-motion Hazards.md
+        title: 10C - X-motion Hazards
+      - id: 10D
+        file: 10D - Add Enemies.md
+        title: 10D - Add Enemies
+      - id: 10E
+        file: 10E - Add Music.md
+        title: 10E - Add Music
+      - id: 10F
+        file: 10F - Add Sound effects.md
+        title: 10F - Add Sound effects
 
 recommended_paths:
   quick_platformer:
@@ -125,7 +138,7 @@ recommended_paths:
     - 4A
     - 5A
     - 6C
-    - 7A
+    - 8A
 
   drawn_platformer:
     - 1A
@@ -134,7 +147,7 @@ recommended_paths:
     - 4A
     - 5B
     - 6A
-    - 7A
+    - 8A
 
   uploaded_assets_platformer:
     - 1B
@@ -143,7 +156,7 @@ recommended_paths:
     - 4A
     - 5B
     - 6B
-    - 7C
+    - 8C
 
   challenge_platformer:
     - 1A
@@ -152,7 +165,7 @@ recommended_paths:
     - 4A
     - 5B
     - 6A
-    - 7C
-    - 8B
-    - 9A
-    - 9E
+    - 8C
+    - 9B
+    - 10A
+    - 10D

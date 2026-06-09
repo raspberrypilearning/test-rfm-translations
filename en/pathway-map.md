@@ -2,7 +2,7 @@
 
 This maintainer note records the branching structure for **Branching Pathways Platformer**.
 
-The learner-facing project contains exactly 26 alphanumeric route steps. Group titles describe the PDF structure but are not separate learner steps.
+The learner-facing project contains exactly 29 alphanumeric route steps. Group titles describe the PDF structure but are not separate learner steps.
 
 ## Groups
 
@@ -12,9 +12,10 @@ The learner-facing project contains exactly 26 alphanumeric route steps. Group t
 - **4. Move player**: `4A - Keys`, `4B - Mouse Move`, `4C - Always Moving`
 - **5. Player jump/fall**: `5A - Player Jump/Fall (Simple)`, `5B - Player Jump/Fall (Gravity)`
 - **6. Exit sprite**: `6A - Draw Exit Sprite`, `6B - Upload Exit Sprite`, `6C - Choose Exit Sprite from Library`
-- **7. Win condition options**: `7A - Get to Exit Sprite (Default)`, `7B - Target Score`, `7C - Has Key & Get to Exit Sprite`
-- **8. Player extras**: `8A - Animate Your Player`, `8B - Make Your Player Sprint`
-- **9. Level extras**: `9A - Add Lava/Spikes`, `9B - Y-motion Hazards`, `9C - X-motion Hazards`, `9D - Add Hazards`, `9E - Add Enemies`
+- **7. Add collectables**: `7A - Place Collectables`, `7B - Random Collectables`
+- **8. Win condition options**: `8A - Get to Exit Sprite (Default)`, `8B - Target Score`, `8C - Take Key to Exit`
+- **9. Player extras**: `9A - Animate Your Player`, `9B - Make Your Player Sprint`
+- **10. Level extras**: `10A - Add Spikes`, `10B - Y-motion Hazards`, `10C - X-motion Hazards`, `10D - Add Enemies`, `10E - Add Music`, `10F - Add Sound effects`
 
 ## Recommended Paths
 
@@ -25,7 +26,7 @@ Quick platformer:
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
 5. [5A - Player Jump/Fall (Simple)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
 6. [6C - Choose Exit Sprite from Library](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
-7. [7A - Get to Exit Sprite (Default)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/17)
+7. [8A - Get to Exit Sprite (Default)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/19)
 
 Drawn platformer:
 1. [1A - Draw Backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/1)
@@ -34,7 +35,7 @@ Drawn platformer:
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
 5. [5B - Player Jump/Fall (Gravity)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
 6. [6A - Draw Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-7. [7A - Get to Exit Sprite (Default)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/17)
+7. [8A - Get to Exit Sprite (Default)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/19)
 
 Uploaded assets platformer:
 1. [1B - Upload Backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/2)
@@ -43,7 +44,7 @@ Uploaded assets platformer:
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
 5. [5B - Player Jump/Fall (Gravity)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
 6. [6B - Upload Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/15)
-7. [7C - Has Key & Get to Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/19)
+7. [8C - Take Key to Exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
 
 Challenge platformer:
 1. [1A - Draw Backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/1)
@@ -52,7 +53,7 @@ Challenge platformer:
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
 5. [5B - Player Jump/Fall (Gravity)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
 6. [6A - Draw Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
-7. [7C - Has Key & Get to Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/19)
-8. [8B - Make Your Player Sprint](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
-9. [9A - Add Lava/Spikes](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/22)
-10. [9E - Add Enemies](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/26)
+7. [8C - Take Key to Exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/21)
+8. [9B - Make Your Player Sprint](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/23)
+9. [10A - Add Spikes](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/24)
+10. [10D - Add Enemies](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/27)

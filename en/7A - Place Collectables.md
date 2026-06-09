@@ -121,7 +121,7 @@ Place collectables exactly where you want the player to find them.
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `delete this clone`{:class="block3control"}.
+> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `hide`{:class="block3looks"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -130,7 +130,7 @@ Place collectables exactly where you want the player to find them.
 > forever
 >   if <touching [Player v]?> then
 > +    change [Score v] by (1)
-> +    delete this clone
+> +    hide
 >   end
 > end
 > ```

@@ -1,38 +1,50 @@
-<h2 class="c-project-heading--task">1B - Upload Backdrop</h2>
+<h2 class="c-project-heading--task">10E - Add Music</h2>
+
+Add background music to give your game atmosphere.
 
 ## Step 1
 
 > [!TASK]
 >
-> Make sure you already have an image you want to use saved onto your computer.
+> Click on the **Stage**.
 >
-> > [!TIP]
-> >
-> > try using one of these
-> > [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
-> >
-> >[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
+> ![Stage](images/stage.png)
+
 
 ## Step 2
 
 > [!TASK]
 >
-> Choose **Upload Backdrop** in the menu, and pick an image from your device.
+> Select the **Sounds** tab and then **Choose a Sound**.
 >
-> ![Scratch backdrop tool](images/backdrop-upload.png)
+> ![Scratch sounds tab](images/sounds-tab.png)
+> ![Scratch sounds tab](images/sounds-choose.png)
 
 ## Step 3
 
 > [!TASK]
 >
-> Use the paint tools to select and resize your a backdrop so that it fills the screen
+> From the list of sounds, select the one your want to use.
 >
-> ![Scratch backdrop paint tool](images/backdrop-resize.gif)
+> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
 
 ## Step 4
 
 > [!TASK]
 >
-> Name the backdrop so you can find it again later.
+> Click the **Code** tab and add the blocks below.
 >
-> ![Scratch backdrop paint tool](images/backdrop-name.png)
+> Select your music from the `sound`{:class="block3sounds"} menu.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   play sound [music v] until done
+> end
+> ```
+
+<h2 class="c-project-heading--task">Test</h2>
+
+> [!TASK]
+>
+> Click the green flag and check that the music plays.
