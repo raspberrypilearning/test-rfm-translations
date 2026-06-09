@@ -66,7 +66,7 @@ Make the player win only after collecting a key and reaching the **Exit**.
 
 > [!TASK]
 >
-> Inside the `if` block, add another `if` block to check whether `has key` is `1`.
+> Inside the `if`{:class="block3control"} block, add another `if`{:class="block3control"} block to check whether `has key` is `1`.
 >
 > ```blocks3
 > when green flag clicked
@@ -83,9 +83,9 @@ Make the player win only after collecting a key and reaching the **Exit**.
 
 > [!TASK]
 >
-> In the `has key = 1` part, add `broadcast [win v]`, `say [Unlocked!] for (2) seconds`, and `stop [this script v]`.
+> In the `has key = 1` part, add `broadcast [win v]`{:class="block3events"}, `say [Unlocked!] for (2) seconds`{:class="block3looks"}, and `stop [this script v]`{:class="block3control"}.
 >
-> In the `else` part, add a `say [] for (2) seconds` block.
+> In the `else` part, add a `say [] for (2) seconds`{:class="block3looks"} block.
 >
 > ```blocks3
 > when green flag clicked

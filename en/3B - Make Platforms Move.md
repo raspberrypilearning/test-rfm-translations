@@ -69,7 +69,7 @@ Make a **Platform** sprite glide between two places to add timing and challenge.
 
 > [!TASK]
 >
-> Add a `forever` loop below the starting position block.
+> Add a `forever`{:class="block3control"} loop below the starting position block.
 >
 > ```blocks3
 > when green flag clicked
@@ -83,7 +83,7 @@ Make a **Platform** sprite glide between two places to add timing and challenge.
 
 > [!TASK]
 >
-> Inside the `forever` loop, add a `glide` block for the place the **Platform** should move to.
+> Inside the `forever`{:class="block3control"} loop, add a `glide`{:class="block3motion"} block for the place the **Platform** should move to.
 >
 > ```blocks3
 > when green flag clicked
@@ -98,7 +98,7 @@ Make a **Platform** sprite glide between two places to add timing and challenge.
 
 > [!TASK]
 >
-> Add a second `glide` block so the **Platform** returns to another place.
+> Add a second `glide`{:class="block3motion"} block so the **Platform** returns to another place.
 >
 > ```blocks3
 > when green flag clicked

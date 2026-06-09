@@ -22,7 +22,7 @@ Make the player win when they touch the **Exit** sprite.
 
 > [!TASK]
 >
-> Add a `forever` loop below the green flag block.
+> Add a `forever`{:class="block3control"} loop below the green flag block.
 >
 > ```blocks3
 > when green flag clicked
@@ -34,7 +34,7 @@ Make the player win when they touch the **Exit** sprite.
 
 > [!TASK]
 >
-> Inside the `forever` loop, add an `if` block that checks whether the **Player** is touching the **Exit** sprite.
+> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block that checks whether the **Player** is touching the **Exit** sprite.
 >
 > ```blocks3
 > when green flag clicked
@@ -48,7 +48,7 @@ Make the player win when they touch the **Exit** sprite.
 
 > [!TASK]
 >
-> Inside the `if` block, add `broadcast [win v]`.
+> Inside the `if`{:class="block3control"} block, add `broadcast [win v]`{:class="block3events"}.
 >
 > This lets other routes react to the win later.
 >
@@ -65,7 +65,7 @@ Make the player win when they touch the **Exit** sprite.
 
 > [!TASK]
 >
-> Add `stop [this script v]` below the broadcast block.
+> Add `stop [this script v]`{:class="block3control"} below the broadcast block.
 >
 > ```blocks3
 > when green flag clicked

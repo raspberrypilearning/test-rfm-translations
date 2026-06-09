@@ -24,7 +24,6 @@ Add keyboard controls so the **Player** can run and jump.
 >
 > `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
 >
-> If you can already see them in your starter project, just check this step off.
 
 ## Step 4
 

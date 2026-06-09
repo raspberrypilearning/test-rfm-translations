@@ -38,7 +38,7 @@ Draw your own **Exit** sprite to show where the player should finish the level.
 
 > [!TASK]
 >
-> Add a `show` block below the green flag block.
+> Add a `show`{:class="block3looks"} block below the green flag block.
 >
 > ```blocks3
 > when green flag clicked
@@ -57,7 +57,7 @@ Draw your own **Exit** sprite to show where the player should finish the level.
 
 > [!TASK]
 >
-> Add a `go to x: () y: ()` block below `show`.
+> Add a `go to x: () y: ()`{:class="block3motion"} block below `show`{:class="block3looks"}.
 >
 > The coordinates of the exit position should appear in the white inputs to set its starting place, but if not you can copy them from the sprite.
 >

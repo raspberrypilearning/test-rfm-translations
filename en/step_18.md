@@ -47,7 +47,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Add a `forever` loop below the variable setup block.
+> Add a `forever`{:class="block3control"} loop below the variable setup block.
 >
 > ```blocks3
 > when green flag clicked
@@ -60,7 +60,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Inside the `forever` loop, add an `if` block that checks whether `Score` is equal to your target value.
+> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block that checks whether `Score` is equal to your target value.
 >
 > Type your target score into the white input.
 >
@@ -77,7 +77,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Inside the `if` block, add `broadcast [win v]` and `stop [this script v]`.
+> Inside the `if`{:class="block3control"} block, add `broadcast [win v]`{:class="block3events"} and `stop [this script v]`{:class="block3control"}.
 >
 > ```blocks3
 > when green flag clicked
@@ -104,7 +104,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Add a `show` block and a `forever` loop.
+> Add a `show`{:class="block3looks"} block and a `forever`{:class="block3control"} loop.
 >
 > ```blocks3
 > when green flag clicked
@@ -117,7 +117,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Inside the `forever` loop, add an `if` block that checks whether the collectable is touching the **Player**.
+> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block that checks whether the collectable is touching the **Player**.
 >
 > ```blocks3
 > when green flag clicked
@@ -132,7 +132,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Inside the `if` block, add `change [Score v] by (1)` and `hide`.
+> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `hide`{:class="block3looks"}.
 >
 > ```blocks3
 > when green flag clicked

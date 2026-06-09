@@ -20,7 +20,7 @@ Add a moving hazard that creates a danger.
 >
 > Add the blocks below to the **Hazard** sprite.
 >
-> You can type your own `glide`{:class="block3motion"} time, and `x`{:class="block3motion"} and `y`{:class="block3motion"} positions. Also, add a `wait`{:class="block3events"} time.
+> You can type your own `glide`{:class="block3motion"} time, and `x`{:class="block3motion"} and `y`{:class="block3motion"} positions. Also, add a `wait`{:class="block3control"} time.
 >
 > ```blocks3
 > when green flag clicked

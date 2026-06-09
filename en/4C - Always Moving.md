@@ -24,7 +24,6 @@ Make the **Player** keep moving, and use the keyboard to change direction and ju
 >
 > `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
 >
-> If you can already see them in your starter project, just check this step off.
 
 ## Step 4
 
