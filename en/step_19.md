@@ -101,6 +101,8 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 > +when I receive [power up v]
 > +change [jump strength v] by (4)
 > ```
+>
+> You could also do both!
 
 ## Test
 
