@@ -8,7 +8,7 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 >
 > Add or choose a new sprite for your power-up.
 >
-> You could use a lightning bolt, star, potion, gem, or any other sprite that looks special.
+> You could use a lightning bolt, star, potion, or any other sprite that looks special.
 
 ## Step 2
 
@@ -84,7 +84,7 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 >
 > Select the **Player** sprite and add a new script that starts when it receives the `power up`{:class="block3events"} message.
 >
-> The movement lessons use `move speed`{:class="block3variables"} to control how fast the **Player** moves and `jump strength`{:class="block3variables"} to control jump height.
+> The movement uses `move speed`{:class="block3variables"} to control how fast the **Player** moves and `jump strength`{:class="block3variables"} to control jump height.
 >
 > Choose one effect for your power-up.
 >
@@ -101,6 +101,8 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 > +when I receive [power up v]
 > +change [jump strength v] by (4)
 > ```
+>
+> You could also do both!
 
 ## Test
 

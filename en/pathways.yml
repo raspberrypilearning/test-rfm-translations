@@ -1,6 +1,6 @@
 title: Branching Pathways Platformer
 steps_are_files: true
-canonical_step_count: 29
+canonical_step_count: 30
 
 groups:
   - id: 1
@@ -84,6 +84,9 @@ groups:
       - id: 7B
         file: 7B - Random Collectables.md
         title: 7B - Random Collectables
+      - id: 7C
+        file: 7C - Add a Power Up.md
+        title: 7C - Add a Power Up
 
   - id: 8
     title: Win condition options

@@ -1,60 +1,37 @@
-## 9B - Make Your Player Sprint
+## 9A - Animate Your Player
 
-Add a sprint key to the keyboard controls from `4A - Keys`.
+Switch costumes while the **Player** moves so the character feels more alive.
 
 ## Step 1
 
 > [!TASK]
 >
-> This extra works with `4A - Keys`.
+> Select the **Player** sprite and open the **Costumes** tab.
 >
-> If you chose `4B - Mouse Move` or `4C - Always Moving`, skip this extra and choose a different one.
+> Check that the sprite has more than one costume.
+>
+> ![The Costumes tab in Scratch.](images/costume_tab.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> Make a variable called `sprint speed` for the **Player** sprite.
-
-## Step 3
-
-> [!TASK]
->
-> Replace the movement script from `4A - Keys` with this version.
+> Open the **Code** tab and add this animation script.
 >
 > ```blocks3
 > when green flag clicked
-> set [move speed v] to (5)
-> set [sprint speed v] to (8)
 > forever
->   set [x speed v] to (0)
->
->   if <key [shift v] pressed?> then
->     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
->       set [x speed v] to (sprint speed)
->       point in direction (90)
->     end
->     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
->       set [x speed v] to ((0) - (sprint speed))
->       point in direction (-90)
->     end
->   else
->     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
->       set [x speed v] to (move speed)
->       point in direction (90)
->     end
->     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
->       set [x speed v] to ((0) - (move speed))
->       point in direction (-90)
->     end
+>   if <<not <(x speed) = (0)>> and <(on ground) = (1)>> then
+>     next costume
+>     wait () seconds
 >   end
->
->   change x by (x speed)
 > end
 > ```
+>
+> Type your own delay into the `wait`{:class="block3control"} block.
 
 ## Test
 
 > [!TASK]
 >
-> Hold `shift` while moving and check that the **Player** travels faster.
+> Move the **Player** and check that the costume changes while it travels.

@@ -77,6 +77,19 @@ Make the player win when they touch the **Exit** sprite.
 > end
 > ```
 
+## Step 7
+
+> [!TASK]
+>
+> Add a new script that starts when it receives the `win`{:class="block3events"} message, then says `You win!`{:class="block3looks"}.
+>
+> You can use a `when I receive`{:class="block3events"} block to trigger other actions (on this sprite, or other sprites) when the player wins, such as changing to a new level or stopping other scripts.
+>
+> ```blocks3
+> +when I receive [win v]
+> +say [You win!]
+> ```
+
 ## Test
 
 > [!TASK]

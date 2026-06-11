@@ -1,50 +1,64 @@
-<h2 class="c-project-heading--task">10E - Add Music</h2>
+<h2 class="c-project-heading--task">10D - Add Enemies</h2>
 
-Add background music to give your game atmosphere.
+
+Add an enemy that moves back and forth for the player to avoid.
 
 ## Step 1
 
 > [!TASK]
 >
-> Click on the **Stage**.
+> Create a new sprite and give it a name.
 >
-> ![Stage](images/stage.png)
-
+> > [!TIP]
+> >
+> > You can use download this blob enemy to use.
+> > [![Enemy sprite example](images/enemy-blob.png)](images/enemy-blob.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> Select the **Sounds** tab and then **Choose a Sound**.
->
-> ![Scratch sounds tab](images/sounds-tab.png)
-> ![Scratch sounds tab](images/sounds-choose.png)
+> In the **paint window**, resize and put the **enemy** sprite on a platform or floor.
 
 ## Step 3
 
 > [!TASK]
 >
-> From the list of sounds, select the one your want to use.
+> Add these blocks to the **Enemy** sprite.
 >
-> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
+> Type `x`{:class="block3motion"} and `y`{:class="block3motion"} positions, and `glide`{:class="block3motion"} time.
+>
+> ```blocks3
+> when green flag clicked
+> go to x: () y: ()
+> forever
+>   glide () secs to x: () y: ()
+>   glide () secs to x: () y: ()
+> end
+> ```
 
 ## Step 4
 
 > [!TASK]
 >
-> Click the **Code** tab and add the blocks below.
->
-> Select your music from the `sound`{:class="block3sounds"} menu.
+> Click on the **Player** sprite and add these blocks:
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   play sound [music v] until done
+>   if <touching [Enemy v]?> then
+>     broadcast [game over v]
+>     go to x: () y: ()
+>   end
 > end
 > ```
+
+> [!TASK]
+>
+> If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
 
 <h2 class="c-project-heading--task">Test</h2>
 
 > [!TASK]
 >
-> Click the green flag and check that the music plays.
+> Click the green flag and check that the `Enemy` patrols and causes `game over` when touched.

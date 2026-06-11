@@ -1,46 +1,60 @@
-<h2 class="c-project-heading--task">10A - Add Spikes</h2>
+## 9B - Make Your Player Sprint
 
-Add spikes, lava or another hazard for the player to avoid. 
+Add a sprint key to the keyboard controls from `4A - Keys`.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and give it a name.
+> This extra works with `4A - Keys`.
 >
-> > [!TIP]
-> >
-> > You can use download these spikes and use them in your game.
-> > [![Spike hazard sprite](images/spikes.png)](images/spikes.png)
+> If you chose `4B - Mouse Move` or `4C - Always Moving`, skip this extra and choose a different one.
 
 ## Step 2
 
 > [!TASK]
 >
-> In the **paint window**, resize and put your spikes where you want them.
+> Make a variable called `sprint speed` for the **Player** sprite.
 
 ## Step 3
 
 > [!TASK]
 >
-> Click your **Player** sprite, and add these blocks:
+> Replace the movement script from `4A - Keys` with this version.
 >
 > ```blocks3
 > when green flag clicked
+> set [move speed v] to (5)
+> set [sprint speed v] to (8)
 > forever
->   if <touching [Spikes v]?> then
->     broadcast [game over v]
->     go to x: () y: ()
+>   set [x speed v] to (0)
+>
+>   if <key [shift v] pressed?> then
+>     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
+>       set [x speed v] to (sprint speed)
+>       point in direction (90)
+>     end
+>     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
+>       set [x speed v] to ((0) - (sprint speed))
+>       point in direction (-90)
+>     end
+>   else
+>     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
+>       set [x speed v] to (move speed)
+>       point in direction (90)
+>     end
+>     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
+>       set [x speed v] to ((0) - (move speed))
+>       point in direction (-90)
+>     end
 >   end
+>
+>   change x by (x speed)
 > end
 > ```
 
-> [!TASK]
->
-> If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
-
-<h2 class="c-project-heading--task">Test</h2>
+## Test
 
 > [!TASK]
 >
-> Touch the spikes and check that the `game over` message broadcasts.
+> Hold `shift` while moving and check that the **Player** travels faster.

@@ -25,6 +25,7 @@ steps:
   - title: '6C - Choose Exit Sprite from Library'
   - title: '7A - Place Collectables'
   - title: '7B - Random Collectables'
+  - title: '7C - Add a Power Up'
   - title: '8A - Get to Exit Sprite (Default)'
     completion:
       - internal
