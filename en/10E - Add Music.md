@@ -43,7 +43,7 @@ Add background music to give your game atmosphere.
 > end
 > ```
 
-<h2 class="c-project-heading--task">Test</h2>
+## Test
 
 > [!TASK]
 >

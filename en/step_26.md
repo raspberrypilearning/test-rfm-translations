@@ -55,7 +55,7 @@ Add a hazard like spikes that move up and down to create danger.
 >
 > If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
 
-<h2 class="c-project-heading--task">Test</h2>
+## Test
 
 > [!TASK]
 >

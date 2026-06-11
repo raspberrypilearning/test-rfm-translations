@@ -36,7 +36,7 @@ Add sound effects to make moments such as jumping, collecting items, winning, or
 > start sound [effect v]
 > ```
 
-<h2 class="c-project-heading--task">Test</h2>
+## Test
 
 > [!TASK]
 >
