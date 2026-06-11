@@ -86,13 +86,15 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 >
 > The movement uses `move speed`{:class="block3variables"} to control how fast the **Player** moves and `jump strength`{:class="block3variables"} to control jump height.
 >
-> Choose one effect for your power-up.
+> Choose one effect for your power-up. The effect will last for `5` seconds.
 >
 > To make the **Player** move faster, increase `move speed`{:class="block3variables"}:
 >
 > ```blocks3
 > +when I receive [power up v]
 > +change [move speed v] by (2)
+> +wait (5) seconds
+> +change [move speed v] by (-2)
 > ```
 >
 > To make the **Player** jump higher, increase `jump strength`{:class="block3variables"}:
@@ -100,14 +102,16 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 > ```blocks3
 > +when I receive [power up v]
 > +change [jump strength v] by (4)
+> +wait (5) seconds
+> +change [jump strength v] by (-4)
 > ```
 >
-> You could also do both!
+> You could also do both! Put both `change`{:class="block3variables"} blocks before the `wait`{:class="block3control"} block, then change both variables back after the wait.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and touch the **Power Up**.
+> Click the green flag and touch the **Power Up** with your **Player**.
 >
-> Check that the power-up disappears and the **Player** moves faster or jumps higher.
+> Check that the power-up disappears and the **Player** moves faster or jumps higher for `5` seconds, then goes back to normal.
