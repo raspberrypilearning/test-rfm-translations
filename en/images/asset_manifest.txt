@@ -17,6 +17,10 @@ Example backdrop previews:
 - example-backdrop-cave-platforms.png: optional supporting image
 - example-backdrop-space-platforms.png: optional supporting image
 
+Example platform previews:
+- platform-lines-costume.png: used in 3A - Add Floors and Platforms and 3B - Make Platforms Move
+- platform-lines-backdrop.png: used in 3A - Add Floors and Platforms and 3B - Make Platforms Move
+
 Example player previews:
 - example-sprite-player-robot.png: optional preview for 2B - Upload Player
 - example-sprite-player-creature.png: optional supporting image

@@ -14,7 +14,7 @@ steps:
     completion:
       - engaged
   - title: '3A - Add Floors and Platforms'
-  - title: '3B - Make Platforms Move'
+  - title: '3B - Make a Moving Platform'
   - title: '4A - Keys'
   - title: '4B - Mouse Move'
   - title: '4C - Always Moving'

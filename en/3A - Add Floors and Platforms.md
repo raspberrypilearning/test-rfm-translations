@@ -14,9 +14,15 @@ Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
 
 > [!TASK]
 >
-> Draw a wide rectangle for the floor. Add ledges or stepping stones if you want more places for the **Player** to land.
+> Draw horizontal lines in the **Platform** sprite for the floor, ledges, and any other places where the **Player** can stand.
 >
-> Keep the shapes simple and clear. The platform needs to be easy to see against your backdrop.
+> Use a bright colour, such as pink, so you can see exactly where the platforms are.
+>
+> The lines do not have to look like platforms. You can line them up with details in your backdrop, so a table, shelf, branch, or rock looks like it is acting as the platform.
+>
+> ![Bright pink horizontal platform lines drawn in the Platform sprite costume.](images/platform-lines-costume.png){:width="520px"}
+>
+> ![Bright pink platform lines placed over backdrop details so the furniture appears to act as platforms.](images/platform-lines-backdrop.png){:width="520px"}
 
 ## Step 3
 
@@ -28,7 +34,15 @@ Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
 
 > [!TASK]
 >
-> Put the **Platform** sprite where the **Player** can reach it. Use the **Size** control if the platform is too large or too small.
+> Put the **Platform** sprite in the centre of the Stage.
+>
+> The platform lines should match the places where you want the **Player** to stand.
+>
+> > [!TIP]
+> >
+> > Once your platform lines are in the right places, you can make them invisible. In the **Costumes** tab, select the platform lines and set the fill and outline colours to transparent.
+> >
+> > This lets the **Player** stand on the invisible **Platform** sprite while the backdrop details look like the real platforms.
 
 ## Step 5
 
@@ -59,33 +73,10 @@ Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
 > +show
 > ```
 
-## Step 8
-
-> [!TASK]
->
-> Add a block to move the **Platform** sprite to your chosen starting position.
->
-> ```blocks3
-> when green flag clicked
-> show
-> +go to x: () y: ()
-> ```
-
-## Step 9
-
-> [!TASK]
->
-> Add a block to set the **Platform** sprite's size.
->
-> ```blocks3
-> when green flag clicked
-> show
-> go to x: () y: ()
-> +set size to ()%
-> ```
-
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Platform** sprite appears where the **Player** can stand or jump to it.
+> Click the green flag and check that the **Platform** sprite lines appear where the **Player** can stand or jump to them.
+>
+> If you made the lines transparent, check that the **Player** can still stand where the platform lines used to be.

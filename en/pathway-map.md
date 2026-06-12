@@ -8,7 +8,7 @@ The learner-facing project contains exactly 30 alphanumeric route steps. Group t
 
 - **1. Add a backdrop**: `1A - Draw Backdrop`, `1B - Upload Backdrop`, `1C - Choose Inbuilt Backdrop`
 - **2. Add a player**: `2A - Draw Player`, `2B - Upload Player`, `2C - Choose Inbuilt Player`
-- **3. Add platforms**: `3A - Add Floors and Platforms`, `3B - Make Platforms Move`
+- **3. Add platforms**: `3A - Add Floors and Platforms`, `3B - Make a Moving Platform`
 - **4. Move player**: `4A - Keys`, `4B - Mouse Move`, `4C - Always Moving`
 - **5. Player jump/fall**: `5A - Player Jump/Fall (Simple)`, `5B - Player Jump/Fall (Gravity)`
 - **6. Exit sprite**: `6A - Draw Exit Sprite`, `6B - Upload Exit Sprite`, `6C - Choose Exit Sprite from Library`
@@ -49,7 +49,7 @@ Uploaded assets platformer:
 Challenge platformer:
 1. [1A - Draw Backdrop](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/1)
 2. [2A - Draw Player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/4)
-3. [3B - Make Platforms Move](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/8)
+3. [3B - Make a Moving Platform](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/8)
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
 5. [5B - Player Jump/Fall (Gravity)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
 6. [6A - Draw Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)

@@ -37,7 +37,7 @@ groups:
         title: 3A - Add Floors and Platforms
       - id: 3B
         file: 3B - Make Platforms Move.md
-        title: 3B - Make Platforms Move
+        title: 3B - Make a Moving Platform
 
   - id: 4
     title: Move player
