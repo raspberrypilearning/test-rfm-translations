@@ -56,11 +56,11 @@ groups:
     title: Player jump/fall
     options:
       - id: 5A
-        file: 5A - Player Jump-Fall (Simple).md
-        title: 5A - Player Jump/Fall (Simple)
+        file: 5A - Player Jump-Fall (Keys).md
+        title: 5A - Player Jump/Fall (Keys)
       - id: 5B
-        file: 5B - Player Jump-Fall (Gravity).md
-        title: 5B - Player Jump/Fall (Gravity)
+        file: 5B - Player Jump-Fall (Mouse).md
+        title: 5B - Player Jump/Fall (Mouse)
 
   - id: 6
     title: Exit sprite
@@ -148,7 +148,7 @@ recommended_paths:
     - 2A
     - 3A
     - 4A
-    - 5B
+    - 5A
     - 6A
     - 8A
 
@@ -157,7 +157,7 @@ recommended_paths:
     - 2B
     - 3A
     - 4A
-    - 5B
+    - 5A
     - 6B
     - 8C
 
@@ -166,7 +166,7 @@ recommended_paths:
     - 2A
     - 3B
     - 4A
-    - 5B
+    - 5A
     - 6A
     - 8C
     - 9B

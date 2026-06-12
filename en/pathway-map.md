@@ -10,7 +10,7 @@ The learner-facing project contains exactly 30 alphanumeric route steps. Group t
 - **2. Add a player**: `2A - Draw Player`, `2B - Upload Player`, `2C - Choose Inbuilt Player`
 - **3. Add platforms**: `3A - Add Floors and Platforms`, `3B - Make a Moving Platform`
 - **4. Move player**: `4A - Keys`, `4B - Mouse Move`, `4C - Always Moving`
-- **5. Player jump/fall**: `5A - Player Jump/Fall (Simple)`, `5B - Player Jump/Fall (Gravity)`
+- **5. Player jump/fall**: `5A - Player Jump/Fall (Keys)`, `5B - Player Jump/Fall (Mouse)`
 - **6. Exit sprite**: `6A - Draw Exit Sprite`, `6B - Upload Exit Sprite`, `6C - Choose Exit Sprite from Library`
 - **7. Add collectables**: `7A - Place Collectables`, `7B - Random Collectables`, `7C - Add a Power Up`
 - **8. Win condition options**: `8A - Get to Exit Sprite (Default)`, `8B - Target Score`, `8C - Take Key to Exit`
@@ -24,7 +24,7 @@ Quick platformer:
 2. [2C - Choose Inbuilt Player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/6)
 3. [3A - Add Floors and Platforms](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/7)
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
-5. [5A - Player Jump/Fall (Simple)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
+5. [5A - Player Jump/Fall (Keys)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
 6. [6C - Choose Exit Sprite from Library](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/16)
 7. [8A - Get to Exit Sprite (Default)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/20)
 
@@ -33,7 +33,7 @@ Drawn platformer:
 2. [2A - Draw Player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/4)
 3. [3A - Add Floors and Platforms](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/7)
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
-5. [5B - Player Jump/Fall (Gravity)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
+5. [5A - Player Jump/Fall (Keys)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
 6. [6A - Draw Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
 7. [8A - Get to Exit Sprite (Default)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/20)
 
@@ -42,7 +42,7 @@ Uploaded assets platformer:
 2. [2B - Upload Player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/5)
 3. [3A - Add Floors and Platforms](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/7)
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
-5. [5B - Player Jump/Fall (Gravity)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
+5. [5A - Player Jump/Fall (Keys)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
 6. [6B - Upload Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/15)
 7. [8C - Take Key to Exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/22)
 
@@ -51,7 +51,7 @@ Challenge platformer:
 2. [2A - Draw Player](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/4)
 3. [3B - Make a Moving Platform](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/8)
 4. [4A - Keys](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/9)
-5. [5B - Player Jump/Fall (Gravity)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/13)
+5. [5A - Player Jump/Fall (Keys)](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/12)
 6. [6A - Draw Exit Sprite](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/14)
 7. [8C - Take Key to Exit](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/22)
 8. [9B - Make Your Player Sprint](https://projects.raspberrypi.org/en/projects/branching-pathways-platformer/24)
