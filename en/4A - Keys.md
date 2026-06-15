@@ -29,10 +29,11 @@ Add keyboard controls so the **Player** can run and jump.
 
 > [!TASK]
 >
-> Inside a `forever`{:class="block3control"} loop, set `x speed`{:class="block3variables"} to `0`.
+> Add a `forever`{:class="block3control"} loop to your starting script and set `x speed`{:class="block3variables"} to `0`.
 >
 > ```blocks3
-> +when green flag clicked
+> when green flag clicked
+> go to x: (100) y: (100)
 > +forever
 > +  set [x speed v] to (0)
 > +end
@@ -112,84 +113,15 @@ Add keyboard controls so the **Player** can run and jump.
 
 > [!TASK]
 >
-> Above `change x by (x speed)`{:class="block3motion"}, add an `if`{:class="block3control"} block that checks whether the `space` key is pressed.
->
-> Inside the `if`{:class="block3control"} block, set `y speed`{:class="block3variables"} to `jump strength`{:class="block3variables"}.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> +  if <key [space v] pressed?> then
-> +    set [y speed v] to (jump strength)
-> +  end
->
->   change x by (x speed)
-> end
-> ```
-
-## Step 9
-
-> [!TASK]
->
 > Click the green flag and test your controls.
 >
-> Press `space` to jump, then press `space` again while the **Player** is still in the air.
->
 > You should see that the **Player** can jump again before landing. This is called a double jump.
-
-## Step 11
-
-> [!TASK]
->
-> If you want to stop the double jump, add an `and`{:class="block3operators"} condition to the space key `if`{:class="block3control"} block.
->
-> The **Player** should only jump if the `space` key is pressed and `on ground`{:class="block3variables"} is `1`.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> -  if <key [space v] pressed?> then
-> +  if <<key [space v] pressed?> and <(on ground) = (1)>> then
->     set [y speed v] to (jump strength)
->   end
->
->   change x by (x speed)
->   Up Down Helper
-> end
-> ```
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and use the arrow keys to move.
+> Click the green flag and use the arrow keys to move left and right.
 >
-> Press `space` to jump, then try pressing `space` again before the **Player** lands.
 >
-> Check that the **Player** only jumps from the ground.
->
-> If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script. If the jump feels too high or too low, change `jump strength`.
+> If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script.
