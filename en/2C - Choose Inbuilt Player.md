@@ -7,6 +7,8 @@ Choose a costume from the Scratch library for the existing **Player** sprite in 
 > [!TASK]
 >
 > Select the **Player** sprite in the sprite pane.
+>
+> ![Scratch Cat sprite selected in the sprite pain](images/player_sprite.png)
 
 ## Step 2
 
