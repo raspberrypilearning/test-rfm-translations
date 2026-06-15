@@ -64,14 +64,6 @@ Add an enemy hazard with a movement pattern that is different from simple left-r
 
 > [!TASK]
 >
-> Try changing the spin pattern.
->
-> Make sure the repeat number multiplied by the turn angle equals `360`, such as `repeat 12` and `turn 30 degrees`, or `repeat 8` and `turn 45 degrees`.
-
-## Step 6
-
-> [!TASK]
->
 > Click on the **Player** sprite and add these blocks:
 >
 > ```blocks3

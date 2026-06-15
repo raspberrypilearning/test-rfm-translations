@@ -58,17 +58,9 @@ Add an enemy hazard with a movement pattern that is different from simple left-r
 > end
 > ```
 >
-> To make it seem more random, make sure the **glide** times are all different, or `pick a random number`{:class="block3operators"}
+> To make it seem more random, make sure the **glide** times are all different, or `pick a random number`{:class="block3operators"}.
 
 ## Step 5
-
-> [!TASK]
->
-> Try changing the spin pattern.
->
-> Make sure the repeat number multiplied by the turn angle equals `360`, such as `repeat 12` and `turn 30 degrees`, or `repeat 8` and `turn 45 degrees`.
-
-## Step 6
 
 > [!TASK]
 >
