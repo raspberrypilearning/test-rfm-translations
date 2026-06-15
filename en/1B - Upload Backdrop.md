@@ -18,6 +18,8 @@
 > > [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
 > >
 > >[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
+> >
+> >[![Vaporwave platform backdrop preview](images/vaporwave-backdrop.png)](images/example-backdrop-forest-platforms.png)
 
 ## Step 3
 
