@@ -1,4 +1,4 @@
-## 3B - Make a Moving Platform
+## 3B - Make Platforms Move
 
 Make one **Platform** sprite create platform clones, then make one platform glide between two places.
 
