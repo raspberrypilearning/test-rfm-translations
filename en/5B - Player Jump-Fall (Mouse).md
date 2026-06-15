@@ -1,4 +1,4 @@
-## 5B - Player Jump-Fall (Mouse)
+## 5B - Player Jump/Fall (Mouse)
 
 Add click-to-jump to the mouse controls from `4B - Mouse Move`.
 
@@ -8,7 +8,7 @@ Add click-to-jump to the mouse controls from `4B - Mouse Move`.
 >
 > This step works with `4B - Mouse Move`.
 >
-> If you chose `4A - Keys` or `4C - Always Moving`, use `5A - Player Jump-Fall (Keys)` instead.
+> If you chose `4A - Keys` or `4C - Always Moving`, use `5A - Player Jump/Fall (Keys)` instead.
 
 ## Step 2
 

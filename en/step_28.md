@@ -1,67 +1,67 @@
-<h2 class="c-project-heading--task">10C - Change Level</h2>
+<h2 class="c-project-heading--task">10C - X-motion Hazards</h2>
 
-Change the **Platform** sprite when the player wins, so the stage looks like a new level or end screen.
+Add a hazard like spikes that move left and right to create danger.
 
 ## Step 1
 
 > [!TASK]
 >
-> Select the **Platform** sprite in the sprite pane.
+> Create a new sprite for your hazard and give it an obvious name like **Hazard**.
 >
-> This is the same sprite you made in `3A - Draw Platforms` or `3B - Clone Platforms`.
+> If you already made a **static hazard** like spikes or lava, you can **duplicate** that sprite and use it here.
+>
+> ![An example horizontal moving hazard.](images/hazard-horizontal.png){:width="420px"}
 
 ## Step 2
 
 > [!TASK]
 >
-> Open the **Costumes** tab.
+> Resize and place the **Hazard** sprite where you want it to start.
 >
-> Duplicate the costume you already use for your platforms.
->
-> Rename the first costume `level 1` and rename the new costume `level 2`.
+> Put it beside a platform, floor, or gap so it can move left and right across the player's path.
 
 ## Step 3
 
 > [!TASK]
 >
-> Edit the `level 2` costume to make a new level, end screen, or changed platform layout.
+> Add these blocks to the **Hazard** sprite.
 >
-> If you drew one big **Platform** costume in `3A`, draw new floor and platform lines on `level 2`.
+> Keep the two `y`{:class="block3motion"} positions the same. Change the two `x`{:class="block3motion"} positions to make the hazard move left and right.
 >
-> If you used cloned platforms in `3B`, edit the `level 2` costume so each clone changes appearance when the level changes.
+> ```blocks3
+> when green flag clicked
+> go to x: () y: ()
+> forever
+>   glide () secs to x: () y: ()
+>   glide () secs to x: () y: ()
+> end
+> ```
 
 ## Step 4
 
 > [!TASK]
 >
-> Open the **Code** tab.
->
-> Add this block to the **Platform** sprite's green flag script so the game always starts on `level 1`.
+> Click on the **Player** sprite and add these blocks:
 >
 > ```blocks3
 > when green flag clicked
-> switch costume to [level 1 v]
+> forever
+>   if <touching [Hazard v]?> then
+>     set [x speed v] to (0)
+>     set [y speed v] to (0)
+>     go to x: () y: ()
+>   end
+> end
 > ```
->
-> If the **Platform** sprite already has a green flag script, add the `switch costume to level 1` block near the top of that script.
-
-## Step 5
 
 > [!TASK]
 >
-> Add this script to the **Platform** sprite.
+> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
 >
-> When any win condition broadcasts `win`, the **Platform** sprite changes to the `level 2` costume.
->
-> ```blocks3
-> when I receive [win v]
-> switch costume to [level 2 v]
-> ```
+> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Platform** sprite starts with the `level 1` costume.
->
-> Meet your win condition and check that the **Platform** sprite switches to the `level 2` costume when the `win` message broadcasts.
+> Click the green flag and check that the **Hazard** moves left and right and sends the **Player** back to the start position on contact.

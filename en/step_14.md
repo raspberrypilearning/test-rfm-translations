@@ -1,74 +1,94 @@
-## 6A - Draw Exit Sprite
+## 5B - Player Jump/Fall (Mouse)
 
-Draw your own **Exit** sprite to show where the player should finish the level.
+Add click-to-jump to the mouse controls from `4B - Mouse Move`.
 
 ## Step 1
 
 > [!TASK]
 >
-> Open the **Sprite** menu and select **Paint**.
+> This step works with `4B - Mouse Move`.
 >
-> ![The Paint option in the Choose a Sprite menu.](images/sprite-paint.png)
+> If you chose `4A - Keys` or `4C - Always Moving`, use `5A - Player Jump/Fall (Keys)` instead.
 
 ## Step 2
 
 > [!TASK]
 >
-> Draw an exit object such as a door, portal, flag, treasure, or finish marker using the paint tools.
+> The starter project already includes the `Up Down Helper` block, a script that runs it, and these variables:
 >
-> Make it clear and easy to spot on your backdrop.
+> `y speed`, `gravity`, `jump strength`, `on ground`, `vertical steps`
+>
+> If you can already see them in your starter project, just check this step off.
 
 ## Step 3
 
 > [!TASK]
 >
-> In the sprite pane, change the sprite name to **Exit**. Use this exact spelling so later steps can refer to the same sprite.
+> Find the mouse movement script from `4B - Mouse Move`.
+>
+> Above `change x by (x speed)`{:class="block3motion"}, add an `if`{:class="block3control"} block that checks whether the mouse button is pressed and `on ground`{:class="block3variables"} is `1`.
+>
+> Inside the `if`{:class="block3control"} block, set `y speed`{:class="block3variables"} to `jump strength`{:class="block3variables"}.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   set [x speed v] to (((mouse x) - (x position)) / (4))
+>
+>   if <([abs v] of ((mouse x) - (x position))) < (2)> then
+>     set [x speed v] to (0)
+>   end
+>
+>   if <(x speed) > (0)> then
+>     point in direction (90)
+>   end
+>
+>   if <(x speed) < (0)> then
+>     point in direction (-90)
+>   end
+>
+> +  if <<mouse down?> and <(on ground) = (1)>> then
+> +    set [y speed v] to (jump strength)
+> +  end
+>
+>   change x by (x speed)
+> end
+> ```
 
 ## Step 4
 
 > [!TASK]
 >
-> Select the **Exit** sprite and add a script that starts when the green flag is clicked.
+> Find the starter setup script for the **Player**.
+>
+> Look for this block.
 >
 > ```blocks3
-> +when green flag clicked
+> set [jump strength v] to (9)
 > ```
+>
+> Change `9` if you want a higher or lower jump.
 
 ## Step 5
 
 > [!TASK]
 >
-> Add a `show`{:class="block3looks"} block below the green flag block.
+> Look for this block in the same setup script.
 >
 > ```blocks3
-> when green flag clicked
-> +show
+> set [gravity v] to (-1)
 > ```
-
-## Step 6
-
-> [!TASK]
 >
-> Move the **Exit** sprite to where you want the door to be in the level.
->
-> Drag it on the Stage so you can see the coordinates you want to use.
-
-## Step 7
-
-> [!TASK]
->
-> Add a `go to x: () y: ()`{:class="block3motion"} block below `show`{:class="block3looks"}.
->
-> The coordinates of the exit position should appear in the white inputs to set its starting place, but if not you can copy them from the sprite.
->
-> ```blocks3
-> when green flag clicked
-> show
-> +go to x: () y: ()
-> ```
+> Change `-1` if you want a faster or slower fall. A more negative number makes stronger gravity.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Exit** sprite appears where the player can reach it.
+> Click the green flag and move the mouse left and right.
+>
+> Click to jump, then try clicking again before the **Player** lands.
+>
+> Check that the **Player** follows the mouse smoothly and only jumps from the ground.
+>
+> Keep adjusting `jump strength` and `gravity` until the **Player** feels right for your level.

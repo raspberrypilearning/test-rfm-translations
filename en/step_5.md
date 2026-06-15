@@ -53,6 +53,16 @@ Make sure you already have an image you want to use saved onto your computer.
 >
 > Select your player image from your computer. Scratch will add it as a new costume for the **Player** sprite.
 
+## Step 7
+
+> [!TASK]
+>
+> On the **Code** tab, add blocks to set the starting position of your player. You can change this later
+> ```blocks3
+> when flag clicked
+> go to x: (100) y: (100)
+> ```
+
 ## Test
 
 > [!TASK]

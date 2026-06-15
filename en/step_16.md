@@ -1,30 +1,40 @@
-## 6C - Choose Exit Sprite from Library
+## 6B - Upload Exit Sprite
 
-Choose a sprite from the Scratch library and use it as the **Exit** - the way to finish the level.
+Upload an image and use it as the **Exit** sprite, the way to finish the level.
 
 ## Step 1
 
 > [!TASK]
 >
-> Open the **Choose a Sprite** menu and select **Choose a Sprite**.
+> Make sure the exit image you want to use is saved on your computer.
 >
-> ![The Choose a Sprite option in the sprite menu.](images/sprite-choose.png)
+> Use an image you made yourself or have permission to use.
+>
+> ![An example exit door sprite.](images/exit-door.png){:width="300px"}
+>
+> ![An example exit portal sprite.](images/exit-portal.png){:width="300px"}
 
 ## Step 2
 
 > [!TASK]
 >
-> Pick a sprite from the Scratch library to use as the exit.
+> Open the **Choose a Sprite** menu and select the **Upload Sprite** icon.
 >
-> A door, portal, flag, treasure, or finish marker can work well.
+> ![The Choose a Sprite menu.](images/choose_sprite.png)
 
 ## Step 3
 
 > [!TASK]
 >
-> In the sprite pane, change the sprite name to **Exit**. Use this exact spelling so later steps can refer to the same sprite.
+> Select your exit image from your computer. Scratch will add it as a new sprite on the Stage.
 
 ## Step 4
+
+> [!TASK]
+>
+> In the sprite pane, change the sprite name to **Exit**. Use this exact spelling so later steps can refer to the same sprite.
+
+## Step 5
 
 > [!TASK]
 >
@@ -34,7 +44,7 @@ Choose a sprite from the Scratch library and use it as the **Exit** - the way to
 > +when green flag clicked
 > ```
 
-## Step 5
+## Step 6
 
 > [!TASK]
 >
@@ -45,7 +55,7 @@ Choose a sprite from the Scratch library and use it as the **Exit** - the way to
 > +show
 > ```
 
-## Step 6
+## Step 7
 
 > [!TASK]
 >
@@ -53,7 +63,7 @@ Choose a sprite from the Scratch library and use it as the **Exit** - the way to
 >
 > Drag it on the Stage so you can see the coordinates you want to use.
 
-## Step 7
+## Step 8
 
 > [!TASK]
 >
@@ -71,4 +81,4 @@ Choose a sprite from the Scratch library and use it as the **Exit** - the way to
 
 > [!TASK]
 >
-> Click the green flag and check that your **Exit** sprite appears where the player can reach it.
+> Click the green flag and check that your uploaded **Exit** sprite appears where the player can reach it.

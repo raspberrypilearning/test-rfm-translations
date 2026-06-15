@@ -1,6 +1,6 @@
 title: Branching Pathways Platformer
 steps_are_files: true
-canonical_step_count: 30
+canonical_step_count: 31
 
 groups:
   - id: 1
@@ -33,11 +33,14 @@ groups:
     title: Add platforms
     options:
       - id: 3A
-        file: 3A - Draw Platforms.md
-        title: 3A - Draw Platforms
+        file: 3A - Add platforms to match your backdrop.md
+        title: 3A - Add platforms to match your backdrop
       - id: 3B
-        file: 3B - Clone Platforms.md
-        title: 3B - Clone Platforms
+        file: 3B - Draw foreground platforms.md
+        title: 3B - Draw foreground platforms
+      - id: 3C
+        file: 3C - Draw Platforms in another editor.md
+        title: 3C - Draw Platforms in another editor
 
   - id: 4
     title: Move player
@@ -115,7 +118,7 @@ groups:
     title: Level extras
     options:
       - id: 10A
-        file: 10A - Static Hazard.md
+        file: 10A - Add Spikes.md
         title: 10A - Add Spikes
       - id: 10B
         file: 10B - Y-motion Hazards.md

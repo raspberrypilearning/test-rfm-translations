@@ -1,55 +1,45 @@
-## 9B - Make Your Player Sprint
+<h2 class="c-project-heading--task">10E - Add Music</h2>
 
-Add a sprint key to the keyboard controls from `4A - Keys`.
+Add background music to give your game atmosphere.
 
 ## Step 1
 
 > [!TASK]
 >
-> This extra works with `4A - Keys`.
+> Click on the **Stage**.
 >
-> If you chose `4B - Mouse Move` or `4C - Always Moving`, skip this extra and choose a different one.
+> ![Stage](images/stage.png)
+
 
 ## Step 2
 
 > [!TASK]
 >
-> Make a variable called `sprint speed` for the **Player** sprite.
+> Select the **Sounds** tab and then **Choose a Sound**.
+>
+> ![Scratch sounds tab](images/sounds-tab.png)
+> ![Scratch sounds tab](images/sound-choose.png)
 
 ## Step 3
 
 > [!TASK]
 >
-> Replace the movement script from `4A - Keys` with this version.
+> From the list of sounds, select the one your want to use.
+>
+> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
+
+## Step 4
+
+> [!TASK]
+>
+> Click the **Code** tab and add the blocks below.
+>
+> Select your music from the `sound`{:class="block3sounds"} menu.
 >
 > ```blocks3
 > when green flag clicked
-> set [move speed v] to (5)
-> set [sprint speed v] to (8)
 > forever
->   set [x speed v] to (0)
->
->   if <key [shift v] pressed?> then
->     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
->       set [x speed v] to (sprint speed)
->       point in direction (90)
->     end
->     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
->       set [x speed v] to ((0) - (sprint speed))
->       point in direction (-90)
->     end
->   else
->     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
->       set [x speed v] to (move speed)
->       point in direction (90)
->     end
->     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
->       set [x speed v] to ((0) - (move speed))
->       point in direction (-90)
->     end
->   end
->
->   change x by (x speed)
+>   play sound [music v] until done
 > end
 > ```
 
@@ -57,4 +47,4 @@ Add a sprint key to the keyboard controls from `4A - Keys`.
 
 > [!TASK]
 >
-> Hold `shift` while moving and check that the **Player** travels faster.
+> Click the green flag and check that the music plays.
