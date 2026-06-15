@@ -7,6 +7,8 @@ Upload an image as a costume for the existing **Player** sprite in the starter p
 > [!TASK]
 >
 > Select the **Player** sprite in the sprite pane.
+>
+> ![Scratch Cat sprite selected in the sprite pain](images/player_sprite.png)
 
 ## Step 2
 
