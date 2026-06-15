@@ -4,7 +4,7 @@
 
 > [!TASK]
 >
-> Open the [Starter project](https://scratch.mit.edu/projects/1331944494/editor){:target="_blank"}.
+> Open the [Starter project](https://scratch.mit.edu/projects/1331945689/editor/){:target="_blank"}.
 
 ## Step 2
 
