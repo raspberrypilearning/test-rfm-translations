@@ -16,214 +16,66 @@ Make the **Player** keep moving, and use the arrow keys to change direction.
 >
 > ![The Code tab in Scratch.](images/tab_code.png)
 
+The starter project already includes an `Up Down Helper` block, and the **Player** setup script with these **player** variables:
+
+`x speed`{:class="block3variables"}, `y speed`{:class="block3variables"}, `gravity`{:class="block3variables"}, `jump strength`{:class="block3variables"}, `move speed`{:class="block3variables"}, `on ground`, `vertical steps`{:class="block3variables"}
+
 ## Step 3
 
 > [!TASK]
 >
-> The starter project already includes the `Up Down Helper` block, the **Player** setup script, and these **Player** variables:
+> Add a block to set the sprite's speed and then use a `forever`{:class="block3control"} loop to start it moving
 >
-> `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
+> ```blocks3
+> when green flag clicked
+> go to x: (100) y: (100)
+> +set [x speed v] to (move speed)
+> +forever
+> change x by (x speed)
+> end
+> ```
 
 ## Step 4
 
 > [!TASK]
 >
-> Add a script that starts when the green flag is clicked.
->
-> Inside a `forever`{:class="block3control"} loop, set `x speed`{:class="block3variables"} to `move speed` if `x speed` is `0`.
->
+> At the moment the sprite will alway move to the right. Add an `if`{:class="block3control"} block so that the sprite changes its speed and direction when the left key is pressed
+> 
 > ```blocks3
-> +when green flag clicked
-> +forever
-> +  if <(x speed) = (0)> then
-> +    set [x speed v] to (move speed)
-> +  end
-> +end
+> when green flag clicked
+> go to x: (100) y: (100)
+> set [x speed v] to (move speed) 
+> forever
+> +if <key (left arrow v) pressed?> then
+> point in direction (-90)
+> set [x speed v] to ((0)-(move speed))
+> end
+> change x by (x speed)
+> end
 > ```
 
 ## Step 5
 
 > [!TASK]
 >
-> Add an `if`{:class="block3control"} block for turning right.
+> Add another `if`{:class="block3control"} block to change direction back again
 >
-> If the `right arrow` key is pressed, set `x speed`{:class="block3variables"} to `move speed` and point the **Player** right.
->
+> At the moment the sprite will alway move to the right. Add an `if`{:class="block3control"} block so that the sprite changes its speed and direction when the left key is pressed
+> 
 > ```blocks3
 > when green flag clicked
+> go to x: (100) y: (100)
+> set [x speed v] to (move speed) 
 > forever
->   if <(x speed) = (0)> then
->     set [x speed v] to (move speed)
->   end
->
-> +  if <key [right arrow v] pressed?> then
-> +    set [x speed v] to (move speed)
-> +    point in direction (90)
-> +  end
+> if <key (left arrow v) pressed?> then
+> point in direction (-90)
+> set [x speed v] to ((0)-(move speed))
 > end
-> ```
-
-## Step 6
-
-> [!TASK]
->
-> Add another `if`{:class="block3control"} block for turning left.
->
-> If the `left arrow` key is pressed, set `x speed`{:class="block3variables"} to `0 - move speed` and point the **Player** left.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <(x speed) = (0)> then
->     set [x speed v] to (move speed)
->   end
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
-> +  if <key [left arrow v] pressed?> then
-> +    set [x speed v] to ((0) - (move speed))
-> +    point in direction (-90)
-> +  end
+> +if <key (right arrow v) pressed?> then
+> point in direction (-90)
+> set [x speed v] to (move speed)
 > end
-> ```
-
-## Step 7
-
-> [!TASK]
->
-> At the bottom of the `forever`{:class="block3control"} loop, add `change x by (x speed)`{:class="block3motion"}.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <(x speed) = (0)> then
->     set [x speed v] to (move speed)
->   end
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> +  change x by (x speed)
-> end
-> ```
-
-## Step 8
-
-> [!TASK]
->
-> Above `change x by (x speed)`{:class="block3motion"}, add an `if`{:class="block3control"} block that checks whether the `space` key is pressed.
->
-> Inside the `if`{:class="block3control"} block, set `y speed`{:class="block3variables"} to `jump strength`{:class="block3variables"}.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <(x speed) = (0)> then
->     set [x speed v] to (move speed)
->   end
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> +  if <key [space v] pressed?> then
-> +    set [y speed v] to (jump strength)
-> +  end
->
->   change x by (x speed)
-> end
-> ```
-
-## Step 9
-
-> [!TASK]
->
-> At the bottom of the `forever`{:class="block3control"} loop, add the `Up Down Helper` block from **My Blocks**.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <(x speed) = (0)> then
->     set [x speed v] to (move speed)
->   end
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
->   if <key [space v] pressed?> then
->     set [y speed v] to (jump strength)
->   end
->
->   change x by (x speed)
-> +  Up Down Helper
-> end
-> ```
-
-## Step 10
-
-> [!TASK]
->
-> Click the green flag and test your controls.
->
-> Press `space` to jump, then press `space` again while the **Player** is still in the air.
->
-> You should see that the **Player** can jump again before landing. This is called a double jump.
-
-## Step 11
-
-> [!TASK]
->
-> To stop the double jump, add an `and`{:class="block3operators"} condition to the space key `if`{:class="block3control"} block.
->
-> The **Player** should only jump if the `space` key is pressed and `on ground`{:class="block3variables"} is `1`.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   if <(x speed) = (0)> then
->     set [x speed v] to (move speed)
->   end
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> -  if <key [space v] pressed?> then
-> +  if <<key [space v] pressed?> and <(on ground) = (1)>> then
->     set [y speed v] to (jump strength)
->   end
->
->   change x by (x speed)
->   Up Down Helper
+> change x by (x speed)
 > end
 > ```
 
@@ -235,6 +87,4 @@ Make the **Player** keep moving, and use the arrow keys to change direction.
 >
 > Press the arrow keys to change direction.
 >
-> Press `space` to jump, then try pressing `space` again before the **Player** lands.
->
-> Check that the **Player** only jumps from the ground. If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script. If the jump feels too high or too low, change `jump strength`.
+> You can change the value of `move speed`{:class="block3variables"} if you want the sprite to move faster or slower.

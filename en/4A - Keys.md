@@ -112,5 +112,4 @@ The starter project already includes an `Up Down Helper` block, and the **Player
 >
 > Click the green flag and use the arrow keys to move left and right.
 >
->
 > If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script.

@@ -38,14 +38,15 @@ The starter project already includes an `Up Down Helper` block, and the **Player
 
 > [!TASK]
 >
-> The **player** sprite is going to move towards the mouse-pointer, but only letf and right.
+> The **player** sprite is going to move towards the mouse-pointer, but only left and right.
 >
 > ```blocks3
 > when green flag clicked
 > go to x: (100) y: (100)
 > forever
 > point towards (mouse-pointer v)
-> set [x speed v] to ((mouse x) - (x position))
+> +set [x speed v] to ((mouse x) - (x position))
+> +change x by (x speed)
 > +end
 > ```
 
@@ -57,64 +58,23 @@ The starter project already includes an `Up Down Helper` block, and the **Player
 >
 > The sprite should always be at about the same x position as the mouse-pointer.
 >
-> 
+> This motion is probably a little too fast
 
-## Step 6
+## Step 5
 
 > [!TASK]
 >
-> Add two `if`{:class="block3control"} blocks so the **Player** points in the direction it is moving.
+> Slow the sprite down by dividing its speed by `10`
 >
 > ```blocks3
 > when green flag clicked
+> go to x: (100) y: (100)
 > forever
->   set [x speed v] to (((mouse x) - (x position)) / (4))
->
->   if <([abs v] of ((mouse x) - (x position))) < (2)> then
->     set [x speed v] to (0)
->   end
->
-> +  if <(x speed) > (0)> then
-> +    point in direction (90)
-> +  end
->
-> +  if <(x speed) < (0)> then
-> +    point in direction (-90)
-> +  end
-> end
+> point towards (mouse-pointer v)
+> +set [x speed v] to (((mouse x) - (x position)) / (10))
+> +end
 > ```
+>
+> If this is too fast or too slow, you can choose a number larger or smaller than `10`.
 
-## Step 7
 
-> [!TASK]
->
-> At the bottom of the `forever`{:class="block3control"} loop, add `change x by (x speed)`{:class="block3motion"}.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (((mouse x) - (x position)) / (4))
->
->   if <([abs v] of ((mouse x) - (x position))) < (2)> then
->     set [x speed v] to (0)
->   end
->
->   if <(x speed) > (0)> then
->     point in direction (90)
->   end
->
->   if <(x speed) < (0)> then
->     point in direction (-90)
->   end
->
-> +  change x by (x speed)
-> end
-> ```
-
-## Test
-
-> [!TASK]
->
-> Click the green flag and move the mouse left and right.
->
-> Check that the **Player** follows the mouse smoothly on the x-axis. If it moves too slowly or too quickly, change the `4` in the division block.
