@@ -9,9 +9,9 @@
 > > [!TIP]
 > >
 > > Try using one of these
-> > [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
+> > [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png){:width="420px"}](images/example-backdrop-sky-platforms.png)
 > >
-> >[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
+> > [![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png){:width="420px"}](images/example-backdrop-forest-platforms.png)
 
 ## Step 2
 

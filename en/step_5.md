@@ -15,11 +15,11 @@ Make sure you already have an image you want to use saved onto your computer.
 > [!TIP]
 >
 > try using one of these
-> [![Robot player sprite preview](images/example-sprite-player-robot.png)](images/example-sprite-player-robot.png)
+> [![Robot player sprite preview](images/example-sprite-player-robot.png){:width="300px"}](images/example-sprite-player-robot.png)
 >
-> [![Adventurer player sprite preview](images/example-sprite-player-adventurer.png)](images/example-sprite-player-adventurer.png)
+> [![Adventurer player sprite preview](images/example-sprite-player-adventurer.png){:width="300px"}](images/example-sprite-player-adventurer.png)
 >
-> [![Creature player sprite preview](images/example-sprite-player-creature.png)](images/example-sprite-player-creature.png)
+> [![Creature player sprite preview](images/example-sprite-player-creature.png){:width="300px"}](images/example-sprite-player-creature.png)
 
 ## Step 3
 

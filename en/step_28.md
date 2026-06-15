@@ -12,7 +12,7 @@ Add an enemy that moves back and forth for the player to avoid.
 > > [!TIP]
 > >
 > > You can use download this blob enemy to use.
-> > [![Enemy sprite example](images/enemy-blob.png)](images/enemy-blob.png)
+> > [![Enemy sprite example](images/enemy-blob.png){:width="300px"}](images/enemy-blob.png)
 
 ## Step 2
 

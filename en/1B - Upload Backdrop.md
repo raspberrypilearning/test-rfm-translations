@@ -16,13 +16,13 @@
 > 
 > You can try using one of these:
 >
-> [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png)](images/example-backdrop-sky-platforms.png)
+> [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png){:width="420px"}](images/example-backdrop-sky-platforms.png)
 >
-> [![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
+> [![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png){:width="420px"}](images/example-backdrop-forest-platforms.png)
 >
-> [![Vaporwave platform backdrop preview](images/vaporwave-backdrop.png)](images/vaporwave-backdrop.png)
+> [![Vaporwave platform backdrop preview](images/vaporwave-backdrop.png){:width="420px"}](images/vaporwave-backdrop.png)
 >
-> [![Magical valley platform backdrop preview](images/magical-valley-backdrop.png)](images/magical-valley-backdrop.png)
+> [![Magical valley platform backdrop preview](images/magical-valley-backdrop.png){:width="420px"}](images/magical-valley-backdrop.png)
 
 ## Step 3
 

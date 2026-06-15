@@ -6,18 +6,18 @@ Add spikes, lava or another hazard for the player to avoid.
 
 > [!TASK]
 >
-> Create a new sprite and give it a name.
+> Create a new sprite and give it an obvious name like **Hazard**.
 >
 > > [!TIP]
 > >
 > > You can use download these spikes and use them in your game.
-> > [![Spike hazard sprite](images/spikes.png)](images/spikes.png)
+> > [![Spike hazard sprite](images/spikes.png){:width="300px"}](images/spikes.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> In the **paint window**, resize and put your spikes where you want them.
+> In the **paint window**, resize and put your hazard where you want it, to make sure it fits on the level.
 
 ## Step 3
 
@@ -44,3 +44,13 @@ Add spikes, lava or another hazard for the player to avoid.
 > [!TASK]
 >
 > Touch the spikes and check that the `game over` message broadcasts.
+
+## Add More Hazards
+
+> [!TASK]
+>
+> When your hazard works, right-click or long-press the **Hazard** sprite and choose **duplicate**.
+>
+> Drag the new hazard sprite to another place in your level.
+>
+> Repeat this to add spikes, lava, or other hazards around the level.

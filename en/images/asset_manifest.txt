@@ -33,6 +33,8 @@ Example sprite and object assets:
 - key.png: used in 8C - Take Key to Exit
 - exit-door.png: used in 6B - Upload Exit Sprite and 8C - Take Key to Exit
 - spikes.png: used in 10A - Add Spikes
+- hazard-vertical.png: used in 10B - Y-motion Hazards
+- hazard-horizontal.png: used in 10C - X-motion Hazards
 - enemy-blob.png: used in 10D - Add Enemies
 
 All generated/example art should be human-reviewed before publication.

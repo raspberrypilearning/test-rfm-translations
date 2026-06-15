@@ -8,7 +8,9 @@ Add a hazard like spikes that move left and right to create danger.
 >
 > Create a new sprite for your hazard and give it an obvious name like **Hazard**.
 >
-> If you already made spikes or lava in `10A`, you can duplicate that sprite and use it here.
+> If you already made a **static hazard** like spikes or lava, you can **duplicate** that sprite and use it here.
+>
+> ![An example horizontal moving hazard.](images/hazard-horizontal.png){:width="220px"}
 
 ## Step 2
 
