@@ -13,7 +13,7 @@
 
 > [!TASK]
 >
-> Use the paint tools to draw your a backdrop based on the world your game is in.
+> Use the paint tools to draw your a backdrop based on the world your game is set in.
 >
 > ![Scratch backdrop paint tool](images/backdrop-draw.png)
 
