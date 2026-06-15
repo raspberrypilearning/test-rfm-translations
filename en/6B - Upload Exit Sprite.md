@@ -11,6 +11,8 @@ Upload an image and use it as the **Exit** sprite, the way to finish the level.
 > Use an image you made yourself or have permission to use.
 >
 > ![An example exit door sprite.](images/exit-door.png)
+>
+> ![An example exit portal sprite.](images/exit-portal.png)
 
 ## Step 2
 
