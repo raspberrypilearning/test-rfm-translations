@@ -16,47 +16,48 @@ Make the **Player** follow the mouse on the x-axis.
 >
 > ![The Code tab in Scratch.](images/tab_code.png)
 
+The starter project already includes an `Up Down Helper` block, and the **Player** setup script with these **player** variables:
+
+`x speed`{:class="block3variables"}, `y speed`{:class="block3variables"}, `gravity`{:class="block3variables"}, `jump strength`{:class="block3variables"}, `move speed`{:class="block3variables"}, `on ground`, `vertical steps`{:class="block3variables"}
+
 ## Step 3
 
 > [!TASK]
 >
-> The starter project already includes the **Player** setup script and the `x speed`{:class="block3variables"} variable.
+> Inside a `forever`{:class="block3control"} loop, point the **player** at the mouse-pointer.
 >
-> If you can already see it in your starter project, just check this step off.
+> ```blocks3
+> when green flag clicked
+> go to x: (100) y: (100)
+> +forever
+> +point towards (mouse-pointer v)
+> +end
+> ```
 
 ## Step 4
 
 > [!TASK]
 >
-> Add a script that starts when the green flag is clicked.
->
-> Inside a `forever`{:class="block3control"} loop, set `x speed`{:class="block3variables"} to the distance from the **Player** to the mouse pointer, divided by `4`.
->
-> ```blocks3
-> +when green flag clicked
-> +forever
-> +  set [x speed v] to (((mouse x) - (x position)) / (4))
-> +end
-> ```
-
-## Step 5
-
-> [!TASK]
->
-> Add an `if`{:class="block3control"} block that sets `x speed`{:class="block3variables"} to `0` when the **Player** is close to the mouse pointer.
->
-> This stops the **Player** wobbling when it reaches the mouse pointer.
+> The **player** sprite is going to move towards the mouse-pointer, but only letf and right.
 >
 > ```blocks3
 > when green flag clicked
+> go to x: (100) y: (100)
 > forever
->   set [x speed v] to (((mouse x) - (x position)) / (4))
->
-> +  if <([abs v] of ((mouse x) - (x position))) < (2)> then
-> +    set [x speed v] to (0)
-> +  end
-> end
+> point towards (mouse-pointer v)
+> set [x speed v] to ((mouse x) - (x position))
+> +end
 > ```
+
+## Test
+
+> [!TASK]
+>
+> Click the green flag and move the mouse left and right.
+>
+> The sprite should always be at about the same x position as the mouse-pointer.
+>
+> 
 
 ## Step 6
 
