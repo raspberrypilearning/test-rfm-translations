@@ -1,94 +1,72 @@
-## 5B - Player Jump/Fall (Mouse)
+## 5A - Player Jump/Fall (Mouse)
 
-Add click-to-jump to the mouse controls from `4B - Mouse Move`.
+Make your **player** sprite jump.
 
 ## Step 1
 
 > [!TASK]
 >
-> This step works with `4B - Mouse Move`.
->
-> If you chose `4A - Keys` or `4C - Always Moving`, use `5A - Player Jump/Fall (Keys)` instead.
+> Select the **Player** sprite and find your movement blocks.
 
 ## Step 2
 
 > [!TASK]
 >
-> The starter project already includes the `Up Down Helper` block, a script that runs it, and these variables:
+> Add in a new `if`{:class="block3control"} block, below the others, but above the `change x by ()`{:class="block3motion"} block.
 >
-> `y speed`, `gravity`, `jump strength`, `on ground`, `vertical steps`
->
-> If you can already see them in your starter project, just check this step off.
+> ```blocks3
+> +if <> then
+> end
+> change x by (x speed)
+> ```
 
 ## Step 3
 
 > [!TASK]
 >
-> Find the mouse movement script from `4B - Mouse Move`.
->
-> Above `change x by (x speed)`{:class="block3motion"}, add an `if`{:class="block3control"} block that checks whether the mouse button is pressed and `on ground`{:class="block3variables"} is `1`.
->
-> Inside the `if`{:class="block3control"} block, set `y speed`{:class="block3variables"} to `jump strength`{:class="block3variables"}.
+> Detect mouse clicks in `if`{:class="block3control"} and then change the `y speed`{:class="block3variables"} of the **player**.
 >
 > ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (((mouse x) - (x position)) / (4))
->
->   if <([abs v] of ((mouse x) - (x position))) < (2)> then
->     set [x speed v] to (0)
->   end
->
->   if <(x speed) > (0)> then
->     point in direction (90)
->   end
->
->   if <(x speed) < (0)> then
->     point in direction (-90)
->   end
->
-> +  if <<mouse down?> and <(on ground) = (1)>> then
-> +    set [y speed v] to (jump strength)
-> +  end
->
->   change x by (x speed)
+> +if <mouse down?> then
+> set [y speed v] to (jump strength)
 > end
+> change x by (x speed)
 > ```
-
-## Step 4
-
-> [!TASK]
->
-> Find the starter setup script for the **Player**.
->
-> Look for this block.
->
-> ```blocks3
-> set [jump strength v] to (9)
-> ```
->
-> Change `9` if you want a higher or lower jump.
-
-## Step 5
-
-> [!TASK]
->
-> Look for this block in the same setup script.
->
-> ```blocks3
-> set [gravity v] to (-1)
-> ```
->
-> Change `-1` if you want a faster or slower fall. A more negative number makes stronger gravity.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and move the mouse left and right.
+> Click the green flag and click the mouse to jump
 >
-> Click to jump, then try clicking again before the **Player** lands.
+> If you click several times, then the sprite will jump "double-jump".
+
+## Step 4
+
+> [!TASK]
 >
-> Check that the **Player** follows the mouse smoothly and only jumps from the ground.
+> If you don't want to enable double-jumps, then jumping should only work when the sprite is on the ground. There's an `on ground`{:class="blocks3variables"} to detect this.
 >
-> Keep adjusting `jump strength` and `gravity` until the **Player** feels right for your level.
+> ```blocks3
+> + if <<mouse down?> and <(on ground) = (1)>> then
+> set [y speed v] to (jump strength)
+> end
+> change x by (x speed)
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Click the green flag and click several times. The **player** should only jump once.
+
+## Step 5
+
+> [!TASK]
+>
+> Change the height the **player** can jump and the speed that it falls, by changing the `gravity`{:class="block3variables"} and `jump strength`{:class="block3variables"} variables.
+>
+> ```blocks3
+> set [gravity v] to (-1)
+> set [jump strength v] to (15)
+> ```
