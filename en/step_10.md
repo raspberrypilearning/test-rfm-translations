@@ -1,6 +1,6 @@
-## 4B - Mouse Move
+## 4A - Keys
 
-Make the **Player** follow the mouse on the x-axis.
+Add keyboard controls so the **Player** can run and jump.
 
 ## Step 1
 
@@ -20,22 +20,22 @@ Make the **Player** follow the mouse on the x-axis.
 
 > [!TASK]
 >
-> The starter project already includes the **Player** setup script and the `x speed`{:class="block3variables"} variable.
+> The starter project already includes an `Up Down Helper` block, the **player** game loop, and the **Player** setup script with these **player** variables:
 >
-> If you can already see it in your starter project, just check this step off.
+> `x speed`{:class="block3variables"}, `y speed`{:class="block3variables"}, `gravity`{:class="block3variables"}, `jump strength`{:class="block3variables"}, `move speed`{:class="block3variables"}, `on ground`, `vertical steps`{:class="block3variables"}
+>
 
 ## Step 4
 
 > [!TASK]
 >
-> Add a script that starts when the green flag is clicked.
->
-> Inside a `forever`{:class="block3control"} loop, set `x speed`{:class="block3variables"} to the distance from the **Player** to the mouse pointer, divided by `4`.
+> Add a `forever`{:class="block3control"} loop to your starting script and set `x speed`{:class="block3variables"} to `0`.
 >
 > ```blocks3
-> +when green flag clicked
+> when green flag clicked
+> go to x: (100) y: (100)
 > +forever
-> +  set [x speed v] to (((mouse x) - (x position)) / (4))
+> +  set [x speed v] to (0)
 > +end
 > ```
 
@@ -43,41 +43,40 @@ Make the **Player** follow the mouse on the x-axis.
 
 > [!TASK]
 >
-> Add an `if`{:class="block3control"} block that sets `x speed`{:class="block3variables"} to `0` when the **Player** is close to the mouse pointer.
+> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block for moving right.
 >
-> This stops the **Player** wobbling when it reaches the mouse pointer.
+> If the `right arrow` key is pressed, set `x speed`{:class="block3variables"} to `move speed` and point the **Player** right.
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   set [x speed v] to (((mouse x) - (x position)) / (4))
+>   set [x speed v] to (0)
 >
-> +  if <([abs v] of ((mouse x) - (x position))) < (2)> then
-> +    set [x speed v] to (0)
+> +  if <key [right arrow v] pressed?> then
+> +    set [x speed v] to (move speed)
+> +    point in direction (90)
 > +  end
 > end
 > ```
 
-## Step 6
-
 > [!TASK]
 >
-> Add two `if`{:class="block3control"} blocks so the **Player** points in the direction it is moving.
+> Add another `if`{:class="block3control"} block for moving left.
+>
+> If the `left arrow` key is pressed, set `x speed`{:class="block3variables"} to `0 - move speed` and point the **Player** left.
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   set [x speed v] to (((mouse x) - (x position)) / (4))
+>   set [x speed v] to (0)
 >
->   if <([abs v] of ((mouse x) - (x position))) < (2)> then
->     set [x speed v] to (0)
+>   if <key [right arrow v] pressed?> then
+>     set [x speed v] to (move speed)
+>     point in direction (90)
 >   end
 >
-> +  if <(x speed) > (0)> then
-> +    point in direction (90)
-> +  end
->
-> +  if <(x speed) < (0)> then
+> +  if <key [left arrow v] pressed?> then
+> +    set [x speed v] to ((0) - (move speed))
 > +    point in direction (-90)
 > +  end
 > end
@@ -89,20 +88,20 @@ Make the **Player** follow the mouse on the x-axis.
 >
 > At the bottom of the `forever`{:class="block3control"} loop, add `change x by (x speed)`{:class="block3motion"}.
 >
+> This moves the **Player** by the speed chosen by the key presses.
+>
 > ```blocks3
 > when green flag clicked
 > forever
->   set [x speed v] to (((mouse x) - (x position)) / (4))
+>   set [x speed v] to (0)
 >
->   if <([abs v] of ((mouse x) - (x position))) < (2)> then
->     set [x speed v] to (0)
->   end
->
->   if <(x speed) > (0)> then
+>   if <key [right arrow v] pressed?> then
+>     set [x speed v] to (move speed)
 >     point in direction (90)
 >   end
 >
->   if <(x speed) < (0)> then
+>   if <key [left arrow v] pressed?> then
+>     set [x speed v] to ((0) - (move speed))
 >     point in direction (-90)
 >   end
 >
@@ -110,10 +109,19 @@ Make the **Player** follow the mouse on the x-axis.
 > end
 > ```
 
+## Step 8
+
+> [!TASK]
+>
+> Click the green flag and test your controls.
+>
+> You should see that the **Player** can jump again before landing. This is called a double jump.
+
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and move the mouse left and right.
+> Click the green flag and use the arrow keys to move left and right.
 >
-> Check that the **Player** follows the mouse smoothly on the x-axis. If it moves too slowly or too quickly, change the `4` in the division block.
+>
+> If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script.

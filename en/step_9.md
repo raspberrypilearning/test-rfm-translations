@@ -1,195 +1,39 @@
-## 4A - Keys
+## 3C - Draw Platforms in another editor
 
-Add keyboard controls so the **Player** can run and jump.
+To draw fancier platforms and montage other images, you can use an editor on your computer or one online like [pixlr](https://pixlr.com/){:target="_blank"}
 
 ## Step 1
 
 > [!TASK]
 >
-> Select the **Player** sprite in the sprite pane.
+> Create a new file in your editor. Make sure to choose a size of 480 x 360 pixels and a transparent background
+>
+> ![pixlr new file options](images/pixlr_new_image.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> Open the **Code** tab.
+> Draw your ground and platforms. You don't need it to be perfect. You can come back and edit it later.
 >
-> ![The Code tab in Scratch.](images/tab_code.png)
+> ![Brown floor and cloud platforms](images/drawn_platforms.png)
 
 ## Step 3
 
 > [!TASK]
 >
-> The starter project already includes an `Up Down Helper` block, the **player** game loop, and the **Player** setup script with these **player** variables:
->
-> `x speed`{:class="block3variables"}, `y speed`{:class="block3variables"}, `gravity`{:class="block3variables"}, `jump strength`{:class="block3variables"}, `move speed`{:class="block3variables"}, `on ground`, `vertical steps`{:class="block3variables"}
->
+> Export or Save your platforms as a PNG file.
 
 ## Step 4
 
 > [!TASK]
 >
-> Inside a `forever`{:class="block3control"} loop, set `x speed`{:class="block3variables"} to `0`.
+> Upload a new sprite and choose the image you've drawn. Rename it to **platform**
 >
-> ```blocks3
-> +when green flag clicked
-> +forever
-> +  set [x speed v] to (0)
-> +end
-> ```
+> ![Upload sprite menu.](images/sprite-upload.png)
 
 ## Step 5
 
 > [!TASK]
 >
-> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block for moving right.
->
-> If the `right arrow` key is pressed, set `x speed`{:class="block3variables"} to `move speed` and point the **Player** right.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
-> +  if <key [right arrow v] pressed?> then
-> +    set [x speed v] to (move speed)
-> +    point in direction (90)
-> +  end
-> end
-> ```
-
-> [!TASK]
->
-> Add another `if`{:class="block3control"} block for moving left.
->
-> If the `left arrow` key is pressed, set `x speed`{:class="block3variables"} to `0 - move speed` and point the **Player** left.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
-> +  if <key [left arrow v] pressed?> then
-> +    set [x speed v] to ((0) - (move speed))
-> +    point in direction (-90)
-> +  end
-> end
-> ```
-
-## Step 7
-
-> [!TASK]
->
-> At the bottom of the `forever`{:class="block3control"} loop, add `change x by (x speed)`{:class="block3motion"}.
->
-> This moves the **Player** by the speed chosen by the key presses.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> +  change x by (x speed)
-> end
-> ```
-
-## Step 8
-
-> [!TASK]
->
-> Above `change x by (x speed)`{:class="block3motion"}, add an `if`{:class="block3control"} block that checks whether the `space` key is pressed.
->
-> Inside the `if`{:class="block3control"} block, set `y speed`{:class="block3variables"} to `jump strength`{:class="block3variables"}.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> +  if <key [space v] pressed?> then
-> +    set [y speed v] to (jump strength)
-> +  end
->
->   change x by (x speed)
-> end
-> ```
-
-## Step 9
-
-> [!TASK]
->
-> Click the green flag and test your controls.
->
-> Press `space` to jump, then press `space` again while the **Player** is still in the air.
->
-> You should see that the **Player** can jump again before landing. This is called a double jump.
-
-## Step 11
-
-> [!TASK]
->
-> If you want to stop the double jump, add an `and`{:class="block3operators"} condition to the space key `if`{:class="block3control"} block.
->
-> The **Player** should only jump if the `space` key is pressed and `on ground`{:class="block3variables"} is `1`.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
-> -  if <key [space v] pressed?> then
-> +  if <<key [space v] pressed?> and <(on ground) = (1)>> then
->     set [y speed v] to (jump strength)
->   end
->
->   change x by (x speed)
->   Up Down Helper
-> end
-> ```
-
-## Test
-
-> [!TASK]
->
-> Click the green flag and use the arrow keys to move.
->
-> Press `space` to jump, then try pressing `space` again before the **Player** lands.
->
-> Check that the **Player** only jumps from the ground.
->
-> If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script. If the jump feels too high or too low, change `jump strength`.
+> You can resize and edit your platforms in the costume editor if needed.

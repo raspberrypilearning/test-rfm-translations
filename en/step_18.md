@@ -1,6 +1,6 @@
-## 7B - Random Collectables
+## 7A - Place Collectables
 
-Make collectables drop from random x positions and land on the **platform** sprite.
+Place collectables exactly where you want the player to find them.
 
 ## Step 1
 
@@ -18,101 +18,66 @@ Make collectables drop from random x positions and land on the **platform** spri
 
 > [!TASK]
 >
-> Make sure you have these variables:
->
-> `Score`, `last_x`, and `min_distance`
->
-> Make `Score` for all sprites. The other variables are used by the collectable sprite to space out the clones.
->
-> Use these exact names so the blocks below match.
-
-## Step 3
-
-> [!TASK]
->
 > Select the collectable sprite and add a script that starts when the green flag is clicked.
 >
 > ```blocks3
 > +when green flag clicked
 > ```
 
+## Step 3
+
+> [!TASK]
+>
+> Add blocks to move the collectable to its first position, show it, and create a clone.
+>
+> Change the costume and position to match your own collectable. This example uses crystals.
+>
+> ```blocks3
+> when green flag clicked
+> +go to x: (-4) y: (100)
+> +show
+> +create clone of [myself v]
+> ```
+
 ## Step 4
 
 > [!TASK]
 >
-> Hide the original collectable sprite, reset `Score`, and set up the variables that space out the collectables.
+> Add more `go to x: y:`{:class="block3motion"} and `create clone of [myself v]`{:class="block3control"} blocks for each extra collectable.
 >
-> The hidden original sprite will move to random x positions and create visible clones.
+> Put each clone somewhere the **Player** can reach.
 >
 > ```blocks3
 > when green flag clicked
-> +hide
-> +set [Score v] to (0)
-> +set [last_x v] to (999)
-> +set [min_distance v] to (70)
+> go to x: (-4) y: (100)
+> show
+> create clone of [myself v]
+> +go to x: (160) y: (100)
+> +create clone of [myself v]
+> +go to x: (-170) y: (100)
+> +create clone of [myself v]
 > ```
 
 ## Step 5
 
 > [!TASK]
 >
-> Add a `repeat`{:class="block3control"} loop for the number of collectables you want to create at the start.
->
-> This example creates `5` collectables.
+> Add `go to [front v] layer`{:class="block3looks"} so they appear in front of any platforms and then add a `hide`{:class="block3looks"} block to the bottom of the green flag script so the original sprite disappears after it has made all the clones.
 >
 > ```blocks3
 > when green flag clicked
-> hide
-> set [Score v] to (0)
-> set [last_x v] to (999)
-> set [min_distance v] to (70)
-> +repeat (5)
-> +end
+> go to x: (-4) y: (100)
+> show
+> create clone of [myself v]
+> go to x: (160) y: (100)
+> create clone of [myself v]
+> go to x: (-170) y: (100)
+> create clone of [myself v]
+> +go to [front v] layer
+> +hide
 > ```
 
 ## Step 6
-
-> [!TASK]
->
-> Inside the `repeat`{:class="block3control"} loop, add a `repeat until`{:class="block3control"} loop that chooses a random x position at the top of the Stage.
->
-> The hidden original keeps choosing until it is at least `min_distance` away from the previous collectable.
->
-> ```blocks3
-> when green flag clicked
-> hide
-> set [Score v] to (0)
-> set [last_x v] to (999)
-> set [min_distance v] to (70)
-> repeat (5)
-> +  repeat until <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>
-> +    go to x: (pick random (-200) to (200)) y: (180)
-> +  end
-> end
-> ```
-
-## Step 7
-
-> [!TASK]
->
-> After the `repeat until`{:class="block3control"} loop, store the chosen x position as `last_x` and create a clone there.
->
-> ```blocks3
-> when green flag clicked
-> hide
-> set [Score v] to (0)
-> set [last_x v] to (999)
-> set [min_distance v] to (70)
-> repeat (5)
->   repeat until <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>
->     go to x: (pick random (-200) to (200)) y: (180)
->   end
-> +  set [last_x v] to (x position)
-> +  create clone of [myself v]
-> end
-> ```
-
-## Step 8
 
 > [!TASK]
 >
@@ -122,42 +87,35 @@ Make collectables drop from random x positions and land on the **platform** spri
 > +when I start as a clone
 > ```
 
-## Step 9
+## Step 7
 
 > [!TASK]
 >
-> Add `show`{:class="block3looks"} and a `repeat until`{:class="block3control"} loop that makes the clone fall straight down until it touches the **platform** sprite.
->
+> Add `show`{:class="block3looks"} and `go to [front v] layer`{:class="block3looks"} so each clone appears in front of the level.
 >
 > ```blocks3
 > when I start as a clone
 > +show
-> +repeat until <touching [platform v]?>
-> +  change y by (-10)
-> +end
+> +go to [front v] layer
 > ```
 
-## Step 10
+## Step 8
 
 > [!TASK]
 >
 > Add a `forever`{:class="block3control"} loop with an `if`{:class="block3control"} block that checks whether the collectable clone is touching the **Player**.
 >
-> The screenshot shows the random drop setup. Add this part so each clone can be collected.
->
 > ```blocks3
 > when I start as a clone
 > show
-> repeat until <touching [platform v]?>
->   change y by (-10)
-> end
+> go to [front v] layer
 > +forever
 > +  if <touching [Player v]?> then
 > +  end
 > +end
 > ```
 
-## Step 11
+## Step 9
 
 > [!TASK]
 >
@@ -166,9 +124,7 @@ Make collectables drop from random x positions and land on the **platform** spri
 > ```blocks3
 > when I start as a clone
 > show
-> repeat until <touching [platform v]?>
->   change y by (-10)
-> end
+> go to [front v] layer
 > forever
 >   if <touching [Player v]?> then
 > +    change [Score v] by (1)
@@ -181,8 +137,6 @@ Make collectables drop from random x positions and land on the **platform** spri
 
 > [!TASK]
 >
-> Click the green flag and check that collectables drop from random x positions, spaced apart from each other.
+> Click the green flag and check that each collectable appears where you placed it.
 >
-> Check that each collectable stops when it touches the **platform** sprite.
->
-> Touch a collectable and check that it disappears and adds `1` to `Score`.
+> Touch each collectable and check that it disappears and adds `1` to `Score`.

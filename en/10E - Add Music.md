@@ -18,7 +18,7 @@ Add background music to give your game atmosphere.
 > Select the **Sounds** tab and then **Choose a Sound**.
 >
 > ![Scratch sounds tab](images/sounds-tab.png)
-> ![Scratch sounds tab](images/sounds-choose.png)
+> ![Scratch sounds tab](images/sound-choose.png)
 
 ## Step 3
 

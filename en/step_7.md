@@ -1,6 +1,6 @@
-## 3A - Draw Platforms
+## 3A - Add platforms to match your backdrop
 
-Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
+Add a **Platform** sprite with lines that match places in your backdrop where the **Player** can stand and jump.
 
 ## Step 1
 
@@ -14,11 +14,11 @@ Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
 
 > [!TASK]
 >
-> Draw horizontal lines in the **Platform** sprite for the floor, ledges, and any other places where the **Player** can stand.
+> Draw horizontal lines in the **Platform** sprite for the floor, ledges, and backdrop details where the **Player** can stand.
 >
 > Use a bright colour, such as pink, so you can see exactly where the platforms are.
 >
-> The lines do not have to look like platforms. You can line them up with details in your backdrop, so a table, shelf, branch, or rock looks like it is acting as the platform.
+> The lines do not have to look like foreground platforms. Line them up with details in your backdrop, so a table, shelf, branch, or rock looks like it is acting as the platform.
 >
 > ![Bright pink horizontal platform lines drawn in the Platform sprite costume.](images/platform-lines-costume.png){:width="520px"}
 >

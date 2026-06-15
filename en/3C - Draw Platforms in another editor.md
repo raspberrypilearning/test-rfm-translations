@@ -1,4 +1,4 @@
-## 3C - Draw platforms in another editor
+## 3C - Draw Platforms in another editor
 
 To draw fancier platforms and montage other images, you can use an editor on your computer or one online like [pixlr](https://pixlr.com/){:target="_blank"}
 
@@ -37,4 +37,3 @@ To draw fancier platforms and montage other images, you can use an editor on you
 > [!TASK]
 >
 > You can resize and edit your platforms in the costume editor if needed.
-

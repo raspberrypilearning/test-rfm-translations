@@ -13,8 +13,9 @@ steps:
   - title: '2C - Choose Inbuilt Player'
     completion:
       - engaged
-  - title: '3A - Draw Platforms'
-  - title: '3B - Clone Platforms'
+  - title: '3A - Add platforms to match your backdrop'
+  - title: '3B - Draw foreground platforms'
+  - title: '3C - Draw Platforms in another editor'
   - title: '4A - Keys'
   - title: '4B - Mouse Move'
   - title: '4C - Always Moving'

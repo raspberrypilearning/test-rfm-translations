@@ -1,40 +1,30 @@
-## 6B - Upload Exit Sprite
+## 6A - Draw Exit Sprite
 
-Upload an image and use it as the **Exit** sprite, the way to finish the level.
+Draw your own **Exit** sprite to show where the player should finish the level.
 
 ## Step 1
 
 > [!TASK]
 >
-> Make sure the exit image you want to use is saved on your computer.
+> Open the **Sprite** menu and select **Paint**.
 >
-> Use an image you made yourself or have permission to use.
->
-> ![An example exit door sprite.](images/exit-door.png){:width="300px"}
->
-> ![An example exit portal sprite.](images/exit-portal.png){:width="300px"}
+> ![The Paint option in the Choose a Sprite menu.](images/sprite-paint.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> Open the **Choose a Sprite** menu and select the **Upload Sprite** icon.
+> Draw an exit object such as a door, portal, flag, treasure, or finish marker using the paint tools.
 >
-> ![The Choose a Sprite menu.](images/choose_sprite.png)
+> Make it clear and easy to spot on your backdrop.
 
 ## Step 3
 
 > [!TASK]
 >
-> Select your exit image from your computer. Scratch will add it as a new sprite on the Stage.
-
-## Step 4
-
-> [!TASK]
->
 > In the sprite pane, change the sprite name to **Exit**. Use this exact spelling so later steps can refer to the same sprite.
 
-## Step 5
+## Step 4
 
 > [!TASK]
 >
@@ -44,7 +34,7 @@ Upload an image and use it as the **Exit** sprite, the way to finish the level.
 > +when green flag clicked
 > ```
 
-## Step 6
+## Step 5
 
 > [!TASK]
 >
@@ -55,7 +45,7 @@ Upload an image and use it as the **Exit** sprite, the way to finish the level.
 > +show
 > ```
 
-## Step 7
+## Step 6
 
 > [!TASK]
 >
@@ -63,7 +53,7 @@ Upload an image and use it as the **Exit** sprite, the way to finish the level.
 >
 > Drag it on the Stage so you can see the coordinates you want to use.
 
-## Step 8
+## Step 7
 
 > [!TASK]
 >
@@ -81,4 +71,4 @@ Upload an image and use it as the **Exit** sprite, the way to finish the level.
 
 > [!TASK]
 >
-> Click the green flag and check that your uploaded **Exit** sprite appears where the player can reach it.
+> Click the green flag and check that the **Exit** sprite appears where the player can reach it.

@@ -1,26 +1,36 @@
-## 7C - Add a Power Up
+## 7B - Random Collectables
 
-Add a new sprite that gives the **Player** extra speed or a higher jump when they touch it.
+Make collectables drop from random x positions and land on the **platform** sprite.
 
 ## Step 1
 
 > [!TASK]
 >
-> Add or choose a new sprite for your power-up.
+> Add or choose a collectable sprite.
 >
-> You could use a lightning bolt, star, potion, or any other sprite that looks special.
+> You can use a coin, star, gem, crystal, or any other small object.
+>
+> ![A coin collectable sprite.](images/coin.png){:width="300px"}
+>
+> ![A star collectable sprite.](images/star.png){:width="300px"}
 
 ## Step 2
 
 > [!TASK]
 >
-> Name the sprite `Power Up`.
+> Make sure you have these variables:
+>
+> `Score`, `last_x`, and `min_distance`
+>
+> Make `Score` for all sprites. The other variables are used by the collectable sprite to space out the clones.
+>
+> Use these exact names so the blocks below match.
 
 ## Step 3
 
 > [!TASK]
 >
-> Select the **Power Up** sprite and add a script that starts when the green flag is clicked.
+> Select the collectable sprite and add a script that starts when the green flag is clicked.
 >
 > ```blocks3
 > +when green flag clicked
@@ -30,31 +40,33 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 
 > [!TASK]
 >
-> Add blocks to put the **Power Up** where you want it, show it, and move it in front of the level.
+> Hide the original collectable sprite, reset `Score`, and set up the variables that space out the collectables.
 >
-> Change the `x` and `y` values to place the power-up in your own level.
+> The hidden original sprite will move to random x positions and create visible clones.
 >
 > ```blocks3
 > when green flag clicked
-> +go to x: (120) y: (-40)
-> +show
-> +go to [front v] layer
+> +hide
+> +set [Score v] to (0)
+> +set [last_x v] to (999)
+> +set [min_distance v] to (70)
 > ```
 
 ## Step 5
 
 > [!TASK]
 >
-> Add a `forever`{:class="block3control"} loop with an `if`{:class="block3control"} block that checks whether the **Power Up** is touching the **Player**.
+> Add a `repeat`{:class="block3control"} loop for the number of collectables you want to create at the start.
+>
+> This example creates `5` collectables.
 >
 > ```blocks3
 > when green flag clicked
-> go to x: (120) y: (-40)
-> show
-> go to [front v] layer
-> +forever
-> +  if <touching [Player v]?> then
-> +  end
+> hide
+> set [Score v] to (0)
+> set [last_x v] to (999)
+> set [min_distance v] to (70)
+> +repeat (5)
 > +end
 > ```
 
@@ -62,19 +74,20 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"} block, broadcast `power up`{:class="block3events"}, hide the sprite, and stop this script.
+> Inside the `repeat`{:class="block3control"} loop, add a `repeat until`{:class="block3control"} loop that chooses a random x position at the top of the Stage.
+>
+> The hidden original keeps choosing until it is at least `min_distance` away from the previous collectable.
 >
 > ```blocks3
 > when green flag clicked
-> go to x: (120) y: (-40)
-> show
-> go to [front v] layer
-> forever
->   if <touching [Player v]?> then
-> +    broadcast [power up v]
-> +    hide
-> +    stop [this script v]
->   end
+> hide
+> set [Score v] to (0)
+> set [last_x v] to (999)
+> set [min_distance v] to (70)
+> repeat (5)
+> +  repeat until <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>
+> +    go to x: (pick random (-200) to (200)) y: (180)
+> +  end
 > end
 > ```
 
@@ -82,36 +95,94 @@ Add a new sprite that gives the **Player** extra speed or a higher jump when the
 
 > [!TASK]
 >
-> Select the **Player** sprite and add a new script that starts when it receives the `power up`{:class="block3events"} message.
->
-> The movement uses `move speed`{:class="block3variables"} to control how fast the **Player** moves and `jump strength`{:class="block3variables"} to control jump height.
->
-> Choose one effect for your power-up. The effect will last for `5` seconds.
->
-> To make the **Player** move faster, increase `move speed`{:class="block3variables"}:
+> After the `repeat until`{:class="block3control"} loop, store the chosen x position as `last_x` and create a clone there.
 >
 > ```blocks3
-> +when I receive [power up v]
-> +change [move speed v] by (2)
-> +wait (5) seconds
-> +change [move speed v] by (-2)
+> when green flag clicked
+> hide
+> set [Score v] to (0)
+> set [last_x v] to (999)
+> set [min_distance v] to (70)
+> repeat (5)
+>   repeat until <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>
+>     go to x: (pick random (-200) to (200)) y: (180)
+>   end
+> +  set [last_x v] to (x position)
+> +  create clone of [myself v]
+> end
 > ```
+
+## Step 8
+
+> [!TASK]
 >
-> To make the **Player** jump higher, increase `jump strength`{:class="block3variables"}:
+> Add a second script to the collectable sprite that starts when each clone is created.
 >
 > ```blocks3
-> +when I receive [power up v]
-> +change [jump strength v] by (4)
-> +wait (5) seconds
-> +change [jump strength v] by (-4)
+> +when I start as a clone
 > ```
+
+## Step 9
+
+> [!TASK]
 >
-> You could also do both! Put both `change`{:class="block3variables"} blocks before the `wait`{:class="block3control"} block, then change both variables back after the wait.
+> Add `show`{:class="block3looks"} and a `repeat until`{:class="block3control"} loop that makes the clone fall straight down until it touches the **platform** sprite.
+>
+>
+> ```blocks3
+> when I start as a clone
+> +show
+> +repeat until <touching [platform v]?>
+> +  change y by (-10)
+> +end
+> ```
+
+## Step 10
+
+> [!TASK]
+>
+> Add a `forever`{:class="block3control"} loop with an `if`{:class="block3control"} block that checks whether the collectable clone is touching the **Player**.
+>
+> The screenshot shows the random drop setup. Add this part so each clone can be collected.
+>
+> ```blocks3
+> when I start as a clone
+> show
+> repeat until <touching [platform v]?>
+>   change y by (-10)
+> end
+> +forever
+> +  if <touching [Player v]?> then
+> +  end
+> +end
+> ```
+
+## Step 11
+
+> [!TASK]
+>
+> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `hide`{:class="block3looks"}.
+>
+> ```blocks3
+> when I start as a clone
+> show
+> repeat until <touching [platform v]?>
+>   change y by (-10)
+> end
+> forever
+>   if <touching [Player v]?> then
+> +    change [Score v] by (1)
+> +    hide
+>   end
+> end
+> ```
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and touch the **Power Up** with your **Player**.
+> Click the green flag and check that collectables drop from random x positions, spaced apart from each other.
 >
-> Check that the power-up disappears and the **Player** moves faster or jumps higher for `5` seconds, then goes back to normal.
+> Check that each collectable stops when it touches the **platform** sprite.
+>
+> Touch a collectable and check that it disappears and adds `1` to `Score`.

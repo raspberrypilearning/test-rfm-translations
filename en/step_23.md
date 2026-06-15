@@ -1,59 +1,135 @@
-<h2 class="c-project-heading--task">10A - Add Spikes</h2>
+## 8C - Take Key to Exit
 
-Add spikes, lava or another hazard for the player to avoid.
+Make the player win only after collecting a key and reaching the **Exit**.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and give it an obvious name like **Hazard**.
+> Make sure you have a variable called `has key`.
 >
-> > [!TIP]
-> >
-> > You can use download these spikes and use them in your game.
-> > [![Spike hazard sprite](images/spikes.png){:width="300px"}](images/spikes.png)
+> Set it up for all sprites so the Stage, **Key**, and **Exit** sprites can all use it.
 
 ## Step 2
 
 > [!TASK]
 >
-> In the **paint window**, resize and put your hazard where you want it, to make sure it fits on the level.
+> Place the key somewhere interesting and put the exit where the player can reach it after collecting the key.
+>
+> ![A key sprite.](images/key.png){:width="300px"}
+>
+> ![An exit door sprite.](images/exit-door.png){:width="300px"}
 
 ## Step 3
 
 > [!TASK]
 >
-> Click your **Player** sprite, and add these blocks:
+> Select the **Stage** and add a script that starts when the green flag is clicked.
 >
 > ```blocks3
 > when green flag clicked
+> set [has key v] to [0]
+> ```
+
+## Step 4
+
+> [!TASK]
+>
+> Select the **Key** sprite and add this script.
+>
+> ```blocks3
+> when green flag clicked
+> show
 > forever
->   if <touching [Spikes v]?> then
->     set [x speed v] to (0)
->     set [y speed v] to (0)
->     go to x: () y: ()
+>   if <touching [Player v]?> then
+>     set [has key v] to [1]
+>     hide
 >   end
 > end
 > ```
 
+## Step 5
+
 > [!TASK]
 >
-> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
+> Select the **Exit** sprite and add a script that checks when the player touches it.
 >
-> This resets the **Player** instead of stopping the game.
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Player v]?> then
+>   end
+> end
+> ```
+
+## Step 6
+
+> [!TASK]
+>
+> Inside the `if`{:class="block3control"} block, add another `if`{:class="block3control"} block to check whether `has key` is `1`.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Player v]?> then
+> +    if <(has key) = [1]> then
+> +    else
+> +    end
+>   end
+> end
+> ```
+
+## Step 7
+
+> [!TASK]
+>
+> In the `has key = 1` part, add `broadcast win`{:class="block3events"}.
+>
+> In the `else` part, add a `say 'Find the key!' for 2 seconds`{:class="block3looks"} block.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Player v]?> then
+>     if <(has key) = [1]> then
+> +      broadcast [win v]
+>     else
+> +      say [Find the key!] for (2) seconds
+>     end
+>   end
+> end
+> ```
+
+## Step 8
+
+> [!TASK]
+>
+> Add a new script that starts when it receives the `win`{:class="block3events"} message.
+>
+> Add `say 'You win!' for 2 seconds`{:class="block3looks"} and `stop all`{:class="block3control"}.
+>
+> If you already added this win script in another route, just check this step off.
+>
+> ```blocks3
+> +when I receive [win v]
+> +say [You win!] for (2) seconds
+> +stop [all v]
+> ```
+
+## Step 9
+
+> [!TASK]
+>
+> Choose what should happen before `stop all`{:class="block3control"}.
+>
+> You can use the `when I receive win`{:class="block3events"} script to show a message, play a sound, change backdrop, switch costume, or trigger another sprite before the game stops.
+>
+> Put any extra win blocks above `stop all`{:class="block3control"}.
 
 ## Test
 
 > [!TASK]
 >
-> Touch the spikes and check that the **Player** goes back to the start position.
-
-## Add More Hazards
-
-> [!TASK]
+> Touch the exit before and after collecting the key.
 >
-> When your hazard works, right-click or long-press the **Hazard** sprite and choose **duplicate**.
->
-> Drag the new hazard sprite to another place in your level.
->
-> Repeat this to add spikes, lava, or other hazards around the level - you can even **add new costumes** for each, to add some variety to your game.
+> Check that the keyed route broadcasts `win`{:class="block3events"}, shows the win message, and stops the game only **after** the key has been collected.

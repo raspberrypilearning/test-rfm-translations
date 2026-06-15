@@ -1,50 +1,59 @@
-<h2 class="c-project-heading--task">10E - Add Music</h2>
+<h2 class="c-project-heading--task">10A - Add Spikes</h2>
 
-Add background music to give your game atmosphere.
+Add spikes, lava or another hazard for the player to avoid.
 
 ## Step 1
 
 > [!TASK]
 >
-> Click on the **Stage**.
+> Create a new sprite and give it an obvious name like **Hazard**.
 >
-> ![Stage](images/stage.png)
-
+> > [!TIP]
+> >
+> > You can use download these spikes and use them in your game.
+> > [![Spike hazard sprite](images/spikes.png){:width="300px"}](images/spikes.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> Select the **Sounds** tab and then **Choose a Sound**.
->
-> ![Scratch sounds tab](images/sounds-tab.png)
-> ![Scratch sounds tab](images/sounds-choose.png)
+> In the **paint window**, resize and put your hazard where you want it, to make sure it fits on the level.
 
 ## Step 3
 
 > [!TASK]
 >
-> From the list of sounds, select the one your want to use.
->
-> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
-
-## Step 4
-
-> [!TASK]
->
-> Click the **Code** tab and add the blocks below.
->
-> Select your music from the `sound`{:class="block3sounds"} menu.
+> Click your **Player** sprite, and add these blocks:
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   play sound [music v] until done
+>   if <touching [Spikes v]?> then
+>     set [x speed v] to (0)
+>     set [y speed v] to (0)
+>     go to x: () y: ()
+>   end
 > end
 > ```
+
+> [!TASK]
+>
+> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
+>
+> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the music plays.
+> Touch the spikes and check that the **Player** goes back to the start position.
+
+## Add More Hazards
+
+> [!TASK]
+>
+> When your hazard works, right-click or long-press the **Hazard** sprite and choose **duplicate**.
+>
+> Drag the new hazard sprite to another place in your level.
+>
+> Repeat this to add spikes, lava, or other hazards around the level - you can even **add new costumes** for each, to add some variety to your game.
