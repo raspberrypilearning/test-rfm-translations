@@ -20,7 +20,7 @@ Make the **Player** keep moving, and use the arrow keys to change direction.
 
 > [!TASK]
 >
-> The starter project already includes the `move vertically` block, the **Player** setup script, and these **Player** variables:
+> The starter project already includes the `Up Down Helper` block, the **Player** setup script, and these **Player** variables:
 >
 > `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
 >
@@ -156,7 +156,7 @@ Make the **Player** keep moving, and use the arrow keys to change direction.
 
 > [!TASK]
 >
-> At the bottom of the `forever`{:class="block3control"} loop, add the `move vertically` block from **My Blocks**.
+> At the bottom of the `forever`{:class="block3control"} loop, add the `Up Down Helper` block from **My Blocks**.
 >
 > ```blocks3
 > when green flag clicked
@@ -180,7 +180,7 @@ Make the **Player** keep moving, and use the arrow keys to change direction.
 >   end
 >
 >   change x by (x speed)
-> +  move vertically
+> +  Up Down Helper
 > end
 > ```
 
@@ -225,7 +225,7 @@ Make the **Player** keep moving, and use the arrow keys to change direction.
 >   end
 >
 >   change x by (x speed)
->   move vertically
+>   Up Down Helper
 > end
 > ```
 

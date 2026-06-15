@@ -14,7 +14,7 @@ Add click-to-jump and falling to the mouse controls from `4B - Mouse Move`.
 
 > [!TASK]
 >
-> The starter project already includes the `move vertically` block and these **Player** variables:
+> The starter project already includes the `Up Down Helper` block and these **Player** variables:
 >
 > `y speed`, `gravity`, `jump strength`, `on ground`, `vertical steps`
 >
@@ -59,7 +59,7 @@ Add click-to-jump and falling to the mouse controls from `4B - Mouse Move`.
 
 > [!TASK]
 >
-> At the bottom of the `forever`{:class="block3control"} loop, add the `move vertically` block from **My Blocks**.
+> At the bottom of the `forever`{:class="block3control"} loop, add the `Up Down Helper` block from **My Blocks**.
 >
 > ```blocks3
 > when green flag clicked
@@ -83,7 +83,7 @@ Add click-to-jump and falling to the mouse controls from `4B - Mouse Move`.
 >   end
 >
 >   change x by (x speed)
-> +  move vertically
+> +  Up Down Helper
 > end
 > ```
 
@@ -128,7 +128,7 @@ Add click-to-jump and falling to the mouse controls from `4B - Mouse Move`.
 >   end
 >
 >   change x by (x speed)
->   move vertically
+>   Up Down Helper
 > end
 > ```
 
