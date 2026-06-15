@@ -4,6 +4,12 @@
 
 > [!TASK]
 >
+> Open the [Starter project](https://scratch.mit.edu/projects/1331944494/editor){:target="_blank"}.
+
+## Step 2
+
+> [!TASK]
+>
 > Make sure you already have an image you want to use saved onto your computer.
 >
 > > [!TIP]
@@ -13,7 +19,7 @@
 > >
 > >[![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png)](images/example-backdrop-forest-platforms.png)
 
-## Step 2
+## Step 3
 
 > [!TASK]
 >
@@ -21,7 +27,7 @@
 >
 > ![Scratch backdrop tool](images/stage-upload.png)
 
-## Step 3
+## Step 4
 
 > [!TASK]
 >
@@ -29,7 +35,7 @@
 >
 > ![Scratch backdrop paint tool](images/backdrop-resize.gif)
 
-## Step 4
+## Step 5
 
 > [!TASK]
 >
