@@ -1,41 +1,73 @@
-## 5A - Player Jump/Fall (Keys)
+## 5A - Player Jump-Fall (Keys)
 
-Use the starter settings to tune how the **Player** jumps and falls.
+Make your **player** sprite jump.
 
 ## Step 1
 
 > [!TASK]
 >
-> Select the **Player** sprite and find the starter setup script.
+> Select the **Player** sprite and find your movement blocks.
 
 ## Step 2
 
 > [!TASK]
 >
-> Look for this block.
+> Add in a new `if`{:class="block3control"} block, below the others, but above the `change x by ()`{:class="block3motion"} block.
 >
 > ```blocks3
-> set [jump strength v] to (9)
+> +if <> then
+> end
+> change x by (x speed)
 > ```
->
-> Change `9` if you want a higher or lower jump.
 
 ## Step 3
 
 > [!TASK]
 >
-> Look for this block in the same setup script.
+> Detect space key presses in `if`{:class="block3control"} and then change the `y speed`{:class="block3variables"} of the **player**.
 >
 > ```blocks3
-> set [gravity v] to (-1)
+> +if <key (space v) pressed?> then
+> set [y speed v] to (jump strength)
+> end
+> change x by (x speed)
 > ```
->
-> Change `-1` if you want a faster or slower fall. A more negative number makes stronger gravity.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and jump between your platforms.
+> Click the green flag and press the space key to jump
 >
-> Keep adjusting `jump strength` and `gravity` until the **Player** feels right for your level.
+> If you press the key several times, then the sprite will jump "double-jump".
+
+## Step 4
+
+> [!TASK]
+>
+> If you don't want to enable double-jumps, then jumping should only work when the sprite is on the ground. There's an `on ground`{:class="blocks3variables"} to detect this.
+>
+> ```blocks3
+> + if <<key (space v) pressed?> and <(on ground) = (1)>> then
+> set [y speed v] to (jump strength)
+> end
+> change x by (x speed)
+> ```
+
+## Test
+
+> [!TASK]
+>
+> Click the green flag and press the space key several times. The **player** should only jump once.
+
+## Step 5
+
+> [!TASK]
+>
+> Change the height the **player** can jump and the speed that it falls, by changing the `gravity`{:class="block3variables"} and `jump strength`{:class="block3variables"} variables.
+>
+> ```blocks3
+> set [gravity v] to (-1)
+> set [jump strength v] to (15)
+> ```
+

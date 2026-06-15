@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">10E - Add Music</h2>
+<h2 class="c-project-heading--task">10A - Add Music</h2>
 
 Add background music to give your game atmosphere.
 
@@ -7,18 +7,12 @@ Add background music to give your game atmosphere.
 > [!TASK]
 >
 > Click on the **Stage**.
->
-> ![Stage](images/stage.png)
-
 
 ## Step 2
 
 > [!TASK]
 >
 > Select the **Sounds** tab and then **Choose a Sound**.
->
-> ![Scratch sounds tab](images/sounds-tab.png)
-> ![Scratch sounds tab](images/sound-choose.png)
 
 ## Step 3
 
@@ -26,7 +20,11 @@ Add background music to give your game atmosphere.
 >
 > From the list of sounds, select the one your want to use.
 >
-> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
+> > [!TIP]
+> >
+> > Clicking on the `loops` button will show files that will loop neatly.
+> >
+> > [![Scratch sound categories with Loops selected](images/sound_categories_loops.png)](images/sound_categories_loops.png)
 
 ## Step 4
 

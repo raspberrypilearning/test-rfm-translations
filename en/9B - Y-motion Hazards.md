@@ -1,6 +1,6 @@
-<h2 class="c-project-heading--task">10C - X-motion Hazards</h2>
+<h2 class="c-project-heading--task">9B - Y-motion Hazards</h2>
 
-Add a hazard like spikes that move left and right to create danger.
+Add a hazard like spikes that move up and down to create danger.
 
 ## Step 1
 
@@ -10,7 +10,12 @@ Add a hazard like spikes that move left and right to create danger.
 >
 > If you already made a **static hazard** like spikes or lava, you can **duplicate** that sprite and use it here.
 >
-> ![An example horizontal moving hazard.](images/hazard-horizontal.png){:width="420px"}
+> ![An example vertical moving hazard.](images/hazard-vertical.png){:width="220px"}
+>
+> > [!TIP]
+> >
+> > A hazard with a different costume can be an enemy. You could use this blob enemy as a moving hazard:
+> > [![Enemy blob sprite example](images/enemy-blob.png){:width="300px"}](images/enemy-blob.png)
 
 ## Step 2
 
@@ -18,7 +23,7 @@ Add a hazard like spikes that move left and right to create danger.
 >
 > Resize and place the **Hazard** sprite where you want it to start.
 >
-> Put it beside a platform, floor, or gap so it can move left and right across the player's path.
+> Put it above or below a risky part of the level so it can move up and down across the player's path.
 
 ## Step 3
 
@@ -26,7 +31,7 @@ Add a hazard like spikes that move left and right to create danger.
 >
 > Add these blocks to the **Hazard** sprite.
 >
-> Keep the two `y`{:class="block3motion"} positions the same. Change the two `x`{:class="block3motion"} positions to make the hazard move left and right.
+> Keep the two `x`{:class="block3motion"} positions the same. Change the two `y`{:class="block3motion"} positions to make the hazard move up and down.
 >
 > ```blocks3
 > when green flag clicked
@@ -64,4 +69,4 @@ Add a hazard like spikes that move left and right to create danger.
 
 > [!TASK]
 >
-> Click the green flag and check that the **Hazard** moves left and right and sends the **Player** back to the start position on contact.
+> Click the green flag and check that the **Hazard** moves up and down and sends the **Player** back to the start position on contact.

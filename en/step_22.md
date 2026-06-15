@@ -58,7 +58,7 @@ Make the player win when their **Score** reaches a target value.
 > when green flag clicked
 > set [Score v] to (0)
 > forever
-> +  if <not <(Score) < (5)>> then
+> +  if <(Score) > (4)> then
 > +  end
 > end
 > ```
@@ -73,7 +73,7 @@ Make the player win when their **Score** reaches a target value.
 > when green flag clicked
 > set [Score v] to (0)
 > forever
->   if <not <(Score) < (5)>> then
+>   if <(Score) > (4)> then
 > +    broadcast [win v]
 >   end
 > end

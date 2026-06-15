@@ -1,4 +1,4 @@
-## 5A - Player Jump/Fall (Keys)
+## 5A - Player Jump-Fall (Keys)
 
 Make your **player** sprite jump.
 
@@ -70,5 +70,4 @@ Make your **player** sprite jump.
 > set [gravity v] to (-1)
 > set [jump strength v] to (15)
 > ```
-
 

@@ -1,4 +1,4 @@
-## 5A - Player Jump/Fall (Mouse)
+## 5B - Player Jump-Fall (Mouse)
 
 Make your **player** sprite jump.
 

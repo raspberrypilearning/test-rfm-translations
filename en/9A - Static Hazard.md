@@ -1,6 +1,6 @@
-<h2 class="c-project-heading--task">10A - Add Spikes</h2>
+<h2 class="c-project-heading--task">9A - Static Hazard</h2>
 
-Add spikes, lava or another hazard for the player to avoid.
+Add spikes, lava or another non-moving hazard for the player to avoid.
 
 ## Step 1
 
@@ -11,7 +11,6 @@ Add spikes, lava or another hazard for the player to avoid.
 > > [!TIP]
 > >
 > > You can use download these spikes and use them in your game.
-> > [![Spike hazard sprite](images/spikes.png){:width="300px"}](images/spikes.png)
 
 ## Step 2
 

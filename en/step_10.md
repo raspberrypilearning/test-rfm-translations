@@ -16,16 +16,11 @@ Add keyboard controls so the **Player** can run and jump.
 >
 > ![The Code tab in Scratch.](images/tab_code.png)
 
+The starter project already includes an `Up Down Helper` block, and the **Player** setup script with these **player** variables:
+
+`x speed`{:class="block3variables"}, `y speed`{:class="block3variables"}, `gravity`{:class="block3variables"}, `jump strength`{:class="block3variables"}, `move speed`{:class="block3variables"}, `on ground`, `vertical steps`{:class="block3variables"}
+
 ## Step 3
-
-> [!TASK]
->
-> The starter project already includes an `Up Down Helper` block, the **player** game loop, and the **Player** setup script with these **player** variables:
->
-> `x speed`{:class="block3variables"}, `y speed`{:class="block3variables"}, `gravity`{:class="block3variables"}, `jump strength`{:class="block3variables"}, `move speed`{:class="block3variables"}, `on ground`, `vertical steps`{:class="block3variables"}
->
-
-## Step 4
 
 > [!TASK]
 >
@@ -39,7 +34,7 @@ Add keyboard controls so the **Player** can run and jump.
 > +end
 > ```
 
-## Step 5
+## Step 4
 
 > [!TASK]
 >
@@ -58,6 +53,8 @@ Add keyboard controls so the **Player** can run and jump.
 > +  end
 > end
 > ```
+
+## Step 5
 
 > [!TASK]
 >
@@ -82,7 +79,7 @@ Add keyboard controls so the **Player** can run and jump.
 > end
 > ```
 
-## Step 7
+## Step 6
 
 > [!TASK]
 >
@@ -109,19 +106,10 @@ Add keyboard controls so the **Player** can run and jump.
 > end
 > ```
 
-## Step 8
-
-> [!TASK]
->
-> Click the green flag and test your controls.
->
-> You should see that the **Player** can jump again before landing. This is called a double jump.
-
 ## Test
 
 > [!TASK]
 >
 > Click the green flag and use the arrow keys to move left and right.
->
 >
 > If the **Player** moves too quickly or too slowly, change `move speed` in the starter setup script.
