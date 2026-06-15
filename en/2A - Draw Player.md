@@ -9,8 +9,18 @@ Draw your own costume for the existing **player** sprite in the starter project.
 > Select the **Player** sprite in the sprite pane.
 > 
 > ![Scratch Cat sprite selected in the sprite pain](images/player_sprite.png)
+>
 
 ## Step 2
+
+>![TASK]
+>
+> Delete the **Cat-a** and **Cat-b** costumes.
+>
+> ![Two Scratch cat costumes in costumes pane](images/cat_costumes.png)
+>
+
+## Step 3
 
 > [!TASK]
 >
@@ -18,7 +28,7 @@ Draw your own costume for the existing **player** sprite in the starter project.
 >
 > ![The Costumes tab in Scratch.](images/tab_costumes.png)
 
-## Step 3
+## Step 4
 
 > [!TASK]
 >
@@ -26,7 +36,7 @@ Draw your own costume for the existing **player** sprite in the starter project.
 >
 > ![The Paint option in the costume menu.](images/costume_paint.png)
 
-## Step 4
+## Step 5
 
 > [!TASK]
 >
@@ -34,7 +44,7 @@ Draw your own costume for the existing **player** sprite in the starter project.
 >
 > Use a clear outline and colours that stand out from your backdrop. Keep the design easy to recognise when it is small on the Stage.
 
-## Step 5
+## Step 6
 
 > [!TASK]
 >
