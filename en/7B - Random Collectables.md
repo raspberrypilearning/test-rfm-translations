@@ -76,13 +76,9 @@ Make collectables drop from random positions and land on the **Platform** sprite
 
 > [!TASK]
 >
-> Inside the `repeat`{:class="block3control"} loop, set `position_ok`{:class="block3variables"} to `0`{:class="block3variables"} and add a `repeat until`{:class="block3control"} loop that chooses a random start position.
+> Inside the `repeat`{:class="block3control"} loop, reset `position_ok`{:class="block3variables"} and add a `repeat until`{:class="block3control"} loop.
 >
-> The hidden original keeps choosing until it is at least `min_distance` away from the previous collectable.
->
-> Use random y positions so collectables can start below higher platforms and land on lower ones.
->
-> The hidden original briefly shows itself to test whether it is touching the **Platform**, then hides again before it creates the clone. If the random start position is already touching the **Platform**, the loop chooses another position.
+> The loop will keep choosing positions until it finds one that is OK.
 >
 > ```blocks3
 > when green flag clicked
@@ -94,17 +90,99 @@ Make collectables drop from random positions and land on the **Platform** sprite
 > repeat (5)
 > +  set [position_ok v] to (0)
 > +  repeat until <(position_ok) = (1)>
-> +    go to x: (pick random (-200) to (200)) y: (pick random (-120) to (160))
-> +    show
-> +    if <<<not <touching [Platform v]?>> and <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>> then
-> +      set [position_ok v] to (1)
-> +    end
-> +    hide
 > +  end
 > end
 > ```
 
 ## Step 7
+
+> [!TASK]
+>
+> Inside the `repeat until`{:class="block3control"} loop, choose a random start position, show the sprite briefly, and set `position_ok`{:class="block3variables"} to `1`{:class="block3variables"}.
+>
+> Use random y positions so collectables can start below higher platforms and land on lower ones.
+>
+> The original needs to show itself so the `touching Platform?`{:class="block3sensing"} block can check its position.
+>
+> ```blocks3
+> when green flag clicked
+> hide
+> set [Score v] to (0)
+> set [last_x v] to (999)
+> set [min_distance v] to (70)
+> set [position_ok v] to (0)
+> repeat (5)
+>   set [position_ok v] to (0)
+>   repeat until <(position_ok) = (1)>
+> +    go to x: (pick random (-200) to (200)) y: (pick random (-120) to (160))
+> +    show
+> +    set [position_ok v] to (1)
+>   end
+> end
+> ```
+
+## Step 8
+
+> [!TASK]
+>
+> Add checks that set `position_ok`{:class="block3variables"} back to `0`{:class="block3variables"} if the random position is not suitable.
+>
+> Reject the position if it starts touching the **Platform** or if it is too close to the previous collectable.
+>
+> ```blocks3
+> when green flag clicked
+> hide
+> set [Score v] to (0)
+> set [last_x v] to (999)
+> set [min_distance v] to (70)
+> set [position_ok v] to (0)
+> repeat (5)
+>   set [position_ok v] to (0)
+>   repeat until <(position_ok) = (1)>
+>     go to x: (pick random (-200) to (200)) y: (pick random (-120) to (160))
+>     show
+>     set [position_ok v] to (1)
+> +    if <touching [Platform v]?> then
+> +      set [position_ok v] to (0)
+> +    end
+> +    if <not <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>> then
+> +      set [position_ok v] to (0)
+> +    end
+>   end
+> end
+> ```
+
+## Step 9
+
+> [!TASK]
+>
+> Hide the original sprite again before the loop checks `position_ok`{:class="block3variables"}.
+>
+> ```blocks3
+> when green flag clicked
+> hide
+> set [Score v] to (0)
+> set [last_x v] to (999)
+> set [min_distance v] to (70)
+> set [position_ok v] to (0)
+> repeat (5)
+>   set [position_ok v] to (0)
+>   repeat until <(position_ok) = (1)>
+>     go to x: (pick random (-200) to (200)) y: (pick random (-120) to (160))
+>     show
+>     set [position_ok v] to (1)
+>     if <touching [Platform v]?> then
+>       set [position_ok v] to (0)
+>     end
+>     if <not <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>> then
+>       set [position_ok v] to (0)
+>     end
+> +    hide
+>   end
+> end
+> ```
+
+## Step 10
 
 > [!TASK]
 >
@@ -122,8 +200,12 @@ Make collectables drop from random positions and land on the **Platform** sprite
 >   repeat until <(position_ok) = (1)>
 >     go to x: (pick random (-200) to (200)) y: (pick random (-120) to (160))
 >     show
->     if <<<not <touching [Platform v]?>> and <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>> then
->       set [position_ok v] to (1)
+>     set [position_ok v] to (1)
+>     if <touching [Platform v]?> then
+>       set [position_ok v] to (0)
+>     end
+>     if <not <<(x position) > ((last_x) + (min_distance))> or <(x position) < ((last_x) - (min_distance))>>> then
+>       set [position_ok v] to (0)
 >     end
 >     hide
 >   end
@@ -132,7 +214,7 @@ Make collectables drop from random positions and land on the **Platform** sprite
 > end
 > ```
 
-## Step 8
+## Step 11
 
 > [!TASK]
 >
@@ -142,7 +224,7 @@ Make collectables drop from random positions and land on the **Platform** sprite
 > +when I start as a clone
 > ```
 
-## Step 9
+## Step 12
 
 > [!TASK]
 >
@@ -157,13 +239,11 @@ Make collectables drop from random positions and land on the **Platform** sprite
 > +end
 > ```
 
-## Step 10
+## Step 13
 
 > [!TASK]
 >
 > Add a `forever`{:class="block3control"} loop with an `if`{:class="block3control"} block that checks whether the collectable clone is touching the **Player**.
->
-> The screenshot shows the random drop setup. Add this part so each clone can be collected.
 >
 > ```blocks3
 > when I start as a clone
@@ -177,7 +257,7 @@ Make collectables drop from random positions and land on the **Platform** sprite
 > +end
 > ```
 
-## Step 11
+## Step 14
 
 > [!TASK]
 >

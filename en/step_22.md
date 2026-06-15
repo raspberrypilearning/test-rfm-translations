@@ -1,28 +1,18 @@
 ## 8B - Target Score
 
-Make the player win after their **Score** reaches a target value.
+Make the player win when their **Score** reaches a target value.
 
 ## Step 1
 
 > [!TASK]
 >
-> Add or choose a collectable sprite.
->
-> You can use a coin, star, gem, or any other small object.
->
-> ![A coin collectable sprite.](images/coin.png){:width="300px"}
->
-> ![A star collectable sprite.](images/star.png){:width="300px"}
-
-## Step 2
-
-> [!TASK]
->
 > Make sure you have a variable called `Score`.
 >
-> Set it up for **all sprites** so the Stage and collectable sprite can both use it.
+> Set it up for **all sprites** so the Stage and other sprites can use it.
+>
+> Your game also needs a way to increase `Score`. Collectables are a good way to do this. If you have not added scoring yet, use `7A - Place Collectables` or `7B - Random Collectables`.
 
-## Step 3
+## Step 2
 
 > [!TASK]
 >
@@ -32,7 +22,7 @@ Make the player win after their **Score** reaches a target value.
 > +when green flag clicked
 > ```
 
-## Step 4
+## Step 3
 
 > [!TASK]
 >
@@ -40,10 +30,10 @@ Make the player win after their **Score** reaches a target value.
 >
 > ```blocks3
 > when green flag clicked
-> +set [Score v] to [0]
+> +set [Score v] to (0)
 > ```
 
-## Step 5
+## Step 4
 
 > [!TASK]
 >
@@ -51,29 +41,29 @@ Make the player win after their **Score** reaches a target value.
 >
 > ```blocks3
 > when green flag clicked
-> set [Score v] to [0]
+> set [Score v] to (0)
 > +forever
 > +end
 > ```
 
-## Step 6
+## Step 5
 
 > [!TASK]
 >
-> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block that checks whether `Score` is equal to your target value.
+> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block that checks whether `Score` has reached your target value.
 >
-> Type your target score into the white input.
+> This example checks whether `Score` is `5` or more.
 >
 > ```blocks3
 > when green flag clicked
-> set [Score v] to [0]
+> set [Score v] to (0)
 > forever
-> +  if <(Score) = ()> then
+> +  if <not <(Score) < (5)>> then
 > +  end
 > end
 > ```
 
-## Step 7
+## Step 6
 
 > [!TASK]
 >
@@ -81,15 +71,15 @@ Make the player win after their **Score** reaches a target value.
 >
 > ```blocks3
 > when green flag clicked
-> set [Score v] to [0]
+> set [Score v] to (0)
 > forever
->   if <(Score) = ()> then
+>   if <not <(Score) < (5)>> then
 > +    broadcast [win v]
 >   end
 > end
 > ```
 
-## Step 8
+## Step 7
 
 > [!TASK]
 >
@@ -105,7 +95,7 @@ Make the player win after their **Score** reaches a target value.
 > +stop [all v]
 > ```
 
-## Step 9
+## Step 8
 
 > [!TASK]
 >
@@ -115,63 +105,10 @@ Make the player win after their **Score** reaches a target value.
 >
 > Put any extra win blocks above `stop all`{:class="block3control"}.
 
-## Step 10
-
-> [!TASK]
->
-> **Select the collectable sprite** and add a script that starts when the green flag is clicked.
->
-> ```blocks3
-> +when green flag clicked
-> ```
-
-## Step 11
-
-> [!TASK]
->
-> Add a `show`{:class="block3looks"} block and a `forever`{:class="block3control"} loop.
->
-> ```blocks3
-> when green flag clicked
-> +show
-> +forever
-> +end
-> ```
-
-## Step 12
-
-> [!TASK]
->
-> Inside the `forever`{:class="block3control"} loop, add an `if`{:class="block3control"} block that checks whether the collectable is touching the **Player**.
->
-> ```blocks3
-> when green flag clicked
-> show
-> forever
-> +  if <touching [Player v]?> then
-> +  end
-> end
-> ```
-
-## Step 13
-
-> [!TASK]
->
-> Inside the `if`{:class="block3control"} block, add `change Score by 1`{:class="block3variables"} and `hide`{:class="block3looks"}.
->
-> ```blocks3
-> when green flag clicked
-> show
-> forever
->   if <touching [Player v]?> then
-> +    change [Score v] by (1)
-> +    hide
->   end
-> end
-> ```
-
 ## Test
 
 > [!TASK]
 >
-> Collect enough items and check that the `win`{:class="block3events"} message broadcasts, the win message appears, and the game stops.
+> Play your game and increase `Score`.
+>
+> Check that the `win`{:class="block3events"} message broadcasts when `Score` reaches the target value, the win message appears, and the game stops.
