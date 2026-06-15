@@ -4,16 +4,27 @@
 
 > [!TASK]
 >
-> Make sure you already have an image you want to use saved onto your computer.
->
-> > [!TIP]
-> >
-> > Try using one of these
-> > [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png){:width="420px"}](images/example-backdrop-sky-platforms.png)
-> >
-> > [![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png){:width="420px"}](images/example-backdrop-forest-platforms.png)
+> Open the [Starter project](https://scratch.mit.edu/projects/1331945689/editor/){:target="_blank"}.
 
 ## Step 2
+
+> [!TASK]
+>
+> Make sure you already have an image you want to use saved onto your computer.
+>
+> [!TIP]
+>
+> You can try using one of these:
+>
+> [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png){:width="420px"}](images/example-backdrop-sky-platforms.png)
+>
+> [![Forest platform backdrop preview](images/example-backdrop-forest-platforms.png){:width="420px"}](images/example-backdrop-forest-platforms.png)
+>
+> [![Vaporwave platform backdrop preview](images/vaporwave-backdrop.png){:width="420px"}](images/vaporwave-backdrop.png)
+>
+> [![Magical valley platform backdrop preview](images/magical-valley-backdrop.png){:width="420px"}](images/magical-valley-backdrop.png)
+
+## Step 3
 
 > [!TASK]
 >
@@ -21,7 +32,7 @@
 >
 > ![Scratch backdrop tool](images/stage-upload.png)
 
-## Step 3
+## Step 4
 
 > [!TASK]
 >
@@ -29,7 +40,7 @@
 >
 > ![Scratch backdrop paint tool](images/backdrop-resize.gif)
 
-## Step 4
+## Step 5
 
 > [!TASK]
 >

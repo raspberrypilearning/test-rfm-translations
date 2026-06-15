@@ -13,7 +13,7 @@
 > Make sure you already have an image you want to use saved onto your computer.
 >
 > [!TIP]
-> 
+>
 > You can try using one of these:
 >
 > [![Sky platform backdrop preview](images/example-backdrop-sky-platforms.png){:width="420px"}](images/example-backdrop-sky-platforms.png)

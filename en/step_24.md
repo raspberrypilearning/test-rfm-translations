@@ -1,60 +1,67 @@
-## 9B - Make Your Player Sprint
+<h2 class="c-project-heading--task">10B - Y-motion Hazards</h2>
 
-Add a sprint key to the keyboard controls from `4A - Keys`.
+Add a hazard like spikes that move up and down to create danger.
 
 ## Step 1
 
 > [!TASK]
 >
-> This extra works with `4A - Keys`.
+> Create a new sprite for your hazard and give it an obvious name like **Hazard**.
 >
-> If you chose `4B - Mouse Move` or `4C - Always Moving`, skip this extra and choose a different one.
+> If you already made a **static hazard** like spikes or lava, you can **duplicate** that sprite and use it here.
+>
+> ![An example vertical moving hazard.](images/hazard-vertical.png){:width="220px"}
 
 ## Step 2
 
 > [!TASK]
 >
-> Make a variable called `sprint speed` for the **Player** sprite.
+> Resize and place the **Hazard** sprite where you want it to start.
+>
+> Put it above or below a risky part of the level so it can move up and down across the player's path.
 
 ## Step 3
 
 > [!TASK]
 >
-> Replace the movement script from `4A - Keys` with this version.
+> Add these blocks to the **Hazard** sprite.
+>
+> Keep the two `x`{:class="block3motion"} positions the same. Change the two `y`{:class="block3motion"} positions to make the hazard move up and down.
 >
 > ```blocks3
 > when green flag clicked
-> set [move speed v] to (5)
-> set [sprint speed v] to (8)
+> go to x: () y: ()
 > forever
->   set [x speed v] to (0)
->
->   if <key [shift v] pressed?> then
->     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
->       set [x speed v] to (sprint speed)
->       point in direction (90)
->     end
->     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
->       set [x speed v] to ((0) - (sprint speed))
->       point in direction (-90)
->     end
->   else
->     if <<key [d v] pressed?> or <key [right arrow v] pressed?>> then
->       set [x speed v] to (move speed)
->       point in direction (90)
->     end
->     if <<key [a v] pressed?> or <key [left arrow v] pressed?>> then
->       set [x speed v] to ((0) - (move speed))
->       point in direction (-90)
->     end
->   end
->
->   change x by (x speed)
+>   glide () secs to x: () y: ()
+>   glide () secs to x: () y: ()
 > end
 > ```
+
+## Step 4
+
+> [!TASK]
+>
+> Click on the **Player** sprite and add these blocks:
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   if <touching [Hazard v]?> then
+>     set [x speed v] to (0)
+>     set [y speed v] to (0)
+>     go to x: () y: ()
+>   end
+> end
+> ```
+
+> [!TASK]
+>
+> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
+>
+> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Hold `shift` while moving and check that the **Player** travels faster.
+> Click the green flag and check that the **Hazard** moves up and down and sends the **Player** back to the start position on contact.

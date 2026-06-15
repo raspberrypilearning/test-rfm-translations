@@ -2,13 +2,8 @@
 
 Upload an image as a costume for the existing **Player** sprite in the starter project.
 
+
 ## Step 1
-
-> [!TASK]
->
-> Select the **Player** sprite in the sprite pane.
-
-## Step 2
 
 Make sure you already have an image you want to use saved onto your computer.
 
@@ -21,6 +16,14 @@ Make sure you already have an image you want to use saved onto your computer.
 >
 > [![Creature player sprite preview](images/example-sprite-player-creature.png){:width="300px"}](images/example-sprite-player-creature.png)
 
+## Step 2
+
+> [!TASK]
+>
+> Select the **Player** sprite in the sprite pane.
+>
+> ![Scratch Cat sprite selected in the sprite pain](images/player_sprite.png)
+
 ## Step 3
 
 > [!TASK]
@@ -31,11 +34,20 @@ Make sure you already have an image you want to use saved onto your computer.
 
 ## Step 4
 
+>![TASK]
+>
+> Delete the **Cat-a** and **Cat-b** costumes.
+>
+> ![Two Scratch cat costumes in costumes pane](images/cat_costumes.png)
+>
+
+## Step 5
+
 > [!TASK]
 >
 > Open the costume menu and choose the **Upload Costume** icon.
 
-## Step 5
+## Step 6
 
 > [!TASK]
 >

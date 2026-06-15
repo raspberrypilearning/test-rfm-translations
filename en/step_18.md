@@ -128,7 +128,6 @@ Make collectables drop from random x positions and land on the **platform** spri
 >
 > Add `show`{:class="block3looks"} and a `repeat until`{:class="block3control"} loop that makes the clone fall straight down until it touches the **platform** sprite.
 >
-> If your platform sprite is named **Platform**, choose that name from the menu instead.
 >
 > ```blocks3
 > when I start as a clone
@@ -162,7 +161,7 @@ Make collectables drop from random x positions and land on the **platform** spri
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `delete this clone`{:class="block3control"}.
+> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `hide`{:class="block3looks"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -173,7 +172,7 @@ Make collectables drop from random x positions and land on the **platform** spri
 > forever
 >   if <touching [Player v]?> then
 > +    change [Score v] by (1)
-> +    delete this clone
+> +    hide
 >   end
 > end
 > ```

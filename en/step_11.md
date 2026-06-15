@@ -23,8 +23,6 @@ Make the **Player** keep moving, and use the arrow keys to change direction.
 > The starter project already includes the `Up Down Helper` block, the **Player** setup script, and these **Player** variables:
 >
 > `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
->
-> If you can already see them in your starter project, just check this step off.
 
 ## Step 4
 

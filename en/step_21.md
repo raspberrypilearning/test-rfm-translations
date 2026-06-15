@@ -119,7 +119,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Select the collectable sprite and add a script that starts when the green flag is clicked.
+> **Select the collectable sprite** and add a script that starts when the green flag is clicked.
 >
 > ```blocks3
 > +when green flag clicked

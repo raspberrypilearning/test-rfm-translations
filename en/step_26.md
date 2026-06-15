@@ -1,67 +1,50 @@
-<h2 class="c-project-heading--task">10B - Y-motion Hazards</h2>
+<h2 class="c-project-heading--task">10E - Add Music</h2>
 
-Add a hazard like spikes that move up and down to create danger.
+Add background music to give your game atmosphere.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite for your hazard and give it an obvious name like **Hazard**.
+> Click on the **Stage**.
 >
-> If you already made a **static hazard** in `10A`, you can duplicate that sprite and use it here.
->
-> ![An example vertical moving hazard.](images/hazard-vertical.png){:width="220px"}
+> ![Stage](images/stage.png)
+
 
 ## Step 2
 
 > [!TASK]
 >
-> Resize and place the **Hazard** sprite where you want it to start.
+> Select the **Sounds** tab and then **Choose a Sound**.
 >
-> Put it above or below a risky part of the level so it can move up and down across the player's path.
+> ![Scratch sounds tab](images/sounds-tab.png)
+> ![Scratch sounds tab](images/sounds-choose.png)
 
 ## Step 3
 
 > [!TASK]
 >
-> Add these blocks to the **Hazard** sprite.
+> From the list of sounds, select the one your want to use.
 >
-> Keep the two `x`{:class="block3motion"} positions the same. Change the two `y`{:class="block3motion"} positions to make the hazard move up and down.
->
-> ```blocks3
-> when green flag clicked
-> go to x: () y: ()
-> forever
->   glide () secs to x: () y: ()
->   glide () secs to x: () y: ()
-> end
-> ```
+> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
 
 ## Step 4
 
 > [!TASK]
 >
-> Click on the **Player** sprite and add these blocks:
+> Click the **Code** tab and add the blocks below.
+>
+> Select your music from the `sound`{:class="block3sounds"} menu.
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   if <touching [Hazard v]?> then
->     set [x speed v] to (0)
->     set [y speed v] to (0)
->     go to x: () y: ()
->   end
+>   play sound [music v] until done
 > end
 > ```
-
-> [!TASK]
->
-> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
->
-> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Hazard** moves up and down and sends the **Player** back to the start position on contact.
+> Click the green flag and check that the music plays.

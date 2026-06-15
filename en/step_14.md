@@ -14,7 +14,7 @@ Draw your own **Exit** sprite to show where the player should finish the level.
 
 > [!TASK]
 >
-> Draw an exit object such as a door, portal, flag, treasure, or finish marker.
+> Draw an exit object such as a door, portal, flag, treasure, or finish marker using the paint tools.
 >
 > Make it clear and easy to spot on your backdrop.
 

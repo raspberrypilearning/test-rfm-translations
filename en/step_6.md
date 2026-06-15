@@ -7,6 +7,8 @@ Choose a costume from the Scratch library for the existing **Player** sprite in 
 > [!TASK]
 >
 > Select the **Player** sprite in the sprite pane.
+>
+> ![Scratch Cat sprite selected in the sprite pain](images/player_sprite.png)
 
 ## Step 2
 
@@ -18,13 +20,22 @@ Choose a costume from the Scratch library for the existing **Player** sprite in 
 
 ## Step 3
 
+>![TASK]
+>
+> Delete the **Cat-a** and **Cat-b** costumes.
+>
+> ![Two Scratch cat costumes in costumes pane](images/cat_costumes.png)
+>
+
+## Step 4
+
 > [!TASK]
 >
 > Open the costume menu and select **Choose a Costume**.
 >
 > ![The costume library in Scratch.](images/list-costume.png)
 
-## Step 4
+## Step 5
 
 > [!TASK]
 >
@@ -32,7 +43,7 @@ Choose a costume from the Scratch library for the existing **Player** sprite in 
 >
 > For a classic platformer, a costume with legs, wheels, or a clear body shape is usually easier to understand as the player.
 
-## Step 5
+## Step 6
 
 > [!TASK]
 >

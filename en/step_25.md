@@ -1,34 +1,52 @@
-<h2 class="c-project-heading--task">10A - Add Spikes</h2>
+<h2 class="c-project-heading--task">10C - X-motion Hazards</h2>
 
-Add spikes, lava or another hazard for the player to avoid. 
+Add a hazard like spikes that move left and right to create danger.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and give it an obvious name like **Hazard**.
+> Create a new sprite for your hazard and give it an obvious name like **Hazard**.
 >
-> > [!TIP]
-> >
-> > You can use download these spikes and use them in your game.
-> > [![Spike hazard sprite](images/spikes.png){:width="300px"}](images/spikes.png)
+> If you already made a **static hazard** like spikes or lava, you can **duplicate** that sprite and use it here.
+>
+> ![An example horizontal moving hazard.](images/hazard-horizontal.png){:width="420px"}
 
 ## Step 2
 
 > [!TASK]
 >
-> In the **paint window**, resize and put your hazard where you want it, to make sure it fits on the level.
+> Resize and place the **Hazard** sprite where you want it to start.
+>
+> Put it beside a platform, floor, or gap so it can move left and right across the player's path.
 
 ## Step 3
 
 > [!TASK]
 >
-> Click your **Player** sprite, and add these blocks:
+> Add these blocks to the **Hazard** sprite.
+>
+> Keep the two `y`{:class="block3motion"} positions the same. Change the two `x`{:class="block3motion"} positions to make the hazard move left and right.
+>
+> ```blocks3
+> when green flag clicked
+> go to x: () y: ()
+> forever
+>   glide () secs to x: () y: ()
+>   glide () secs to x: () y: ()
+> end
+> ```
+
+## Step 4
+
+> [!TASK]
+>
+> Click on the **Player** sprite and add these blocks:
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   if <touching [Spikes v]?> then
+>   if <touching [Hazard v]?> then
 >     set [x speed v] to (0)
 >     set [y speed v] to (0)
 >     go to x: () y: ()
@@ -46,14 +64,4 @@ Add spikes, lava or another hazard for the player to avoid.
 
 > [!TASK]
 >
-> Touch the spikes and check that the **Player** goes back to the start position.
-
-## Add More Hazards
-
-> [!TASK]
->
-> When your hazard works, right-click or long-press the **Hazard** sprite and choose **duplicate**.
->
-> Drag the new hazard sprite to another place in your level.
->
-> Repeat this to add spikes, lava, or other hazards around the level.
+> Click the green flag and check that the **Hazard** moves left and right and sends the **Player** back to the start position on contact.

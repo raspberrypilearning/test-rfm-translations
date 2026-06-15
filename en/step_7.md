@@ -73,31 +73,6 @@ Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
 > +show
 > ```
 
-## Step 8
-
-> [!TASK]
->
-> Add a block to move the **Platform** sprite to the centre of the Stage.
->
-> ```blocks3
-> when green flag clicked
-> show
-> +go to x: (0) y: (0)
-> ```
-
-## Step 9
-
-> [!TASK]
->
-> Add a block to set the **Platform** sprite's size to `100`{:class="block3looks"} percent.
->
-> ```blocks3
-> when green flag clicked
-> show
-> go to x: (0) y: (0)
-> +set size to (100)%
-> ```
-
 ## Test
 
 > [!TASK]

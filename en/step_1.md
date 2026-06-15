@@ -4,21 +4,27 @@
 
 > [!TASK]
 >
-> In the **Stage**, choose **Paint** in the backdrop menu.
->
-> ![Scratch backdrop paint tool](images/stage-paint.png)
-
+> Open the [Starter project](https://scratch.mit.edu/projects/1331945689/editor/){:target="_blank"}.
 
 ## Step 2
 
 > [!TASK]
 >
-> Use the paint tools to draw your a backdrop based on the world your game is in.
+> In the **Stage**, choose **Paint** in the backdrop menu.
+>
+> ![Scratch backdrop paint tool](images/stage-paint.png)
+
+
+## Step 3
+
+> [!TASK]
+>
+> Use the paint tools to draw your a backdrop based on the world your game is set in.
 >
 > ![Scratch backdrop paint tool](images/backdrop-draw.png)
 
 
-## Step 3
+## Step 4
 
 > [!TASK]
 >

@@ -132,4 +132,4 @@ Make the player win only after collecting a key and reaching the **Exit**.
 >
 > Touch the exit before and after collecting the key.
 >
-> Check that the keyed route broadcasts `win`{:class="block3events"}, shows the win message, and stops the game only after the key has been collected.
+> Check that the keyed route broadcasts `win`{:class="block3events"}, shows the win message, and stops the game only **after** the key has been collected.

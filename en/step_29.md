@@ -1,50 +1,37 @@
-<h2 class="c-project-heading--task">10E - Add Music</h2>
+## 9A - Animate Your Player
 
-Add background music to give your game atmosphere.
+Switch costumes while the **Player** moves so the character feels more alive.
 
 ## Step 1
 
 > [!TASK]
 >
-> Click on the **Stage**.
+> Select the **Player** sprite and open the **Costumes** tab.
 >
-> ![Stage](images/stage.png)
-
+> Check that the sprite has more than one costume.
+>
+> ![The Costumes tab in Scratch.](images/costume_tab.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> Select the **Sounds** tab and then **Choose a Sound**.
->
-> ![Scratch sounds tab](images/sounds-tab.png)
-> ![Scratch sounds tab](images/sounds-choose.png)
-
-## Step 3
-
-> [!TASK]
->
-> From the list of sounds, select the one your want to use.
->
-> [![Scratch sound library](images/list-sounds.png)](images/list-sounds.png)
-
-## Step 4
-
-> [!TASK]
->
-> Click the **Code** tab and add the blocks below.
->
-> Select your music from the `sound`{:class="block3sounds"} menu.
+> Open the **Code** tab and add this animation script.
 >
 > ```blocks3
 > when green flag clicked
 > forever
->   play sound [music v] until done
+>   if <<not <(x speed) = (0)>> and <(on ground) = (1)>> then
+>     next costume
+>     wait () seconds
+>   end
 > end
 > ```
+>
+> Type your own delay into the `wait`{:class="block3control"} block.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the music plays.
+> Move the **Player** and check that the costume changes while it travels.

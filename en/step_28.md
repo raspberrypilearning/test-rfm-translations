@@ -1,90 +1,67 @@
-<h2 class="c-project-heading--task">10D - Add Enemies</h2>
+<h2 class="c-project-heading--task">10C - Change Level</h2>
 
-Add an enemy hazard with a movement pattern that is different from simple left-right or up-down movement.
+Change the **Platform** sprite when the player wins, so the stage looks like a new level or end screen.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and name it **Enemy**.
+> Select the **Platform** sprite in the sprite pane.
 >
-> > [!TIP]
-> >
-> > You can download this blob enemy to upload, choose one from the Scatch library or draw your own:
-> > [![Enemy sprite example](images/enemy-blob.png){:width="300px"}](images/enemy-blob.png)
+> This is the same sprite you made in `3A - Draw Platforms` or `3B - Clone Platforms`.
 
 ## Step 2
 
 > [!TASK]
 >
-> Resize and place the **Enemy** sprite somewhere dangerous.
+> Open the **Costumes** tab.
 >
-> Enemies are hazards, but they should feel more alive than spikes or lava. Put them on a platform, beside a gap, or near a place where the player needs careful timing.
+> Duplicate the costume you already use for your platforms.
+>
+> Rename the first costume `level 1` and rename the new costume `level 2`.
 
 ## Step 3
 
 > [!TASK]
 >
-> Choose a movement pattern for the **Enemy**.
+> Edit the `level 2` costume to make a new level, end screen, or changed platform layout.
 >
-> You could make it patrol around a small route, then spin before it moves again.
+> If you drew one big **Platform** costume in `3A`, draw new floor and platform lines on `level 2`.
+>
+> If you used cloned platforms in `3B`, edit the `level 2` costume so each clone changes appearance when the level changes.
 
 ## Step 4
 
 > [!TASK]
 >
-> Add this patrol and spin script to the **Enemy** sprite.
+> Open the **Code** tab.
 >
-> Type your own `x`{:class="block3motion"} and `y`{:class="block3motion"} positions for each place the enemy should visit.
->
-> The enemy spins between each glide. Each spin turns `36`{:class="block3motion"} degrees `10`{:class="block3control"} times. This makes `360` degrees, so the enemy is upright before it moves again.
+> Add this block to the **Platform** sprite's green flag script so the game always starts on `level 1`.
 >
 > ```blocks3
 > when green flag clicked
-> go to x: () y: ()
-> forever
->   glide () secs to x: () y: ()
->   repeat (10)
->     turn cw (36) degrees
->   end
->   glide () secs to x: () y: ()
->   repeat (10)
->     turn cw (36) degrees
->   end
->   glide () secs to x: () y: ()
->   repeat (10)
->     turn cw (36) degrees
->   end
-> end
+> switch costume to [level 1 v]
 > ```
 >
-> To make it seem more random, make sure the **glide** times are all different, or `pick a random number`{:class="block3operators"}.
+> If the **Platform** sprite already has a green flag script, add the `switch costume to level 1` block near the top of that script.
 
 ## Step 5
 
 > [!TASK]
 >
-> Click on the **Player** sprite and add these blocks:
+> Add this script to the **Platform** sprite.
+>
+> When any win condition broadcasts `win`, the **Platform** sprite changes to the `level 2` costume.
 >
 > ```blocks3
-> when green flag clicked
-> forever
->   if <touching [Enemy v]?> then
->     set [x speed v] to (0)
->     set [y speed v] to (0)
->     go to x: () y: ()
->   end
-> end
+> when I receive [win v]
+> switch costume to [level 2 v]
 > ```
-
-> [!TASK]
->
-> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
->
-> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Enemy** follows its pattern and sends the **Player** back to the start position when touched.
+> Click the green flag and check that the **Platform** sprite starts with the `level 1` costume.
+>
+> Meet your win condition and check that the **Platform** sprite switches to the `level 2` costume when the `win` message broadcasts.

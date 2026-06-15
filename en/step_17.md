@@ -10,8 +10,6 @@ Place collectables exactly where you want the player to find them.
 >
 > You can use a coin, star, gem, crystal, or any other small object.
 >
-> If your collectable has different looks, add or rename its costumes. The example below uses `Crystal-a` and `Crystal-b`.
->
 > ![A coin collectable sprite.](images/coin.png){:width="300px"}
 >
 > ![A star collectable sprite.](images/star.png){:width="300px"}
@@ -121,7 +119,7 @@ Place collectables exactly where you want the player to find them.
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `delete this clone`{:class="block3control"}.
+> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `hide`{:class="block3looks"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -130,7 +128,7 @@ Place collectables exactly where you want the player to find them.
 > forever
 >   if <touching [Player v]?> then
 > +    change [Score v] by (1)
-> +    delete this clone
+> +    hide
 >   end
 > end
 > ```

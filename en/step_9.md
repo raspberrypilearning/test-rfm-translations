@@ -20,17 +20,14 @@ Add keyboard controls so the **Player** can run and jump.
 
 > [!TASK]
 >
-> The starter project already includes the `Up Down Helper` block, the **Player** setup script, and these **Player** variables:
+> The starter project already includes an `Up Down Helper` block, the **player** game loop, and the **Player** setup script with these **player** variables:
 >
-> `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
+> `x speed`{:class="block3variables"}, `y speed`{:class="block3variables"}, `gravity`{:class="block3variables"}, `jump strength`{:class="block3variables"}, `move speed`{:class="block3variables"}, `on ground`, `vertical steps`{:class="block3variables"}
 >
-> If you can already see them in your starter project, just check this step off.
 
 ## Step 4
 
 > [!TASK]
->
-> Add a script that starts when the green flag is clicked.
 >
 > Inside a `forever`{:class="block3control"} loop, set `x speed`{:class="block3variables"} to `0`.
 >
@@ -60,8 +57,6 @@ Add keyboard controls so the **Player** can run and jump.
 > +  end
 > end
 > ```
-
-## Step 6
 
 > [!TASK]
 >
@@ -148,38 +143,6 @@ Add keyboard controls so the **Player** can run and jump.
 
 > [!TASK]
 >
-> At the bottom of the `forever`{:class="block3control"} loop, add the `Up Down Helper` block from **My Blocks**.
->
-> This makes the **Player** move up and down after the space key has changed `y speed`{:class="block3variables"}.
->
-> ```blocks3
-> when green flag clicked
-> forever
->   set [x speed v] to (0)
->
->   if <key [right arrow v] pressed?> then
->     set [x speed v] to (move speed)
->     point in direction (90)
->   end
->
->   if <key [left arrow v] pressed?> then
->     set [x speed v] to ((0) - (move speed))
->     point in direction (-90)
->   end
->
->   if <key [space v] pressed?> then
->     set [y speed v] to (jump strength)
->   end
->
->   change x by (x speed)
-> +  Up Down Helper
-> end
-> ```
-
-## Step 10
-
-> [!TASK]
->
 > Click the green flag and test your controls.
 >
 > Press `space` to jump, then press `space` again while the **Player** is still in the air.
@@ -190,7 +153,7 @@ Add keyboard controls so the **Player** can run and jump.
 
 > [!TASK]
 >
-> To stop the double jump, add an `and`{:class="block3operators"} condition to the space key `if`{:class="block3control"} block.
+> If you want to stop the double jump, add an `and`{:class="block3operators"} condition to the space key `if`{:class="block3control"} block.
 >
 > The **Player** should only jump if the `space` key is pressed and `on ground`{:class="block3variables"} is `1`.
 >

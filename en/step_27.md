@@ -1,67 +1,43 @@
-<h2 class="c-project-heading--task">10C - X-motion Hazards</h2>
+<h2 class="c-project-heading--task">10F - Add Sound effects</h2>
 
-Add a hazard like spikes that move left and right to create danger.
+Add sound effects to make moments such as jumping, collecting items, winning, or danger feel more realistic.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite for your hazard and give it an obvious name like **Hazard**.
->
-> If you already made a **static hazard** in `10A`, you can duplicate that sprite and use it here.
->
-> ![An example horizontal moving hazard.](images/hazard-horizontal.png){:width="220px"}
+> Click the sprite you want to add a sound effect to.
 
 ## Step 2
 
 > [!TASK]
 >
-> Resize and place the **Hazard** sprite where you want it to start.
+> Select the **Sounds** tab and then **Choose a Sound**.
 >
-> Put it beside a platform, floor, or gap so it can move left and right across the player's path.
+> ![Scratch sounds tab](images/sounds-tab.png)
+> ![Scratch sounds tab](images/sounds-choose.png)
+
 
 ## Step 3
 
 > [!TASK]
 >
-> Add these blocks to the **Hazard** sprite.
+> Choose a sound effect from the library.
 >
-> Keep the two `y`{:class="block3motion"} positions the same. Change the two `x`{:class="block3motion"} positions to make the hazard move left and right.
->
-> ```blocks3
-> when green flag clicked
-> go to x: () y: ()
-> forever
->   glide () secs to x: () y: ()
->   glide () secs to x: () y: ()
-> end
-> ```
+> ![Scratch sound library](images/list-sounds.png)
 
 ## Step 4
 
 > [!TASK]
 >
-> Click on the **Player** sprite and add these blocks:
+> Add `start sound`{:class="block3sounds"} inside the blocks you want it to play. For example, when collecting a coin, or in a block that makes a sprite jump.
 >
 > ```blocks3
-> when green flag clicked
-> forever
->   if <touching [Hazard v]?> then
->     set [x speed v] to (0)
->     set [y speed v] to (0)
->     go to x: () y: ()
->   end
-> end
+> start sound [effect v]
 > ```
-
-> [!TASK]
->
-> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
->
-> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Hazard** moves left and right and sends the **Player** back to the start position on contact.
+> Click the green flag and check that the sound works.
