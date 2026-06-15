@@ -13,20 +13,21 @@ Draw your own costume for the existing **player** sprite in the starter project.
 
 ## Step 2
 
+> [!TASK]
+>
+> Open the **Costumes** tab.
+>
+> ![The Costumes tab in Scratch.](images/tab_costumes.png)
+
+
+## Step 3
+
 >![TASK]
 >
 > Delete the **Cat-a** and **Cat-b** costumes.
 >
 > ![Two Scratch cat costumes in costumes pane](images/cat_costumes.png)
 >
-
-## Step 3
-
-> [!TASK]
->
-> Open the **Costumes** tab.
->
-> ![The Costumes tab in Scratch.](images/tab_costumes.png)
 
 ## Step 4
 
