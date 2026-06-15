@@ -20,7 +20,7 @@ Make the player win after their **Score** reaches a target value.
 >
 > Make sure you have a variable called `Score`.
 >
-> Set it up for all sprites so the Stage and collectable sprite can both use it.
+> Set it up for **all sprites** so the Stage and collectable sprite can both use it.
 
 ## Step 3
 
