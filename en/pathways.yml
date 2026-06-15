@@ -60,10 +60,10 @@ groups:
     options:
       - id: 5A
         file: 5A - Player Jump-Fall (Keys).md
-        title: 5A - Player Jump/Fall (Keys)
+        title: 5A - Player Jump-Fall (Keys)
       - id: 5B
         file: 5B - Player Jump-Fall (Mouse).md
-        title: 5B - Player Jump/Fall (Mouse)
+        title: 5B - Player Jump-Fall (Mouse)
 
   - id: 6
     title: Exit sprite
@@ -105,36 +105,36 @@ groups:
         title: 8C - Take Key to Exit
 
   - id: 9
-    title: Player extras
+    title: Hazards
     options:
       - id: 9A
-        file: 9A - Animate Your Player.md
-        title: 9A - Animate Your Player
+        file: 9A - Static Hazard.md
+        title: 9A - Static Hazard
       - id: 9B
-        file: 9B - Make Your Player Sprint.md
-        title: 9B - Make Your Player Sprint
+        file: 9B - Y-motion Hazards.md
+        title: 9B - Y-motion Hazards
+      - id: 9C
+        file: 9C - X-motion Hazards.md
+        title: 9C - X-motion Hazards
 
   - id: 10
-    title: Level extras
+    title: Extras
     options:
       - id: 10A
-        file: 10A - Add Spikes.md
-        title: 10A - Add Spikes
+        file: 10A - Add Music.md
+        title: 10A - Add Music
       - id: 10B
-        file: 10B - Y-motion Hazards.md
-        title: 10B - Y-motion Hazards
+        file: 10B - Add Sound effects.md
+        title: 10B - Add Sound effects
       - id: 10C
-        file: 10C - X-motion Hazards.md
-        title: 10C - X-motion Hazards
+        file: 10C - New Level.md
+        title: 10C - New Level
       - id: 10D
-        file: 10D - Add Enemies.md
-        title: 10D - Add Enemies
+        file: 10D - Animate your player.md
+        title: 10D - Animate your player
       - id: 10E
-        file: 10E - Add Music.md
-        title: 10E - Add Music
-      - id: 10F
-        file: 10F - Add Sound effects.md
-        title: 10F - Add Sound effects
+        file: 10E - Make Your Player Sprint.md
+        title: 10E - Make Your Player Sprint
 
 recommended_paths:
   quick_platformer:
@@ -173,5 +173,5 @@ recommended_paths:
     - 6A
     - 8C
     - 9B
-    - 10A
-    - 10D
+    - 10C
+    - 10E

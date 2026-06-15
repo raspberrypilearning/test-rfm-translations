@@ -6,11 +6,12 @@ Add spikes, lava or another non-moving hazard for the player to avoid.
 
 > [!TASK]
 >
-> Create a new sprite and give it an obvious name like **Hazard**.
+> Create a new sprite and give it an obvious name like **Hazard** or **spikes**.
 >
 > > [!TIP]
 > >
 > > You can use download these spikes and use them in your game.
+> > [![Spike hazard sprite](images/spikes.png){:width="300px"}](images/spikes.png)
 
 ## Step 2
 
@@ -27,7 +28,7 @@ Add spikes, lava or another non-moving hazard for the player to avoid.
 > ```blocks3
 > when green flag clicked
 > forever
->   if <touching [Spikes v]?> then
+>   if <touching [hazard v]?> then
 >     set [x speed v] to (0)
 >     set [y speed v] to (0)
 >     go to x: () y: ()

@@ -23,7 +23,7 @@ en/
 ├── 1A - Draw Backdrop.md
 ├── 1B - Upload Backdrop.md
 ├── ...
-└── 10F - Add Sound effects.md
+└── 10E - Make Your Player Sprint.md
 ```
 
 ## Directory and File Descriptions

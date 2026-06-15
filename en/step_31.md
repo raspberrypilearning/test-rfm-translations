@@ -22,7 +22,7 @@ Add a sprint key so the **Player** moves faster while `shift` is held.
 
 > [!TASK]
 >
-> If you used keyboard controls or always-moving controls, add this sprint check just above `change x by (x speed)`{:class="block3motion"}.
+> If you used **keyboard controls** or **always-moving controls**, add this sprint check just above `change x by (x speed)`{:class="block3motion"}.
 >
 > ```blocks3
 > forever
@@ -52,7 +52,7 @@ Add a sprint key so the **Player** moves faster while `shift` is held.
 
 > [!TASK]
 >
-> If you used mouse movement, use this version instead.
+> If you used **mouse movement**, use this version instead.
 >
 > Change the block that sets `x speed`{:class="block3variables"} so it uses a smaller divisor while `shift` is pressed.
 >

@@ -34,7 +34,7 @@ Create a second platform layout and switch to it when the player meets the win c
 >
 > Keep the top edges straight and horizontal where the **Player** needs to stand.
 >
-> If you used hidden platform lines in `3A - Add platforms to match your backdrop`, make the lines visible while you edit, then make them transparent again when you are finished.
+> If you used hidden platform lines in `Add platforms to match your backdrop`, make the lines visible while you edit, then make them transparent again when you are finished.
 
 ## Step 5
 
@@ -44,7 +44,7 @@ Create a second platform layout and switch to it when the player meets the win c
 >
 > Rename your current backdrop `level 1`, duplicate it, rename the copy `level 2`, and edit it so it matches the new platform layout.
 >
-> If you used `3B - Draw foreground platforms` or `3C - Draw Platforms in another editor`, you can skip this step.
+> If you used `Draw foreground platforms` or `Draw Platforms in another editor`, you can skip this step.
 
 ## Step 6
 
