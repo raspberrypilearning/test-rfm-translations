@@ -6,7 +6,7 @@ Add a hazard like spikes that move up and down to create danger.
 
 > [!TASK]
 >
-> Create a new sprite for your hazard and give it a name such as **Hazard**.
+> Create a new sprite for your hazard and give it an obvious name like **Hazard**.
 >
 > If you already made spikes or lava in `10A`, you can duplicate that sprite and use it here.
 
