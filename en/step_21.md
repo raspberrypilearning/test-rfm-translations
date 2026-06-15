@@ -20,7 +20,7 @@ Make the player win after their **Score** reaches a target value.
 >
 > Make sure you have a variable called `Score`.
 >
-> Set it up for all sprites so the Stage and collectable sprite can both use it.
+> Set it up for **all sprites** so the Stage and collectable sprite can both use it.
 
 ## Step 3
 
@@ -77,7 +77,7 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"} block, add `broadcast [win v]`{:class="block3events"} and `stop [this script v]`{:class="block3control"}.
+> Inside the `if`{:class="block3control"} block, add `broadcast win`{:class="block3events"}.
 >
 > ```blocks3
 > when green flag clicked
@@ -85,12 +85,37 @@ Make the player win after their **Score** reaches a target value.
 > forever
 >   if <(Score) = ()> then
 > +    broadcast [win v]
-> +    stop [this script v]
 >   end
 > end
 > ```
 
 ## Step 8
+
+> [!TASK]
+>
+> Add a new script that starts when it receives the `win`{:class="block3events"} message.
+>
+> Add `say 'You win!' for 2 seconds`{:class="block3looks"} and `stop all`{:class="block3control"}.
+>
+> If you already added this win script in another route, just check this step off.
+>
+> ```blocks3
+> +when I receive [win v]
+> +say [You win!] for (2) seconds
+> +stop [all v]
+> ```
+
+## Step 9
+
+> [!TASK]
+>
+> Choose what should happen before `stop all`{:class="block3control"}.
+>
+> You can use the `when I receive win`{:class="block3events"} script to show a message, play a sound, change backdrop, switch costume, or trigger another sprite before the game stops.
+>
+> Put any extra win blocks above `stop all`{:class="block3control"}.
+
+## Step 10
 
 > [!TASK]
 >
@@ -100,7 +125,7 @@ Make the player win after their **Score** reaches a target value.
 > +when green flag clicked
 > ```
 
-## Step 9
+## Step 11
 
 > [!TASK]
 >
@@ -113,7 +138,7 @@ Make the player win after their **Score** reaches a target value.
 > +end
 > ```
 
-## Step 10
+## Step 12
 
 > [!TASK]
 >
@@ -128,11 +153,11 @@ Make the player win after their **Score** reaches a target value.
 > end
 > ```
 
-## Step 11
+## Step 13
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"} block, add `change [Score v] by (1)`{:class="block3variables"} and `hide`{:class="block3looks"}.
+> Inside the `if`{:class="block3control"} block, add `change Score by 1`{:class="block3variables"} and `hide`{:class="block3looks"}.
 >
 > ```blocks3
 > when green flag clicked
@@ -149,4 +174,4 @@ Make the player win after their **Score** reaches a target value.
 
 > [!TASK]
 >
-> Collect enough items and check that `win` broadcasts when the value of `Score` matches your target value.
+> Collect enough items and check that the `win`{:class="block3events"} message broadcasts, the win message appears, and the game stops.

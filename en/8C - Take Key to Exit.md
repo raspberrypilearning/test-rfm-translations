@@ -83,9 +83,9 @@ Make the player win only after collecting a key and reaching the **Exit**.
 
 > [!TASK]
 >
-> In the `has key = 1` part, add `broadcast [win v]`{:class="block3events"}, `say [Unlocked!] for (2) seconds`{:class="block3looks"}, and `stop [this script v]`{:class="block3control"}.
+> In the `has key = 1` part, add `broadcast win`{:class="block3events"}.
 >
-> In the `else` part, add a `say [] for (2) seconds`{:class="block3looks"} block.
+> In the `else` part, add a `say 'Find the key!' for 2 seconds`{:class="block3looks"} block.
 >
 > ```blocks3
 > when green flag clicked
@@ -93,17 +93,43 @@ Make the player win only after collecting a key and reaching the **Exit**.
 >   if <touching [Player v]?> then
 >     if <(has key) = [1]> then
 > +      broadcast [win v]
-> +      say [Unlocked!] for (2) seconds
-> +      stop [this script v]
 >     else
-> +      say [] for (2) seconds
+> +      say [Find the key!] for (2) seconds
 >     end
 >   end
 > end
 > ```
 
+## Step 8
+
+> [!TASK]
+>
+> Add a new script that starts when it receives the `win`{:class="block3events"} message.
+>
+> Add `say 'You win!' for 2 seconds`{:class="block3looks"} and `stop all`{:class="block3control"}.
+>
+> If you already added this win script in another route, just check this step off.
+>
+> ```blocks3
+> +when I receive [win v]
+> +say [You win!] for (2) seconds
+> +stop [all v]
+> ```
+
+## Step 9
+
+> [!TASK]
+>
+> Choose what should happen before `stop all`{:class="block3control"}.
+>
+> You can use the `when I receive win`{:class="block3events"} script to show a message, play a sound, change backdrop, switch costume, or trigger another sprite before the game stops.
+>
+> Put any extra win blocks above `stop all`{:class="block3control"}.
+
 ## Test
 
 > [!TASK]
 >
-> Touch the exit before and after collecting the key to check that only the keyed route wins.
+> Touch the exit before and after collecting the key.
+>
+> Check that the keyed route broadcasts `win`{:class="block3events"}, shows the win message, and stops the game only after the key has been collected.

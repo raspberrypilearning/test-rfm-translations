@@ -48,9 +48,7 @@ Make the player win when they touch the **Exit** sprite.
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"} block, add `broadcast [win v]`{:class="block3events"}.
->
-> This lets other routes react to the win later.
+> Inside the `if`{:class="block3control"} block, add `broadcast win`{:class="block3events"}.
 >
 > ```blocks3
 > when green flag clicked
@@ -65,33 +63,28 @@ Make the player win when they touch the **Exit** sprite.
 
 > [!TASK]
 >
-> Add `stop [this script v]`{:class="block3control"} below the broadcast block.
+> Add a new script that starts when it receives the `win`{:class="block3events"} message.
+>
+> Add `say 'You win!' for 2 seconds`{:class="block3looks"} and `stop all`{:class="block3control"}.
 >
 > ```blocks3
-> when green flag clicked
-> forever
->   if <touching [Exit v]?> then
->     broadcast [win v]
-> +    stop [this script v]
->   end
-> end
+> +when I receive [win v]
+> +say [You win!] for (2) seconds
+> +stop [all v]
 > ```
 
 ## Step 7
 
 > [!TASK]
 >
-> Add a new script that starts when it receives the `win`{:class="block3events"} message, then says `You win!`{:class="block3looks"}.
+> Choose what should happen before `stop all`{:class="block3control"}.
 >
-> You can use a `when I receive`{:class="block3events"} block to trigger other actions (on this sprite, or other sprites) when the player wins, such as changing to a new level or stopping other scripts.
+> You can use the `when I receive win`{:class="block3events"} script to show a message, play a sound, change backdrop, switch costume, or trigger another sprite before the game stops.
 >
-> ```blocks3
-> +when I receive [win v]
-> +say [You win!]
-> ```
+> Put any extra win blocks above `stop all`{:class="block3control"}.
 
 ## Test
 
 > [!TASK]
 >
-> Move the **Player** to the **Exit** and check that the win message appears.
+> Move the **Player** to the **Exit** and check that the win message appears and the game stops.
