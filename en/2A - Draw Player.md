@@ -2,13 +2,12 @@
 
 Draw your own costume for the existing **player** sprite in the starter project.
 
-![Scratch Cat sprite selected in the sprite pain](images/player_sprite.png)
-
 ## Step 1
 
 > [!TASK]
 >
 > Select the **Player** sprite in the sprite pane.
+> ![Scratch Cat sprite selected in the sprite pain](images/player_sprite.png)
 
 ## Step 2
 
