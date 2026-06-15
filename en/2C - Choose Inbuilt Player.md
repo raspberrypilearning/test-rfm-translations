@@ -47,7 +47,17 @@ Choose a costume from the Scratch library for the existing **Player** sprite in 
 
 > [!TASK]
 >
-> Add the costume to the **Player** sprite. If the **Player** already has another costume, keep it because you may be able to use it for animation later.
+> Add the costume to the **Player** sprite. If the **Player** already has another costume, keep it because you may be able to use it for an animation later.
+
+## Step 7
+
+> [!TASK]
+>
+> On the **Code** tab, add blocks to set the starting position of your player. You can change this later
+> ```blocks3
+> when flag clicked
+> go to x: (100) y: (100)
+> ```
 
 ## Test
 

@@ -51,6 +51,16 @@ Draw your own costume for the existing **player** sprite in the starter project.
 >
 > Check that your costume is facing sideways or is easy to turn sideways later. A platformer player usually moves left and right, so a side-on character will be easier to animate.
 
+## Step 7
+
+> [!TASK]
+>
+> On the **Code** tab, add blocks to set the starting position of your player. You can change this later
+> ```blocks3
+> when flag clicked
+> go to x: (100) y: (100)
+> ```
+
 ## Test
 
 > [!TASK]
