@@ -1,32 +1,41 @@
 <h2 class="c-project-heading--task">10D - Add Enemies</h2>
 
-
-Add an enemy that moves back and forth for the player to avoid.
+Add an enemy hazard with a movement pattern that is different from simple left-right or up-down movement.
 
 ## Step 1
 
 > [!TASK]
 >
-> Create a new sprite and give it a name.
+> Create a new sprite and name it **Enemy**.
 >
 > > [!TIP]
 > >
-> > You can use download this blob enemy to use.
+> > You can download this blob enemy to use.
 > > [![Enemy sprite example](images/enemy-blob.png){:width="300px"}](images/enemy-blob.png)
 
 ## Step 2
 
 > [!TASK]
 >
-> In the **paint window**, resize and put the **enemy** sprite on a platform or floor.
+> Resize and place the **Enemy** sprite somewhere dangerous.
+>
+> Enemies are hazards, but they should feel more alive than spikes or lava. Put them on a platform, beside a gap, or near a place where the player needs careful timing.
 
 ## Step 3
 
 > [!TASK]
 >
-> Add these blocks to the **Enemy** sprite.
+> Choose a movement pattern for the **Enemy**.
 >
-> Type `x`{:class="block3motion"} and `y`{:class="block3motion"} positions, and `glide`{:class="block3motion"} time.
+> You could make it patrol around a small route, spin as it moves, or use uneven glide times so it feels less predictable than a simple moving hazard.
+
+## Step 4
+
+> [!TASK]
+>
+> Add this patrol script to the **Enemy** sprite.
+>
+> Type your own `x`{:class="block3motion"} and `y`{:class="block3motion"} positions for each place the enemy should visit.
 >
 > ```blocks3
 > when green flag clicked
@@ -34,10 +43,25 @@ Add an enemy that moves back and forth for the player to avoid.
 > forever
 >   glide () secs to x: () y: ()
 >   glide () secs to x: () y: ()
+>   glide () secs to x: () y: ()
 > end
 > ```
 
-## Step 4
+## Step 5
+
+> [!TASK]
+>
+> If you want the enemy to spin while it patrols, add this second script to the **Enemy** sprite.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+>   turn cw (15) degrees
+>   wait (0.05) seconds
+> end
+> ```
+
+## Step 6
 
 > [!TASK]
 >
@@ -61,4 +85,4 @@ Add an enemy that moves back and forth for the player to avoid.
 
 > [!TASK]
 >
-> Click the green flag and check that the `Enemy` patrols and causes `game over` when touched.
+> Click the green flag and check that the **Enemy** follows its pattern and causes `game over` when touched.
