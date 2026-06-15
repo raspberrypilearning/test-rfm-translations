@@ -4,17 +4,23 @@
 
 > [!TASK]
 >
-> In the **Stage**, select **Choose a Backdrop** in the menu.
->
-> ![Scratch backdrop library](images/stage-backdrop.png)
+> Open the [Starter project](https://scratch.mit.edu/projects/1331944494/editor){:target="_blank"}.
 
 ## Step 2
 
 > [!TASK]
 >
-> Pick a backdrop.
+> In the **Stage**, select **Choose a Backdrop** in the menu.
+>
+> ![Scratch backdrop library](images/stage-backdrop.png)
 
 ## Step 3
+
+> [!TASK]
+>
+> Pick a backdrop.
+
+## Step 4
 
 > [!TASK]
 >
