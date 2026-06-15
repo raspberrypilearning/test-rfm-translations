@@ -20,7 +20,7 @@ Add keyboard controls so the **Player** can run and jump.
 
 > [!TASK]
 >
-> The starter project already includes the `Up Down Helper` block, the **Player** setup script, and these **Player** variables:
+> The starter project already includes the `move vertically` block, the **Player** setup script, and these **Player** variables:
 >
 > `x speed`, `y speed`, `gravity`, `jump strength`, `move speed`, `on ground`, `vertical steps`
 >
@@ -148,7 +148,7 @@ Add keyboard controls so the **Player** can run and jump.
 
 > [!TASK]
 >
-> At the bottom of the `forever`{:class="block3control"} loop, add the `Up Down Helper` block from **My Blocks**.
+> At the bottom of the `forever`{:class="block3control"} loop, add the `move vertically` block from **My Blocks**.
 >
 > This makes the **Player** move up and down after the space key has changed `y speed`{:class="block3variables"}.
 >
@@ -172,7 +172,7 @@ Add keyboard controls so the **Player** can run and jump.
 >   end
 >
 >   change x by (x speed)
-> +  Up Down Helper
+> +  move vertically
 > end
 > ```
 
@@ -215,7 +215,7 @@ Add keyboard controls so the **Player** can run and jump.
 >   end
 >
 >   change x by (x speed)
->   Up Down Helper
+>   move vertically
 > end
 > ```
 
