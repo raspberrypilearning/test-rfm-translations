@@ -10,7 +10,7 @@ Add an enemy hazard with a movement pattern that is different from simple left-r
 >
 > > [!TIP]
 > >
-> > You can download this blob enemy to use.
+> > You can download this blob enemy to upload, choose one from the Scatch library or draw your own:
 > > [![Enemy sprite example](images/enemy-blob.png){:width="300px"}](images/enemy-blob.png)
 
 ## Step 2
@@ -27,39 +27,46 @@ Add an enemy hazard with a movement pattern that is different from simple left-r
 >
 > Choose a movement pattern for the **Enemy**.
 >
-> You could make it patrol around a small route, spin as it moves, or use uneven glide times so it feels less predictable than a simple moving hazard.
+> You could make it patrol around a small route, then spin before it moves again.
 
 ## Step 4
 
 > [!TASK]
 >
-> Add this patrol script to the **Enemy** sprite.
+> Add this patrol and spin script to the **Enemy** sprite.
 >
 > Type your own `x`{:class="block3motion"} and `y`{:class="block3motion"} positions for each place the enemy should visit.
+>
+> The enemy spins between each glide. Each spin turns `36`{:class="block3motion"} degrees `10`{:class="block3control"} times. This makes `360` degrees, so the enemy is upright before it moves again.
 >
 > ```blocks3
 > when green flag clicked
 > go to x: () y: ()
 > forever
 >   glide () secs to x: () y: ()
+>   repeat (10)
+>     turn cw (36) degrees
+>   end
 >   glide () secs to x: () y: ()
+>   repeat (10)
+>     turn cw (36) degrees
+>   end
 >   glide () secs to x: () y: ()
+>   repeat (10)
+>     turn cw (36) degrees
+>   end
 > end
 > ```
+>
+> To make it seem more random, make sure the **glide** times are all different, or `pick a random number`{:class="block3operators"}
 
 ## Step 5
 
 > [!TASK]
 >
-> If you want the enemy to spin while it patrols, add this second script to the **Enemy** sprite.
+> Try changing the spin pattern.
 >
-> ```blocks3
-> when green flag clicked
-> forever
->   turn cw (15) degrees
->   wait (0.05) seconds
-> end
-> ```
+> Make sure the repeat number multiplied by the turn angle equals `360`, such as `repeat 12` and `turn 30 degrees`, or `repeat 8` and `turn 45 degrees`.
 
 ## Step 6
 
