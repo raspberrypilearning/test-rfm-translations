@@ -1,4 +1,4 @@
-## 5A - Player Jump/Fall (Simple)
+## 5A - Player Jump/Fall (Keys)
 
 Use the starter settings to tune how the **Player** jumps and falls.
 
@@ -15,10 +15,10 @@ Use the starter settings to tune how the **Player** jumps and falls.
 > Look for this block.
 >
 > ```blocks3
-> set [jump strength v] to (14)
+> set [jump strength v] to (9)
 > ```
 >
-> Change `14` if you want a higher or lower jump.
+> Change `9` if you want a higher or lower jump.
 
 ## Step 3
 
