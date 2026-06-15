@@ -1,6 +1,6 @@
 ## 2A - Draw Player
 
-Draw your own costume for the existing **Player** sprite in the starter project.
+Draw your own costume for the existing **player** sprite in the starter project.
 
 ## Step 1
 
