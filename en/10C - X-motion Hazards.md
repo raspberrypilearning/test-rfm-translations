@@ -47,7 +47,8 @@ Add a hazard like spikes that move left and right to create danger.
 > when green flag clicked
 > forever
 >   if <touching [Hazard v]?> then
->     broadcast [game over v]
+>     set [x speed v] to (0)
+>     set [y speed v] to (0)
 >     go to x: () y: ()
 >   end
 > end
@@ -55,10 +56,12 @@ Add a hazard like spikes that move left and right to create danger.
 
 > [!TASK]
 >
-> If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
+> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
+>
+> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Hazard** moves left and right and broadcasts `game over` on contact.
+> Click the green flag and check that the **Hazard** moves left and right and sends the **Player** back to the start position on contact.

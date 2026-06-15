@@ -70,7 +70,8 @@ Add an enemy hazard with a movement pattern that is different from simple left-r
 > when green flag clicked
 > forever
 >   if <touching [Enemy v]?> then
->     broadcast [game over v]
+>     set [x speed v] to (0)
+>     set [y speed v] to (0)
 >     go to x: () y: ()
 >   end
 > end
@@ -78,10 +79,12 @@ Add an enemy hazard with a movement pattern that is different from simple left-r
 
 > [!TASK]
 >
-> If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
+> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
+>
+> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Click the green flag and check that the **Enemy** follows its pattern and causes `game over` when touched.
+> Click the green flag and check that the **Enemy** follows its pattern and sends the **Player** back to the start position when touched.

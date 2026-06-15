@@ -29,7 +29,8 @@ Add spikes, lava or another hazard for the player to avoid.
 > when green flag clicked
 > forever
 >   if <touching [Spikes v]?> then
->     broadcast [game over v]
+>     set [x speed v] to (0)
+>     set [y speed v] to (0)
 >     go to x: () y: ()
 >   end
 > end
@@ -37,13 +38,15 @@ Add spikes, lava or another hazard for the player to avoid.
 
 > [!TASK]
 >
-> If you want the player to start again, then add the new position into `go to x: y:`{:class="block3motion"}.
+> Add the same position you used in the **Player** starting script into `go to x: y:`{:class="block3motion"}.
+>
+> This resets the **Player** instead of stopping the game.
 
 ## Test
 
 > [!TASK]
 >
-> Touch the spikes and check that the `game over` message broadcasts.
+> Touch the spikes and check that the **Player** goes back to the start position.
 
 ## Add More Hazards
 
