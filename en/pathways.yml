@@ -33,11 +33,11 @@ groups:
     title: Add platforms
     options:
       - id: 3A
-        file: 3A - Add Floors and Platforms.md
-        title: 3A - Add Floors and Platforms
+        file: 3A - Draw Platforms.md
+        title: 3A - Draw Platforms
       - id: 3B
-        file: 3B - Make Platforms Move.md
-        title: 3B - Make a Moving Platform
+        file: 3B - Clone Platforms.md
+        title: 3B - Clone Platforms
 
   - id: 4
     title: Move player

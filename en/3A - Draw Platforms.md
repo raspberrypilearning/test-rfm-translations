@@ -1,4 +1,4 @@
-## 3A - Add Floors and Platforms
+## 3A - Draw Platforms
 
 Add a **Platform** sprite so the **Player** has somewhere to stand and jump.
 
