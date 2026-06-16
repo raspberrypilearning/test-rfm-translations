@@ -2,6 +2,8 @@
 
 Draw your own costume for the existing **player** sprite in the starter project.
 
+The **Player** sprite already has code that handles gravity, jumping, and falling. Change the costume in these steps, but do not delete or change the code unless a later step tells you to, or the game might stop working properly.
+
 ## Step 1
 
 > [!TASK]
