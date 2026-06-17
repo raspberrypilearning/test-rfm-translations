@@ -49,11 +49,46 @@ jobs:
           crowdin --version
           # NTTT reads the Crowdin listing and prints the IDs of strings to hide
           # (those containing a marker from markers.yml, legacy or RFM).
-          crowdin string list --verbose | nttt --hide-strings > ids.txt
-          echo "Hiding $(wc -l < ids.txt) strings"
+          crowdin string list --verbose --no-progress | nttt --hide-strings > ids.txt
+          count=$(grep -c . ids.txt || true)
+          echo "Hiding $count strings"
+          if [[ "$count" -eq 0 ]]; then
+            echo "No strings to hide"
+            exit 0
+          fi
+          # Batch hide via API — much faster than one `crowdin string edit` per ID.
+          batch_size=100
+          batch=()
+          hidden=0
+          hide_batch() {
+            local patch http_code batch_count
+            patch=$(printf '%s\n' "${batch[@]}" | jq -R 'select(length > 0) | {op: "replace", path: ("/" + . + "/isHidden"), value: true}' | jq -s '.')
+            http_code=$(curl -sS -o /tmp/crowdin-hide-response.json -w "%{http_code}" \
+              -X PATCH "https://api.crowdin.com/api/v2/projects/${CROWDIN_PROJECT_ID}/strings" \
+              -H "Authorization: Bearer ${CROWDIN_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              -d "$patch")
+            if [[ "$http_code" -ge 300 ]]; then
+              echo "Batch hide failed (HTTP $http_code):"
+              cat /tmp/crowdin-hide-response.json
+              exit 1
+            fi
+            batch_count=${#batch[@]}
+            hidden=$((hidden + batch_count))
+            echo "Hid $hidden / $count strings"
+            batch=()
+          }
           while read -r id; do
-            crowdin string edit "$id" --hidden
+            [[ -z "$id" ]] && continue
+            batch+=("$id")
+            if ((${#batch[@]} >= batch_size)); then
+              hide_batch
+            fi
           done < ids.txt
+          if ((${#batch[@]} > 0)); then
+            hide_batch
+          fi
+          echo "Done — hid $hidden strings"
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_API_TOKEN: ${{ secrets.CROWDIN_API_TOKEN }}
