@@ -15,7 +15,7 @@ Add spikes, lava or another non-moving hazard for the player to avoid.
 
 ## Step 2
 
-> [!TASK]
+> [!TASK] With a title
 >
 > In the **paint window**, resize and put your hazard where you want it, to make sure it fits on the level.
 

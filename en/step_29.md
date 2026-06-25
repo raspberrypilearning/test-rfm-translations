@@ -20,7 +20,7 @@ Create a second platform layout and switch to it when the player meets the win c
 
 ## Step 3
 
-> [!TASK]
+> [ACCORDION] I have added a fake title
 >
 > Duplicate the `level 1` costume and rename the copy `level 2`.
 >
