@@ -1,0 +1,42 @@
+Image asset manifest for Branching Pathways Platformer
+
+All paths are relative to en/images.
+
+Scratch UI screenshots:
+- backdrop-paint.png: used in 1A - Draw Backdrop
+- backdrop-choose.png: used in 1C - Choose Inbuilt Backdrop
+- sprite-paint.png: used in 2A - Draw Player, 3A - Add platforms to match your backdrop, and 3B - Draw foreground platforms
+- choose_sprite.png: used in 6B - Upload Exit Sprite
+- sprite-choose.png: used in 2C - Choose Inbuilt Player and 6C - Choose Exit Sprite from Library
+- pixlr_new_image.png: used in 3C - Draw Platforms in another editor
+- costume_tab.png: used in 9A - Animate Your Player
+- sounds_tab.png: used in 10E - Add Music
+- list-sounds.png: used in 10E - Add Music
+
+Example backdrop previews:
+- example-backdrop-sky-platforms.png: optional preview for 1B - Upload Backdrop
+- example-backdrop-forest-platforms.png: optional preview for 1B - Upload Backdrop
+- example-backdrop-cave-platforms.png: optional supporting image
+- example-backdrop-space-platforms.png: optional supporting image
+
+Example platform previews:
+- platform-lines-costume.png: used in 3A - Add platforms to match your backdrop
+- platform-lines-backdrop.png: used in 3A - Add platforms to match your backdrop
+- drawn_platforms.png: used in 3C - Draw Platforms in another editor
+
+Example player previews:
+- example-sprite-player-robot.png: optional preview for 2B - Upload Player
+- example-sprite-player-creature.png: optional supporting image
+- example-sprite-player-adventurer.png: optional preview for 2B - Upload Player
+
+Example sprite and object assets:
+- coin.png: used in 7A - Place Collectables, 7B - Random Collectables, and 8B - Target Score
+- star.png: used in 7A - Place Collectables, 7B - Random Collectables, and 8B - Target Score
+- key.png: used in 8C - Take Key to Exit
+- exit-door.png: used in 6B - Upload Exit Sprite and 8C - Take Key to Exit
+- spikes.png: used in 10A - Add Spikes
+- hazard-vertical.png: used in 10B - Y-motion Hazards
+- hazard-horizontal.png: used in 10C - X-motion Hazards
+- enemy-blob.png: used in 10D - Add Enemies
+
+All generated/example art should be human-reviewed before publication.
