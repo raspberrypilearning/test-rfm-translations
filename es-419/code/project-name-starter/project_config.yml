@@ -1,0 +1,4 @@
+name: "Branching Pathways Platformer"
+identifier: "project-name-starter"
+type: 'python'
+build: true
