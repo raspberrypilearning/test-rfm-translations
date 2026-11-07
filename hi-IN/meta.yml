@@ -1,0 +1,44 @@
+title: Branching Pathways Platformer
+hero_image: images/banner.png
+description: Build a Scratch platformer by choosing your own route through backdrops, players, movement, hazards, and extra features.
+listed: false
+pdf: false
+landing: true
+steps:
+  - title: '1A - Draw Backdrop'
+  - title: '1B - Upload Backdrop'
+  - title: '1C - Choose Inbuilt Backdrop'
+  - title: '2A - Draw Player'
+  - title: '2B - Upload Player'
+  - title: '2C - Choose Inbuilt Player'
+    completion:
+      - engaged
+  - title: '3A - Add platforms to match your backdrop'
+  - title: '3B - Draw foreground platforms'
+  - title: '3C - Draw Platforms in another editor'
+  - title: '4A - Keys'
+  - title: '4B - Mouse Move'
+  - title: '4C - Always Moving'
+  - title: '5A - Player Jump-Fall (Keys)'
+  - title: '5B - Player Jump-Fall (Mouse)'
+  - title: '6A - Draw Exit Sprite'
+  - title: '6B - Upload Exit Sprite'
+  - title: '6C - Choose Exit Sprite from Library'
+  - title: '7A - Place Collectables'
+  - title: '7B - Random Collectables'
+  - title: '7C - Add a Power Up'
+  - title: '8A - Get to Exit Sprite (Default)'
+    completion:
+      - internal
+  - title: '8B - Target Score'
+  - title: '8C - Take Key to Exit'
+  - title: '9A - Static Hazard'
+  - title: '9B - Y-motion Hazards'
+  - title: '9C - X-motion Hazards'
+  - title: '10A - Add Music'
+  - title: '10B - Add Sound effects'
+  - title: '10C - New Level'
+  - title: '10D - Animate your player'
+  - title: '10E - Make Your Player Sprint'
+    completion:
+      - external
