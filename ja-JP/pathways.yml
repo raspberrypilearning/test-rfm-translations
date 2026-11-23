@@ -1,0 +1,163 @@
+title: Branching Pathways Platformer
+steps_are_files: true
+canonical_step_count: 31
+groups:
+  - id: 1
+    title: Add a backdrop
+    options:
+      - id: 1A
+        file: 1A - Draw Backdrop.md
+        title: 1A - Draw Backdrop
+      - id: 1B
+        file: 1B - Upload Backdrop.md
+        title: 1B - Upload Backdrop
+      - id: 1C
+        file: 1C - Choose Inbuilt Backdrop.md
+        title: 1C - Choose Inbuilt Backdrop
+  - id: 2
+    title: Add a player
+    options:
+      - id: 2A
+        file: 2A - Draw Player.md
+        title: 2A - Draw Player
+      - id: 2B
+        file: 2B - Upload Player.md
+        title: 2B - Upload Player
+      - id: 2C
+        file: 2C - Choose Inbuilt Player.md
+        title: 2C - Choose Inbuilt Player
+  - id: 3
+    title: Add platforms
+    options:
+      - id: 3A
+        file: 3A - Add platforms to match your backdrop.md
+        title: 3A - Add platforms to match your backdrop
+      - id: 3B
+        file: 3B - Draw foreground platforms.md
+        title: 3B - Draw foreground platforms
+      - id: 3C
+        file: 3C - Draw Platforms in another editor.md
+        title: 3C - Draw Platforms in another editor
+  - id: 4
+    title: Move player
+    options:
+      - id: 4A
+        file: 4A - Keys.md
+        title: 4A - Keys
+      - id: 4B
+        file: 4B - Mouse Move.md
+        title: 4B - Mouse Move
+      - id: 4C
+        file: 4C - Always Moving.md
+        title: 4C - Always Moving
+  - id: 5
+    title: Player jump/fall
+    options:
+      - id: 5A
+        file: 5A - Player Jump-Fall (Keys).md
+        title: 5A - Player Jump-Fall (Keys)
+      - id: 5B
+        file: 5B - Player Jump-Fall (Mouse).md
+        title: 5B - Player Jump-Fall (Mouse)
+  - id: 6
+    title: Exit sprite
+    options:
+      - id: 6A
+        file: 6A - Draw Exit Sprite.md
+        title: 6A - Draw Exit Sprite
+      - id: 6B
+        file: 6B - Upload Exit Sprite.md
+        title: 6B - Upload Exit Sprite
+      - id: 6C
+        file: 6C - Choose Exit Sprite from Library.md
+        title: 6C - Choose Exit Sprite from Library
+  - id: 7
+    title: Add collectables
+    options:
+      - id: 7A
+        file: 7A - Place Collectables.md
+        title: 7A - Place Collectables
+      - id: 7B
+        file: 7B - Random Collectables.md
+        title: 7B - Random Collectables
+      - id: 7C
+        file: 7C - Add a Power Up.md
+        title: 7C - Add a Power Up
+  - id: 8
+    title: Win condition options
+    options:
+      - id: 8A
+        file: 8A - Get to Exit Sprite (Default).md
+        title: 8A - Get to Exit Sprite (Default)
+      - id: 8B
+        file: 8B - Target Score.md
+        title: 8B - Target Score
+      - id: 8C
+        file: 8C - Take Key to Exit.md
+        title: 8C - Take Key to Exit
+  - id: 9
+    title: Hazards
+    options:
+      - id: 9A
+        file: 9A - Static Hazard.md
+        title: 9A - Static Hazard
+      - id: 9B
+        file: 9B - Y-motion Hazards.md
+        title: 9B - Y-motion Hazards
+      - id: 9C
+        file: 9C - X-motion Hazards.md
+        title: 9C - X-motion Hazards
+  - id: 10
+    title: Extras
+    options:
+      - id: 10A
+        file: 10A - Add Music.md
+        title: 10A - Add Music
+      - id: 10B
+        file: 10B - Add Sound effects.md
+        title: 10B - Add Sound effects
+      - id: 10C
+        file: 10C - New Level.md
+        title: 10C - New Level
+      - id: 10D
+        file: 10D - Animate your player.md
+        title: 10D - Animate your player
+      - id: 10E
+        file: 10E - Make Your Player Sprint.md
+        title: 10E - Make Your Player Sprint
+recommended_paths:
+  quick_platformer:
+    - 1C
+    - 2C
+    - 3A
+    - 4A
+    - 5A
+    - 6C
+    - 8A
+  drawn_platformer:
+    - 1A
+    - 2A
+    - 3A
+    - 4A
+    - 5A
+    - 6A
+    - 8A
+  uploaded_assets_platformer:
+    - 1B
+    - 2B
+    - 3A
+    - 4A
+    - 5A
+    - 6B
+    - 8C
+  challenge_platformer:
+    - 1A
+    - 2A
+    - 3B
+    - 4A
+    - 5A
+    - 6A
+    - 8C
+    - 9B
+    - 10C
+    - 10E
